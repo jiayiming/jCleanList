@@ -1,12 +1,10 @@
 [Adblock]
-! My Private ABP Filter Subscription
+! Title: jCleanList
 ! Last modified: 10 Nov 2012 17:10 UTC
 ! Expires: 7 days (update frequency)
-!
-!  If you need help or have any question,
-!  please visit: https://jcleanlist.googlecode.com/
-!
+! Homepage: https://jcleanlist.googlecode.com/
 !----MIT Licensed, NO WARRANTY but Best Wishes----
+!
 !---视频全局
 ||irs01.com^
 ||irs01.net^
