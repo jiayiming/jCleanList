@@ -1,6 +1,5 @@
 [Adblock]
 ! My Private ABP Filter Subscription
-! Checksum: Xg+uG/zUyz6UfqnE2SuOjQ
 ! Last modified: 10 Nov 2012 17:10 UTC
 ! Expires: 7 days (update frequency)
 !
