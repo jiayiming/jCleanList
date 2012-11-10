@@ -1,11 +1,12 @@
-! ChinaList and EasyList combination subscription
-! Checksum: LXJKbxk6xrxyU8zAm8gZgQ
-! Last modified: 10 Nov 2012 14:30 UTC
+[Adblock]
+! My Private ABP Filter Subscription
+! Checksum: Xg+uG/zUyz6UfqnE2SuOjQ
+! Last modified: 10 Nov 2012 16:30 UTC
 ! Expires: 7 days (update frequency)
 !
-! *** Fetched from: https://jcleanlist.googlecode.com/ ***
+! *** Fetched from: https://jcleanlist.googlecode.com/files/jCleanList.txt ***
 !  Adblock Plus List with Main Focus on Chinese Sites.
-!  Last Modified:  Wed, 10 Nov 2012 14:30:00 +0800
+!  Last Modified:  Wed, 10 Nov 2012 16:30:00 +0800
 !  If you need help or have any question,
 !  please visit: https://jcleanlist.googlecode.com/
 !
