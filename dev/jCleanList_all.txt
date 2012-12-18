@@ -3,6 +3,7 @@
 ! Last modified: 18 Dec 2012 12:30 UTC
 ! Expires: 7 days (update frequency)
 ! Homepage: https://jcleanlist.googlecode.com/
+! https://jcleanlist.googlecode.com/git/jCleanList_all.txt
 !----MIT Licensed, NO WARRANTY but Best Wishes----
 /\[\/_\.\?\&\-]ads?\[\/_\.\d\-]/
 /\[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
