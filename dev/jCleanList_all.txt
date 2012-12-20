@@ -1,7 +1,7 @@
 [Adblock]
 ! Title: jCleanList
 ! Last modified: 20 Dec 2012 23:00 UTC
-! Expires: 7 days (update frequency)
+! Expires: 3 days (update frequency)
 ! Homepage: https://jcleanlist.googlecode.com/
 ! https://jcleanlist.googlecode.com/git/jCleanList_all.txt
 !----MIT Licensed, NO WARRANTY but Best Wishes----
