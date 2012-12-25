@@ -1,6 +1,6 @@
 [Adblock]
 ! Title: jCleanList
-! Last modified: 25 Dec 2012 22:30 UTC
+! Last modified: 25 Dec 2012 23:00 UTC
 ! Expires: 3 days (update frequency)
 ! Homepage: https://jcleanlist.googlecode.com/
 ! https://jcleanlist.googlecode.com/git/jCleanList_all.txt
@@ -94,6 +94,7 @@ googletagservices.com/tag/js/gpt.js
 ||adkongjian.com^$third-party
 ||adyun.com^$third-part
 ||adsame.com^$third-party
+||chanet.com.cn^$third-party
 ||chinaih.com^$third-party
 ||clickeye.cn^$third-party
 ||egooad.com^$third-party
@@ -179,6 +180,7 @@ googletagservices.com/tag/js/gpt.js
 ||cnzz.com^$third-party
 ||cnzz.net^$third-party
 ||hitslink.com^$third-party
+||v2.jiathis.com^$third-party
 ||imrworldwide.com^$third-party
 ||linezing.com^$third-party
 ||users.51.la^$third-party
@@ -384,16 +386,17 @@ ithome.com###cn
 ||5d6d.net/include/js/googleAfs.js$domain=5d6d.net
 5d6d.net###ad_text
 !---卡饭论坛
-||chanet.com.cn^$domain=bbs.kafan.cn
-bbs.kafan.cn##.wp.header_gg
+bbs.kafan.cn##.header_gg
 bbs.kafan.cn##.a_f
 bbs.kafan.cn##.a_pt
 !---远景论坛
 ||pcbeta.com^*/biz/$domain=pcbeta.com
 ||pbcdn.com/activities/$domain=pcbeta.com
 ||pbcdn.com/public/javascript/*_appx_banner/$domain=pcbeta.com
-bbs.pcbeta.com##li.left,div\[style*="width:980px;"],div\[style*="width:960px;height:90px;"]
 bbs.pcbeta.com###sitefocus
+bbs.pcbeta.com##div[style*="width:980px;"]
+bbs.pcbeta.com##div[style*="width:960px;height:60px;"]
+bbs.pcbeta.com##div[style*="height:60px;border:solid #EDEEF0;"]
 !---机锋网
 /press/*$domain=bbs.gfan.com
 bbs.gfan.com##.ad,\[class*="ad_textlink"]
