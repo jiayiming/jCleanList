@@ -1,20 +1,18 @@
 [Adblock]
 ! Title: jCleanList
-! Last modified: 25 Dec 2012 18:00 UTC
+! Last modified: 25 Dec 2012 22:30 UTC
 ! Expires: 3 days (update frequency)
 ! Homepage: https://jcleanlist.googlecode.com/
 ! https://jcleanlist.googlecode.com/git/jCleanList_all.txt
 !----Sina/TX @小蛐蛐
 !----MIT Licensed, NO WARRANTY but Best Wishes----
 !通用猜测
-/\[\/_\.\?\&\-]ads?\[\/_\.\d\-]/
 /\[\/_\.\?\&\-]ads?\d*\[\/_\.\-]/
 /\[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
 /\/\[^\?\=]*(?:\[^eop\d]ads?|popup|tan|tanchuang|float)(\[_\d]\[^\.\?\&\=%]*)?\.js$/$script
 |http://*/gg/*
 |http://*/ggao/*
 |http://*/guanggao/*
-/\/\/\[^\?\=]*(?:\[^egop](?:popup|tan|tanchuang|float|ads?)(\[^a-z]\[^\.\?\&\=%]*)?|\/(?:gg|guanggao|ggao)\/\S*)\.js$/$script
 !---通用猜测
 |http://*icast*
 |http://*/*duilian*
