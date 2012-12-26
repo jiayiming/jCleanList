@@ -1,19 +1,19 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Last modified: 26 Dec 2012 09:00 UTC
+! Last modified: 26 Dec 2012 10:00 UTC
 ! Expires: 3 days (update frequency)
 ! Homepage: https://jcleanlist.googlecode.com/
 ! https://jcleanlist.googlecode.com/git/jCleanList_all.txt
 !----Sina/TX @小蛐蛐
 !----MIT Licensed, NO WARRANTY but Best Wishes----
-!通用猜测
+!通用广告猜测
 /\[\/_\.\?\&\-]ads?\d*\[\/_\.\-]/
 /\[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
 /\/\[^\?\=]*(?:\[^eop\d]ads?|popup|tan|tanchuang|float)(\[_\d]\[^\.\?\&\=%]*)?\.js$/$script
 |http://*/gg/*
 |http://*/ggao/*
 |http://*/guanggao/*
-!---通用猜测
+!---通用广告联盟通用猜测
 |http://*icast*
 |http://*/*duilian*
 */couplet.js
@@ -108,6 +108,7 @@
 ||heroclick.cn^$third-party
 ||i3z.cn^$third-part
 ||ifocus.cn^$third-party
+||ipinyou.$third-party
 ||keydot.net^$third-party
 ||keyrun.cn^$third-party
 ||keytui.com^$third-party
@@ -190,6 +191,7 @@
 ||wrating.com^$third-party
 !---Others(Foreign)
 ||serving-sys.com^$third-party
+!---白名单区域
 @@/\[_\?#](:?\[a-z\d]{1,})?ad\[a-ce-z\d]{4,}/$script,stylesheet
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||static.youku.com/v1.*/index/js/popup.js
@@ -274,6 +276,18 @@ qq.com###PL_adT
 ||rh.qq.com/afc?union_id$domain=wenwen.soso.com
 ||rh.qq.com/afc.js$domain=wenwen.soso.com
 wenwen.soso.com##.ad1
+!---网易
+|http://oimageb8.ydstatic.com/*adpublish
+||img1.126.net^
+||img2.126.net^
+||adgeo.163.com^
+||impservice2.youdao.com^
+||www.163.com/special/*/pdtj*.html
+||news.2hua.com/adiframe/$domain=163.com
+||top.baidu.com/none/163.html
+163.com##\[class^="gg"]
+!邮箱
+||mimg.127.net/external/*
 !---新浪
 /\.sinaimg\.cn\/\S+(suda|\/deco\/)\S+\.js/$domain=sina.com.cn
 ||bj.house.sina.com.cn^$domain=sina.com.cn
