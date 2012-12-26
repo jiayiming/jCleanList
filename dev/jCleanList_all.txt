@@ -1,6 +1,6 @@
-[Adblock]
+[Adblock Plus 2.1]
 ! Title: jCleanList
-! Last modified: 25 Dec 2012 23:00 UTC
+! Last modified: 26 Dec 2012 09:00 UTC
 ! Expires: 3 days (update frequency)
 ! Homepage: https://jcleanlist.googlecode.com/
 ! https://jcleanlist.googlecode.com/git/jCleanList_all.txt
@@ -22,7 +22,7 @@
 */pagead/*
 */gampad/*
 ||doubleclick.net^$third-party
-googletagservices.com/tag/js/gpt.js
+||googletagservices.com/tag/js/gpt.js
 !---baidu
 ||cpro.baidu.com^
 ||cpro.baidustatic.com^
@@ -42,6 +42,7 @@ googletagservices.com/tag/js/gpt.js
 ||union.netease.com^$third-part
 ||union.163.com^$third-part
 ||union.114.com.cn^$third-part
+||union.ijinshan.com^$third-part
 ||union.mop.com^$third-part
 ||union.narrowad.com^$third-part
 ||union.zhongsou.com^$third-part
@@ -64,6 +65,8 @@ googletagservices.com/tag/js/gpt.js
 !---naqigs
 ||naqigs.com^$third-party
 ||i.na7.cc^$third-party
+!---popup
+||resmkt.dipan.com^$popup
 !---others(no_video_ad)
 ||000wan.com^$third-party
 ||001union.com^$third-party
@@ -180,10 +183,10 @@ googletagservices.com/tag/js/gpt.js
 ||cnzz.com^$third-party
 ||cnzz.net^$third-party
 ||hitslink.com^$third-party
-||v2.jiathis.com^$third-party
 ||imrworldwide.com^$third-party
 ||linezing.com^$third-party
 ||users.51.la^$third-party
+||v2.jiathis.com^$third-party
 ||wrating.com^$third-party
 !---Others(Foreign)
 ||serving-sys.com^$third-party
@@ -370,8 +373,8 @@ bbs.csdn.net##\[class^="ad_"]
 bbs.csdn.net###Topic_Top
 !---cnBeta
 /img\.cnbeta\.com\/\[^\/_\d]*?\d{3}\.\[f-w]{3}/$domain=cnbeta.com
+|http://img.cnbeta.com/maipu.swf
 ^google.js$domain=cnbeta.com
-||open.qzone.qq.com^$domain=cnbeta.com
 cnbeta.com##.detail>em,#userInfo,#fm_r,#comad,#fixed_area
 cnbeta.com###votes:nth-child(9),#votes:nth-child(14),#votes:nth-child(17),#votes:nth-child(18),#votes:nth-child(19)
 cnbeta.com###mark:nth-child(2)
@@ -394,9 +397,9 @@ bbs.kafan.cn##.a_pt
 ||pbcdn.com/activities/$domain=pcbeta.com
 ||pbcdn.com/public/javascript/*_appx_banner/$domain=pcbeta.com
 bbs.pcbeta.com###sitefocus
-bbs.pcbeta.com##div[style*="width:980px;"]
-bbs.pcbeta.com##div[style*="width:960px;height:60px;"]
-bbs.pcbeta.com##div[style*="height:60px;border:solid #EDEEF0;"]
+bbs.pcbeta.com##div\[style*="width:980px;"]
+bbs.pcbeta.com##div\[style*="width:960px;height:60px;"]
+bbs.pcbeta.com##div\[style*="height:60px;border:solid #EDEEF0;"]
 !---机锋网
 /press/*$domain=bbs.gfan.com
 bbs.gfan.com##.ad,\[class*="ad_textlink"]
@@ -540,7 +543,6 @@ weibo.com##.footer_adv
 ||xnimg.cn^*/beacon.js
 !---115网盘
 ||static.115img.com/static/delivery/$domain=115.com
-115.com##\[class^="ban"],.app-recom-box,.resuorces-search,.random-banner,.app-recommend
 !---华为网盘
 |http://*.com/netdisk/download/ads/*
 ||hiad.vmall.com^
@@ -725,6 +727,8 @@ jjwxc.net##TABLE\[style*="width:984px;height:92px;"]
 jjwxc.net##\[id^="adp_jjwxc"]
 !阅读页顶部横幅
 jjwxc.net##DIV\[style="height: 90px;"]
+!pv
+|http://*/*.ca*$domain=jjwxc.net
 !---小说阅读网
 ||readnovel.com/js/$domain=readnovel.com
 !书页+女生版首页
@@ -754,6 +758,10 @@ qidian.com##\[class^="show_ggpic"]
 !目录页
 !阅读页
 ||ku6.com^$domain=qidian.com
+!---红袖添香
+||pic.hongxiu.com/fox/hx/*
+hongxiu.com##.wrapper_mod\[style="height:60px;"]
+hongxiu.com##.wrapper_mod\[style="height:90px;"]
 !---溜达TXT电子书论坛
 @@||liudatxt.com/js/simp2trad.js
 !---雅文言情小说吧
