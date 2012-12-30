@@ -1,24 +1,28 @@
 [Adblock Plus 2.1]
-! Title: jCleanList
-! Last modified: 28 Dec 2012 23:00 UTC
-! Expires: 3 days (update frequency)
-! Homepage: https://jcleanlist.googlecode.com/
-! https://jcleanlist.googlecode.com/git/jCleanList_all.txt
+!  Title: jCleanList
+!  Checksum: Zy/829jGX8C0O+bsGYhoAw
+!  Last modified: 30 Dec 2012 18:28 +0800
+!  Expires: 3 days (update frequency)
+!  Coding: utf-8
+!  Homepage: https://jcleanlist.googlecode.com/
+!  https://jcleanlist.googlecode.com/git/jCleanList_all.txt
 !----Sina/TX @小蛐蛐
 !----MIT Licensed, NO WARRANTY but Best Wishes----
+
 !通用广告猜测
-/\[\/_\.\?\&\-]ads?\d*\[\/_\.\-]/
-/\[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
-/\/\[^\?\=]*(?:\[^beop\d]ads?|popup|tan|tanchuang|float)(\[_\d]\[^\.\?\&\=%]*)?\.js$/$script
+/[\/_\.\?\&\-]ads?\d*[\/_\.\-]/
+/[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
+/\/[^\?\=]*(?:[^beop\d]ads?|popup|tan|tanchuang|float)([_\d][^\.\?\&\=%]*)?\.js$/$script
 |http://*/gg/*
 |http://*/ggao/*
 |http://*/guanggao/*
 !---白名单区域
-@@/\[_\?#](:?\[a-z\d]{1,})?ad\[a-ce-z\d]{4,}/$script,stylesheet$domain~=hm.baidu.com
+@@/[_\?#](:?[a-z\d]{1,})?ad[a-ce-z\d]{4,}/$script,stylesheet$domain~=hm.baidu.com
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
 @@||im.baidu.com/popup/popup.js*
+
 !---通用广告联盟通用猜测
 |http://*icast*
 |http://*/*duilian*
@@ -152,6 +156,7 @@
 ||yoyi.com.cn^$third-party
 ||zdy.cc^$third-party
 ||zedo.com^$third-party
+
 !---通用分析统计站点猜测
 */tongji.js
 |http://*/tj.js
@@ -198,6 +203,7 @@
 ||wrating.com^$third-party
 !---Others(Foreign)
 ||serving-sys.com^$third-party
+
 !---Google
 !反跳转
 ||google.com*/xjs/_/js/*
@@ -208,13 +214,13 @@ www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 ||a.baidu.com^$domain=baidu.com
 !搜索+推广
 www.baidu.com###content_right
-www.baidu.com##table\[width="30%"]
+www.baidu.com##table[width="30%"]
 www.baidu.com##.EC_mr15
 !news_All|news1
-news.baidu.com##\[id^="ecom"]
+news.baidu.com##[id^="ecom"]
 news.baidu.com###ecad
 !tieba0|tieba2
-tieba.baidu.com##\[id^="guanggao"]
+tieba.baidu.com##[id^="guanggao"]
 tieba.baidu.com##.l_banner
 ||tb1.bdstatic.com/tb/hao123/*$domain=tieba.baidu.com
 !tieba1
@@ -224,7 +230,7 @@ tieba.baidu.com###aside_ad
 !zhidao0|zhidao1|zhidao2
 ||baidu.com^*/egg*.swf
 ||zhidao.baidu.*/flash/zhidao.swf$domain=zhidao.baidu.cn
-zhidao.baidu.com##div\[class^="ad"]
+zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com###advertise
 zhidao.baidu.com##.wgt-ads
 !zhidao2侧边栏
@@ -233,6 +239,8 @@ zhidao.baidu.com##.wgt-ads
 ||img.baidu.com/img/iknow/JNH_270_170.png
 ||jingyan.baidu.com/event/nianzhongpandian/images/270_90.jpg
 zhidao.baidu.com##.cms-slide
+!zhidao3搜索
+zhidao.baidu.com##.widget-ads
 !mp3_0|mp3_1
 mp3.baidu.com###ecom
 mp3.baidu.com##.grid_20
@@ -240,7 +248,7 @@ mp3.baidu.com##.grid_20
 !image0
 image.baidu.com###re70
 !video0
-video.baidu.com##\[monkey="ecom"]
+video.baidu.com##[monkey="ecom"]
 video.baidu.com##.popular
 !---腾讯网
 ||adsrich.qq.com^
@@ -261,7 +269,7 @@ finance.qq.com###topAd
 tech.qq.com##.kjad2
 bookapp.book.qq.com###topad
 !娱乐/数码/时尚等板块顶部通用
-qq.com##\[id$="_ad"]
+qq.com##[id$="_ad"]
 !娱乐子页右侧
 ||mat1.gtimg.com/ent/flash/*.swf$domain=ent.qq.com
 !体育板块中部横幅
@@ -288,7 +296,7 @@ wenwen.soso.com##.ad1
 ||www.163.com/special/*/pdtj*.html
 ||news.2hua.com/adiframe/$domain=163.com
 ||top.baidu.com/none/163.html
-163.com##\[class^="gg"]
+163.com##[class^="gg"]
 !邮箱
 ||mimg.127.net/external/*
 !---新浪
@@ -300,10 +308,10 @@ www.sina.com.cn##.topads
 !首页左侧
 www.sina.com.cn##div.left
 !首页中间横幅
-www.sina.com.cn##\[class*="780x90"]
-www.sina.com.cn##div\[style$="_height:99px;"]
+www.sina.com.cn##[class*="780x90"]
+www.sina.com.cn##div[style$="_height:99px;"]
 !新闻顶部
-news.sina.com.cn##\[class^="ATopTxt"]
+news.sina.com.cn##[class^="ATopTxt"]
 !新闻页顶部
 news.sina.com.cn###ad_top
 !子页底部
@@ -316,16 +324,16 @@ sina.com.cn##.adBlock
 ||ifeng.com/tres/recommend/*
 ||ifengimg.com/tres/recommend/*
 ||ifengimg.com/mappa/*
-ifeng.com##div\[class^="ad"]
+ifeng.com##div[class^="ad"]
 !子页
 !子页右侧栏
 ifeng.com##.label_3
 !子页对联
-ifeng.com##\[id$="CoupletId"]
+ifeng.com##[id$="CoupletId"]
 !---中关村
 ||p.zol-img.com.cn^
 ||pic.zol-img.com.cn*.swf
-zol.com.cn##div\[id^="AD"]
+zol.com.cn##div[id^="AD"]
 www.zol.com.cn##.banner760_1,.word_ad
 !首页右下角漂浮
 www.zol.com.cn###hq_float_content
@@ -337,7 +345,7 @@ mobile.zol.com.cn##.header_ad
 !首页顶部
 it168.com##.gg
 !通用
-it168.com##\[id^="ADV_"]
+it168.com##[id^="ADV_"]
 !论坛右下角漂浮
 it168.com!---泡泡网
 ||ashow.pcpop.com^
@@ -346,17 +354,17 @@ it168.com!---泡泡网
 www.pcpop.com###addiv3
 www.pcpop.com##.l1:first-child
 pcpop.com##.h493
-www.pcpop.com##\[id^="ad_"]
+www.pcpop.com##[id^="ad_"]
 !新闻页顶部横幅
 pcpop.com##.ad
 !---驱动之家
 ||11.mydrivers.com^$script
-mydrivers.com##\[class^="ad_"]
+mydrivers.com##[class^="ad_"]
 !子页顶部
-mydrivers.com##div>table\[style="border: 1px solid #5A7EA0"]
+mydrivers.com##div>table[style="border: 1px solid #5A7EA0"]
 ||mydrivers.com/inc/*.js
 !驱动下载
-drivers.mydrivers.com##\[id^="ad_"]
+drivers.mydrivers.com##[id^="ad_"]
 !---太平洋电脑网
 ||pconline.com.cn/js/ivy.js
 ||ivy.pconline.com.cn/adpuba/*
@@ -370,7 +378,7 @@ drivers.mydrivers.com##\[id^="ad_"]
 !---电脑之家
 ||js-1.pchome.net^$script,domain=pchome.net|kdslife.com
 ||btn.pchome.net^$domain=pchome.net
-pchome.net,kdslife.com##\[class^="ad"]
+pchome.net,kdslife.com##[class^="ad"]
 !---宽带山
 @@||js-1.pchome.net/*/ipub/$script,domain=kdslife.com
 !---天极网
@@ -379,17 +387,17 @@ pchome.net,kdslife.com##\[class^="ad"]
 !---CSDN
 ||csdn.net/*ggmm*
 ||counter.csdn.net^
-csdn.net##\[class^="banner_top"]
+csdn.net##[class^="banner_top"]
 !首页
 csdn.net##.businessad
 !新闻页
 csdn.net##.ad_960
 !论坛
 ||bbs.csdn.net/sda/*.htm
-bbs.csdn.net##\[class^="ad_"]
+bbs.csdn.net##[class^="ad_"]
 bbs.csdn.net###Topic_Top
 !---cnBeta
-/img\.cnbeta\.com\/\[^\/_\d]*?\d{3}\.\[f-w]{3}/$domain=cnbeta.com
+/img\.cnbeta\.com\/[^\/_\d]*?\d{3}\.[f-w]{3}/$domain=cnbeta.com
 |http://img.cnbeta.com/maipu.swf
 ^google.js$domain=cnbeta.com
 cnbeta.com##.detail>em,#userInfo,#fm_r,#comad,#fixed_area
@@ -401,6 +409,7 @@ ithome.com##.site_ad
 ithome.com##.side_products.ulc.ball
 !顶部闪游推荐横幅
 ithome.com###cn
+
 !--5d6d
 ||5d6d.net/include/js/tellYou.js$domain=5d6d.net
 ||5d6d.net/include/js/googleAfs.js$domain=5d6d.net
@@ -413,17 +422,19 @@ bbs.kafan.cn##.a_pt
 ||pcbeta.com^*/biz/$domain=pcbeta.com
 ||pbcdn.com/activities/$domain=pcbeta.com
 ||pbcdn.com/public/javascript/*_appx_banner/$domain=pcbeta.com
-bbs.pcbeta.combbs.pcbeta.com##div\[style*="width:980px;"]
-bbs.pcbeta.com##div\[style*="width:960px;height:60px;"]
-bbs.pcbeta.com##div\[style*="height:60px;border:solid #EDEEF0;"]
+bbs.pcbeta.combbs.pcbeta.com##div[style*="width:980px;"]
+bbs.pcbeta.com##div[style*="width:960px;height:60px;"]
+bbs.pcbeta.com##div[style*="height:60px;border:solid #EDEEF0;"]
 !---机锋网
 /press/*$domain=bbs.gfan.com
-bbs.gfan.com##.ad,\[class*="ad_textlink"]
+bbs.gfan.com##.ad,[class*="ad_textlink"]
 !底部漂浮
 bbs.gfan.com###bbs_jxtj
 !---XDA.CN
 ||bbs.xda.cn/data/attachment/common/cf/*$domain=bbs.xda.cn
-!---拇指玩
+||bbs.xda.cn/static/image/xdagg/*
+bbs.xda.cn##.a_pt
+bbs.xda.cn!---拇指玩
 /data/attachment/common/cf/*$domain=muzhiwan.com
 !---OPDA
 ||ooomm.com/ad/*$image,domain=ooomm.com
@@ -431,7 +442,7 @@ bbs.gfan.com###bbs_jxtj
 ooomm.com##.a_mu
 ooomm.com##.a_cn
 !---智能塞班论坛
-bbs.dospy.com##div\[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder\[style="width: 98%"],tr.t_infoline
+bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder[style="width: 98%"],tr.t_infoline
 !---游侠网
 ||bmp.ali213.net/JS/*.js$domain=ali213.net
 !---3DM游戏论坛
@@ -445,8 +456,8 @@ bbs.dospy.com##div\[style="clear: both; margin-top: 5px;"],center>div.maintable>
 ||tgbus.com/sf/taobao/*
 ||17446.com^$domain=tgbus.com
 tgbus.com##.a760x100
-tgbus.com##\[class^="a200x"]
-tgbus.com##\[class^="ad"]
+tgbus.com##[class^="a200x"]
+tgbus.com##[class^="ad"]
 !---A9VG电玩部落
 *bbs.a9vg.com/showit*$domain=bbs.a9vg.com
 bbs.a9vg.com###a9_show
@@ -475,6 +486,7 @@ bbs.mydigit.cn##.radio.mb10
 !---天涯
 ||806.tianya.cn^
 bbs.tianya.cn###q_topbanner_950_90
+
 !---动漫花园
 play-asia.com$third-party
 share.dmhy.org###play-asia
@@ -499,12 +511,12 @@ bbs.aptx.cn##.a_pr
 ||dm.tsdm.net/images/2012_10/*
 tsdm.net##.a_pt
 !---NyaaTorrents
-/files\[\S]*?\d{1,3}\.jpg/$domain=nyaa.eu
-nyaa.eu##a\[href^="http://www.nyaa.eu/gg/"]
+/files[\S]*?\d{1,3}\.jpg/$domain=nyaa.eu
+nyaa.eu##a[href^="http://www.nyaa.eu/gg/"]
 !---笨狗漫画
 ||bengou.com/game/*
-bengou.com##div\[style*="width:980px; height:70px;"]
-bengou.com##div\[style*="width:870px; height:215px;"]
+bengou.com##div[style*="width:980px; height:70px;"]
+bengou.com##div[style*="width:870px; height:215px;"]
 !---射手网
 ||shooter.cn/a/*adv$script,domain=shooter.cn
 ||google.com/afsonline/show_afs_search.js$domain=shooter.cn
@@ -522,16 +534,16 @@ yyets.com##.adBox
 ||l.qq.com^$domain=chdtv.com
 ||10moons.com$domain=chdtv.com
 chdtv.com##.a_mu,.a_t
-chdtv.net###sitefocus
-!---MySilU论坛
+chdtv.net!---MySilU论坛
 */attachment/common/cf/*$domain=www.mysilu.com
 www.mysilu.com##.a_h,.a_t,.a_pt
 !---高清与PT
 ||wszpy.com^$domain=hd2pt.com
 hd2pt.com##.a_t
-hd2pt.com###sitefocus
+hd2pt.com/[]/
+/ab\\\.[/
 !---TorrenTGui
-/ttg\[_-]\[^l]\[^\/]+\.\[f-p]{3}/$domain=ttg.im
+/ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=ttg.im
 ||ttg.im/pic/*450.gif$domain=ttg.im
 ||ttg.im/bbs/data/attachment/common/cf/*$domain=ttg.im
 ||bbs.gaoqing.tv/pt/ttg.gif$domain=ttg.im
@@ -549,6 +561,7 @@ kishd.org##div.a_h,div.wp.a_f
 !帖子底部百度搜索
 unstat.baidu.com$domain=pt80.com
 pt80.com##.a_t
+
 !---新浪微薄
 ||biz.weibo.com^
 weibo.com##.footer_adv
@@ -568,7 +581,7 @@ weibo.com##.footer_adv
 !---华为网盘
 |http://*.com/netdisk/download/ads/*
 ||hiad.vmall.com^
-dl.vmall.com##\[id^="ad_"]
+dl.vmall.com##[id^="ad_"]
 !去加载中提示
 dl.vmall.com###filelist_marker
 !---迅雷快传
@@ -589,7 +602,8 @@ mediafire.com##.rockmeltAdWrapper
 ctdisk.com##.kk_xshow
 !---千军万马
 ||u.qjwm.com^
-movie.qjwm.com##\[id^="gggg"]
+movie.qjwm.com##[id^="gggg"]
+
 !---视频全局
 ||irs01.com^
 ||irs01.net^
@@ -601,8 +615,8 @@ movie.qjwm.com##\[id^="gggg"]
 !True AD  放行td.atm.youku.com节约等待时间
 ||f.youku.com/player/getFlvPath/fileid/
 !---优酷
-youku.com##div\[class^="AB"]
-soku.com##div\[id^="ab_"]
+youku.com##div[class^="AB"]
+soku.com##div[id^="ab_"]
 !---土豆
 @@||td.atm.youku.com^
 ||tudou.com*outside.php
@@ -627,7 +641,7 @@ iqiyi.com###ad-left-tl
 @@||g.aa.sdo.com/crossdomain.xml
 @@||g.aa.sdo.com/?method=getversion
 ku6.com##.ku6_ad
-v.ku6.com##\[class^="aa_"]
+v.ku6.com##[class^="aa_"]
 !视频页右上角小横幅
 ||css.ku6cdn.com/*/300x63*$image,domain=v.ku6.com
 !404垃圾连接
@@ -680,7 +694,10 @@ acfun.tv##.ad
 ||apas.aipai.com/www/images/$domain=aipai.com
 /common/js/pop_dialog.js$domain=aipai.com
 !---乐视
-pro.letv.com/adpolestar/
+||pro.hoye.letv.com^
+!pv
+||dc.letv.com^
+||js.letvcdn.com/js/*/stats/*
 !---六间房
 .6rooms.com/adpolestar/
 !---激动网
@@ -693,16 +710,17 @@ pro.letv.com/adpolestar/
 ||billing.yicai.com$domain=yicai.com
 ||yicai.adsame.com$domain=yicai.com
 !---江苏卫士
+
 !---迅雷
 ||biz*.sandai.net^
 ||float.sandai.net^
 !---迅雷看看
-kankan.com##\[id^="cm"]
+kankan.com##[id^="cm"]
 !---VeryCD
 sp.vcimg.com$domain=verycd.com
-www.verycd.com##div\[style*="width:960px;height:90px;"],div\[style*="width:250px;height:200px;padding:4px;"]
+www.verycd.com##div[style*="width:960px;height:90px;"],div[style*="width:250px;height:200px;padding:4px;"]
 !下载页顶部横幅
-verycd.com##IFRAME\[height="70"]\[width="980"]:first-child
+verycd.com##IFRAME[height="70"][width="980"]:first-child
 !---SimpleCD
 /static/ad$domain=simplecd.org
 code.7794.com$domain=simplecd.org
@@ -712,20 +730,20 @@ code.7794.com$domain=simplecd.org
 */newhuagg/js_softdown_*.js$script
 */newhuagg/*_search_*.js$script
 newhua.com##.ad_top
-newhua.com##\[class^="ad_ritht_"]
+newhua.com##[class^="ad_ritht_"]
 !---天空下载
 ||skycn.com/js/soft_*.js
 !首页
 skycn.com##.h90.top7
 skycn.com##.h100.top7
 !---绿色下载站
-downg.com##\[class*=" ad-b"],\[class="cp sponsor"]
-downg.com##div\[class="wrapper"]>\[class="content cols2"]>\[class="col1"]>\[class="cp cp-black"]
+downg.com##[class*=" ad-b"],[class="cp sponsor"]
+downg.com##div[class="wrapper"]>[class="content cols2"]>[class="col1"]>[class="cp cp-black"]
 !---非凡软件站
-crsky.com##\[id$="_TL"]
+crsky.com##[id$="_TL"]
 crsky.com###recommend-new
 crsky.com###recommend-useful
-crsky.com##.mirror-adr>span\[style^="float:right;padding-right:5px;"]
+crsky.com##.mirror-adr>span[style^="float:right;padding-right:5px;"]
 !---绿色软件联盟
 ||xdowns.com/new/ggdown.html
 xdowns.com##.co_content52
@@ -736,10 +754,10 @@ xiazaiba.com##.ads_34
 ||hanzify.org/*/a-d-s/*$domain=hanzify.org
 *www.90hao.com$domain=hanzify.org
 hanzify.org##.banner-leader-index
-hanzify.org##.section-title>span\[style*="float:right;"]
+hanzify.org##.section-title>span[style*="float:right;"]
 hanzify.org##.categorypickdown
 !---小众软件
-/\/wp-content\/\[^\.\/]*?\.\w/$domain=www.appinn.com
+/\/wp-content\/[^\.\/]*?\.\w/$domain=www.appinn.com
 @@||appinn.com^*down.gif$domain=www.appinn.com
 !---软件盒子
 itopdog.cn##.widget_itopdog_ad
@@ -755,20 +773,20 @@ itopdog.cn##.ad728
 orsoon.com###youxi
 orsoon.com###adsmid
 !---晋江言情小说网
-||jjwxc.net/jjad2.html$popup,domain=jjwxc.net
+||jjwxc.net/jjad*html$popup,domain=jjwxc.net
 !首页顶部
-jjwxc.net##TABLE\[style*="width:984px;height:92px;"]
+jjwxc.net##table[style*="width:984px;height:92px;"]
 !书页横幅
-||static.jjwxc.net/scripts/richMedia.js$domain=jjwxc.net
-jjwxc.net##\[id^="adp_jjwxc"]
+||static.jjwxc.net/scripts/richMedia.js
+jjwxc.net##[id^="adp_jjwxc"]
 !阅读页顶部横幅
-jjwxc.net##DIV\[style="height: 90px;"]
+jjwxc.net##DIV[style="height: 90px;"]
 !pv
 |http://*/*.ca*$domain=jjwxc.net
 !---小说阅读网
 ||readnovel.com/js/$domain=readnovel.com
 !书页+女生版首页
-readnovel.com##DIV\[style*="width: 950px; height: 90px;"]
+readnovel.com##DIV[style*="width: 950px; height: 90px;"]
 !---潇湘书院
 ||images.xxsy.net/js/guanggao/*
 ||images.xxsy.net/js/xxsypop.js
@@ -788,28 +806,31 @@ xxsy.net##.bigbanner1
 ||qidian.com/javascript/SNDAADAltern.js
 ||qdmm.com/javascript/NewSNDAPop.js
 !首页
-www.qidian.com##\[class^="gg"]
+www.qidian.com##[class^="gg"]
 !书页
-qidian.com##\[class^="show_ggpic"]
+qidian.com##[class^="show_ggpic"]
 !目录页
 !阅读页
 ||ku6.com^$domain=qidian.com
 !---红袖添香
 ||pic.hongxiu.com/fox/hx/*
-hongxiu.com##.wrapper_mod\[style="height:60px;"]
-hongxiu.com##.wrapper_mod\[style="height:90px;"]
+hongxiu.com##.wrapper_mod[style="height:60px;"]
+hongxiu.com##.wrapper_mod[style="height:90px;"]
 !---溜达TXT电子书论坛
 @@||liudatxt.com/js/simp2trad.js
 !---雅文言情小说吧
 www.ya55.com###adtop
+
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---酷安网
+coolapk.com##.recentRecommendBox>dd
 !---京东商城
 ||fa.360buy.com^$script,domain=360buy.com
+||jprice.360buy.com/pageadword/*
 !---硬派网
 inpai.com.cn##.inpaiadtext
 !---超能网
@@ -833,7 +854,7 @@ www.17173.com##.header-3-1,.header-3-3
 duowan.com##.livetip
 !---178
 ||market.178.com^$domain=178.com
-178.com##\[class^="ad-"]
+178.com##[class^="ad-"]
 !---叶子猪
 ||yktj.yzz.cn^
 yzz.cn##.ad200x340
