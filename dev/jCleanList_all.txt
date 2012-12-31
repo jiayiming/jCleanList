@@ -1,11 +1,11 @@
 [Adblock Plus 2.1]
-!  Title: jCleanList
-!  Checksum: Zy/829jGX8C0O+bsGYhoAw
-!  Last modified: 30 Dec 2012 18:28 +0800
-!  Expires: 3 days (update frequency)
-!  Coding: utf-8
-!  Homepage: https://jcleanlist.googlecode.com/
-!  https://jcleanlist.googlecode.com/git/jCleanList_all.txt
+! Title: jCleanList
+! Checksum: AlfhzJwyr+QCIo8feSy8XA
+! Last modified: 31 Dec 2012 21:48 +0800
+! Expires: 3 days (update frequency)
+! Coding: utf-8
+! Homepage: https://jcleanlist.googlecode.com/
+! https://jcleanlist.googlecode.com/git/jCleanList_all.txt
 !----Sina/TX @小蛐蛐
 !----MIT Licensed, NO WARRANTY but Best Wishes----
 
@@ -48,6 +48,7 @@
 @@||drmcmm.baidu.com/media/$image,object,domain=cpro.baidu.com
 !---alimama
 ||alimama.cn^$third-part
+||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
 !---union
 ||union.netease.com^$third-part
 ||union.163.com^$third-part
@@ -206,7 +207,6 @@
 
 !---Google
 !反跳转
-||google.com*/xjs/_/js/*
 www.google.com.hk,www.google.com,encrypted.google.com###tads,#bottomads
 www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 !---众里寻他千百度
@@ -426,10 +426,14 @@ bbs.pcbeta.combbs.pcbeta.com##div[style*="width:980px;"]
 bbs.pcbeta.com##div[style*="width:960px;height:60px;"]
 bbs.pcbeta.com##div[style*="height:60px;border:solid #EDEEF0;"]
 !---机锋网
-/press/*$domain=bbs.gfan.com
-bbs.gfan.com##.ad,[class*="ad_textlink"]
-!底部漂浮
-bbs.gfan.com###bbs_jxtj
+||img1.tbcdn.cn^$domain=bbs.gfan.com
+||cdn*.image.apk.gfan.com/asdf/*
+bbs.gfan.com##.a_h
+bbs.gfan.com##[id^="div-gpt-ad-"]
+!每楼底部
+bbs.gfan.com##.a_pb
+!帖子底部推荐
+bbs.gfan.com##.wp.cl>div>table
 !---XDA.CN
 ||bbs.xda.cn/data/attachment/common/cf/*$domain=bbs.xda.cn
 ||bbs.xda.cn/static/image/xdagg/*
@@ -478,6 +482,12 @@ pcinlife.com###div_minipage
 !---软媒论坛
 ||img.vista123.com/images/saayaa468.gif
 bbs.ithome.com###bbs_hl
+!---无忧启动论坛
+||bbs.wuyou.net/images/banner.gif
+||bbs.wuyou.com/images/*0-*0.gif
+||bbs.wuyou.com/images/udashi.gif
+bbs.wuyou.com##.spaceborder[style="width: 98%"]:first-child
+bbs.wuyou.com##.t_infoline
 !---数码之家
 ||img.mydigit.net/advpic/$domain=bbs.mydigit.cn
 bbs.mydigit.cn##.radio.mb10
@@ -539,10 +549,9 @@ chdtv.net!---MySilU论坛
 www.mysilu.com##.a_h,.a_t,.a_pt
 !---高清与PT
 ||wszpy.com^$domain=hd2pt.com
+||hd2pt.com/qita/*
 hd2pt.com##.a_t
-hd2pt.com/[]/
-/ab\\\.[/
-!---TorrenTGui
+hd2pt.com!---TorrenTGui
 /ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=ttg.im
 ||ttg.im/pic/*450.gif$domain=ttg.im
 ||ttg.im/bbs/data/attachment/common/cf/*$domain=ttg.im
