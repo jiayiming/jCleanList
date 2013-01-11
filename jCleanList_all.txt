@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: abj5Dg/ZH9+KvU62ZPPIsw
-! Last modified: 05 Jan 2013 15:27 +0800
+! Checksum: uIaloK4eZb3jcSGKhP13Ag
+! Last modified: 11 Jan 2013 21:54 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -21,6 +21,7 @@
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
+@@||tb1.bdstatic.com/*float*.js$script
 @@||im.baidu.com/popup/popup.js*
 
 !---通用广告联盟通用猜测
@@ -165,6 +166,7 @@
 |http://*/pv.js
 |http://pv.*
 |http://track.
+|http://count.
 */count.js
 !---Google
 ||google-analytics.com/urchin.js
@@ -500,6 +502,10 @@ bbs.wuyou.com##.t_infoline
 bbs.mydigit.cn##.radio.mb10
 !---iMP3随身影音论坛
 ||imp3.net/data/js/$script,domain=imp3.net
+!---耳机大家坛
+||photo.erji.com^
+||erji.net/mf.swf
+erji.net##.t[style="margin:15px auto"]
 !---天涯
 ||806.tianya.cn^
 bbs.tianya.cn###q_topbanner_950_90
@@ -604,6 +610,7 @@ dl.vmall.com###filelist_marker
 ||img.kuai.xunlei.com/js/statistics.js
 ||img.kuai.xunlei.com/img/v2/fen/
 kuai.xunlei.com##.adv_area
+kuai.xunlei.com##.hot_list
 !---MediaFire
 ||mediafire.com/templates/linkto/default-$domain=mediafire.com
 ||sparkstudios.com^$domain=mediafire.com
@@ -629,8 +636,8 @@ movie.qjwm.com##[id^="gggg"]
 !-----优酷+土豆共通
 ||atm.youku.com^
 !True AD  放行td.atm.youku.com节约等待时间
-||f.youku.com/player/getFlvPath/fileid/
 !---优酷
+@@||f.youku.com/player/getFlvPath/fileid/*?K=*
 youku.com##div[class^="AB"]
 youku.com##div[id^="ab_"]
 soku.com##div[id^="ab_"]
@@ -641,12 +648,17 @@ soku.com##div[id^="ab_"]
 ||lstat.youku.com^$third-party
 ||player.pb.ops.tudou.com/info.php*
 !---爱奇异
+||202.108.14.72/ts.swf
 ||cupid.qiyi.com^
 ||iqiyi.com/player/*/theatre*.swf$object,domain=iqiyi.com
 ||afp.qiyi.com^
-iqiyi.com###div_theatre1.mt15
+iqiyi.com##[id^="div_theatre"]
 iqiyi.com###ad-left-tl
+!pv
+||data.video.qiyi.com/v.f4v?*
 ||msg.video.qiyi.com^
+||jsmsg.video.qiyi.com^
+||static.iqiyi.com/js/pingback/*
 !---56.com
 ||acs.56.com
 !---酷6
@@ -744,10 +756,18 @@ code.7794.com$domain=simplecd.org
 !---华军软件园
 */newhuagg/index_*.js$script,domain=onlinedown.net|newhua.com
 */newhuagg/*_newhua_*.js$script
-*/newhuagg/js_softdown_*.js$script
 */newhuagg/*_search_*.js$script
+!新闻页
 newhua.com##.ad_top
 newhua.com##[class^="ad_ritht_"]
+!下载
+*/newhuagg/js_soft*.js$script
+*/newhuagg/sort_pic_*.js
+onlinedown.net##.ban
+onlinedown.net##.adzone
+onlinedown.net##.push
+onlinedown.net##.adr
+onlinedown.net##.gameunion
 !---天空下载
 ||skycn.com/js/soft_*.js
 !首页
