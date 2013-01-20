@@ -638,7 +638,8 @@ movie.qjwm.com##[id^="gggg"]
 ||atm.youku.com^
 !True AD  放行td.atm.youku.com节约等待时间
 !---优酷
-@@||f.youku.com/player/getFlvPath/fileid/*?K=*
+@@||valf.atm.youku.com^
+||f.youku.com/player/getFlvPath/fileid/*?K=*
 youku.com##div[class^="AB"]
 youku.com##div[id^="ab_"]
 soku.com##div[id^="ab_"]
