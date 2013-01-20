@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: vZmymxfuhyECnd+Zc313iA
-! Last modified: 20 Jan 2013 13:34 +0800
+! Checksum: FEAB+vihUkXEbAoG9ZfhaA
+! Last modified: 20 Jan 2013 14:33 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -356,7 +356,8 @@ it168.com##.gg
 !通用
 it168.com##[id^="ADV_"]
 !论坛右下角漂浮
-it168.com!---泡泡网
+it168.com###sitefocus
+!---泡泡网
 ||ashow.pcpop.com^
 ||pcpop.com/js/pcpop_ad.js
 !首页
@@ -431,7 +432,8 @@ bbs.kafan.cn##.a_pt
 ||pcbeta.com^*/biz/$domain=pcbeta.com
 ||pbcdn.com/activities/$domain=pcbeta.com
 ||pbcdn.com/public/javascript/*_appx_banner/$domain=pcbeta.com
-bbs.pcbeta.combbs.pcbeta.com##div[style*="width:980px;"]
+bbs.pcbeta.com###sitefocus
+bbs.pcbeta.com##div[style*="width:980px;"]
 bbs.pcbeta.com##div[style*="width:960px;height:90px;"]
 bbs.pcbeta.com##div[style*="height:60px;border:solid #EDEEF0;"]
 bbs.pcbeta.com##[style*="width:980px;height:170px;"]
@@ -448,7 +450,8 @@ bbs.gfan.com##.wp.cl>div>table
 ||bbs.xda.cn/data/attachment/common/cf/*$domain=bbs.xda.cn
 ||bbs.xda.cn/static/image/xdagg/*
 bbs.xda.cn##.a_pt
-bbs.xda.cn!---拇指玩
+bbs.xda.cn###sitefocus
+!---拇指玩
 /data/attachment/common/cf/*$domain=muzhiwan.com
 !---OPDA
 ||ooomm.com/ad/*$image,domain=ooomm.com
@@ -558,14 +561,16 @@ yyets.com##.adBox
 ||l.qq.com^$domain=chdtv.com
 ||10moons.com$domain=chdtv.com
 chdtv.com##.a_mu,.a_t
-chdtv.net!---MySilU论坛
+chdtv.net###sitefocus
+!---MySilU论坛
 */attachment/common/cf/*$domain=www.mysilu.com
 www.mysilu.com##.a_h,.a_t,.a_pt
 !---高清与PT
 ||wszpy.com^$domain=hd2pt.com
 ||hd2pt.com/qita/*
 hd2pt.com##.a_t
-hd2pt.com!---TorrenTGui
+hd2pt.com###sitefocus
+!---TorrenTGui
 /ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=ttg.im
 ||ttg.im/pic/*450.gif$domain=ttg.im
 ||ttg.im/bbs/data/attachment/common/cf/*$domain=ttg.im
