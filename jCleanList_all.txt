@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: FEAB+vihUkXEbAoG9ZfhaA
-! Last modified: 20 Jan 2013 14:33 +0800
+! Checksum: oORpyV28x6YI/2cIvUp+Ew
+! Last modified: 23 Jan 2013 22:12 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -164,7 +164,7 @@
 !---通用分析统计站点猜测
 */tongji.js
 |http://*/tj.js
-|http://*/pv.js
+|http://*/pv.*
 |http://pv.*
 |http://track.
 |http://count.
@@ -207,6 +207,7 @@
 ||v2.jiathis.com^$third-party
 ||wrating.com^$third-party
 !---Others(Foreign)
+||scorecardresearch.com^$third-party
 ||serving-sys.com^$third-party
 
 !---Google
@@ -226,22 +227,20 @@ news.baidu.com###ecad
 !tieba0|tieba2
 tieba.baidu.com##[id^="guanggao"]
 tieba.baidu.com##.l_banner
-||tb1.bdstatic.com/tb/hao123/*$domain=tieba.baidu.com
+tieba.baidu.com##.wapapp_adv
+!pv
+||c.baidu.com/c.gif*
+||static.tieba.baidu.com/tb/img/hive.gif*
 !tieba1
-||tb2.bdstatic.com/tb/static-itieba3/img/pc2client_*.png$domain=tieba.baidu.com
 tieba.baidu.com##.pc2client
 tieba.baidu.com###aside_ad
 !zhidao0|zhidao1|zhidao2
-||baidu.com^*/egg*.swf
 ||zhidao.baidu.*/flash/zhidao.swf$domain=zhidao.baidu.cn
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com###advertise
 zhidao.baidu.com##.wgt-ads
 !zhidao2侧边栏
 ||baidu.com/search/zhidao/tuiguang/
-||img.baidu.com/img/iknow/*-qb.png
-||img.baidu.com/img/iknow/JNH_270_170.png
-||jingyan.baidu.com/event/nianzhongpandian/images/270_90.jpg
 zhidao.baidu.com##.cms-slide
 !zhidao3搜索
 zhidao.baidu.com##.widget-ads
@@ -433,12 +432,10 @@ bbs.kafan.cn##.a_pt
 ||pbcdn.com/activities/$domain=pcbeta.com
 ||pbcdn.com/public/javascript/*_appx_banner/$domain=pcbeta.com
 bbs.pcbeta.com###sitefocus
+bbs.pcbeta.com##div[style$="border:9px solid #EDEEF0;"]
 bbs.pcbeta.com##div[style*="width:980px;"]
-bbs.pcbeta.com##div[style*="width:960px;height:90px;"]
 bbs.pcbeta.com##div[style*="height:60px;border:solid #EDEEF0;"]
-bbs.pcbeta.com##[style*="width:980px;height:170px;"]
 !---机锋网
-||img1.tbcdn.cn^$domain=bbs.gfan.com
 ||cdn*.image.apk.gfan.com/asdf/*
 bbs.gfan.com##.a_h
 bbs.gfan.com##[id^="div-gpt-ad-"]
@@ -592,7 +589,7 @@ pt80.com##.a_t
 
 !---新浪微薄
 ||biz.weibo.com^
-weibo.com##.footer_adv
+weibo.com##[feedtype="ad"]
 !---腾讯微薄
 .gtimg.com/microblog/pics/$domain=t.qq.com
 .gtimg.com/wbzt/$domain=t.qq.com
@@ -630,8 +627,11 @@ mediafire.com##.rockmeltAdWrapper
 ||clientclick.tv002.com^
 ctdisk.com##.kk_xshow
 !---千军万马
+||qjwm.com/adv*
 ||u.qjwm.com^
 movie.qjwm.com##[id^="gggg"]
+!pv
+||tj.qjwm.com^
 
 !---视频全局
 ||irs01.com^
@@ -648,6 +648,9 @@ movie.qjwm.com##[id^="gggg"]
 youku.com##div[class^="AB"]
 youku.com##div[id^="ab_"]
 soku.com##div[id^="ab_"]
+!pv
+||hz.youku.com^
+||static.youku.com/*/paycenter/*$script
 !---土豆
 @@||td.atm.youku.com^
 ||tudou.com*outside.php
