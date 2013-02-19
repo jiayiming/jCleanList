@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: oORpyV28x6YI/2cIvUp+Ew
-! Last modified: 23 Jan 2013 22:12 +0800
+! Checksum: nkpq7ppDrP5oG7xzuxDZ2A
+! Last modified: 19 Feb 2013 21:36 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -12,17 +12,20 @@
 !通用广告猜测
 /[\/_\.\?\&\-]ads?\d*[\/_\.\-]/
 /[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
+![^a-z0-9%_-]ad(?:[sv][^a-z\r=\?]+|banner|click|ver|name|x|log|[^a-z\r_-]*[\./]|bot|c_|client|council|gifs|graph|images|img|fshow|pic|vert|view|info|click|sponsor)
 /\/[^\?\=]*(?:[^beop\d]ads?|popup|tan|tanchuang|float)([_\d][^\.\?\&\=%]*)?\.js$/$script
 |http://*/gg/*
 |http://*/ggao/*
 |http://*/guanggao/*
+|http://gg.*^
 !---白名单区域
-@@/[_\?#](:?[a-z\d]{1,})?ad[a-ce-z\d]{4,}/$script,stylesheet$domain~=hm.baidu.com
+!@@/[_\?#](:?[a-z\d]{1,})?ad[a-ce-z\d]{4,}/$script,stylesheet$domain~=hm.baidu.com
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
 @@||tb1.bdstatic.com/*float*.js$script
 @@||im.baidu.com/popup/popup.js*
+@@||i1.dpfile.com/lib/1.0/*ad*.js$script
 
 !---通用广告联盟通用猜测
 |http://*icast*
@@ -128,7 +131,6 @@
 ||keyrun.cn^$third-party
 ||keytui.com^$third-party
 ||kfwan.com^$third-party
-||miaozhen.com^$third-party
 ||maxreturn.cn^$third-party
 ||myad.cn^$third-party
 ||netgy.com^$third-party
@@ -156,6 +158,7 @@
 ||yigao.com^$third-party
 ||yiqiwin.com^$third-party
 ||youday.cn^$third-party
+||youxitui.net^$third-party
 ||youxjia.com^$third-party
 ||yoyi.com.cn^$third-party
 ||zdy.cc^$third-party
@@ -197,6 +200,7 @@
 !---Others(China)
 ||51yes.com^$third-party
 ||99click.com^$third-party
+||css.aliyun.com^$third-party
 ||baifendian.com^$third-party
 ||cnzz.com^$third-party
 ||cnzz.net^$third-party
@@ -231,7 +235,9 @@ tieba.baidu.com##.wapapp_adv
 !pv
 ||c.baidu.com/c.gif*
 ||static.tieba.baidu.com/tb/img/hive.gif*
+||tongji.tieba.baidu.com^
 !tieba1
+||tb*.bdstatic.com/tb/*/pc2client*
 tieba.baidu.com##.pc2client
 tieba.baidu.com###aside_ad
 !zhidao0|zhidao1|zhidao2
@@ -367,13 +373,15 @@ www.pcpop.com##[id^="ad_"]
 !新闻页顶部横幅
 pcpop.com##.ad
 !---驱动之家
-||11.mydrivers.com^$script
+||11.mydrivers.com/news/03.js
+||11.mydrivers.com/news/google468x60.js
+||11.mydrivers.com/drivers/*
 mydrivers.com##[class^="ad_"]
+mydrivers.com##[id^="ad_"]
 !子页顶部
 mydrivers.com##div>table[style="border: 1px solid #5A7EA0"]
 ||mydrivers.com/inc/*.js
 !驱动下载
-drivers.mydrivers.com##[id^="ad_"]
 !---太平洋电脑网
 ||pconline.com.cn/js/ivy.js
 ||ivy.pconline.com.cn/adpuba/*
@@ -419,10 +427,16 @@ ithome.com##.side_products.ulc.ball
 !顶部闪游推荐横幅
 ithome.com###cn
 
+!--discuz
+search.discuz.qq.com##.ad
+||cache.soso.com/afc/js/showads_if_discuz_titleads_specified.js*
+!--phpwind
+||cs*.phpwind.com/apps.php?appname=ad*
 !--5d6d
 ||5d6d.net/include/js/tellYou.js$domain=5d6d.net
 ||5d6d.net/include/js/googleAfs.js$domain=5d6d.net
 5d6d.net###ad_text
+||cache.soso.com/30d/js/discuz/relate_subject.js$domain=5d6d.net
 !---卡饭论坛
 bbs.kafan.cn##.header_gg
 bbs.kafan.cn##.a_f
@@ -457,13 +471,14 @@ ooomm.com##.a_mu
 ooomm.com##.a_cn
 !---智能塞班论坛
 bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder[style="width: 98%"],tr.t_infoline
+!---威锋网
+||aoodoo.weiphone.com^
 !---游侠网
 ||bmp.ali213.net/JS/*.js$domain=ali213.net
 !---3DM游戏论坛
 ||att.3dmgame.com/att/common/cf/*
 !---EZ 游戏社区
-.1717da.com$domain=bbs.emu-zone.org
-||bbs.emu-zone.org/images/down.jpg
+bbs.emu-zone.org##font[style="font-size:0px;color:#FFFFFF"]
 !---电玩巴士
 ||inc.tgbus.com/frame^
 ||vista.tgbusdata.cn^
@@ -519,10 +534,12 @@ share.dmhy.org###play-asia
 ||bt.ktxp.com/iframe/show_kkkmh.js$domain=bt.ktxp.com
 bt.ktxp.com##.item-box2.money
 !---看漫画
-/abcde/*$domain=kkkmh.com
-/banner.js$domain=kkkmh.com
-l.youxitui.net$domain=kkkmh.com
-www.kkkmh.com##.mm-book,.mm-hot
+||kkkmh.com/iframe/banner.js
+||kkkmh.com/javascripts/abcde/*
+||js.kk7kk.com/cpm_static/*
+kkkmh.com##.mm-hot
+kkkmh.com##.mm-book
+kkkmh.com##.box[style="margin-top:10px;text-align:center;"]
 !---轻之国度
 */data/attachment/common/cf/*$domain=lightnovel.cn
 ||lightnovel.cn/images/*960x90*
@@ -674,11 +691,9 @@ iqiyi.com###ad-left-tl
 !---酷6
 ||snyu.com^
 !外链时候
-@@||pic.snyu.com/sdk*/Main.swf$domain=~ku6.com
 ||aa.sdo.com^
 !主站播放时候
-@@||g.aa.sdo.com/crossdomain.xml
-@@||g.aa.sdo.com/?method=getversion
+||gug.ku6cdn.com^
 ku6.com##.ku6_ad
 v.ku6.com##[class^="aa_"]
 !视频页右上角小横幅
@@ -686,6 +701,7 @@ v.ku6.com##[class^="aa_"]
 !404垃圾连接
 ||st.vq.ku6.cn^
 ||stat.ku6.com^
+||log*.ku6.com^
 !---搜狐视频
 ||aty.tv.sohu.com^
 ||images.sohu.com/ytv/
@@ -806,6 +822,7 @@ hanzify.org##.categorypickdown
 !---小众软件
 /\/wp-content\/[^\.\/]*?\.\w/$domain=www.appinn.com
 @@||appinn.com^*down.gif$domain=www.appinn.com
+appinn.com##.gad
 !---软件盒子
 itopdog.cn##.widget_itopdog_ad
 itopdog.cn##.ad728
@@ -871,6 +888,8 @@ www.ya55.com###adtop
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
+!---RSS
+||da.feedsportal.com^
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---酷安网
@@ -917,6 +936,7 @@ gamersky.com###clickbg
 gamersky.com##.topadbod
 gamersky.com##.adc
 !---userstyles.org
+||d.addelive.com^$domain=userstyles.org
 ||recomendedsite.com^$domain=userstyles.org
 !---脚本之家
 ||img.jb51.net/imgby/*$domain=jb51.net
