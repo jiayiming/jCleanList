@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: vYCIfkL0g7c8sGizM57Pdw
-! Last modified: 14 Mar 2013 21:41 +0800
+! Checksum: 9T4bbe5ikYwxmIbMujrUIA
+! Last modified: 16 Mar 2013 21:26 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -128,6 +128,7 @@
 ||heroclick.cn^$third-party
 ||i3z.cn^$third-part
 ||ifocus.cn^$third-party
+||innity.*^$third-party
 ||ipinyou.$third-party
 ||keydot.net^$third-party
 ||keyrun.cn^$third-party
@@ -254,10 +255,9 @@ zhidao.baidu.com##.wgt-ads
 zhidao.baidu.com##.cms-slide
 !zhidao3搜索
 zhidao.baidu.com##.widget-ads
-!mp3_0|mp3_1
-mp3.baidu.com###ecom
-mp3.baidu.com##.grid_20
-||static.mp3.baidu.com/mp3fiesta/mt340x140.js$script
+!music
+||music.baidu.com/static/html/cbjs.html*
+music.baidu.com##.adm
 !image0
 image.baidu.com###re70
 !video0
@@ -308,9 +308,11 @@ wenwen.soso.com##.ad1
 163.com##.ad
 !新闻子页
 ||impservice2.youdao.com^
-||news.2hua.com/adiframe/$domain=163.com
+||gongheshengshi.com/adiframe/
 163.com##.ep-area
 news.163.com##[class*="gg-"]
+!子页右侧
+||top.baidu.com/none/163_new.html
 !邮箱
 ||mimg.127.net/external/*
 !论坛
@@ -469,8 +471,6 @@ bbs.gfan.com##.a_h
 bbs.gfan.com##[id^="div-gpt-ad-"]
 !每楼底部
 bbs.gfan.com##.a_pb
-!帖子底部推荐
-bbs.gfan.com##.wp.cl>div>table
 !---XDA.CN
 ||bbs.xda.cn/data/attachment/common/cf/*$domain=bbs.xda.cn
 ||bbs.xda.cn/static/image/xdagg/*
@@ -673,7 +673,6 @@ movie.qjwm.com##[id^="gggg"]
 ||atm.youku.com^
 !True AD  放行td.atm.youku.com节约等待时间
 !---优酷
-@@||valf.atm.youku.com^
 ||f.youku.com/player/getFlvPath/fileid/*?K=*
 youku.com##div[class^="AB"]
 youku.com##div[id^="ab_"]
