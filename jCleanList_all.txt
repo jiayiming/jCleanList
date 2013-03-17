@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: d97B8kMrSdv3o6KmdIAYyg
-! Last modified: 17 Mar 2013 14:21 +0800
+! Checksum: X7f/+SjluhjK0cn4+/Ordw
+! Last modified: 17 Mar 2013 18:46 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -443,10 +443,12 @@ ithome.com##.side_products.ulc.ball
 !顶部闪游推荐横幅
 ithome.com###cn
 
-!--discuz
+!--Discuz
+*/data/attachment/common/cf/*
+*/data/attachment/common/ad/*
 search.discuz.qq.com##.ad
 ||cache.soso.com/afc/js/showads_if_discuz_titleads_specified.js*
-!--phpwind
+!--PHPWind
 ||cs*.phpwind.com/apps.php?appname=ad*
 !--5d6d
 ||5d6d.net/include/js/tellYou.js$domain=5d6d.net
@@ -471,19 +473,18 @@ bbs.gfan.com##.a_h
 bbs.gfan.com##[id^="div-gpt-ad-"]
 !每楼底部
 bbs.gfan.com##.a_pb
-!---XDA.CN
-||bbs.xda.cn/data/attachment/common/cf/*$domain=bbs.xda.cn
-||bbs.xda.cn/static/image/xdagg/*
-bbs.xda.cn##.a_pt
-bbs.xda.cn###sitefocus
 !---拇指玩
-/data/attachment/common/cf/*$domain=muzhiwan.com
+muzhiwan.com###sitefocus
+muzhiwan.com###focus
+!---XDA.CN
+!论坛首页顶部
+bbs.xda.cn##.area-banner-pic
+bbs.xda.cn##.duoge_r
 !---OPDA
-||ooomm.com/ad/*$image,domain=ooomm.com
+||ooomm.com/ad/*$image
 ||padtt.com/ad/*$domain=ooomm.com
 ooomm.com##.a_mu
-ooomm.com##.a_cn
-!---智能塞班论坛
+!---塞班智能手机网
 bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder[style="width: 98%"],tr.t_infoline
 !---威锋网
 ||aoodoo.weiphone.com^
@@ -498,7 +499,6 @@ bbs.emu-zone.org##font[style="font-size:0px;color:#FFFFFF"]
 ||inc.tgbus.com/frame^
 ||vista.tgbusdata.cn^
 ||tgbus.com/sf/taobao/*
-||17446.com^$domain=tgbus.com
 tgbus.com##.a760x100
 tgbus.com##[class^="a200x"]
 tgbus.com##[class^="ad"]
@@ -506,19 +506,12 @@ tgbus.com##[class^="ad"]
 *bbs.a9vg.com/showit*$domain=bbs.a9vg.com
 bbs.a9vg.com###a9_show
 !---PCINLIFE
-/data/attachment/common/cf/*$domain=pcinlife.com
 ||we.pcinlife.com/banner/*$domain=pcinlife.com
 ||wdfans.cn^$domain=we.pcinlife.com
 pcinlife.com###top4
-pcinlife.com##.wp.a_h
-pcinlife.com##.jammer
-pcinlife.com##.a_pt
-pcinlife.com###div_minipage
-!---chiphell
-||chiphell.com/activity/*$domain=chiphell.com
-||chiphell.com/data/attachment/portal/201204/12/*.jpg$domain=chiphell.com
+!---Chiphell
+||chiphell.com/activity/*
 !---PCEVA
-||www.pceva.com.cn//topic/*banner.swf$domain=pceva.com.cn
 !---软媒论坛
 ||img.vista123.com/images/saayaa468.gif
 bbs.ithome.com###bbs_hl
@@ -556,10 +549,10 @@ kkkmh.com##.mm-hot
 kkkmh.com##.mm-book
 kkkmh.com##.box[style="margin-top:10px;text-align:center;"]
 !---轻之国度
-*/data/attachment/common/cf/*$domain=lightnovel.cn
-||lightnovel.cn/images/*960x90*
-||img170.poco.cn^$domain=lightnovel.cn
-lightnovel.cn##.a_h
+||img*.poco.cn/mypoco/myphoto/*$image
+!首页顶部
+||dzqun.gtimg.cn/apptrain/scripts/publicizead.js*$domain=lightnovel.cn
+lightnovel.cn###swRoller_1
 !---APTX柯南事务所
 bbs.aptx.cn##.a_pr
 !---天使动漫
@@ -590,7 +583,6 @@ yyets.com##.adBox
 ||10moons.com$domain=chdtv.com
 chdtv.com##.a_mu,.a_t
 !---MySilU论坛
-*/attachment/common/cf/*$domain=www.mysilu.com
 www.mysilu.com##.a_h,.a_t,.a_pt
 !---高清与PT
 ||wszpy.com^$domain=hd2pt.com
@@ -600,11 +592,9 @@ hd2pt.com###sitefocus
 !---TorrenTGui
 /ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=ttg.im
 ||ttg.im/pic/*450.gif$domain=ttg.im
-||ttg.im/bbs/data/attachment/common/cf/*$domain=ttg.im
 ||bbs.gaoqing.tv/pt/ttg.gif$domain=ttg.im
 ||ttg.im/pic/taohigh.jpg$domain=ttg.im
 !---高清第一
-*/attachment/common/cf/*$domain=hd001.org
 ||360buyimg.com^$domain=hd001.org
 ||hd001.org/union.base.js$domain=hd001.org
 hd001.org###Focus_Img
@@ -612,12 +602,10 @@ hd001.org###Focus_Img
 !---KiSHD
 kishd.org##div.a_h,div.wp.a_f
 !---PT80
-*/data/attachment/common/cf/*$domain=pt80.com
+pt80.com##.a_t
 !帖子底部百度搜索
 unstat.baidu.com$domain=pt80.com
-pt80.com##.a_t
 !---杂碎后院
-||zasv.net/data/attachment/common/cf/*
 ||zasv.net/data/attachment/forum/*
 
 !---新浪微薄
