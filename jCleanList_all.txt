@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 9T4bbe5ikYwxmIbMujrUIA
-! Last modified: 16 Mar 2013 21:26 +0800
+! Checksum: d97B8kMrSdv3o6KmdIAYyg
+! Last modified: 17 Mar 2013 14:21 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -616,6 +616,9 @@ kishd.org##div.a_h,div.wp.a_f
 !帖子底部百度搜索
 unstat.baidu.com$domain=pt80.com
 pt80.com##.a_t
+!---杂碎后院
+||zasv.net/data/attachment/common/cf/*
+||zasv.net/data/attachment/forum/*
 
 !---新浪微薄
 ||biz.weibo.com^
