@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 1GqSqsy83gRhePoFE0HNHg
-! Last modified: 21 Mar 2013 22:09 +0800
+! Checksum: /XJwt1dmCw3A2obNYAy/ig
+! Last modified: 23 Mar 2013 17:57 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -27,9 +27,9 @@
 @@||tb1.bdstatic.com/*float*.js$script
 @@||im.baidu.com/popup/popup.js*
 @@||i1.dpfile.com/lib/1.0/*ad*.js$script
-||iqiyi.com/player/cupid/20121227145731/*
 
 !---通用广告联盟通用猜测
+|http://*/i.js
 |http://*icast*
 |http://*/*duilian*
 */couplet.js
@@ -168,7 +168,6 @@
 ||yoyi.com.cn^$third-party
 ||zdy.cc^$third-party
 ||zedo.com^$third-party
-@@||track.cupid.qiyi.com^
 
 !---通用分析统计站点猜测
 */tongji.js
@@ -341,6 +340,16 @@ sina.com.cn##.adNone
 !评论页
 sina.com.cn##.adBlock
 !---搜狐
+sohu.com##sohuadcode
+sohu.com##[id^="ad_"]
+!新闻首页
+news.sohu.com###adList
+!子页顶
+news.sohu.com###turn-ad
+||news.sohu.com/upload/article/2012/images/swf/
+!pv
+||go.sohu.com^
+||js.mail.sohu.com/pv/*
 !---凤凰网
 ||ifeng.com/tres/html/*
 ||ifeng.com/tres/recommend/*
@@ -535,6 +544,18 @@ erji.net##.t[style="margin:15px auto"]
 !---天涯
 ||806.tianya.cn^
 bbs.tianya.cn###q_topbanner_950_90
+!---猫扑
+||pub.mop.com^
+||mopimg.cn/tj/
+||mopimg.cn/dc/
+!首页
+mop.com##[class^="gg"]
+mop.com##.ggP
+!子页
+mop.com##[class^="adP"]
+!大杂烩
+dzh.mop.com##.adarea
+dzh.mop.com##.adarea_top
 
 !---动漫花园
 play-asia.com$third-party
@@ -551,10 +572,26 @@ kkkmh.com##.mm-hot
 kkkmh.com##.mm-book
 kkkmh.com##.box[style="margin-top:10px;text-align:center;"]
 !---轻之国度
-||img*.poco.cn/mypoco/myphoto/*$image
+||img*.poco.cn/mypoco/myphoto/*$image,domain=lightnovel.cn
 !首页顶部
 ||dzqun.gtimg.cn/apptrain/scripts/publicizead.js*$domain=lightnovel.cn
 lightnovel.cn###swRoller_1
+!---SOSG
+||pic*.sosg.net/ad/*
+sosg.net##[id^="gad_"]
+!通用风格
+sosg.net###home_promo_top
+sosg.net###read_promo_top
+sosg.net##.cc[style^="width:100%; height:280px;"]
+!SOS动漫单独修正
+sosg.net##.read_promo
+!---苍雪的世界
+||bbs.9gal.com/ys/*
+!首页空白
+bbs.9gal.com##td[height="110"][colspan="10"]
+bbs.9gal.com##div[style^="width:640px;height:60px;"]
+!帖子空白
+bbs.9gal.com##td[width="680"][height="50"]
 !---APTX柯南事务所
 bbs.aptx.cn##.a_pr
 !---天使动漫
@@ -594,6 +631,7 @@ hd2pt.com###sitefocus
 !---TorrenTGui
 /ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=ttg.im
 ||ttg.im/pic/*450.gif$domain=ttg.im
+||ttg.im/pic/450*.jpg$domain=ttg.im
 ||bbs.gaoqing.tv/pt/ttg.gif$domain=ttg.im
 ||ttg.im/pic/taohigh.jpg$domain=ttg.im
 !---高清第一
@@ -681,7 +719,6 @@ soku.com##div[id^="ab_"]
 ||player.pb.ops.tudou.com/info.php*
 !---爱奇异
 ||202.108.14.72/ts.swf
-||iqiyi.com/player/cupid/common/clear.swf*
 ||iqiyi.com/player/cupid/*/pageer.swf*
 ||iqiyi.com/player/*/theatre*.swf$object,domain=iqiyi.com
 ||afp.qiyi.com^
@@ -712,6 +749,13 @@ v.ku6.com##[class^="aa_"]
 ||aty.tv.sohu.com^
 ||images.sohu.com/ytv/
 ||images.sohu.com/bill/
+||mfiles.sohu.com/tv/*
+!视频首页
+tv.sohu.com##.areaAdv
+!pv
+||js.tv.itc.cn/hdpv.js
+||sohu.com/pvlog*
+||hd.sohu.com.cn/dov.do*
 !---新浪视频
 /d\d.sina.com.cn/$domain=sina.com.cn
 ||pfp.sina.com.cn^
