@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: /XJwt1dmCw3A2obNYAy/ig
-! Last modified: 23 Mar 2013 17:57 +0800
+! Checksum: OBwu4AxtIG11ZZLMGyIODA
+! Last modified: 23 Mar 2013 18:34 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -56,6 +56,7 @@
 ||alimama.cn^$third-part
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
 !---union
+||union.youdao.com^$third-part
 ||union.netease.com^$third-part
 ||union.163.com^$third-part
 ||union.114.com.cn^$third-part
@@ -177,6 +178,8 @@
 |http://track.
 |http://count.
 */count.js
+|http://*c.gif
+|http://*1.gif
 !---Google
 ||google-analytics.com/urchin.js
 ||google-analytics.com/ga.js
