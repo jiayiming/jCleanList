@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: OBwu4AxtIG11ZZLMGyIODA
-! Last modified: 23 Mar 2013 18:34 +0800
+! Checksum: qpQAEE1/EruXEjrxEegEww
+! Last modified: 23 Mar 2013 18:41 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -178,8 +178,8 @@
 |http://track.
 |http://count.
 */count.js
-|http://*c.gif
-|http://*1.gif
+|http://*/c.gif
+|http://*/1.gif
 !---Google
 ||google-analytics.com/urchin.js
 ||google-analytics.com/ga.js
