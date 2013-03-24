@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 8QOLFG0KBMZoZt72Z8sX0Q
-! Last modified: 24 Mar 2013 11:44 +0800
+! Checksum: SSJHmLgEPbp1JwlhV8TYEw
+! Last modified: 24 Mar 2013 12:04 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -735,8 +735,8 @@ soku.com##div[id^="ab_"]
 ||player.pb.ops.tudou.com/info.php*
 !---爱奇异
 ||202.108.14.72/ts.swf
-||iqiyi.com/player/cupid/*/pageer.swf*
-||iqiyi.com/player/*/theatre*.swf$object,domain=iqiyi.com
+||iqiyi.com/player/*.swf
+@@||iqiyi.com/player/*/*.swf
 ||afp.qiyi.com^
 iqiyi.com##[id^="div_theatre"]
 iqiyi.com###ad-left-tl
