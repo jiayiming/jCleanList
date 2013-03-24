@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: qpQAEE1/EruXEjrxEegEww
-! Last modified: 23 Mar 2013 18:41 +0800
+! Checksum: 8QOLFG0KBMZoZt72Z8sX0Q
+! Last modified: 24 Mar 2013 11:44 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -169,6 +169,8 @@
 ||yoyi.com.cn^$third-party
 ||zdy.cc^$third-party
 ||zedo.com^$third-party
+!---easy ad
+||addelive.com^$third-party
 
 !---通用分析统计站点猜测
 */tongji.js
@@ -516,9 +518,19 @@ bbs.emu-zone.org##font[style="font-size:0px;color:#FFFFFF"]
 tgbus.com##.a760x100
 tgbus.com##[class^="a200x"]
 tgbus.com##[class^="ad"]
+psp.tgbus.com###neck_970
 !---A9VG电玩部落
 *bbs.a9vg.com/showit*$domain=bbs.a9vg.com
 bbs.a9vg.com###a9_show
+!---玩家网
+!首页
+cngba.com##.ad
+!子页
+cngba.com##.ad980
+cngba.com##[class^="ad_"]
+!论坛
+cngba.com##.a_f
+cngba.com##.a_mu
 !---PCINLIFE
 ||we.pcinlife.com/banner/*$domain=pcinlife.com
 ||wdfans.cn^$domain=we.pcinlife.com
@@ -707,6 +719,7 @@ movie.qjwm.com##[id^="gggg"]
 ||atm.youku.com^
 !True AD  放行td.atm.youku.com节约等待时间
 !---优酷
+@@||valf.atm.youku.com^
 ||f.youku.com/player/getFlvPath/fileid/*?K=*
 youku.com##div[class^="AB"]
 youku.com##div[id^="ab_"]
