@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: SSJHmLgEPbp1JwlhV8TYEw
-! Last modified: 24 Mar 2013 12:04 +0800
+! Checksum: OBNU5jeB1UBwX7A34tQM0w
+! Last modified: 27 Mar 2013 22:43 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -248,7 +248,7 @@ tieba.baidu.com##.wapapp_adv
 ||static.tieba.baidu.com/tb/img/hive.gif*
 ||tongji.tieba.baidu.com^
 !tieba1
-||tb*.bdstatic.com/tb/*/pc2client*
+||tieba.baidu.com/tb/r/image/*
 tieba.baidu.com##.pc2client
 tieba.baidu.com###aside_ad
 !zhidao0|zhidao1|zhidao2
@@ -478,7 +478,7 @@ bbs.kafan.cn##.a_pt
 !---远景论坛
 ||pcbeta.com^*/biz/$domain=pcbeta.com
 ||pbcdn.com/activities/$domain=pcbeta.com
-||pbcdn.com/public/javascript/*_appx_banner/$domain=pcbeta.com
+bbs.pcbeta.com###win8book
 bbs.pcbeta.com###sitefocus
 bbs.pcbeta.com##div[style$="border:9px solid #EDEEF0;"]
 bbs.pcbeta.com##div[style*="width:980px;"]
@@ -489,6 +489,8 @@ bbs.gfan.com##.a_h
 bbs.gfan.com##[id^="div-gpt-ad-"]
 !每楼底部
 bbs.gfan.com##.a_pb
+!搜索
+so.gfan.com##.ad
 !---拇指玩
 muzhiwan.com###sitefocus
 muzhiwan.com###focus
@@ -717,10 +719,8 @@ movie.qjwm.com##[id^="gggg"]
 !------------------------------------
 !-----优酷+土豆共通
 ||atm.youku.com^
-!True AD  放行td.atm.youku.com节约等待时间
 !---优酷
 @@||valf.atm.youku.com^
-||f.youku.com/player/getFlvPath/fileid/*?K=*
 youku.com##div[class^="AB"]
 youku.com##div[id^="ab_"]
 soku.com##div[id^="ab_"]
@@ -728,11 +728,12 @@ soku.com##div[id^="ab_"]
 ||hz.youku.com^
 ||static.youku.com/*/paycenter/*$script
 !---土豆
-@@||td.atm.youku.com^
-||tudou.com*outside.php
 ||stat*.tudou.com^
+!pv
 ||lstat.youku.com^$third-party
 ||player.pb.ops.tudou.com/info.php*
+*/cv/pl*&uuid=*
+*/pos?act=dur*
 !---爱奇异
 ||202.108.14.72/ts.swf
 ||iqiyi.com/player/*.swf
@@ -920,6 +921,7 @@ readnovel.com##DIV[style*="width: 950px; height: 90px;"]
 !---潇湘书院
 ||images.xxsy.net/js/guanggao/*
 ||images.xxsy.net/js/xxsypop.js
+||images.xxsy.net/sygg/*$popup
 ||xxsy.net/js/20110801/global/rightfloat.js
 !首页
 xxsy.net###banner
