@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: OBNU5jeB1UBwX7A34tQM0w
-! Last modified: 27 Mar 2013 22:43 +0800
+! Checksum: Y9Tuen9B8bdZ4oryP+TmMg
+! Last modified: 31 Mar 2013 16:14 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -209,7 +209,6 @@
 ||dwtracking.sdo.com^
 !---Others(China)
 ||51yes.com^$third-party
-||99click.com^$third-party
 ||css.aliyun.com^$third-party
 ||baifendian.com^$third-party
 ||cnzz.com^$third-party
@@ -244,15 +243,16 @@ tieba.baidu.com##[id^="guanggao"]
 tieba.baidu.com##.l_banner
 tieba.baidu.com##.wapapp_adv
 !pv
-||c.baidu.com/c.gif*
 ||static.tieba.baidu.com/tb/img/hive.gif*
 ||tongji.tieba.baidu.com^
 !tieba1
 ||tieba.baidu.com/tb/r/image/*
 tieba.baidu.com##.pc2client
 tieba.baidu.com###aside_ad
+!tieba_qrCode
+|http://*/tb/*dimension$image
+tieba.baidu.com###j_dimension
 !zhidao0|zhidao1|zhidao2
-||zhidao.baidu.*/flash/zhidao.swf$domain=zhidao.baidu.cn
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com###advertise
 zhidao.baidu.com##.wgt-ads
@@ -742,7 +742,6 @@ soku.com##div[id^="ab_"]
 iqiyi.com##[id^="div_theatre"]
 iqiyi.com###ad-left-tl
 !pv
-||data.video.qiyi.com/v.f4v?*
 ||msg.video.qiyi.com^
 ||jsmsg.video.qiyi.com^
 ||static.iqiyi.com/js/pingback/*
@@ -750,14 +749,13 @@ iqiyi.com###ad-left-tl
 ||acs.56.com
 !---酷6
 ||snyu.com^
-!外链时候
+!外链fix
+@@||pic.snyu.com/sdk*/Main.swf$domain=~ku6.com
 ||aa.sdo.com^
 !主站播放时候
 ||gug.ku6cdn.com^
 ku6.com##.ku6_ad
 v.ku6.com##[class^="aa_"]
-!视频页右上角小横幅
-||css.ku6cdn.com/*/300x63*$image,domain=v.ku6.com
 !404垃圾连接
 ||st.vq.ku6.cn^
 ||stat.ku6.com^
@@ -831,7 +829,6 @@ acfun.tv##.ad
 !---一财网
 ||billing.yicai.com$domain=yicai.com
 ||yicai.adsame.com$domain=yicai.com
-!---江苏卫士
 
 !---迅雷
 ||biz*.sandai.net^
@@ -1017,8 +1014,7 @@ gamersky.com###clickbg
 gamersky.com##.topadbod
 gamersky.com##.adc
 !---userstyles.org
-||d.addelive.com^$domain=userstyles.org
-||recomendedsite.com^$domain=userstyles.org
+||delivery45.com^$domain=userstyles.org
 !---脚本之家
 ||img.jb51.net/imgby/*$domain=jb51.net
 jb51.net##.search
