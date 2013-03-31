@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Y9Tuen9B8bdZ4oryP+TmMg
-! Last modified: 31 Mar 2013 16:14 +0800
+! Checksum: gfeMSb4f4gt70SKI+YMoig
+! Last modified: 31 Mar 2013 23:05 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -710,6 +710,8 @@ ctdisk.com##.kk_xshow
 movie.qjwm.com##[id^="gggg"]
 !pv
 ||tj.qjwm.com^
+!---ys168
+ys168.com###zdy_wz0
 
 !---视频全局
 ||irs01.com^
@@ -1013,6 +1015,10 @@ yzz.cn##.ad200x340
 gamersky.com###clickbg
 gamersky.com##.topadbod
 gamersky.com##.adc
+!---52pk
+||5y9nfpes.52pk.com^
+||wan.52pk.com^
+||market.52pk.com/files/union/*
 !---userstyles.org
 ||delivery45.com^$domain=userstyles.org
 !---脚本之家
