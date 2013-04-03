@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: gfeMSb4f4gt70SKI+YMoig
-! Last modified: 31 Mar 2013 23:05 +0800
+! Checksum: 3SReg8Y5wIEVFu/kZNi66Q
+! Last modified: 03 Apr 2013 16:03 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -190,6 +190,8 @@
 ||nsclick.baidu.com^
 ||sclick.baidu.com^
 @@||hm.baidu.com^$domain=ie.cnbeta.com
+!分享
+||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---TX
 ||pingjs.qq.com/ping.js
 ||tcss.qq.com^
@@ -527,12 +529,17 @@ bbs.a9vg.com###a9_show
 !---玩家网
 !首页
 cngba.com##.ad
+!专题
+||img.cngba.com/js/c.js
+psp.cngba.com##.ztbox
 !子页
 cngba.com##.ad980
 cngba.com##[class^="ad_"]
 !论坛
 cngba.com##.a_f
 cngba.com##.a_mu
+!---口袋吧
+koudai8.com##.a_pb
 !---PCINLIFE
 ||we.pcinlife.com/banner/*$domain=pcinlife.com
 ||wdfans.cn^$domain=we.pcinlife.com
@@ -870,6 +877,7 @@ downg.com##[class*=" ad-b"],[class="cp sponsor"]
 downg.com##div[class="wrapper"]>[class="content cols2"]>[class="col1"]>[class="cp cp-black"]
 !---非凡软件站
 crsky.com##[id$="_TL"]
+crsky.com##.banner
 crsky.com###recommend-new
 crsky.com###recommend-useful
 crsky.com##.mirror-adr>span[style^="float:right;padding-right:5px;"]
