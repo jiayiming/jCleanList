@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: CuP1O9HwRQuHZ8WZE1KjMQ
-! Last modified: 04 Apr 2013 19:32 +0800
+! Checksum: /bHQxt6sQ+1zo7wzCuyliA
+! Last modified: 04 Apr 2013 19:54 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -1042,7 +1042,8 @@ jb51.net##.dxy230
 ||pics.wanlibo.com/js/pagemodulestat.js$domain=docin.com
 ||docin.com/app/playerLoadLog/$domain=docin.com
 !---中国天气网
-weather.com.cn##[class^="adposter_"]
+weather.com.cn##[class^="adpos"]
+weather.com.cn##.post_st
 !---爱词霸
 !右侧边栏
 ||cdn.iciba.com/web/co/ci/*$domain=iciba.com
