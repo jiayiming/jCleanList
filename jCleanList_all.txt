@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: /bHQxt6sQ+1zo7wzCuyliA
-! Last modified: 04 Apr 2013 19:54 +0800
+! Checksum: 7LTNq6d+4gUB10IJ/+w/LQ
+! Last modified: 09 Apr 2013 22:23 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -11,15 +11,16 @@
 
 !通用广告猜测
 /[\/_\.\?\&\-]ads?\d*[\/_\.\-]/
-/[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
+/[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
+!/[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
 ![^a-z0-9%_-]ad(?:[sv][^a-z\r=\?]+|banner|click|ver|name|x|log|[^a-z\r_-]*[\./]|bot|c_|client|council|gifs|graph|images|img|fshow|pic|vert|view|info|click|sponsor)
-/\/[^\?\=]*(?:[^beop\d]ads?|popup|tan|tanchuang|float)([_\d][^\.\?\&\=%]*)?\.js$/$script
+/\/[^\?\#=%]*(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
+!/\/[^\?\=]*(?:[^beop\d]ads?|popup|tan|tanchuang|float)([_\d][^\.\?\&\=%]*)?\.js$/$script
 |http://*/gg/*
 |http://*/ggao/*
 |http://*/guanggao/*
 |http://gg.*^
 !---白名单区域
-!@@/[_\?#](:?[a-z\d]{1,})?ad[a-ce-z\d]{4,}/$script,stylesheet$domain~=hm.baidu.com
 @@|http://*ad*.$stylesheet
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
@@ -454,6 +455,9 @@ bbs.csdn.net###Topic_Top
 cnbeta.com##.detail>em,#userInfo,#fm_r,#comad,#fixed_area
 cnbeta.com###votes:nth-child(9),#votes:nth-child(14),#votes:nth-child(17),#votes:nth-child(18),#votes:nth-child(19)
 cnbeta.com###mark:nth-child(2)
+!---CSDN
+csdn.net##[class^="ad_area_"]
+download.csdn.net##[id^="div-gpt-ad-"]
 !---IT之家
 ||ithome.com/block/*
 ithome.com##.site_ad
@@ -729,7 +733,7 @@ ys168.com###zdy_wz0
 !-----优酷+土豆共通
 ||atm.youku.com^
 !---优酷
-@@||valf.atm.youku.com^
+||f.youku.com/player/getFlvPath/sid/*&ymovie=1*
 youku.com##div[class^="AB"]
 youku.com##div[id^="ab_"]
 soku.com##div[id^="ab_"]
@@ -757,7 +761,6 @@ iqiyi.com###ad-left-tl
 !---56.com
 ||acs.56.com
 !---酷6
-||snyu.com^
 !外链fix
 @@||pic.snyu.com/sdk*/Main.swf$domain=~ku6.com
 ||aa.sdo.com^
@@ -972,7 +975,8 @@ mail.google.com##.Bu.y3
 !---酷安网
 coolapk.com##.recentRecommendBox>dd
 !---京东商城
-||fa.360buy.com^$script,domain=360buy.com
+||fa.jd.com^
+||fa.360buy.com
 ||jprice.360buy.com/pageadword/*
 !---硬派网
 inpai.com.cn##.inpaiadtext
