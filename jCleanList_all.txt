@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 7LTNq6d+4gUB10IJ/+w/LQ
-! Last modified: 09 Apr 2013 22:23 +0800
+! Checksum: jqUJEMwiZ9PsOC5JPUvBNw
+! Last modified: 13 Apr 2013 12:21 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -10,7 +10,7 @@
 !----MIT Licensed, NO WARRANTY but Best Wishes----
 
 !通用广告猜测
-/[\/_\.\?\&\-]ads?\d*[\/_\.\-]/
+/[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
 !/[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
 ![^a-z0-9%_-]ad(?:[sv][^a-z\r=\?]+|banner|click|ver|name|x|log|[^a-z\r_-]*[\./]|bot|c_|client|council|gifs|graph|images|img|fshow|pic|vert|view|info|click|sponsor)
@@ -477,6 +477,7 @@ search.discuz.qq.com##.ad
 ||5d6d.net/include/js/googleAfs.js$domain=5d6d.net
 5d6d.net###ad_text
 ||cache.soso.com/30d/js/discuz/relate_subject.js$domain=5d6d.net
+potplayer.5d6d.net##SPAN[style="height:30px;line-height:30px;"]
 !---卡饭论坛
 bbs.kafan.cn##.header_gg
 bbs.kafan.cn##.a_f
@@ -733,7 +734,7 @@ ys168.com###zdy_wz0
 !-----优酷+土豆共通
 ||atm.youku.com^
 !---优酷
-||f.youku.com/player/getFlvPath/sid/*&ymovie=1*
+@@||valf.atm.youku.com^
 youku.com##div[class^="AB"]
 youku.com##div[id^="ab_"]
 soku.com##div[id^="ab_"]
