@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: jqUJEMwiZ9PsOC5JPUvBNw
-! Last modified: 13 Apr 2013 12:21 +0800
+! Checksum: IANSJ3CzH19DM3TkSiCOmQ
+! Last modified: 13 Apr 2013 16:49 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -108,6 +108,7 @@
 ||37see.com^$third-party
 ||49ko.com^$third-party
 ||6dad.com^$third-party
+||70e.com^$third-party
 ||778669.com^$third-party
 ||7k7k.com^$third-party,popup
 ||77union.cn^$third-party
