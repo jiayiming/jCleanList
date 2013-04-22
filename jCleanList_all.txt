@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: IANSJ3CzH19DM3TkSiCOmQ
-! Last modified: 13 Apr 2013 16:49 +0800
+! Checksum: HHYH2xx1QpdQA0vy0qNEcg
+! Last modified: 22 Apr 2013 18:23 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -13,7 +13,6 @@
 /[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
 !/[^eop]ads?(?:id|puba|top|flash|click|client|code|file|frame|view|img|text|info|page|sence|show|serv|ertimg|detail)/
-![^a-z0-9%_-]ad(?:[sv][^a-z\r=\?]+|banner|click|ver|name|x|log|[^a-z\r_-]*[\./]|bot|c_|client|council|gifs|graph|images|img|fshow|pic|vert|view|info|click|sponsor)
 /\/[^\?\#=%]*(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
 !/\/[^\?\=]*(?:[^beop\d]ads?|popup|tan|tanchuang|float)([_\d][^\.\?\&\=%]*)?\.js$/$script
 |http://*/gg/*
@@ -21,7 +20,7 @@
 |http://*/guanggao/*
 |http://gg.*^
 !---白名单区域
-@@|http://*ad*.$stylesheet
+@@|http://*/*ad*.$stylesheet
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
@@ -331,19 +330,18 @@ news.163.com##[class*="gg-"]
 bbs.163.com##.f_body
 !---新浪
 ||sinaimg.cn/unipro/pub/suda*.js
-||sinaimg.cn/dy/deco/*/wwwbottom.js
-||bj.house.sina.com.cn^$domain=sina.com.cn
+||sinaimg.cn/*/deco/*/*bottom.js
+||bj.house.sina.com.cn^
+sina.com.cn##[id^="ad_"]
 !首页顶部
-www.sina.com.cn##.topads
-!首页左侧
-www.sina.com.cn##div.left
-!首页中间横幅
-www.sina.com.cn##[class*="780x90"]
-www.sina.com.cn##div[style$="_height:99px;"]
-!新闻顶部
+www.sina.com.cn##.top-ads
+!新闻首页
+||news.sina.com.cn/pfpnews/merge/*
+!顶部
 news.sina.com.cn##[class^="ATopTxt"]
-!新闻页顶部
-news.sina.com.cn###ad_top
+news.sina.com.cn##.cPart
+!底部
+news.sina.com.cn###blk_xlzttltop_01
 !子页底部
 sina.com.cn##.adNone
 !评论页
@@ -514,6 +512,7 @@ ooomm.com##.a_mu
 bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder[style="width: 98%"],tr.t_infoline
 !---威锋网
 ||aoodoo.weiphone.com^
+bbs.weiphone.com##.tac
 bbs.weiphone.com##.ad-box-r
 !---游侠网
 ||bmp.ali213.net/JS/*.js$domain=ali213.net
@@ -726,6 +725,7 @@ movie.qjwm.com##[id^="gggg"]
 !---ys168
 ys168.com###zdy_wz0
 
+||imgcache.qq.com/liveportal_v1/swf/player/bgadplayer.swf
 !---视频全局
 ||irs01.com^
 ||irs01.net^
@@ -786,11 +786,13 @@ tv.sohu.com##.areaAdv
 ||sohu.com/pvlog*
 ||hd.sohu.com.cn/dov.do*
 !---新浪视频
-/d\d.sina.com.cn/$domain=sina.com.cn
+/d\d.sina.com.cn/
 ||pfp.sina.com.cn^
-video.sina.com.cn##.adNone,.adFrame
+!pv
+||dcads.sina.com.cn^
 !---腾讯视频
 ||livem.l.qq.com/livemsg?*
+v.qq.com###adPlayer
 !---网易讯视频
 ||popme.163.com^
 ||img2.126.net^$domain=v.163.com
@@ -912,7 +914,7 @@ itopdog.cn##.ad728
 !---pc6下载站
 ||pc6.com/js/un/*
 ||pc6.com/js/html/*
-||d.caiyifz.com^$domain=pc6.com
+||zhanzhang.net^$third-party
 !---未来软件站
 ||orsoon.com/orsoon/*
 orsoon.com###youxi
