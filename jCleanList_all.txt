@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: HHYH2xx1QpdQA0vy0qNEcg
-! Last modified: 22 Apr 2013 18:23 +0800
+! Checksum: FKNSqrTU0zOLpE+5d1t+HA
+! Last modified: 22 Apr 2013 22:57 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -172,6 +172,8 @@
 ||zedo.com^$third-party
 !---easy ad
 ||addelive.com^$third-party
+!---testlist
+||tbjfw.com^$third-party
 
 !---通用分析统计站点猜测
 */tongji.js
