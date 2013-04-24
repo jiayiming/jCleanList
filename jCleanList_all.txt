@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: FKNSqrTU0zOLpE+5d1t+HA
-! Last modified: 22 Apr 2013 22:57 +0800
+! Checksum: OszKxcrQb/LqGtJLE0JRpw
+! Last modified: 24 Apr 2013 10:54 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -242,6 +242,9 @@ www.baidu.com##.EC_mr15
 !news_All|news1
 news.baidu.com##[id^="ecom"]
 news.baidu.com###ecad
+!tieba_All
+||tieba.baidu.com/tb/r/image/*
+||static.tieba.baidu.com/tb/cms/*
 !tieba0|tieba2
 ||tieba.baidu.com/f/urlcheck?*
 tieba.baidu.com##[id^="guanggao"]
@@ -251,7 +254,6 @@ tieba.baidu.com##.wapapp_adv
 ||static.tieba.baidu.com/tb/img/hive.gif*
 ||tongji.tieba.baidu.com^
 !tieba1
-||tieba.baidu.com/tb/r/image/*
 tieba.baidu.com##.pc2client
 tieba.baidu.com###aside_ad
 !tieba_qrCode
@@ -278,26 +280,26 @@ video.baidu.com##.popular
 ||adsrich.qq.com^
 ||adsfile.qq.com^
 ||l.qq.com^$domain=~v.qq.com
-!体育板块和子页侧栏swf
-||mat1.gtimg.com/sports/*ad/*.swf$domain=sports.qq.com
-!科技板块分页顶部
 !首页通用
 qq.com##.adLeft,.adRight
 !首页和子页通用
 qq.com##.l_qq_com
 !新版子页
 qq.com##.mian-ad
-sports.qq.com##.ad-box
+qq.com##.ad-box
 !板块分页顶部
-finance.qq.com###topAd
+||mat1.gtimg.com/news/2012/qqnews/yukeqh.jpg
+qq.com##.phone_ad_960
 tech.qq.com##.kjad2
-bookapp.book.qq.com###topad
-!娱乐/数码/时尚等板块顶部通用
+finance.qq.com,auto.qq.com###topAd
+!体育/娱乐/数码/时尚/汽车等板块顶部通用
 qq.com##[id$="_ad"]
+!体育板块和侧栏swf
+||mat1.gtimg.com/sports/000*.swf
 !娱乐子页右侧
 ||mat1.gtimg.com/ent/flash/*.swf$domain=ent.qq.com
-!体育板块中部横幅
-sports.qq.com###ad8
+!新番板块顶部
+comic.qq.com##TD[width="728"][height="90"]
 !子页顶部通用
 qq.com##.AdTop-Article-QQ
 !子页底部通用
@@ -308,7 +310,6 @@ auto.qq.com##.fbad-Article-QQ
 ||view.news.qq.com/PL_ad*.htm$domain=qq.com
 qq.com###PL_adT
 !---SOSO
-||rh.qq.com/afc?union_id$domain=wenwen.soso.com
 ||rh.qq.com/afc.js$domain=wenwen.soso.com
 wenwen.soso.com##.ad1
 !---网易
@@ -437,34 +438,31 @@ pchome.net,kdslife.com##[class^="ad"]
 !---天极网
 ||adsame.tianjimedia.com^$domain=yesky.com
 ||media.tianjimedia.com^$domain=yesky.com
-!---CSDN
-||csdn.net/*ggmm*
-||counter.csdn.net^
-csdn.net##[class^="banner_top"]
-!首页
-csdn.net##.businessad
-!新闻页
-csdn.net##.ad_960
-!论坛
-||bbs.csdn.net/sda/*.htm
-bbs.csdn.net##[class^="ad_"]
-bbs.csdn.net###Topic_Top
 !---cnBeta
 /img\.cnbeta\.com\/[^\/_\d]*?\d{3}\.[f-w]{3}/$domain=cnbeta.com
-|http://img.cnbeta.com/maipu.swf
 ^google.js$domain=cnbeta.com
 cnbeta.com##.detail>em,#userInfo,#fm_r,#comad,#fixed_area
 cnbeta.com###votes:nth-child(9),#votes:nth-child(14),#votes:nth-child(17),#votes:nth-child(18),#votes:nth-child(19)
 cnbeta.com###mark:nth-child(2)
-!---CSDN
-csdn.net##[class^="ad_area_"]
-download.csdn.net##[id^="div-gpt-ad-"]
 !---IT之家
 ||ithome.com/block/*
 ithome.com##.site_ad
 ithome.com##.side_products.ulc.ball
 !顶部闪游推荐横幅
 ithome.com###cn
+!---CSDN
+||csdn.net/*ggmm*
+||counter.csdn.net^
+csdn.net##[class^="banner_top"]
+csdn.net##[class^="ad_"]
+download.csdn.net##[id^="div-gpt-ad-"]
+!首页
+csdn.net##.businessad
+!新闻页
+csdn.net##.ad_960
+!论坛
+||bbs.csdn.net/sda/*.htm
+bbs.csdn.net###Topic_Top
 
 !--Discuz
 */data/attachment/common/cf/*
