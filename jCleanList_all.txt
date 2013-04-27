@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: OszKxcrQb/LqGtJLE0JRpw
-! Last modified: 24 Apr 2013 10:54 +0800
+! Checksum: VHtAJyLeMjgH3LPZanWWhQ
+! Last modified: 27 Apr 2013 13:26 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -502,11 +502,9 @@ muzhiwan.com###sitefocus
 muzhiwan.com###focus
 !---XDA.CN
 !论坛首页顶部
-bbs.xda.cn##.area-banner-pic
-bbs.xda.cn##.duoge_r
+xda.cn##.area-banner-pic
+xda.cn##.duoge_r
 !---OPDA
-||ooomm.com/ad/*$image
-||padtt.com/ad/*$domain=ooomm.com
 ooomm.com##.a_mu
 !---塞班智能手机网
 bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder[style="width: 98%"],tr.t_infoline
@@ -820,6 +818,7 @@ v.pptv.com##.ads
 */html/*$domain=bilibili.tv|bilibili.kankanews.com|bilibili.smgbb.cn
 ||static.hdslb.com/ad-images/*$domain=bilibili.tv|bilibili.kankanews.com|bilibili.smgbb.cn
 @@||bilibili.tv/html/js/hot_tag.json$domain=bilibili.tv
+||i1.hdslb.com/u_user/*$object-subrequest
 bilibili.tv,bilibili.kankanews.com,bilibili.smgbb.cn##.ad-f
 !---AcFun
 acfun.tv##.ad
@@ -977,7 +976,7 @@ mail.google.com##.Bu.y3
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---酷安网
-coolapk.com##.recentRecommendBox>dd
+coolapk.com##[data-for="apkUpdateBox"]
 !---京东商城
 ||fa.jd.com^
 ||fa.360buy.com
