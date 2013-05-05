@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: VHtAJyLeMjgH3LPZanWWhQ
-! Last modified: 27 Apr 2013 13:26 +0800
+! Checksum: WtqqAhrmlUJ+OoykMZIqtQ
+! Last modified: 05 May 2013 22:37 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -117,6 +117,7 @@
 ||8le8le.com^$third-party
 ||91wan.com^$third-party
 ||9dcpm.com^$third-party
+||a3p4.com^$third-party
 ||adkongjian.com^$third-party
 ||adyun.com^$third-part
 ||adsame.com^$third-party
@@ -137,6 +138,7 @@
 ||keyrun.cn^$third-party
 ||keytui.com^$third-party
 ||kfwan.com^$third-party
+||kuqi.com^$third-party
 ||miaozhen.com^$third-party
 ||maxreturn.cn^$third-party
 ||myad.cn^$third-party
@@ -160,6 +162,7 @@
 ||wauee.com^$third-party
 ||woniu666.com^$third-party
 ||xi666.com^$third-party
+||xcy8.com^
 ||xp3366.com^$third-party
 ||xsu.cc^$third-party
 ||yigao.com^$third-party
@@ -297,7 +300,7 @@ qq.com##[id$="_ad"]
 !体育板块和侧栏swf
 ||mat1.gtimg.com/sports/000*.swf
 !娱乐子页右侧
-||mat1.gtimg.com/ent/flash/*.swf$domain=ent.qq.com
+||mat1.gtimg.com/ent/flash/*.swf
 !新番板块顶部
 comic.qq.com##TD[width="728"][height="90"]
 !子页顶部通用
@@ -307,10 +310,10 @@ qq.com##.AdBox-Article-QQ,.qiye-Article-QQ
 qq.com##.business-Article-QQ
 auto.qq.com##.fbad-Article-QQ
 !评论顶部
-||view.news.qq.com/PL_ad*.htm$domain=qq.com
+||view.news.qq.com/PL_ad*.htm
 qq.com###PL_adT
 !---SOSO
-||rh.qq.com/afc.js$domain=wenwen.soso.com
+||rh.qq.com/afc.js
 wenwen.soso.com##.ad1
 !---网易
 ||img1.126.net^
@@ -715,11 +718,7 @@ mediafire.com##.rockmeltAdWrapper
 ||clientclick.tv002.com^
 ctdisk.com##.kk_xshow
 !---千军万马
-||qjwm.com/adv*
-||u.qjwm.com^
-movie.qjwm.com##[id^="gggg"]
-!pv
-||tj.qjwm.com^
+||go.snsfun.cc^$popup,third-party
 !---ys168
 ys168.com###zdy_wz0
 
@@ -818,11 +817,10 @@ v.pptv.com##.ads
 */html/*$domain=bilibili.tv|bilibili.kankanews.com|bilibili.smgbb.cn
 ||static.hdslb.com/ad-images/*$domain=bilibili.tv|bilibili.kankanews.com|bilibili.smgbb.cn
 @@||bilibili.tv/html/js/hot_tag.json$domain=bilibili.tv
-||i1.hdslb.com/u_user/*$object-subrequest
+||hdslb.com/u_user/*$object-subrequest
 bilibili.tv,bilibili.kankanews.com,bilibili.smgbb.cn##.ad-f
 !---AcFun
 acfun.tv##.ad
-||act.2144.cn/adv_img/2808_200.jpg$domain=acfun.tv
 !---17173游戏视频
 ||media.17173.com/x/*$domain=media.17173.com|17173.tv.sohu.com
 !---爱拍
@@ -883,6 +881,7 @@ skycn.com##.h100.top7
 !---绿色下载站
 downg.com##[class*=" ad-b"],[class="cp sponsor"]
 downg.com##div[class="wrapper"]>[class="content cols2"]>[class="col1"]>[class="cp cp-black"]
+downg.com##.baiduad
 !---非凡软件站
 crsky.com##[id$="_TL"]
 crsky.com##.banner
