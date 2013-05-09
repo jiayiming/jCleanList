@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: WtqqAhrmlUJ+OoykMZIqtQ
-! Last modified: 05 May 2013 22:37 +0800
+! Checksum: vQ02j7LburY9Y/oazI71qg
+! Last modified: 09 May 2013 14:37 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -48,13 +48,10 @@
 ||spcode.baidu.com^
 !解决验证码问题|如down.it168.com
 @@||cpro.baidu.com/cpro/ui/y.js$domain=down.it168.com
-@@||cpro.baidu.com/img/bg_captchaF.png$domain=down.it168.com
-@@||cpro.baidu.com/cpro/ui/uijs.php$domain=down.it168.com
-@@||cpro.baidu.com/extra/text_flash/AC_RunActiveContent.js$domain=cpro.baidu.com
-@@||drmcmm.baidu.com/media/$image,object,domain=cpro.baidu.com
-!---alimama
+!---alimama/taobao
 ||alimama.cn^$third-part
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
+||tanx.com
 !---union
 ||union.youdao.com^$third-part
 ||union.netease.com^$third-part
@@ -175,6 +172,7 @@
 ||zedo.com^$third-party
 !---easy ad
 ||addelive.com^$third-party
+||delivery45.com^$third-party
 !---testlist
 ||tbjfw.com^$third-party
 
@@ -396,10 +394,15 @@ zol.com.cn##.hot_tj
 ||pic.cnmo-img.com.cn
 !---IT168
 ||168.it168.com^$domain=it168.com
+||down.it168.com/ggimg/*
 !首页顶部
 it168.com##.gg
 !通用
 it168.com##[id^="ADV_"]
+!下载子页
+down.it168.com##[style^=" width:238px;height:80px;"]
+down.it168.com##[style^="width:468px;height:60px;"]
+down.it168.com###down_right_soft
 !论坛右下角漂浮
 it168.com###sitefocus
 !---泡泡网
@@ -1035,8 +1038,6 @@ gamersky.com##.adc
 ||5y9nfpes.52pk.com^
 ||wan.52pk.com^
 ||market.52pk.com/files/union/*
-!---userstyles.org
-||delivery45.com^$domain=userstyles.org
 !---脚本之家
 ||img.jb51.net/imgby/*$domain=jb51.net
 jb51.net##.search
