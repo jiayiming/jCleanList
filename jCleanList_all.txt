@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: vQ02j7LburY9Y/oazI71qg
-! Last modified: 09 May 2013 14:37 +0800
+! Checksum: hKt9mnUcqcUz3jMUjnZYMA
+! Last modified: 06 Jun 2013 22:05 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -235,7 +235,7 @@ www.google.com.hk,www.google.com,encrypted.google.com###tads,#bottomads
 www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 !---众里寻他千百度
 !百度全局
-||a.baidu.com^$domain=baidu.com
+||a.baidu.com
 !搜索+推广
 www.baidu.com###content_right
 www.baidu.com##table[width="30%"]
@@ -251,6 +251,8 @@ news.baidu.com###ecad
 tieba.baidu.com##[id^="guanggao"]
 tieba.baidu.com##.l_banner
 tieba.baidu.com##.wapapp_adv
+!i贴吧顶部提示
+tieba.baidu.com###top_banner
 !pv
 ||static.tieba.baidu.com/tb/img/hive.gif*
 ||tongji.tieba.baidu.com^
@@ -319,6 +321,7 @@ wenwen.soso.com##.ad1
 ||adgeo.163.com^
 ||www.163.com/special/*.html$subdocument
 163.com##.ad
+163.com##.ad-main
 !新闻子页
 ||impservice2.youdao.com^
 ||gongheshengshi.com/adiframe/
@@ -474,22 +477,24 @@ bbs.csdn.net###Topic_Top
 */data/attachment/common/cf/*
 */data/attachment/common/ad/*
 search.discuz.qq.com##.ad
-||cache.soso.com/afc/js/showads_if_discuz_titleads_specified.js*
 !--PHPWind
 ||cs*.phpwind.com/apps.php?appname=ad*
 !--5d6d
-||5d6d.net/include/js/tellYou.js$domain=5d6d.net
-||5d6d.net/include/js/googleAfs.js$domain=5d6d.net
+||5d6d.net/include/js/tellYou.js
+||5d6d.net/include/js/googleAfs.js
 5d6d.net###ad_text
-||cache.soso.com/30d/js/discuz/relate_subject.js$domain=5d6d.net
+||cache.soso.com/30d/js/discuz/relate_subject.js
 potplayer.5d6d.net##SPAN[style="height:30px;line-height:30px;"]
+!404
+www.5d6d.net/giftbox*
+||5d6d.net/forumdata/cache/winGiftBoxData.js
 !---卡饭论坛
 bbs.kafan.cn##.header_gg
 bbs.kafan.cn##.a_f
 bbs.kafan.cn##.a_pt
 !---远景论坛
-||pcbeta.com^*/biz/$domain=pcbeta.com
-||pbcdn.com/activities/$domain=pcbeta.com
+||pcbeta.com^*/biz/*
+||pbcdn.com/activities/*
 bbs.pcbeta.com###win8book
 bbs.pcbeta.com###sitefocus
 bbs.pcbeta.com##div[style$="border:9px solid #EDEEF0;"]
@@ -519,7 +524,7 @@ bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>d
 bbs.weiphone.com##.tac
 bbs.weiphone.com##.ad-box-r
 !---游侠网
-||bmp.ali213.net/JS/*.js$domain=ali213.net
+||bmp.ali213.net/JS/*.js
 !---3DM游戏论坛
 ||att.3dmgame.com/att/common/cf/*
 !---EZ 游戏社区
@@ -532,8 +537,11 @@ tgbus.com##.a760x100
 tgbus.com##[class^="a200x"]
 tgbus.com##[class^="ad"]
 psp.tgbus.com###neck_970
+!游戏下载页面
+||ol.tgbus.com/iframe/tu/index_down.html
+games.tgbus.com##[style*="width: 960px;height:90px;"]
 !---A9VG电玩部落
-*bbs.a9vg.com/showit*$domain=bbs.a9vg.com
+*bbs.a9vg.com/showit*
 bbs.a9vg.com###a9_show
 !---玩家网
 !首页
@@ -550,15 +558,18 @@ cngba.com##.a_mu
 !---口袋吧
 koudai8.com##.a_pb
 !---PCINLIFE
-||we.pcinlife.com/banner/*$domain=pcinlife.com
+||we.pcinlife.com/banner/*
 ||wdfans.cn^$domain=we.pcinlife.com
 pcinlife.com###top4
+pcinlife.com##.a_h
 !---Chiphell
 ||chiphell.com/activity/*
 !---PCEVA
 !---软媒论坛
 ||img.vista123.com/images/saayaa468.gif
 bbs.ithome.com###bbs_hl
+!---999宝藏网
+||att1.rin9.com/img/*
 !---无忧启动论坛
 ||bbs.wuyou.net/images/banner.gif
 ||bbs.wuyou.com/images/*0-*0.gif
@@ -566,10 +577,10 @@ bbs.ithome.com###bbs_hl
 bbs.wuyou.com##.spaceborder[style="width: 98%"]:first-child
 bbs.wuyou.com##.t_infoline
 !---数码之家
-||img.mydigit.net/advpic/$domain=bbs.mydigit.cn
+||img.mydigit.net/advpic/*
 bbs.mydigit.cn##.radio.mb10
 !---iMP3随身影音论坛
-||imp3.net/data/js/$script,domain=imp3.net
+||imp3.net/data/js/$script
 !---耳机大家坛
 ||photo.erji.com^
 ||erji.net/mf.swf
@@ -854,23 +865,22 @@ youtube.com##.branded-page-v2-top-row
 !---迅雷看看
 kankan.com##[id^="cm"]
 !---VeryCD
-sp.vcimg.com$domain=verycd.com
+||sp.vcimg.com
 www.verycd.com##div[style*="width:960px;height:90px;"],div[style*="width:250px;height:200px;padding:4px;"]
 !下载页顶部横幅
 verycd.com##IFRAME[height="70"][width="980"]:first-child
 !---SimpleCD
-/static/ad$domain=simplecd.org
-code.7794.com$domain=simplecd.org
+simplecd.me##[class^="ad-"]
 !---华军软件园
-*/newhuagg/index_*.js$script,domain=onlinedown.net|newhua.com
-*/newhuagg/*_newhua_*.js$script
-*/newhuagg/*_search_*.js$script
+*/newhuagg/index_*.js
+*/newhuagg/*_search_*.js
 !新闻页
-newhua.com##.ad_top
-newhua.com##[class^="ad_ritht_"]
+news.newhua.com##.ad_top
+news.newhua.com##[class^="ad_"]
 !下载
-*/newhuagg/js_soft*.js$script
+*/newhuagg/js_soft*.js
 */newhuagg/sort_pic_*.js
+@@*/newhuagg/js_soft_zhuangji*.js
 onlinedown.net##.ban
 onlinedown.net##.adzone
 onlinedown.net##.push
@@ -978,20 +988,26 @@ mail.google.com##.Bu.y3
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---酷安网
+||image.coolapk.com/apk_logo/*/10001_*$image
 coolapk.com##[data-for="apkUpdateBox"]
 !---京东商城
 ||fa.jd.com^
 ||fa.360buy.com
+||jprice.360buy.com/adslogan/*
 ||jprice.360buy.com/pageadword/*
+!pv
+||csc.jd.com/log.ashx*
+!---玩家堂
+||itocp.com/html/gk/*
 !---硬派网
 inpai.com.cn##.inpaiadtext
+inpai.com.cn##[class^="baiduad"]
 !---超能网
 ||expreview.com/topic/img/gg/*
-||expreview.com/topic/img/ad/*
+||expreview.com/topic/2013/NVIDLA_2013/01.swf
 !---17173
 ||ue8.17173.itc.cn/*/ggcommon*.js
 ||ue8.17173.itc.cn/*/slide_toggle_ads.js
-*/www/*/gg/*$domain=17173.com
 ||17173.com/new/nesbutton*.js
 |http://*/if/$domain=17173.com
 www.17173.com##.mod-daily
@@ -1028,12 +1044,17 @@ yzz.cn##.ad200x340
 !---游民星空
 ||gamersky.com/ad/
 ||gamersky.com/frame/
-||gamersky.com/img/*x*.htm
+||gamersky.com/img/
 ||imgf.gamersky.com/300/*
+||youxi.baidu.com/images/*$third-party
 !首页背景大图
 gamersky.com###clickbg
 gamersky.com##.topadbod
 gamersky.com##.adc
+!新闻页
+gamersky.com###right_fixed_w
+!下载页
+gamersky.com##.td_d2
 !---52pk
 ||5y9nfpes.52pk.com^
 ||wan.52pk.com^
@@ -1058,3 +1079,6 @@ weather.com.cn##.post_st
 ||cdn.iciba.com/web/static/images/ezfm03.gif$domain=iciba.com
 !右下角漂浮
 ||cdn.iciba.com/web/webpaopao/*$domain=iciba.com
+!---海词
+||dict.dfile.cn/list/slots.php?callback*
+dict.cn###gadsv
