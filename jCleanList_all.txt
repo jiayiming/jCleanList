@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: hKt9mnUcqcUz3jMUjnZYMA
-! Last modified: 06 Jun 2013 22:05 +0800
+! Checksum: agWPwjUU+gdPTuEH8YKY6g
+! Last modified: 16 Jun 2013 16:51 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -262,6 +262,8 @@ tieba.baidu.com###aside_ad
 !tieba_qrCode
 |http://*/tb/*dimension$image
 tieba.baidu.com###j_dimension
+!tieba_M
+||m.tiebaimg.com/*static%2Fwaptb*
 !zhidao0|zhidao1|zhidao2
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com###advertise
@@ -354,12 +356,12 @@ sina.com.cn##.adNone
 !评论页
 sina.com.cn##.adBlock
 !---搜狐
-sohu.com##sohuadcode
 sohu.com##[id^="ad_"]
 !新闻首页
 news.sohu.com###adList
 !子页顶
 news.sohu.com###turn-ad
+sohu.com##.lottery-box
 ||news.sohu.com/upload/article/2012/images/swf/
 !pv
 ||go.sohu.com^
@@ -378,16 +380,17 @@ ifeng.com##[id$="CoupletId"]
 !---中关村
 ||p.zol-img.com.cn^
 ||pic.zol-img.com.cn^*.swf$object
-zol.com.cn##[id^="ad_"]
+zol.com.cn##[class^="ad-"]
+zol.com.cn##[id^="ad-"]
 !首页
-||pic.zol-img.com.cn/*/zol430100_*$image
-zol.com.cn##.adwindow
 !首页右下角漂浮
-www.zol.com.cn###hq_float
+zol.com.cn##.winbox
 !子页
 ||img.zol-img.com/compare/ad/*
 ||icon.zol-img.com.cn/public/js/web_foot.js
 zol.com.cn##.hot_tj
+!下载首页
+xiazai.zol.com.cn###top_tl_ad
 !pv
 ||ca.cbsi.com.cn^
 ||dw.cbsi.com.cn^
@@ -396,7 +399,7 @@ zol.com.cn##.hot_tj
 !---手机中国
 ||pic.cnmo-img.com.cn
 !---IT168
-||168.it168.com^$domain=it168.com
+||168.it168.com
 ||down.it168.com/ggimg/*
 !首页顶部
 it168.com##.gg
@@ -560,7 +563,7 @@ koudai8.com##.a_pb
 !---PCINLIFE
 ||we.pcinlife.com/banner/*
 ||wdfans.cn^$domain=we.pcinlife.com
-pcinlife.com###top4
+pcinlife.com##div[style="height:126px"]
 pcinlife.com##.a_h
 !---Chiphell
 ||chiphell.com/activity/*
@@ -905,8 +908,7 @@ crsky.com##.mirror-adr>span[style^="float:right;padding-right:5px;"]
 ||xdowns.com/new/ggdown.html
 xdowns.com##.co_content52
 !---下载吧
-xiazaiba.com##.adArea2
-xiazaiba.com##.ads_34
+||www.xiazaiba.com/data/xzb_haha.js
 !---汉化新世纪
 ||hanzify.org/*/a-d-s/*$domain=hanzify.org
 *www.90hao.com$domain=hanzify.org
@@ -994,7 +996,6 @@ coolapk.com##[data-for="apkUpdateBox"]
 ||fa.jd.com^
 ||fa.360buy.com
 ||jprice.360buy.com/adslogan/*
-||jprice.360buy.com/pageadword/*
 !pv
 ||csc.jd.com/log.ashx*
 !---玩家堂
