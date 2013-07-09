@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: agWPwjUU+gdPTuEH8YKY6g
-! Last modified: 16 Jun 2013 16:51 +0800
+! Checksum: SAZyEG7S7ZMlhSSa05tnbw
+! Last modified: 09 Jul 2013 21:24 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -452,10 +452,7 @@ pchome.net,kdslife.com##[class^="ad"]
 ||media.tianjimedia.com^$domain=yesky.com
 !---cnBeta
 /img\.cnbeta\.com\/[^\/_\d]*?\d{3}\.[f-w]{3}/$domain=cnbeta.com
-^google.js$domain=cnbeta.com
-cnbeta.com##.detail>em,#userInfo,#fm_r,#comad,#fixed_area
-cnbeta.com###votes:nth-child(9),#votes:nth-child(14),#votes:nth-child(17),#votes:nth-child(18),#votes:nth-child(19)
-cnbeta.com###mark:nth-child(2)
+cnbeta.com##.adsbygoogle
 !---IT之家
 ||ithome.com/block/*
 ithome.com##.site_ad
@@ -605,8 +602,8 @@ dzh.mop.com##.adarea
 dzh.mop.com##.adarea_top
 
 !---动漫花园
+||image.mzhbt.org^$third-party
 play-asia.com$third-party
-share.dmhy.org###play-asia
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
 ||bt.ktxp.com/iframe/show_kkkmh.js$domain=bt.ktxp.com
@@ -996,8 +993,6 @@ coolapk.com##[data-for="apkUpdateBox"]
 ||fa.jd.com^
 ||fa.360buy.com
 ||jprice.360buy.com/adslogan/*
-!pv
-||csc.jd.com/log.ashx*
 !---玩家堂
 ||itocp.com/html/gk/*
 !---硬派网
