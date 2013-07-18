@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: o5l2clNwVf0KEkNSaD0u+w
-! Last modified: 18 Jul 2013 20:51 +0800
+! Checksum: 3s3RlDa8Jx4+GKARz/3XHw
+! Last modified: 18 Jul 2013 20:56 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -724,7 +724,6 @@ ctdisk.com##.kk_xshow
 !---ys168
 ys168.com###zdy_wz0
 
-||imgcache.qq.com/liveportal_v1/swf/player/bgadplayer.swf
 !---视频全局
 ||irs01.com^
 ||irs01.net^
