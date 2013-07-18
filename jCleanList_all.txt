@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: SAZyEG7S7ZMlhSSa05tnbw
-! Last modified: 09 Jul 2013 21:24 +0800
+! Checksum: o5l2clNwVf0KEkNSaD0u+w
+! Last modified: 18 Jul 2013 20:51 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -102,6 +102,7 @@
 ||336.com^$third-party
 ||37cs.com^$third-part
 ||37see.com^$third-party
+||3dwwwgame.com^$third-party
 ||49ko.com^$third-party
 ||6dad.com^$third-party
 ||70e.com^$third-party
@@ -521,7 +522,7 @@ ooomm.com##.a_mu
 bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder[style="width: 98%"],tr.t_infoline
 !---威锋网
 ||aoodoo.weiphone.com^
-bbs.weiphone.com##.tac
+bbs.weiphone.com##.tac.mb5
 bbs.weiphone.com##.ad-box-r
 !---游侠网
 ||bmp.ali213.net/JS/*.js
@@ -571,11 +572,9 @@ bbs.ithome.com###bbs_hl
 !---999宝藏网
 ||att1.rin9.com/img/*
 !---无忧启动论坛
-||bbs.wuyou.net/images/banner.gif
-||bbs.wuyou.com/images/*0-*0.gif
-||bbs.wuyou.com/images/udashi.gif
-bbs.wuyou.com##.spaceborder[style="width: 98%"]:first-child
-bbs.wuyou.com##.t_infoline
+||bbs.wuyou.com/0000/*
+bbs.wuyou.net##.a_t
+bbs.wuyou.com##.a_t
 !---数码之家
 ||img.mydigit.net/advpic/*
 bbs.mydigit.cn##.radio.mb10
@@ -604,6 +603,7 @@ dzh.mop.com##.adarea_top
 !---动漫花园
 ||image.mzhbt.org^$third-party
 play-asia.com$third-party
+share.dmhy.org###play-asia
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
 ||bt.ktxp.com/iframe/show_kkkmh.js$domain=bt.ktxp.com
@@ -657,10 +657,6 @@ shooter.cn###googleSearchUnitIframe
 ||res.yyets.com/ads/*
 ||copy.ousns.com^$domain=yyets.com
 yyets.com##.adBox
-!---电影天堂
-||dy*.com/gg/$domain=dy2018.com|dytt8.net
-!---老调网
-/gg/images/*$domain=bestxl.com
 !---CHD论坛
 ||chdtv.com/gg/$domain=chdtv.com
 ||10moons.com$domain=chdtv.com
@@ -670,25 +666,17 @@ www.mysilu.com##.a_h,.a_t,.a_pt
 !---高清与PT
 ||wszpy.com^$domain=hd2pt.com
 ||hd2pt.com/qita/*
-hd2pt.com##.a_t
-hd2pt.com###sitefocus
 !---TorrenTGui
 /ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=ttg.im
 ||ttg.im/pic/*450.gif$domain=ttg.im
-||ttg.im/pic/450*.jpg$domain=ttg.im
-||bbs.gaoqing.tv/pt/ttg.gif$domain=ttg.im
 ||ttg.im/pic/taohigh.jpg$domain=ttg.im
-!---高清第一
-||360buyimg.com^$domain=hd001.org
-||hd001.org/union.base.js$domain=hd001.org
-hd001.org###Focus_Img
-||360buy.com^$domain=hd001.org
 !---KiSHD
 kishd.org##div.a_h,div.wp.a_f
 !---PT80
-pt80.com##.a_t
+pt80.net##.a_t
+pt80.net##.a_f
 !帖子底部百度搜索
-unstat.baidu.com$domain=pt80.com
+unstat.baidu.com$domain=pt80.net
 !---杂碎后院
 ||zasv.net/data/attachment/forum/*
 
