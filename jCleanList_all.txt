@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: qaFC59J4ZSoGGLvZzw9KxA
-! Last modified: 27 Sep 2013 20:06 +0800
+! Checksum: TPWtSN+7Zo7cwBtiF7NnJg
+! Last modified: 04 Oct 2013 00:13 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -120,6 +120,7 @@
 ||chanet.com.cn^$third-party
 ||chinaih.com^$third-party
 ||clickeye.cn^$third-party
+||csbew.com^
 ||egooad.com^$third-party
 ||game3737.com^$third-party
 ||gamediad.com^$third-party
@@ -347,7 +348,8 @@ ifeng.com##div[class^="ad"]
 ifeng.com##.label_3
 !---中关村
 ||p.zol-img.com.cn^
-||pic.zol-img.com.cn^*.swf$object
+||pic.zol-img.com.cn^
+zol.com.cn##[id^="AD"]
 zol.com.cn##[class^="ad-"]
 zol.com.cn##[id^="ad-"]
 !首页
@@ -357,13 +359,9 @@ zol.com.cn##.winbox
 ||img.zol-img.com/compare/ad/*
 ||icon.zol-img.com.cn/public/js/web_foot.js
 zol.com.cn##.hot_tj
-!下载首页
-xiazai.zol.com.cn###top_tl_ad
 !pv
 ||ca.cbsi.com.cn^
-||dw.cbsi.com.cn^
 ||icon.zol-img.com.cn/mainpage/js/click.js?*
-||imp.zol.com.cn^
 !---手机中国
 ||pic.cnmo-img.com.cn
 !---IT168
@@ -561,6 +559,7 @@ dzh.mop.com##.adarea_top
 !---动漫花园
 ||image.mzhbt.org^$third-party
 play-asia.com$third-party
+||share.dmhy.org/shareman*.jpg
 share.dmhy.org###play-asia
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
@@ -599,7 +598,7 @@ bbs.aptx.cn##.a_pr
 ||poco.cn^$domain=tsdm.net
 tsdm.net##.a_pt
 !---NyaaTorrents
-||files.nyaa.se/ab*.jpg
+||files.nyaa.se/ac*.jpg
 !---笨狗漫画
 ||bengou.com/game/*
 bengou.com##div[style*="width:980px; height:70px;"]
@@ -774,6 +773,8 @@ acfun.tv##.ad
 !pv
 ||dc.letv.com^
 ||js.letvcdn.com/js/*/stats/*
+!---风云直播
+||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
 ||yytcdn.com/uploads/page_advertisement/*
 !pv
