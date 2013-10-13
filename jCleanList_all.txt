@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: TPWtSN+7Zo7cwBtiF7NnJg
-! Last modified: 04 Oct 2013 00:13 +0800
+! Checksum: US1c4wFkKE3KkJwHrxD9wg
+! Last modified: 13 Oct 2013 11:53 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -314,6 +314,10 @@ wenwen.soso.com##.ad1
 news.163.com##[class*="gg-"]
 !邮箱
 ||mimg.127.net/external/*
+!---有道(词典)
+||impservice.dictweb.youdao.com^
+||impservice.dictapp.youdao.com^
+dict.youdao.com###topImgAd
 !---新浪
 ||sinaimg.cn/unipro/pub/suda*.js
 sina.com.cn##[id^="ad_"]
@@ -557,9 +561,9 @@ dzh.mop.com##.adarea
 dzh.mop.com##.adarea_top
 
 !---动漫花园
-||image.mzhbt.org^$third-party
 play-asia.com$third-party
 ||share.dmhy.org/shareman*.jpg
+||share.dmhy.org/WLGO*.jpg
 share.dmhy.org###play-asia
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
