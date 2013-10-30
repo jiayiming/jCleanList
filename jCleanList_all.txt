@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: US1c4wFkKE3KkJwHrxD9wg
-! Last modified: 13 Oct 2013 11:53 +0800
+! Checksum: 0TRVlPdqVTPmAJFN+exckg
+! Last modified: 30 Oct 2013 19:19 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -23,6 +23,7 @@
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
 @@||tb1.bdstatic.com/*float*.js$script
+@@||tb1.bdstatic.com/*_ad_*.js
 @@||im.baidu.com/popup/popup.js*
 @@||i1.dpfile.com/lib/1.0/*ad*.js$script
 
@@ -402,8 +403,10 @@ mydrivers.com##div>table[style="border: 1px solid #5A7EA0"]
 ||mydrivers.com/inc/*.js
 !---太平洋电脑网
 ||pconline.com.cn/js/ivy.js
+*/ivy/image/*
 ||ivy.pconline.com.cn/adpuba/*
-||img0.pcgames.com.cn^$object
+||img*.pcgames.com.cn^$object
+||img0.pconline.com.cn/ivy/*$object
 ||pcgames.com.cn/g/*
 ||js.3conline.com/js/pconilne/qzgb/area_lmt2012.js
 !论坛
@@ -437,6 +440,8 @@ csdn.net##.ad_960
 ||bbs.csdn.net/sda/*.htm
 bbs.csdn.net###Topic_Top
 
+!---腾讯各类游戏论坛
+||ossweb-img.qq.com^$domain=gamebbs.qq.com
 !--Discuz
 */data/attachment/common/cf/*
 */data/attachment/common/ad/*
@@ -562,8 +567,10 @@ dzh.mop.com##.adarea_top
 
 !---动漫花园
 play-asia.com$third-party
-||share.dmhy.org/shareman*.jpg
+||share.dmhy.org/MZ*.jpg
 ||share.dmhy.org/WLGO*.jpg
+||share.dmhy.org/shareman*.jpg
+||share.dmhy.org/QS*.jpg
 share.dmhy.org###play-asia
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
@@ -933,6 +940,7 @@ coolapk.com##[data-for="apkUpdateBox"]
 ||fa.jd.com^
 ||fa.360buy.com
 ||jprice.360buy.com/adslogan/*
+@@||ad.3.cn/ads/*
 !---玩家堂
 ||itocp.com/html/gk/*
 !---硬派网
