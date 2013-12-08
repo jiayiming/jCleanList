@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 0TRVlPdqVTPmAJFN+exckg
-! Last modified: 30 Oct 2013 19:19 +0800
+! Checksum: PO1UPXOQGxOVYRE/F5K3Ww
+! Last modified: 08 Dec 2013 22:00 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -201,13 +201,10 @@ http://stat.
 !分享
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---TX
-||pingjs.qq.com/ping.js
 ||tcss.qq.com^
 ||pingtcss.qq.com^$third-party
 ||btrace.qq.com^
 !dz搜索点击率
-||pingfore.qq.com^
-||jsqmt.qq.com/cdn_djl.js
 !---Sina
 ||tjs.sjs.sinajs.cn/open/analytics/js/suda.js
 ||rs.sinajs.cn^
@@ -254,17 +251,25 @@ tieba.baidu.com##.wapapp_adv
 !pv
 ||static.tieba.baidu.com/tb/img/hive.gif*
 ||tongji.tieba.baidu.com^
+!对联
+||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
+tieba.baidu.com##[id^="game_couplet_pb_"]
 !tieba1
 tieba.baidu.com##.pc2client
 tieba.baidu.com###aside_ad
 !zhidao0|zhidao1|zhidao2
+||static.tieba.baidu.com/tb/cms/img/tieba_index_banner*.png
 ||img.baidu.com/img/iknow/loregrowth/egg_qlyf.swf
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com##.wgt-ads
+||tb1.bdstatic.com/tb/cms/com/game/game_*.swf
+tieba.baidu.com##.pop_main
 !zhidao2侧边栏
 zhidao.baidu.com##.cms-slide
 !zhidao3搜索
 zhidao.baidu.com##.widget-ads
+!baike
+@@||baike.bdimg.com/*/adside/*.js
 !music
 ||music.baidu.com/static/html/cbjs.html*
 music.baidu.com##.adm
@@ -567,9 +572,9 @@ dzh.mop.com##.adarea_top
 
 !---动漫花园
 play-asia.com$third-party
-||share.dmhy.org/MZ*.jpg
-||share.dmhy.org/WLGO*.jpg
-||share.dmhy.org/shareman*.jpg
+||share.dmhy.org/MZ*$image
+||share.dmhy.org/WLGO*$image
+||share.dmhy.org/shareman*$image
 ||share.dmhy.org/QS*.jpg
 share.dmhy.org###play-asia
 !---极影动漫
@@ -957,6 +962,8 @@ inpai.com.cn##.tbad2
 17173.com##[class^="ad-pn"]
 !首页页游隐藏
 17173.com##.box-daily
+!视频
+||v.17173.com/x/*
 !pv
 ||js.17173.com/ping.js
 !---页游网
