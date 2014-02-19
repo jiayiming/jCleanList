@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: PO1UPXOQGxOVYRE/F5K3Ww
-! Last modified: 08 Dec 2013 22:00 +0800
+! Checksum: 3cezUGjJxq6m89a0gKfqdA
+! Last modified: 19 Feb 2014 23:49 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -20,6 +20,7 @@
 !---白名单区域
 @@|http://*/*ad*.$stylesheet
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
+@@||ossweb-img.qq.com/images/gameshop/ad/*
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
 @@||tb1.bdstatic.com/*float*.js$script
@@ -247,23 +248,21 @@ www.baidu.com###content_right
 !tieba0|tieba2
 ||tieba.baidu.com/f/urlcheck?*
 tieba.baidu.com##.l_banner
-tieba.baidu.com##.wapapp_adv
+!帖子1楼底部游戏横幅
+||imgsrc.baidu.com/tieba/pic/item/*$image
+tieba.baidu.com##.game_spread_thread
 !pv
 ||static.tieba.baidu.com/tb/img/hive.gif*
 ||tongji.tieba.baidu.com^
 !对联
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
-tieba.baidu.com##[id^="game_couplet_pb_"]
 !tieba1
 tieba.baidu.com##.pc2client
 tieba.baidu.com###aside_ad
 !zhidao0|zhidao1|zhidao2
 ||static.tieba.baidu.com/tb/cms/img/tieba_index_banner*.png
-||img.baidu.com/img/iknow/loregrowth/egg_qlyf.swf
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com##.wgt-ads
-||tb1.bdstatic.com/tb/cms/com/game/game_*.swf
-tieba.baidu.com##.pop_main
 !zhidao2侧边栏
 zhidao.baidu.com##.cms-slide
 !zhidao3搜索
@@ -614,7 +613,7 @@ bbs.aptx.cn##.a_pr
 ||poco.cn^$domain=tsdm.net
 tsdm.net##.a_pt
 !---NyaaTorrents
-||files.nyaa.se/ac*.jpg
+||files.nyaa.se/a*.jpg
 !---笨狗漫画
 ||bengou.com/game/*
 bengou.com##div[style*="width:980px; height:70px;"]
@@ -632,8 +631,10 @@ yyets.com##.adBox
 www.mysilu.com##.a_h,.a_t,.a_pt
 !---TorrenTGui
 /ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=ttg.im
-||ttg.im/pic/*450.gif$domain=ttg.im
-||ttg.im/pic/taohigh.jpg$domain=ttg.im
+||ttg.im/pic/*450.gif
+||ttg.im/pic/fangtuo.jpg
+||ttg.im/pic/playbill/*
+||ttg.im/pic/taohigh.jpg
 !---PT80
 pt80.net##.a_t
 pt80.net##.a_f
@@ -711,34 +712,22 @@ soku.com##div[id^="ab_"]
 */cv/pl*&uuid=*
 */pos?act=dur*
 !---爱奇异
-||202.108.14.72/ts.swf
-||iqiyi.com/player/*.swf
-@@||iqiyi.com/player/*/*.swf
-||afp.qiyi.com^
+||iqiyi.com/player/cupid/*/adplayer.swf
 iqiyi.com##[id^="div_theatre"]
 iqiyi.com###ad-left-tl
 !pv
 ||msg.video.qiyi.com^
-||jsmsg.video.qiyi.com^
 ||static.iqiyi.com/js/pingback/*
-!---56.com
-||acs.56.com
-!---酷6
-!外链fix
-@@||pic.snyu.com/sdk*/Main.swf$domain=~ku6.com
-||aa.sdo.com^
-!主站播放时候
-||gug.ku6cdn.com^
-ku6.com##.ku6_ad
-v.ku6.com##[class^="aa_"]
-!404垃圾连接
-||st.vq.ku6.cn^
-||stat.ku6.com^
+!---腾讯视频
+||livew.l.qq.com/livemsg?*
+!---乐视
+*/letv-web/*
+!pv
+||dc.letv.com^
 !---搜狐视频
-||aty.tv.sohu.com^
+||data.vod.itc.cn/*.mp4
 ||images.sohu.com/ytv/
 ||images.sohu.com/bill/
-||mfiles.sohu.com/tv/*
 !视频首页
 tv.sohu.com##.areaAdv
 !pv
@@ -751,8 +740,6 @@ tv.sohu.com##.areaAdv
 video.sina.com.cn##.topAd950
 !pv
 ||dcads.sina.com.cn^
-!---腾讯视频
-||livem.l.qq.com/livemsg?*
 v.qq.com###adPlayer
 !---网易讯视频
 ||g.163.com^
@@ -774,7 +761,19 @@ v.qq.com###adPlayer
 @@||web-play.pptv.com^
 ||asimgs.pplive.cn
 pptv.com##[id^="afp_"]
-pptv.com##.sp_h90
+!---酷6
+!外链fix
+@@||pic.snyu.com/sdk*/Main.swf$domain=~ku6.com
+||aa.sdo.com^
+!主站播放时候
+||gug.ku6cdn.com^
+ku6.com##.ku6_ad
+v.ku6.com##[class^="aa_"]
+!404垃圾连接
+||st.vq.ku6.cn^
+||stat.ku6.com^
+!---56.com
+||acs.56.com
 !------------------------------------
 !---嗶哩嗶哩
 */html/*$domain=bilibili.tv|bilibili.kankanews.com|bilibili.smgbb.cn
@@ -784,11 +783,6 @@ pptv.com##.sp_h90
 bilibili.tv,bilibili.kankanews.com,bilibili.smgbb.cn##.ad-f
 !---AcFun
 acfun.tv##.ad
-!---乐视
-||pro.hoye.letv.com^
-!pv
-||dc.letv.com^
-||js.letvcdn.com/js/*/stats/*
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
