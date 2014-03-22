@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: BYjDinxFCCbrEo2F+sJDGA
-! Last modified: 25 Feb 2014 19:32 +0800
+! Checksum: kHrhQHsQk821+fAxrRkArQ
+! Last modified: 23 Mar 2014 01:36 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -400,12 +400,13 @@ pcpop.com##.ad
 !---驱动之家
 ||11.mydrivers.com/news/03.js
 ||11.mydrivers.com/news/google468x60.js
-||11.mydrivers.com/drivers/*
 mydrivers.com##[class^="ad_"]
 mydrivers.com##[id^="ad_"]
 !子页顶部
 mydrivers.com##div>table[style="border: 1px solid #5A7EA0"]
 ||mydrivers.com/inc/*.js
+!驱动子页
+drivers.mydrivers.com##.baidu_box
 !---太平洋电脑网
 ||pconline.com.cn/js/ivy.js
 */ivy/image/*
@@ -571,15 +572,12 @@ dzh.mop.com##.adarea
 dzh.mop.com##.adarea_top
 
 !---动漫花园
-play-asia.com$third-party
-||share.dmhy.org/MZ*$image
-||share.dmhy.org/WLGO*$image
+||share.dmhy.org/*.jpg?$image
+||share.dmhy.org/*.gif?$image
 ||share.dmhy.org/shareman*$image
-||share.dmhy.org/QS*.jpg
-share.dmhy.org###play-asia
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
-||bt.ktxp.com/iframe/show_kkkmh.js$domain=bt.ktxp.com
+||bt.ktxp.com/iframe/show_kkkmh.js
 bt.ktxp.com##.item-box2.money
 !---看漫画
 ||kkkmh.com/iframe/banner.js
@@ -593,7 +591,6 @@ kkkmh.com##.box[style="margin-top:10px;text-align:center;"]
 lightnovel.cn###swRoller_1
 lightnovel.cn##div[style^="height:90px;width:960px;"]
 !---SOSG
-||pic*.sosg.net/ad/*
 sosg.net##[id^="gad_"]
 !通用风格
 sosg.net###home_promo_top
@@ -635,7 +632,6 @@ www.mysilu.com##.a_h,.a_t,.a_pt
 ||ttg.im/pic/*450.gif
 ||ttg.im/pic/fangtuo.jpg
 ||ttg.im/pic/playbill/*
-||ttg.im/pic/taohigh.jpg
 !---PT80
 pt80.net##.a_t
 pt80.net##.a_f
@@ -947,7 +943,6 @@ coolapk.com##[data-for="apkUpdateBox"]
 inpai.com.cn##[class^="baiduad"]
 inpai.com.cn##.addoc1
 inpai.com.cn##.tbad2
-!---超能网
 !---17173
 ||ue8.17173.itc.cn/*/ggcommon*.js
 ||ue8.17173.itc.cn/*/slide_toggle_ads.js
@@ -982,6 +977,9 @@ duowan.com##.ad
 duowan.com##.pic300
 !子页右下角漂浮
 duowan.com##.livetip
+!论坛
+||att.bbs.duowan.com/forum/201403/22/*
+bbs.duowan.com##.a_pb
 !---178
 ||market.178.com^
 178.com##[class^="ad"]
@@ -994,12 +992,12 @@ duowan.com##.livetip
 yzz.cn##.ad200x340
 !---游民星空
 ||gamersky.com/ad/
-||gamersky.com/pt2/*
+||gamersky.com/pt3/*
 ||gamersky.com/frame/
 ||gamersky.com/img/
 ||imgf.gamersky.com/300/*
-||yx4449.com^$third-party
-||37pk49.com^$third-party
+||9w1an.com^
+||g.youyou234.com^
 !下载页
 ||imgf.gamersky.com/img1/dcr300.gif
 !---52pk
@@ -1009,8 +1007,6 @@ yzz.cn##.ad200x340
 ||img.jb51.net/imgby/*$domain=jb51.net
 jb51.net##.search
 jb51.net##.dxy230
-!---豆瓣电台
-||douban.fm/rotate_ad*
 !---豆丁
 ||docin.com/app/a_d/*
 ||pics.wanlibo.com/js/pagemodulestat.js$domain=docin.com
