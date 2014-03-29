@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: kHrhQHsQk821+fAxrRkArQ
-! Last modified: 23 Mar 2014 01:36 +0800
+! Checksum: Si5K3gSCBoMRJHFDx9Vt+A
+! Last modified: 29 Mar 2014 16:34 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -925,6 +925,8 @@ www.ya55.com###adtop
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
+!---userscripts.org
+||coinurl.com^$third-party
 !---userstyles.org
 userstyles.org##.ad
 !---网页飞信
@@ -973,10 +975,10 @@ inpai.com.cn##.tbad2
 !首页
 duowan.com##.promot-box
 duowan.com##.ad
-!子页右侧
-duowan.com##.pic300
 !子页右下角漂浮
-duowan.com##.livetip
+duowan.com###livetip-wrap
+!多玩乐视视频
+||untitled.dwstatic.com/fodder/*$object-subrequest
 !论坛
 ||att.bbs.duowan.com/forum/201403/22/*
 bbs.duowan.com##.a_pb
