@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Si5K3gSCBoMRJHFDx9Vt+A
-! Last modified: 29 Mar 2014 16:34 +0800
+! Checksum: Z4fRgbN+BhkE2+Kls+4PMQ
+! Last modified: 19 Apr 2014 21:42 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -252,6 +252,7 @@ tieba.baidu.com##.l_banner
 !帖子1楼底部游戏横幅
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##.game_spread_thread
+||tieba.lecai.com/*/tieba_lottery_*.shtml
 !pv
 ||static.tieba.baidu.com/tb/img/hive.gif*
 ||tongji.tieba.baidu.com^
@@ -465,13 +466,9 @@ bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
 bbs.vc52.cn##.a_pb
 !---远景论坛
-||pcbeta.com^*/biz/*
-||pbcdn.com/activities/*
-bbs.pcbeta.com###win8book
-bbs.pcbeta.com###sitefocus
-bbs.pcbeta.com##div[style$="border:9px solid #EDEEF0;"]
 bbs.pcbeta.com##div[style*="width:980px;"]
-bbs.pcbeta.com##div[style*="height:60px;border:solid #EDEEF0;"]
+bbs.pcbeta.com##div[style*="width:960px;height:91px;"]
+bbs.pcbeta.com###sitefocus
 !---机锋网
 ||cdn*.image.apk.gfan.com/asdf/*
 bbs.gfan.com##.a_h
@@ -574,6 +571,7 @@ dzh.mop.com##.adarea_top
 !---动漫花园
 ||share.dmhy.org/*.jpg?$image
 ||share.dmhy.org/*.gif?$image
+||share.dmhy.org/*.png?$image
 ||share.dmhy.org/shareman*$image
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
@@ -628,10 +626,10 @@ yyets.com##.adBox
 !---MySilU论坛
 www.mysilu.com##.a_h,.a_t,.a_pt
 !---TorrenTGui
-/ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=ttg.im
-||ttg.im/pic/*450.gif
-||ttg.im/pic/fangtuo.jpg
-||ttg.im/pic/playbill/*
+/ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=totheglory.im
+||totheglory.im/pic/*450.gif
+||totheglory.im/pic/fangtuo.jpg
+||totheglory.im/pic/playbill/*
 !---PT80
 pt80.net##.a_t
 pt80.net##.a_f
@@ -865,7 +863,9 @@ itopdog.cn##.ad728
 !---pc6下载站
 ||pc6.com/js/un/*
 ||pc6.com/js/html/*
-||zhanzhang.net^$third-party
+||d.12291.com^
+!下载页右下角漂浮
+||media.8jkx.com^$third-party
 !---未来软件站
 ||orsoon.com/orsoon/*
 orsoon.com###youxi
@@ -933,6 +933,7 @@ userstyles.org##.ad
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---酷安网
 ||image.coolapk.com/apk_logo/*/10001_*$image
+||image.coolapk.com/group/2014/0409/10002_*$image
 coolapk.com##[data-for="apkUpdateBox"]
 !---京东商城
 ||fa.jd.com^
@@ -982,6 +983,7 @@ duowan.com###livetip-wrap
 !论坛
 ||att.bbs.duowan.com/forum/201403/22/*
 bbs.duowan.com##.a_pb
+||img.dwstatic.com/shouyou/
 !---178
 ||market.178.com^
 178.com##[class^="ad"]
@@ -998,8 +1000,9 @@ yzz.cn##.ad200x340
 ||gamersky.com/frame/
 ||gamersky.com/img/
 ||imgf.gamersky.com/300/*
-||9w1an.com^
-||g.youyou234.com^
+||9w1an.com^$third-party
+||g.youyou234.com^$third-party
+||37pk49.com^$third-party
 !下载页
 ||imgf.gamersky.com/img1/dcr300.gif
 !---52pk
