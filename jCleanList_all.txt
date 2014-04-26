@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Z4fRgbN+BhkE2+Kls+4PMQ
-! Last modified: 19 Apr 2014 21:42 +0800
+! Checksum: b1rLid6712Q4ZoYEqpk6Ng
+! Last modified: 26 Apr 2014 23:51 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -27,7 +27,7 @@
 @@||tb1.bdstatic.com/*float*.js$script
 @@||tb1.bdstatic.com/*_ad_*.js
 @@||im.baidu.com/popup/popup.js*
-@@||i1.dpfile.com/lib/1.0/*ad*.js$script
+@@||dpfile.com/combos/*ad*.js
 
 !---通用广告联盟通用猜测
 |http://*/i.js
@@ -627,9 +627,10 @@ yyets.com##.adBox
 www.mysilu.com##.a_h,.a_t,.a_pt
 !---TorrenTGui
 /ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=totheglory.im
-||totheglory.im/pic/*450.gif
 ||totheglory.im/pic/fangtuo.jpg
 ||totheglory.im/pic/playbill/*
+!---老调网
+||pic9382.com^$third-party
 !---PT80
 pt80.net##.a_t
 pt80.net##.a_f
@@ -637,8 +638,10 @@ pt80.net##.a_f
 unstat.baidu.com$domain=pt80.net
 !---杂碎后院
 ||zasv.net/data/attachment/forum/*
+||zasv.com/somic.gif
 ||libdd.com^$third-party
-||player.56.com/renrenshare_$domain=zasv.com
+||srcdd.com^$third-party
+||papaapp.com^$third-party
 
 !---新浪微薄
 ||biz.weibo.com^
