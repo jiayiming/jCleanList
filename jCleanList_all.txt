@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: b1rLid6712Q4ZoYEqpk6Ng
-! Last modified: 26 Apr 2014 23:51 +0800
+! Checksum: 2xGCeBcDZUct0qGSufvRhw
+! Last modified: 25 May 2014 15:34 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -261,6 +261,8 @@ tieba.baidu.com##.game_spread_thread
 !tieba1
 tieba.baidu.com##.pc2client
 tieba.baidu.com###aside_ad
+!对联
+tieba.baidu.com###j_ten_years
 !zhidao0|zhidao1|zhidao2
 ||static.tieba.baidu.com/tb/cms/img/tieba_index_banner*.png
 zhidao.baidu.com##div[class^="ad"]
@@ -460,7 +462,6 @@ search.discuz.qq.com##.ad
 !---卡饭论坛
 bbs.kafan.cn##.header_gg
 bbs.kafan.cn##.a_f
-bbs.kafan.cn##.a_pt
 !---精睿论坛
 bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
@@ -580,14 +581,12 @@ bt.ktxp.com##.item-box2.money
 !---看漫画
 ||kkkmh.com/iframe/banner.js
 ||kkkmh.com/javascripts/abcde/*
-||js.kk7kk.com/cpm_static/*
 kkkmh.com##.mm-hot
 kkkmh.com##.mm-book
 kkkmh.com##.box[style="margin-top:10px;text-align:center;"]
 !---轻之国度
-||lightnovel.cn/logopic/*
+||sinaimg.cn^$domain=lightnovel.cn
 lightnovel.cn###swRoller_1
-lightnovel.cn##div[style^="height:90px;width:960px;"]
 !---SOSG
 sosg.net##[id^="gad_"]
 !通用风格
@@ -597,9 +596,8 @@ sosg.net##.cc[style^="width:100%; height:280px;"]
 !SOS动漫单独修正
 sosg.net##.read_promo
 !---苍雪的世界
-||bbs.9gal.com/ys/*
 !首页空白
-bbs.9gal.com##td[style="border-bottom:1px solid #DDDDFF;"]
+bbs.9gal.com###top80
 bbs.9gal.com##div[style^="width:640px;height:60px;"]
 !帖子空白
 bbs.9gal.com##td[width="680"][height="50"]
@@ -610,18 +608,24 @@ bbs.aptx.cn##.a_pr
 tsdm.net##.a_pt
 !---NyaaTorrents
 ||files.nyaa.se/a*.jpg
-!---笨狗漫画
-||bengou.com/game/*
-bengou.com##div[style*="width:980px; height:70px;"]
-bengou.com##div[style*="width:870px; height:215px;"]
+!---U17
+||s.u17t.com/leaflet/upload/
+u17.com##div[id^="u17-advert"]
+u17.com##.r_ad_drag
+u17.com##.top_ad
+u17.com###ldpop
+u17.com###rdpop
 !---射手网
-||shooter.cn/a/*adv$script,domain=shooter.cn
+||shooter.cn/a/*adv$script
 ||google.com/afsonline/show_afs_search.js$domain=shooter.cn
 shooter.cn###googleSearchUnitIframe
 !---人人影视
+||weddingeeos.com^$third-party
+||admaji.com^$third-party
 ||res.yyets.com/ads/*
 ||copy.ousns.com^$domain=yyets.com
 yyets.com##.adBox
+yyets.com##.block > .box_4:only-child
 !---CHD论坛
 !---MySilU论坛
 www.mysilu.com##.a_h,.a_t,.a_pt
@@ -657,6 +661,9 @@ weibo.com##[feedtype="ad"]
 ||dj.renren.com^
 ||s.renren.com^
 ||xnimg.cn^*/beacon.js
+!--百度云
+!下载页右侧闪电互传活动
+||pan.baidu.com/res/static/images/cms/shandianhuchuan.jpg
 !---115网盘
 ||static.115img.com/static/delivery/$domain=115.com
 !---华为网盘
@@ -780,7 +787,7 @@ v.ku6.com##[class^="aa_"]
 ||hdslb.com/u_user/*$object-subrequest
 bilibili.tv,bilibili.kankanews.com,bilibili.smgbb.cn##.ad-f
 !---AcFun
-acfun.tv##.ad
+acfun.com##[id^="ad-"]
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
@@ -949,6 +956,8 @@ coolapk.com##[data-for="apkUpdateBox"]
 inpai.com.cn##[class^="baiduad"]
 inpai.com.cn##.addoc1
 inpai.com.cn##.tbad2
+!---超能网
+expreview.com##.banner
 !---17173
 ||ue8.17173.itc.cn/*/ggcommon*.js
 ||ue8.17173.itc.cn/*/slide_toggle_ads.js
@@ -984,7 +993,8 @@ duowan.com###livetip-wrap
 !多玩乐视视频
 ||untitled.dwstatic.com/fodder/*$object-subrequest
 !论坛
-||att.bbs.duowan.com/forum/201403/22/*
+||att.bbs.duowan.com/*/163936za22qnj31dbg1nr3.jpg
+||att.bbs.duowan.com/*s24vk4090m.jpg
 bbs.duowan.com##.a_pb
 ||img.dwstatic.com/shouyou/
 !---178
