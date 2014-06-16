@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 2xGCeBcDZUct0qGSufvRhw
-! Last modified: 25 May 2014 15:34 +0800
+! Checksum: sfL+xWTfF/4JaHNaOGVgcg
+! Last modified: 16 Jun 2014 22:09 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -17,11 +17,13 @@
 |http://*/ggao/*
 |http://*/guanggao/*
 |http://gg.*^
+/300x250_
 !---白名单区域
 @@|http://*/*ad*.$stylesheet
 @@||qq.com^*ADTAG*
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||ossweb-img.qq.com/images/gameshop/ad/*
+@@||ossweb-img.qq.com/*/guanggao/*$image
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
 @@||tb1.bdstatic.com/*float*.js$script
@@ -48,6 +50,7 @@
 ||spcode.baidu.com^
 !解决验证码问题|如down.it168.com
 @@||cpro.baidu.com/cpro/ui/y.js$domain=down.it168.com
+||ecma.bdimg.com^
 !---alimama/taobao
 ||alimama.cn^$third-party
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
@@ -70,13 +73,6 @@
 ||j.wit.qq.com^$third-party
 !---sdo
 ||snyu.com^$third-party
-!--9v
-||9vcpc.cn^$third-party
-||f.9vcpm.cn^$third-party
-||v.9vcpp.cn^$third-party
-||9vcpp.com^$third-party
-||cpm9v.cn^$third-party
-||v.cpp9v.cn^$third-party
 !---naqigs
 ||naqigs.com^$third-party
 ||i.na7.cc^$third-party
@@ -84,7 +80,6 @@
 ||resmkt.dipan.com^$popup
 !---others(no_video_ad)
 ||000wan.com^$third-party
-||001union.com^$third-party
 ||033.com^$third-party
 ||100fenlm.cn^$third-party
 ||1133.cc^$third-party
@@ -101,6 +96,7 @@
 ||333wan.com^$third-party
 ||336.com^$third-party
 ||37cs.com^$third-party
+||37pk49.com^$third-party
 ||37see.com^$third-party
 ||3dwwwgame.com^$third-party
 ||49ko.com^$third-party
@@ -115,14 +111,14 @@
 ||88210212.com^$third-party
 ||8le8le.com^$third-party
 ||91wan.com^$third-party
-||9dcpm.com^$third-party
+||9w1an.com^$third-party
 ||a3p4.com^$third-party
 ||adkongjian.com^$third-party
 ||adyun.com^$third-party
 ||adsame.com^$third-party
 ||chanet.com.cn^$third-party
 ||chinaih.com^$third-party
-||clickeye.cn^$third-party
+||c1o1.com^$third-party
 ||csbew.com^
 ||egooad.com^$third-party
 ||game3737.com^$third-party
@@ -168,7 +164,6 @@
 ||xsu.cc^$third-party
 ||yigao.com^$third-party
 ||yiqiwin.com^$third-party
-||youday.cn^$third-party
 ||youxitui.net^$third-party
 ||youxjia.com^$third-party
 ||yoyi.com.cn^$third-party
@@ -199,14 +194,15 @@ http://stat.
 ||hm.baidu.com^
 ||nsclick.baidu.com^
 ||sclick.baidu.com^
-@@||hm.baidu.com^$domain=ie.cnbeta.com
 !分享
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---TX
-||tcss.qq.com^
 ||pingtcss.qq.com^$third-party
 ||btrace.qq.com^
-!dz搜索点击率
+||gdt.qq.com^
+||isdspeed.qq.com^
+||tajs.qq.com^
+||tcss.qq.com^
 !---Sina
 ||tjs.sjs.sinajs.cn/open/analytics/js/suda.js
 ||rs.sinajs.cn^
@@ -221,10 +217,13 @@ http://stat.
 ||dwtracking.sdo.com^
 !---Others(China)
 ||51yes.com^$third-party
-||css.aliyun.com^$third-party
+||api.pixnet.tv/count^
+||brand.sogou.com^
 ||baifendian.com^$third-party
+||css.aliyun.com^$third-party
 ||cnzz.com^$third-party
 ||cnzz.net^$third-party
+||cloudfront.net/atrk.js
 ||hitslink.com^$third-party
 ||imrworldwide.com^$third-party
 ||linezing.com^$third-party
@@ -238,7 +237,6 @@ http://stat.
 !---Google
 www.google.com.hk,www.google.com,encrypted.google.com###tads,#bottomads
 www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
-!反跳转
 !---众里寻他千百度
 !百度全局
 ||a.baidu.com
@@ -250,9 +248,9 @@ www.baidu.com###content_right
 ||tieba.baidu.com/f/urlcheck?*
 tieba.baidu.com##.l_banner
 !帖子1楼底部游戏横幅
+tieba.baidu.com##[id^="BAIDU_CLB_AD_"]
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##.game_spread_thread
-||tieba.lecai.com/*/tieba_lottery_*.shtml
 !pv
 ||static.tieba.baidu.com/tb/img/hive.gif*
 ||tongji.tieba.baidu.com^
@@ -263,6 +261,7 @@ tieba.baidu.com##.pc2client
 tieba.baidu.com###aside_ad
 !对联
 tieba.baidu.com###j_ten_years
+tieba.baidu.com###j_worldcup_info_banner
 !zhidao0|zhidao1|zhidao2
 ||static.tieba.baidu.com/tb/cms/img/tieba_index_banner*.png
 zhidao.baidu.com##div[class^="ad"]
@@ -283,7 +282,7 @@ video.baidu.com##.popular
 !---腾讯网
 ||adsrich.qq.com^
 ||adsfile.qq.com^
-||l.qq.com^$domain=~v.qq.com
+||l.qq.com/lview?
 !首页通用
 qq.com##.adLeft,.adRight
 !首页和子页通用
@@ -433,6 +432,8 @@ pchome.net,kdslife.com##[class^="ad"]
 ||media.tianjimedia.com^$domain=yesky.com
 !---cnBeta
 cnbeta.com##.adsbygoogle
+!招聘
+cnbeta.com##.cber:nth-child(7)
 !---IT之家
 ||ithome.com/block/*
 ithome.com##.site_ad
@@ -462,6 +463,7 @@ search.discuz.qq.com##.ad
 !---卡饭论坛
 bbs.kafan.cn##.header_gg
 bbs.kafan.cn##.a_f
+bbs.kafan.cn##.wp.gg
 !---精睿论坛
 bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
@@ -530,8 +532,8 @@ koudai8.com##.a_pb
 ||we.pcinlife.com/banner/*
 ||we.poppur.com/banner/*
 ||wdfans.cn^$domain=we.poppur.com
-we.poppur.com##DIV[style="height:116px"]
 we.poppur.com##.a_h
+we.poppur.com##.a_pt
 !---Chiphell
 ||chiphell.com/activity/*
 !---PCEVA
@@ -608,6 +610,9 @@ bbs.aptx.cn##.a_pr
 tsdm.net##.a_pt
 !---NyaaTorrents
 ||files.nyaa.se/a*.jpg
+!Pixiv
+||cache.microad.jp/send_jsonp.js
+pixiv.net##.ads_area
 !---U17
 ||s.u17t.com/leaflet/upload/
 u17.com##div[id^="u17-advert"]
@@ -662,10 +667,11 @@ weibo.com##[feedtype="ad"]
 ||s.renren.com^
 ||xnimg.cn^*/beacon.js
 !--百度云
-!下载页右侧闪电互传活动
-||pan.baidu.com/res/static/images/cms/shandianhuchuan.jpg
+!下载页右侧招聘
+||pan.baidu.com/res/*/zhaopin.jpg
+pan.baidu.com###share_ad_info_panl
 !---115网盘
-||static.115img.com/static/delivery/$domain=115.com
+||static.115img.com/static/delivery/
 !---华为网盘
 |http://*.com/netdisk/download/ads/*
 ||hiad.vmall.com^
@@ -674,11 +680,8 @@ dl.vmall.com##[id^="ad_"]
 dl.vmall.com###filelist_marker
 !---迅雷快传
 ||img.kuai.xunlei.com/js/statistics.js
-||img.kuai.xunlei.com/img/v2/fen/
-kuai.xunlei.com##.adv_area
-kuai.xunlei.com##.hot_list
 !---MediaFire
-||mediafire.com/templates/linkto/default-$domain=mediafire.com
+||mediafire.com/templates/linkto/default-
 ||sparkstudios.com^$domain=mediafire.com
 ||adsupply.com^$domain=mediafire.com
 mediafire.com##.ad
@@ -703,10 +706,9 @@ ys168.com###zdy_wz0
 ||atm.youku.com^
 !---优酷
 @@||valf.atm.youku.com^
-youku.com##div[class^="AB"]
 youku.com##div[id^="ab_"]
-soku.com##div[id^="ab_"]
 !pv
+||l.yk.com
 ||hz.youku.com^
 ||static.youku.com/*/paycenter/*$script
 !---土豆
@@ -724,7 +726,10 @@ iqiyi.com###ad-left-tl
 ||msg.video.qiyi.com^
 ||static.iqiyi.com/js/pingback/*
 !---腾讯视频
+!||l.qq.com/lview?
 ||livew.l.qq.com/livemsg?*
+||ra.gtimg.com/adsame/
+v.qq.com##.mod_ad
 !---乐视
 */letv-web/*
 !pv
@@ -758,10 +763,9 @@ v.qq.com###adPlayer
 ||bc.ifeng.com/main/*
 ||y*.ifengimg.com*/rdn_*.js
 !---CNTV
-||cntv.cn/adplayer/
 ||a.cntv.cn^
-||static.t.cntv.cn/js/ad.js
-@@||js.player.cntv.cn/creator/*_bg_ad.js$domain=cntv.cn
+cntv.cn##.adv
+cntv.cn##[id^="div-gpt-ad-"]
 !---PPTV
 @@||web-play.pptv.com^
 ||asimgs.pplive.cn
@@ -781,11 +785,10 @@ v.ku6.com##[class^="aa_"]
 ||acs.56.com
 !------------------------------------
 !---嗶哩嗶哩
-*/html/*$domain=bilibili.tv|bilibili.kankanews.com|bilibili.smgbb.cn
-||static.hdslb.com/ad-images/*$domain=bilibili.tv|bilibili.kankanews.com|bilibili.smgbb.cn
-@@||bilibili.tv/html/js/hot_tag.json$domain=bilibili.tv
+*/html/*$domain=bilibili.tv|bilibili.com|bilibili.kankanews.com|bilibili.smgbb.cn
+||static.hdslb.com/ad-images/*
 ||hdslb.com/u_user/*$object-subrequest
-bilibili.tv,bilibili.kankanews.com,bilibili.smgbb.cn##.ad-f
+bilibili.tv,bilibili.com,bilibili.kankanews.com,bilibili.smgbb.cn##.ad-f
 !---AcFun
 acfun.com##[id^="ad-"]
 !---风云直播
@@ -795,7 +798,7 @@ acfun.com##[id^="ad-"]
 !pv
 ||v.stats.yytcdn.com^
 !---17173游戏视频
-||media.17173.com/x/*$domain=media.17173.com|17173.tv.sohu.com
+||v.17173cdn.com/upload/vlog/*.swf
 !---爱拍
 ||apas.aipai.com/www/images/
 /common/js/pop_dialog.js$domain=aipai.com
@@ -1009,13 +1012,14 @@ bbs.duowan.com##.a_pb
 yzz.cn##.ad200x340
 !---游民星空
 ||gamersky.com/ad/
-||gamersky.com/pt3/*
-||gamersky.com/frame/
+||gamersky.com/pt3/
 ||gamersky.com/img/
-||imgf.gamersky.com/300/*
-||9w1an.com^$third-party
-||g.youyou234.com^$third-party
-||37pk49.com^$third-party
+||gamersky.com/frame/
+||assets.changyan.sohu.com/upload/changyan.js
+||xihawan8.com^$third-party
+!背景
+||gamersky.com/bgpic/*
+gamersky.com###hitix
 !下载页
 ||imgf.gamersky.com/img1/dcr300.gif
 !---52pk
