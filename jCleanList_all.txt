@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: sfL+xWTfF/4JaHNaOGVgcg
-! Last modified: 16 Jun 2014 22:09 +0800
+! Checksum: KZpjboO2r8PUWhRL9sBiag
+! Last modified: 21 Jun 2014 12:10 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -27,7 +27,7 @@
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
 @@||tb1.bdstatic.com/*float*.js$script
-@@||tb1.bdstatic.com/*_ad_*.js
+@@||tb1.bdstatic.com/*ad*.js
 @@||im.baidu.com/popup/popup.js*
 @@||dpfile.com/combos/*ad*.js
 
@@ -244,24 +244,37 @@ www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 www.baidu.com###content_right
 !news_All
 !tieba_All
-!tieba0|tieba2
-||tieba.baidu.com/f/urlcheck?*
-tieba.baidu.com##.l_banner
-!帖子1楼底部游戏横幅
-tieba.baidu.com##[id^="BAIDU_CLB_AD_"]
-||imgsrc.baidu.com/tieba/pic/item/*$image
-tieba.baidu.com##.game_spread_thread
 !pv
 ||static.tieba.baidu.com/tb/img/hive.gif*
+||static.tieba.baidu.com/tb/img/track.gif?*
 ||tongji.tieba.baidu.com^
-!对联
-||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
-!tieba1
+!itieba
 tieba.baidu.com##.pc2client
+||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
+!tieba0_帖子列表
+!顶部游戏
+||tb1.bdstatic.com/tb/cms/frs/game/*
+||tb1.bdstatic.com/tb/zt/tengfei/frs_in_head/*
+tieba.baidu.com##.game_frs_in_head
+!列表内推广贴
+||imgsrc.baidu.com/tieba/pic/item/*$image
+tieba.baidu.com##.spreadad
+!侧边栏
 tieba.baidu.com###aside_ad
 !对联
 tieba.baidu.com###j_ten_years
 tieba.baidu.com###j_worldcup_info_banner
+!tieba1_帖子
+||tieba.baidu.com/f/urlcheck?*
+!帖子顶部横幅
+tieba.baidu.com###pb_adbanner
+||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
+!帖子1楼底部游戏横幅
+||tieba.baidu.com/tb/cms/game_test/*
+tieba.baidu.com##.banner_post
+tieba.baidu.com##[id^="BAIDU_CLB_AD_"]
+!侧边栏
+tieba.baidu.com###union_mod
 !zhidao0|zhidao1|zhidao2
 ||static.tieba.baidu.com/tb/cms/img/tieba_index_banner*.png
 zhidao.baidu.com##div[class^="ad"]
@@ -422,16 +435,19 @@ drivers.mydrivers.com##.baidu_box
 !pv
 ||count*.pconline.com.cn^
 !---电脑之家
-||js-1.pchome.net^$script,domain=pchome.net|kdslife.com
-||btn.pchome.net^$domain=pchome.net
-pchome.net,kdslife.com##[class^="ad"]
+||js-1.pchome.net^$script
+pchome.net,kdslife.com##[id^="ad"]
 !---宽带山
 @@||js-1.pchome.net/*/ipub/$script,domain=kdslife.com
+||btn.pchome.net^
+kdslife.com##[id^="AD"]
+kdslife.com##.ad
 !---天极网
-||adsame.tianjimedia.com^$domain=yesky.com
-||media.tianjimedia.com^$domain=yesky.com
+||adsame.tianjimedia.com
 !---cnBeta
+cnbeta.com##.time
 cnbeta.com##.adsbygoogle
+cnbeta.com##.navi
 !招聘
 cnbeta.com##.cber:nth-child(7)
 !---IT之家
@@ -461,9 +477,9 @@ search.discuz.qq.com##.ad
 !--5d6d
 ||cache.soso.com/30d/js/discuz/relate_subject.js
 !---卡饭论坛
-bbs.kafan.cn##.header_gg
-bbs.kafan.cn##.a_f
-bbs.kafan.cn##.wp.gg
+kafan.cn##.header_gg
+kafan.cn##.a_f
+kafan.cn##.wp.gg
 !---精睿论坛
 bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
