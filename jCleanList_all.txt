@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: KZpjboO2r8PUWhRL9sBiag
-! Last modified: 21 Jun 2014 12:10 +0800
+! Checksum: MKEcUgZlCafs2pQK4H1A0A
+! Last modified: 21 Jun 2014 18:47 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -304,17 +304,10 @@ qq.com##.l_qq_com
 qq.com##.mian-ad
 qq.com##.ad-box
 !板块分页顶部
-qq.com##.phone_ad_960
 tech.qq.com##.kjad2
-finance.qq.com,auto.qq.com###topAd
+finance.qq.com###topAd
 !体育/娱乐/数码/时尚/汽车等板块顶部通用
 qq.com##[id$="_ad"]
-!子页顶部通用
-qq.com##.AdTop-Article-QQ
-!子页底部通用
-qq.com##.AdBox-Article-QQ,.qiye-Article-QQ
-qq.com##.business-Article-QQ
-auto.qq.com##.fbad-Article-QQ
 !评论顶部
 ||view.news.qq.com/PL_ad*.htm
 qq.com###PL_adT
@@ -382,7 +375,6 @@ zol.com.cn##[id^="ad-"]
 zol.com.cn##.winbox
 !子页
 ||img.zol-img.com/compare/ad/*
-||icon.zol-img.com.cn/public/js/web_foot.js
 zol.com.cn##.hot_tj
 !pv
 ||ca.cbsi.com.cn^
@@ -746,6 +738,8 @@ iqiyi.com###ad-left-tl
 ||livew.l.qq.com/livemsg?*
 ||ra.gtimg.com/adsame/
 v.qq.com##.mod_ad
+!http://www.qq.com/coral/coralVideo/coralCommentNew.htm
+www.qq.com###advertisement
 !---乐视
 */letv-web/*
 !pv
