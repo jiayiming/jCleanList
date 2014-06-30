@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: MKEcUgZlCafs2pQK4H1A0A
-! Last modified: 21 Jun 2014 18:47 +0800
+! Checksum: y7NuyGfzVqU7B44w/fH1rg
+! Last modified: 30 Jun 2014 22:02 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -194,6 +194,8 @@ http://stat.
 ||hm.baidu.com^
 ||nsclick.baidu.com^
 ||sclick.baidu.com^
+||webclick.baidu.com^
+||imgstat.baidu.com^
 !分享
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---TX
@@ -242,7 +244,8 @@ www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 ||a.baidu.com
 !搜索+推广
 www.baidu.com###content_right
-!news_All
+!image_All
+image.baidu.com###relEcom
 !tieba_All
 !pv
 ||static.tieba.baidu.com/tb/img/hive.gif*
@@ -266,6 +269,7 @@ tieba.baidu.com###j_ten_years
 tieba.baidu.com###j_worldcup_info_banner
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
+||s1.bdstatic.com/r/www/cache/baidu_search/*
 !帖子顶部横幅
 tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
@@ -311,6 +315,9 @@ qq.com##[id$="_ad"]
 !评论顶部
 ||view.news.qq.com/PL_ad*.htm
 qq.com###PL_adT
+!世界杯
+||mat1.gtimg.com/2014/webtips/ola2014tips*.js
+2014.qq.com##tipsAll
 !---SOSO
 ||rh.qq.com/afc.js
 wenwen.soso.com##.ad1
@@ -477,17 +484,18 @@ bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
 bbs.vc52.cn##.a_pb
 !---远景论坛
-bbs.pcbeta.com##div[style*="width:980px;"]
+||static.cdn.pcbeta.com/static/image/*_banner.png
+bbs.pcbeta.com##.forum_top + div[class]:last-child
+bbs.pcbeta.com###diynavtop + style + div[class]
 bbs.pcbeta.com##div[style*="width:960px;height:91px;"]
 bbs.pcbeta.com###sitefocus
-!---机锋网
-||cdn*.image.apk.gfan.com/asdf/*
-bbs.gfan.com##.a_h
-bbs.gfan.com##[id^="div-gpt-ad-"]
-!每楼底部
-bbs.gfan.com##.a_pb
-!搜索
-so.gfan.com##.ad
+!---机锋市场
+apk.gfan.com##DIV[style="width:960px;height:90px;margin-top:10px;"]
+!---机锋论坛
+bbs.gfan.com##.wpp
+!每页一楼底部
+bbs.gfan.com##.plc.plm>a[href*="apk.gfan.com"]
+bbs.gfan.com##.ad
 !---拇指玩
 muzhiwan.com###sitefocus
 muzhiwan.com###focus
@@ -504,6 +512,7 @@ bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>d
 bbs.weiphone.com##.wea_d_panel_980
 !---游侠网
 ||bmp.ali213.net/JS/*.js
+||bmp1.ali213.net/JS/*.js
 !---3DM游戏论坛
 ||att.3dmgame.com/att/common/cf/*
 !---EZ 游戏社区
@@ -810,8 +819,13 @@ acfun.com##[id^="ad-"]
 !---17173游戏视频
 ||v.17173cdn.com/upload/vlog/*.swf
 !---爱拍
-||apas.aipai.com/www/images/
-/common/js/pop_dialog.js$domain=aipai.com
+||aipai.com/rsd/
+||aipai.com/app/www/*/ADPlayer*.swf
+aipai.com##.pmp_random
+aipai.com###pm_rush
+aipai.com###pm_mod_pic
+aipai.com###baidu_gg
+aipai.com###cmt_slnew
 !---激动网
 ||86file.megajoy.com
 !---爆米花网
@@ -955,7 +969,6 @@ userstyles.org##.ad
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---酷安网
-||image.coolapk.com/apk_logo/*/10001_*$image
 ||image.coolapk.com/group/2014/0409/10002_*$image
 coolapk.com##[data-for="apkUpdateBox"]
 !---京东商城
@@ -980,6 +993,9 @@ expreview.com##.banner
 17173.com##[class^="ad-pn"]
 !首页页游隐藏
 17173.com##.box-daily
+!右下角视窗
+||p*.v.17173cdn.com/tfrquk/YWxqaGBf/*.swf
+sohu.com,17173.com##.win17173
 !视频
 ||v.17173.com/x/*
 !pv
@@ -1025,7 +1041,6 @@ yzz.cn##.ad200x340
 ||gamersky.com/pt3/
 ||gamersky.com/img/
 ||gamersky.com/frame/
-||assets.changyan.sohu.com/upload/changyan.js
 ||xihawan8.com^$third-party
 !背景
 ||gamersky.com/bgpic/*
