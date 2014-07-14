@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 1FW7WTf/xRvUUL+wGMA/sA
-! Last modified: 14 Jul 2014 20:58 +0800
+! Checksum: wpf0E62RDBx9xTwZuBFAiA
+! Last modified: 14 Jul 2014 21:07 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -808,7 +808,7 @@ v.ku6.com##[class^="aa_"]
 ||acs.56.com
 !------------------------------------
 !---嗶哩嗶哩
-@@||bilibili.com/sppage/ad-recommend
+@@||bilibili.com/sppage/ad-*$xmlhttprequest
 */html/*$domain=bilibili.tv|bilibili.com|bilibili.kankanews.com|bilibili.smgbb.cn
 ||static.hdslb.com/ad-images/*
 ||hdslb.com/u_user/*$object-subrequest
