@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: wpf0E62RDBx9xTwZuBFAiA
-! Last modified: 14 Jul 2014 21:07 +0800
+! Checksum: 8Ythi2x2Ml/SDrSB/EtMxA
+! Last modified: 20 Jul 2014 10:12 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -257,10 +257,15 @@ tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
 !tieba0_帖子列表
 !顶部游戏
+||tieba.baidu.com/tb/cms/game/*_banner.jpg
 ||tb1.bdstatic.com/tb/cms/frs/game/*
 ||tb1.bdstatic.com/tb/zt/tengfei/*
 tieba.baidu.com##.game_frs_in_head
-tieba.baidu.com##.dialogJ.worldcup_info_banner_dialog
+!顶部视频互动
+||image.cache.xiu8.com^$domain=tieba.baidu.com
+tieba.baidu.com##.per_list.j_per_list.per_list_frs
+!嘉年华按钮
+tieba.baidu.com##.j_tbnav_tab.tbnav_tab_list
 !列表内推广贴
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##.spreadad
@@ -321,10 +326,6 @@ qq.com##[id$="_ad"]
 qq.com###PL_adT
 !世界杯
 ||mat1.gtimg.com/2014/webtips/ola2014tips*.js
-2014.qq.com##tipsAll
-!---SOSO
-||rh.qq.com/afc.js
-wenwen.soso.com##.ad1
 !---网易
 ||img1.126.net^
 ||img2.126.net^
@@ -727,6 +728,8 @@ ys168.com###zdy_wz0
 !---优酷
 @@||valf.atm.youku.com^
 youku.com##div[id^="ab_"]
+!首页右侧延迟加载侧栏
+||static.youku.com/*/index/*/sideTool.*
 !pv
 ||l.yk.com
 ||hz.youku.com^
@@ -809,11 +812,10 @@ v.ku6.com##[class^="aa_"]
 !------------------------------------
 !---嗶哩嗶哩
 @@||bilibili.com/sppage/ad-*$xmlhttprequest
-*/html/*$domain=bilibili.tv|bilibili.com|bilibili.kankanews.com|bilibili.smgbb.cn
+||bilibili.com/html/*
 ||static.hdslb.com/ad-images/*
 ||hdslb.com/u_user/*$object-subrequest
 ||acg.tv^$third-party
-bilibili.tv,bilibili.com,bilibili.kankanews.com,bilibili.smgbb.cn##.ad-f
 !---AcFun
 acfun.com##[id^="ad-"]
 !---风云直播
@@ -947,14 +949,25 @@ xxsy.net##.bigbanner1
 ||cj.qidian.com^
 ||script.cmfu.com/ADScript/*
 ||qidian.com/javascript/SNDAADAltern.js
-||qdmm.com/javascript/NewSNDAPop.js
+||uedas.qidian.com^
 !首页
 www.qidian.com##[class^="gg"]
+!对联
+qidian.com##[id^="DoublePop_"]
+!顶部游戏
+qidian.com##.top_game_info
 !书页
 qidian.com##[class^="show_ggpic"]
 !目录页
 !阅读页
-||ku6.com^$domain=qidian.com
+read.qidian.com##.game_info
+!---起点女生网
+||o.if.qdmm.com/js/o.js
+||qdmm.com/javascript/NewSNDAPop.js
+||qdmm.com/javascript/SNDAADAltern.js
+||uedas.qdmm.com^
+!对联
+qdmm.com##[id$="_3g_20140303"]
 !---红袖添香
 ||pic.hongxiu.com/fox/hx/*
 hongxiu.com##.wrapper_mod[style="height:60px;"]
