@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: GoNmQ9KQSzE/YaYPR5vIGg
-! Last modified: 26 Jul 2014 13:54 +0800
+! Checksum: MZwjpfvBqxOo2JyEMDPUBQ
+! Last modified: 26 Jul 2014 14:08 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -326,8 +326,6 @@ qq.com##[id$="_ad"]
 !评论顶部
 ||view.news.qq.com/PL_ad*.htm
 qq.com###PL_adT
-!世界杯
-||mat1.gtimg.com/2014/webtips/ola2014tips*.js
 !---网易
 ||img1.126.net^
 ||img2.126.net^
