@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: MZwjpfvBqxOo2JyEMDPUBQ
-! Last modified: 26 Jul 2014 14:08 +0800
+! Checksum: qgckVugfCUoJhng79Jew9w
+! Last modified: 26 Jul 2014 14:21 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -1025,8 +1025,8 @@ sohu.com,17173.com##.win17173
 ||yeyou.com/2013/new/yeyou-float-window.js
 !---766
 ||get.766.com^
+||manads.static.olcdn.com/js/*
 ||static.766.com/a/windows/float.js
-766.com##.abox
 766.com##[class^="abox"]
 !子页
 766.com###banner_top
@@ -1040,6 +1040,8 @@ duowan.com##.promot-box
 duowan.com##.ad
 !子页右下角漂浮
 duowan.com###livetip-wrap
+!pv
+||stats.766.com/stats.js
 !多玩乐视视频
 ||untitled.dwstatic.com/fodder/*$object-subrequest
 !论坛
