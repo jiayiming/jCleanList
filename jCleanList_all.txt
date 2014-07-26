@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 8Ythi2x2Ml/SDrSB/EtMxA
-! Last modified: 20 Jul 2014 10:12 +0800
+! Checksum: GoNmQ9KQSzE/YaYPR5vIGg
+! Last modified: 26 Jul 2014 13:54 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -187,6 +187,7 @@ http://stat.
 */count.js
 |http://*/c.gif
 |http://*/1.gif
+@@||count.tbcdn.cn^
 !---Google
 ||google-analytics.com/urchin.js
 ||google-analytics.com/ga.js
@@ -269,6 +270,7 @@ tieba.baidu.com##.j_tbnav_tab.tbnav_tab_list
 !列表内推广贴
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##.spreadad
+tieba.baidu.com##[id^="dasense_"]
 !侧边栏
 tieba.baidu.com###aside_ad
 !对联
@@ -688,9 +690,7 @@ weibo.com##[feedtype="ad"]
 ||s.renren.com^
 ||xnimg.cn^*/beacon.js
 !--百度云
-!下载页右侧招聘
-||pan.baidu.com/res/*/zhaopin.jpg
-pan.baidu.com###share_ad_info_panl
+||pups.baidu.com/advert/*
 !---115网盘
 ||static.115img.com/static/delivery/
 !---华为网盘
@@ -728,8 +728,6 @@ ys168.com###zdy_wz0
 !---优酷
 @@||valf.atm.youku.com^
 youku.com##div[id^="ab_"]
-!首页右侧延迟加载侧栏
-||static.youku.com/*/index/*/sideTool.*
 !pv
 ||l.yk.com
 ||hz.youku.com^
@@ -889,6 +887,7 @@ crsky.com##.mirror-adr>span[style^="float:right;padding-right:5px;"]
 xdowns.com##.co_content52
 !---下载吧
 ||www.xiazaiba.com/data/xzb_haha.js
+xiazaiba.com##.test-90
 !---汉化新世纪
 ||hanzify.org/*/a-d-s/*$domain=hanzify.org
 *www.90hao.com$domain=hanzify.org
@@ -980,6 +979,8 @@ www.ya55.com###adtop
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
+!---腾讯邮箱
+||stockweb.mail.qq.com/lview?*
 !---userscripts.org
 ||coinurl.com^$third-party
 !---userstyles.org
@@ -989,6 +990,8 @@ userstyles.org##.ad
 !---酷安网
 ||image.coolapk.com/group/2014/0409/10002_*$image
 coolapk.com##[data-for="apkUpdateBox"]
+!---淘宝网
+item.taobao.com###J_toolbar
 !---京东商城
 ||fa.jd.com^
 ||fa.360buy.com
