@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: qgckVugfCUoJhng79Jew9w
-! Last modified: 26 Jul 2014 14:21 +0800
+! Checksum: TByAoQ6S2UPF4UI1dqdfKg
+! Last modified: 27 Jul 2014 14:27 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -526,9 +526,11 @@ bbs.emu-zone.org##font[style="font-size:0px;color:#FFFFFF"]
 ||vista.tgbusdata.cn^
 ||tgbus.com/sf/taobao/*
 tgbus.com##.a760x100
-tgbus.com##[class^="a200x"]
+tgbus.com##.a200x375
 tgbus.com##[class^="ad"]
 psp.tgbus.com###neck_970
+!子页侧边栏推荐视频
+tgbus.com##.appe>.video
 !游戏下载页面
 ||ol.tgbus.com/iframe/tu/index_down.html
 games.tgbus.com##[style*="width: 960px;height:90px;"]
