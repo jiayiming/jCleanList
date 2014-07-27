@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: TByAoQ6S2UPF4UI1dqdfKg
-! Last modified: 27 Jul 2014 14:27 +0800
+! Checksum: Mk8CT9fu2HxmdEVXrZ9RqA
+! Last modified: 27 Jul 2014 14:51 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -181,6 +181,7 @@
 |http://*/tj.js
 |http://*/pv.*
 |http://pv.*
+||dwtrack.*^
 |http://track.
 http://stat.
 |http://count.
@@ -927,9 +928,12 @@ jjwxc.net##DIV[style="height: 90px;"]
 !pv
 |http://*/*.ca*$domain=jjwxc.net
 !---小说阅读网
-||readnovel.com/js/$domain=readnovel.com
-!书页+女生版首页
-readnovel.com##DIV[style*="width: 950px; height: 90px;"]
+||readnovel.com/js/*
+!书简介页面
+readnovel.com##.w740>.introPanel + div
+readnovel.com###manhuazhi
+!书目录
+readnovel.com##.ML_banner
 !---潇湘书院
 ||images.xxsy.net/js/guanggao/*
 ||images.xxsy.net/js/xxsypop.js
@@ -942,7 +946,7 @@ xxsy.net##.sider_banner
 xxsy.net###interact>.list
 xxsy.net##.rightbanner
 xxsy.net###movebooks
-!书章节列表
+!书章节列表+书正文
 xxsy.net##.bigbanner1
 !---起点中文小说网
 ||cj.qidian.com^
