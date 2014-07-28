@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: DoylUGgn5CQRU9mLTZK42Q
-! Last modified: 28 Jul 2014 19:52 +0800
+! Checksum: Z1jVP3SNRENTCY3qNou8KA
+! Last modified: 28 Jul 2014 23:43 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -914,13 +914,16 @@ itopdog.cn##.ad728
 !---pc6下载站
 ||pc6.com/js/un/*
 ||pc6.com/js/html/*
-||show.qx15.com^
+||pc6.com/qq2010/250.html
+||show.68ti.com^
 !---未来软件站
 ||orsoon.com/orsoon/*
 orsoon.com###youxi
 orsoon.com###adsmid
 !----当下软件园
 ||downxia.com/zejs/*
+!---飘荡软件
+||piaodown.com/other/*
 !---晋江言情小说网
 ||jjwxc.net/jjad*html$popup,domain=jjwxc.net
 !首页顶部
@@ -930,8 +933,6 @@ jjwxc.net##table[style*="width:984px;height:92px;"]
 jjwxc.net##[id^="adp_jjwxc"]
 !阅读页顶部横幅
 jjwxc.net##DIV[style="height: 90px;"]
-!pv
-|http://*/*.ca*$domain=jjwxc.net
 !---小说阅读网
 ||readnovel.com/js/*
 !书简介页面
