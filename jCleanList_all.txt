@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Mk8CT9fu2HxmdEVXrZ9RqA
-! Last modified: 27 Jul 2014 14:51 +0800
+! Checksum: DoylUGgn5CQRU9mLTZK42Q
+! Last modified: 28 Jul 2014 19:52 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -535,6 +535,8 @@ tgbus.com##.appe>.video
 !游戏下载页面
 ||ol.tgbus.com/iframe/tu/index_down.html
 games.tgbus.com##[style*="width: 960px;height:90px;"]
+!论坛帖子右侧
+bbs.tgbus.com##.a_pr
 !---A9VG电玩部落
 *bbs.a9vg.com/showit*
 bbs.a9vg.com###a9_show
@@ -692,6 +694,8 @@ weibo.com##[feedtype="ad"]
 ||xnimg.cn^*/beacon.js
 !--百度云
 ||pups.baidu.com/advert/*
+!pv
+||*monitor.jpg?xcode
 !---115网盘
 ||static.115img.com/static/delivery/
 !---华为网盘
@@ -734,6 +738,7 @@ youku.com##div[id^="ab_"]
 ||hz.youku.com^
 ||static.youku.com/*/paycenter/*$script
 !---土豆
+||js.tudouui.com/bin/lingtong/app
 ||stat*.tudou.com^
 !pv
 ||lstat.youku.com^$third-party
