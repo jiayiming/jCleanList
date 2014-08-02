@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Z1jVP3SNRENTCY3qNou8KA
-! Last modified: 28 Jul 2014 23:43 +0800
+! Checksum: Sub+lMWQNmKYy0SD6YPBgw
+! Last modified: 02 Aug 2014 13:30 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -474,7 +474,7 @@ bbs.csdn.net###Topic_Top
 !---腾讯各类游戏论坛
 ||ossweb-img.qq.com^$domain=gamebbs.qq.com
 !--Discuz
-*/data/attachment/common/cf/*
+*/common/cf/*
 */data/attachment/common/ad/*
 search.discuz.qq.com##.ad
 !--PHPWind
@@ -575,6 +575,9 @@ bbs.wuyou.com##.a_t
 !---数码之家
 ||img.mydigit.net/advpic/*
 bbs.mydigit.cn##.radio.mb10
+!---52pojie
+52pojie.cn##.a_pt
+52pojie.cn##.a_pb
 !---iMP3随身影音论坛
 ||imp3.net/data/js/$script
 !---耳机大家坛
@@ -693,7 +696,7 @@ weibo.com##[feedtype="ad"]
 ||s.renren.com^
 ||xnimg.cn^*/beacon.js
 !--百度云
-||pups.baidu.com/advert/*
+||pups.bdimg.com/advert/*
 !pv
 ||*monitor.jpg?xcode
 !---115网盘
@@ -904,8 +907,10 @@ hanzify.org##.categorypickdown
 /\/wp-content\/(?:[^\.\/]*?\.\w|sinceshop)/$domain=www.appinn.com
 @@||appinn.com^*down.gif|
 ||ax-d.pixfuture.net^$third-party
-||img3.appinn.com/images/201406/licaifan.jpg
+||img5.appinn.com/images/201407/lcf.png
+||taobaocdn.com/imgextra/$domain=appinn.com
 appinn.com##.ads
+appinn.com##.adsbygoogle
 !---软件盒子
 itopdog.cn##.widget_itopdog_ad
 itopdog.cn##.ad728
@@ -1057,6 +1062,7 @@ duowan.com###livetip-wrap
 !多玩乐视视频
 ||untitled.dwstatic.com/fodder/*$object-subrequest
 !论坛
+||att.bbs.duowan.com/forum/201408/01/214650vqvx6f6fqs5xuz1u.jpg
 ||img.dwstatic.com/www/$domain=bbs.duowan.com
 ||img.dwstatic.com/shouyou/
 bbs.duowan.com##.a_pb
