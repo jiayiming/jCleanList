@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Sub+lMWQNmKYy0SD6YPBgw
-! Last modified: 02 Aug 2014 13:30 +0800
+! Checksum: TGHYLP8MC7NR5LHQ9m8n4w
+! Last modified: 04 Aug 2014 06:56 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -960,12 +960,15 @@ xxsy.net###movebooks
 !书章节列表+书正文
 xxsy.net##.bigbanner1
 !---起点中文小说网
+||a.game.qidian.com^
 ||cj.qidian.com^
 ||script.cmfu.com/ADScript/*
 ||qidian.com/javascript/SNDAADAltern.js
 ||uedas.qidian.com^
 !首页
+||qidian.com/ploy/july01/*
 www.qidian.com##[class^="gg"]
+qidian.com##div[style*="width:375px;height:63px;"]
 !对联
 qidian.com##[id^="DoublePop_"]
 !顶部游戏
