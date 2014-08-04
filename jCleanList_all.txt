@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: TGHYLP8MC7NR5LHQ9m8n4w
-! Last modified: 04 Aug 2014 06:56 +0800
+! Checksum: 30JWLzDOdDNBBo87i3Ensw
+! Last modified: 04 Aug 2014 22:53 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -258,16 +258,18 @@ image.baidu.com###relEcom
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
 !tieba0_帖子列表
+!T豆提示框
+tieba.baidu.com##.ui_card_wrap.doupiao_offline
 !顶部游戏
 ||tieba.baidu.com/tb/cms/game/*_banner.jpg
 ||tb1.bdstatic.com/tb/cms/frs/game/*
 ||tb1.bdstatic.com/tb/zt/tengfei/*
 tieba.baidu.com##.game_frs_in_head
+!顶部UUU9游戏
+tieba.baidu.com##.u9_head.clearfix
 !顶部视频互动
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
 tieba.baidu.com##.per_list.j_per_list.per_list_frs
-!嘉年华按钮
-tieba.baidu.com##.j_tbnav_tab.tbnav_tab_list
 !列表内推广贴
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##.spreadad
@@ -276,7 +278,6 @@ tieba.baidu.com##[id^="dasense_"]
 tieba.baidu.com###aside_ad
 !对联
 tieba.baidu.com###j_ten_years
-tieba.baidu.com###j_worldcup_info_banner
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
 ||s1.bdstatic.com/r/www/cache/baidu_search/*
@@ -290,7 +291,6 @@ tieba.baidu.com##[id^="BAIDU_CLB_AD_"]
 !侧边栏
 tieba.baidu.com###union_mod
 !zhidao0|zhidao1|zhidao2
-||static.tieba.baidu.com/tb/cms/img/tieba_index_banner*.png
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com##.wgt-ads
 !zhidao2侧边栏
@@ -824,7 +824,7 @@ v.ku6.com##[class^="aa_"]
 ||hdslb.com/u_user/*$object-subrequest
 ||acg.tv^$third-party
 !---AcFun
-acfun.com##[id^="ad-"]
+acfun.tv##[id^="ad-"]
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
