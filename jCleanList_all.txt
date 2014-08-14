@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 30JWLzDOdDNBBo87i3Ensw
-! Last modified: 04 Aug 2014 22:53 +0800
+! Checksum: 52Fs/oYz9h1qLFihpaK+nQ
+! Last modified: 15 Aug 2014 06:49 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -232,6 +232,7 @@ http://stat.
 ||hitslink.com^$third-party
 ||imrworldwide.com^$third-party
 ||linezing.com^$third-party
+||mmstat.com^$third-party
 ||users.51.la^$third-party
 ||v2.jiathis.com^$third-party
 ||wrating.com^$third-party
@@ -261,19 +262,16 @@ tieba.baidu.com##.pc2client
 !T豆提示框
 tieba.baidu.com##.ui_card_wrap.doupiao_offline
 !顶部游戏
-||tieba.baidu.com/tb/cms/game/*_banner.jpg
-||tb1.bdstatic.com/tb/cms/frs/game/*
-||tb1.bdstatic.com/tb/zt/tengfei/*
 tieba.baidu.com##.game_frs_in_head
-!顶部UUU9游戏
+!顶部yoyojie&UUU9游戏
+||upload.yoyojie.com^$domain=tieba.baidu.com
+||ka.uuu9.com/admin/Public/$domain=tieba.baidu.com
 tieba.baidu.com##.u9_head.clearfix
-!顶部视频互动
-||image.cache.xiu8.com^$domain=tieba.baidu.com
-tieba.baidu.com##.per_list.j_per_list.per_list_frs
 !列表内推广贴
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##.spreadad
 tieba.baidu.com##[id^="dasense_"]
+tieba.baidu.com##.qipai_thread
 !侧边栏
 tieba.baidu.com###aside_ad
 !对联
@@ -282,6 +280,7 @@ tieba.baidu.com###j_ten_years
 ||tieba.baidu.com/f/urlcheck?*
 ||s1.bdstatic.com/r/www/cache/baidu_search/*
 !帖子顶部横幅
+tieba.baidu.com##.l_banner
 tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
 !帖子1楼底部游戏横幅
@@ -994,6 +993,7 @@ hongxiu.com##.wrapper_mod[style="height:90px;"]
 !---雅文言情小说吧
 www.ya55.com###adtop
 
+!---178
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
@@ -1063,7 +1063,7 @@ duowan.com###livetip-wrap
 !pv
 ||stats.766.com/stats.js
 !多玩乐视视频
-||untitled.dwstatic.com/fodder/*$object-subrequest
+||untitled.dwstatic.com^
 !论坛
 ||att.bbs.duowan.com/forum/201408/01/214650vqvx6f6fqs5xuz1u.jpg
 ||img.dwstatic.com/www/$domain=bbs.duowan.com
@@ -1071,7 +1071,10 @@ duowan.com###livetip-wrap
 bbs.duowan.com##.a_pb
 !---178
 ||market.178.com^
-178.com##[class^="ad"]
+||178.com/glr.js
+||acg.178.com^*/t_$subdocument,domain=~dmzj.com
+!pv
+/atcount.php?$domain=178.com
 !每日推荐+收藏提示
 ||178.com/s/js/tg178.js
 !---艾泽拉斯国家地理论坛
