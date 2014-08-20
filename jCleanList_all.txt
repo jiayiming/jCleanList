@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 52Fs/oYz9h1qLFihpaK+nQ
-! Last modified: 15 Aug 2014 06:49 +0800
+! Checksum: LYUJ5l8CaH3YKH2eAtlCXw
+! Last modified: 21 Aug 2014 00:04 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -267,6 +267,9 @@ tieba.baidu.com##.game_frs_in_head
 ||upload.yoyojie.com^$domain=tieba.baidu.com
 ||ka.uuu9.com/admin/Public/$domain=tieba.baidu.com
 tieba.baidu.com##.u9_head.clearfix
+!顶部视频互动
+||image.cache.xiu8.com^$domain=tieba.baidu.com
+tieba.baidu.com##.per_list.j_per_list.per_list_frs
 !列表内推广贴
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##.spreadad
@@ -735,8 +738,8 @@ ys168.com###zdy_wz0
 !---优酷
 @@||valf.atm.youku.com^
 youku.com##div[id^="ab_"]
+soku.com##div[id^="ab_"]
 !pv
-||l.yk.com
 ||hz.youku.com^
 ||static.youku.com/*/paycenter/*$script
 !---土豆
@@ -755,11 +758,9 @@ iqiyi.com###ad-left-tl
 ||msg.video.qiyi.com^
 ||static.iqiyi.com/js/pingback/*
 !---腾讯视频
-!||l.qq.com/lview?
 ||livew.l.qq.com/livemsg?*
 ||ra.gtimg.com/adsame/
 v.qq.com##.mod_ad
-!http://www.qq.com/coral/coralVideo/coralCommentNew.htm
 www.qq.com###advertisement
 !---乐视
 */letv-web/*
@@ -1059,16 +1060,16 @@ sohu.com,17173.com##.win17173
 duowan.com##.promot-box
 duowan.com##.ad
 !子页右下角漂浮
-duowan.com###livetip-wrap
+duowan.com##.dw-live-tips__bd
 !pv
 ||stats.766.com/stats.js
 !多玩乐视视频
 ||untitled.dwstatic.com^
 !论坛
-||att.bbs.duowan.com/forum/201408/01/214650vqvx6f6fqs5xuz1u.jpg
 ||img.dwstatic.com/www/$domain=bbs.duowan.com
 ||img.dwstatic.com/shouyou/
 bbs.duowan.com##.a_pb
+bbs.duowan.com##.a_pr
 !---178
 ||market.178.com^
 ||178.com/glr.js
