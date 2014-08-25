@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: b3pJZ0YTT+TuYe9rzfzbnQ
-! Last modified: 21 Aug 2014 19:22 +0800
+! Checksum: AjLuzsRoxU3j7jcEqrcYRQ
+! Last modified: 26 Aug 2014 06:57 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -261,13 +261,10 @@ image.baidu.com###relEcom
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
 !tieba0_帖子列表
-!T豆提示框
-tieba.baidu.com##.ui_card_wrap.doupiao_offline
-!顶部游戏
-tieba.baidu.com##.game_frs_in_head
+!顶部最新游戏横幅
+||tieba.baidu.com/tb/cms/game/*_banner*$image
 !顶部yoyojie&UUU9游戏
 ||upload.yoyojie.com^$domain=tieba.baidu.com
-||ka.uuu9.com/admin/Public/$domain=tieba.baidu.com
 tieba.baidu.com##.u9_head.clearfix
 !顶部视频互动
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
@@ -276,7 +273,6 @@ tieba.baidu.com##.per_list.j_per_list.per_list_frs
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##.spreadad
 tieba.baidu.com##[id^="dasense_"]
-tieba.baidu.com##.qipai_thread
 !侧边栏
 tieba.baidu.com###aside_ad
 !对联
