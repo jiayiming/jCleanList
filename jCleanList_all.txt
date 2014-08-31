@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: AjLuzsRoxU3j7jcEqrcYRQ
-! Last modified: 26 Aug 2014 06:57 +0800
+! Checksum: Zo1PSNEw4DAGGpoUhqAsbw
+! Last modified: 31 Aug 2014 14:01 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -10,7 +10,6 @@
 !----MIT Licensed, NO WARRANTY but Best Wishes----
 
 !通用广告猜测
-/[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
 /\/[^\?\#=%]*(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
 |http://*/gg/*
@@ -28,6 +27,8 @@
 @@||static.youku.com/v1.*/index/js/popup.js
 !http://www.iqiyi.com/v_19rrmisqt8.html
 @@|http://*/ad/*.f4v?*
+http://www.iqiyi.com/v_19rrmn0guc.html
+||www.iqiyi.com/common/flashplayer/*/MainPlayer_*_ad*.swf
 @@||tb1.bdstatic.com/*float*.js$script
 @@||tb1.bdstatic.com/*ad*.js
 @@||im.baidu.com/popup/popup.js*
@@ -605,6 +606,7 @@ dzh.mop.com##.adarea_top
 ||share.dmhy.org/*.gif?$image
 ||share.dmhy.org/*.png?$image
 ||share.dmhy.org/shareman*$image
+share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
 ||bt.ktxp.com/iframe/show_kkkmh.js
