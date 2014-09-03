@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Zo1PSNEw4DAGGpoUhqAsbw
-! Last modified: 31 Aug 2014 14:01 +0800
+! Checksum: sPSz7MTrTSriFGMstRhHwg
+! Last modified: 03 Sep 2014 23:58 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -10,6 +10,7 @@
 !----MIT Licensed, NO WARRANTY but Best Wishes----
 
 !通用广告猜测
+/[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
 /\/[^\?\#=%]*(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
 |http://*/gg/*
