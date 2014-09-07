@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: sPSz7MTrTSriFGMstRhHwg
-! Last modified: 03 Sep 2014 23:58 +0800
+! Checksum: QSBERSlBcNjh/rRI76Sbrg
+! Last modified: 07 Sep 2014 16:40 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -1088,8 +1088,7 @@ yzz.cn##.ad200x340
 ||gamersky.com/ad/
 ||gamersky.com/pt3/
 ||gamersky.com/img/
-||gamersky.com/frame/
-||xihawan8.com^$third-party
+||g.badao37.com^$third-party
 !背景
 ||gamersky.com/bgpic/*
 gamersky.com###hitix
@@ -1099,13 +1098,17 @@ gamersky.com###hitix
 ||5y9nfpes.52pk.com^
 ||market.52pk.com/files/union/*
 !---脚本之家
-||img.jb51.net/imgby/*$domain=jb51.net
-jb51.net##.search
+||img.jb51.net/imgby/*
+jb51.net##[id^="tonglan"]
+jb51.net##.mainad
 jb51.net##.dxy230
+jb51.net###con_all
+jb51.net##.adsbygoogle
 !---豆丁
 ||docin.com/app/a_d/*
-||pics.wanlibo.com/js/pagemodulestat.js$domain=docin.com
-||docin.com/app/playerLoadLog/$domain=docin.com
+||pics.wanlibo.com/js/pagemodulestat.js*
+!跳过广告
+docin.com###beforeAd
 !---中国天气网
 weather.com.cn##[class^="adpos"]
 weather.com.cn##.post_st
