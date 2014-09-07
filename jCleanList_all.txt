@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: QSBERSlBcNjh/rRI76Sbrg
-! Last modified: 07 Sep 2014 16:40 +0800
+! Checksum: fp567VfxDAsAAqOzNM5VlQ
+! Last modified: 07 Sep 2014 16:49 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -976,7 +976,6 @@ qidian.com##[id^="DoublePop_"]
 qidian.com##.top_game_info
 !书页
 qidian.com##[class^="show_ggpic"]
-!目录页
 !阅读页
 read.qidian.com##.game_info
 !---起点女生网
@@ -987,13 +986,11 @@ read.qidian.com##.game_info
 !对联
 qdmm.com##[id$="_3g_20140303"]
 !---红袖添香
-||pic.hongxiu.com/fox/hx/*
-hongxiu.com##.wrapper_mod[style="height:60px;"]
-hongxiu.com##.wrapper_mod[style="height:90px;"]
-!---溜达TXT电子书论坛
-@@||liudatxt.com/js/simp2trad.js
-!---雅文言情小说吧
-www.ya55.com###adtop
+!---派派前后院
+||paipai.fm/bans/bd.htm*
+||paipai*/images/paipai/tgm.jpg
+||paipai*/images/paipai/gt*.jpg
+paipaitxt.com###pic_div
 
 !---178
 !---Gmail
