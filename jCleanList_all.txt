@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: fp567VfxDAsAAqOzNM5VlQ
-! Last modified: 07 Sep 2014 16:49 +0800
+! Checksum: TPdGkee830UA14HvFKNrRw
+! Last modified: 14 Sep 2014 15:30 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -33,6 +33,7 @@ http://www.iqiyi.com/v_19rrmn0guc.html
 @@||tb1.bdstatic.com/*float*.js$script
 @@||tb1.bdstatic.com/*ad*.js
 @@||im.baidu.com/popup/popup.js*
+@@||ry.tbcdn.cn/apps/ivy/*
 @@||dpfile.com/combos/*ad*.js
 
 !---通用广告联盟通用猜测
@@ -362,6 +363,8 @@ news.sina.com.cn###blk_xlzttltop_01
 sina.com.cn##.adNone
 !评论页
 sina.com.cn##.adBlock
+!---搜狗问问
+||p.inte.sogou.com/js/b.js
 !---搜狐
 sohu.com##[id^="ad_"]
 !新闻首页
@@ -459,8 +462,8 @@ cnbeta.com##.navi
 cnbeta.com##.cber:nth-child(7)
 !---IT之家
 ||ithome.com/block/*
-ithome.com##.site_ad
-ithome.com##.side_products.ulc.ball
+ithome.com###hl
+ithome.com##.con-recom
 !---CSDN
 ||csdn.net/*ggmm*
 ||counter.csdn.net^
@@ -515,8 +518,15 @@ ooomm.com##.a_mu
 !---塞班智能手机网
 bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder[style="width: 98%"],tr.t_infoline
 !---威锋网
-||aoodoo.weiphone.com^
-bbs.weiphone.com##.wea_d_panel_980
+||feng.com/aoodoo/
+!论坛logo修复
+@@||feng.com/aoodoo/view.php?what=zone:93
+@@||feng.com/aoodoo/images/*logo.png
+||aoodoo.feng.com^
+||feng.com/bbs_v4/index_treasure/
+||fengbuy.com/recommend-new.php
+bbs.feng.com##.wea_d_panel_980
+bbs.feng.com##.a_pb
 !---游侠网
 ||bmp.ali213.net/JS/*.js
 ||bmp1.ali213.net/JS/*.js
