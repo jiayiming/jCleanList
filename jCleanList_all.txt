@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: TPdGkee830UA14HvFKNrRw
-! Last modified: 14 Sep 2014 15:30 +0800
+! Checksum: 004boyPBwx0pgRf8MLFW4Q
+! Last modified: 21 Sep 2014 21:29 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -486,6 +486,7 @@ search.discuz.qq.com##.ad
 ||cs*.phpwind.com/apps.php?appname=ad*
 !--5d6d
 ||cache.soso.com/30d/js/discuz/relate_subject.js
+||toutiao.haotui.com/data/js/0.js
 !---卡饭论坛
 kafan.cn##.a_f
 kafan.cn##.wp.gg
@@ -830,7 +831,6 @@ v.ku6.com##[class^="aa_"]
 !------------------------------------
 !---嗶哩嗶哩
 @@||bilibili.com/sppage/ad-*$xmlhttprequest
-||bilibili.com/html/*
 ||static.hdslb.com/ad-images/*
 ||hdslb.com/u_user/*$object-subrequest
 ||acg.tv^$third-party
@@ -909,11 +909,12 @@ xdowns.com##.co_content52
 ||www.xiazaiba.com/data/xzb_haha.js
 xiazaiba.com##.test-90
 !---汉化新世纪
-||hanzify.org/*/a-d-s/*$domain=hanzify.org
-*www.90hao.com$domain=hanzify.org
+||hanzify.org/*/ak47/yingsu.jpg
 hanzify.org##.banner-leader-index
 hanzify.org##.section-title>span[style*="float:right;"]
 hanzify.org##.categorypickdown
+!---zd423
+||zdfans.com/webad/*
 !---小众软件
 /\/wp-content\/(?:[^\.\/]*?\.\w|sinceshop)/$domain=www.appinn.com
 @@||appinn.com^*down.gif|
@@ -922,16 +923,12 @@ hanzify.org##.categorypickdown
 ||taobaocdn.com/imgextra/$domain=appinn.com
 appinn.com##.ads
 appinn.com##.adsbygoogle
-!---软件盒子
-itopdog.cn##.widget_itopdog_ad
-itopdog.cn##.ad728
 !---飘荡软件
 ||piaodown.com/other/js/*
 !---pc6下载站
 ||pc6.com/js/un/*
 ||pc6.com/js/html/*
-||pc6.com/qq2010/250.html
-||show.68ti.com^
+pc6.com###topbanner2
 !---未来软件站
 ||orsoon.com/orsoon/*
 orsoon.com###youxi
