@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 6uia9ZXZ40GRoKgDOR6jFA
-! Last modified: 01 Oct 2014 13:15 +0800
+! Checksum: FwcJeYpM3RC2UslkdTrvFQ
+! Last modified: 05 Oct 2014 22:37 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -835,7 +835,7 @@ v.ku6.com##[class^="aa_"]
 !---嗶哩嗶哩
 @@||bilibili.com/sppage/ad-*$xmlhttprequest
 @@||bilibili.com/html/ads-index.js
-@@||i0.hdslb.com/sp/ad/ad*.jpg
+@@||hdslb.com/*/ad*.jpg
 ||acg.tv^$third-party
 bilibili.com##.adsbygoogle
 !---AcFun
