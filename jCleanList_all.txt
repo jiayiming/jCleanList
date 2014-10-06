@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: FwcJeYpM3RC2UslkdTrvFQ
-! Last modified: 05 Oct 2014 22:37 +0800
+! Checksum: 5kwvj3NBPx59UpMk9e7tog
+! Last modified: 06 Oct 2014 22:22 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -120,8 +120,10 @@ http://www.iqiyi.com/v_19rrmn0guc.html
 ||9w1an.com^$third-party
 ||a3p4.com^$third-party
 ||adkongjian.com^$third-party
+||admaji.com^$third-party
 ||adyun.com^$third-party
 ||adsame.com^$third-party
+||btyou.com^$third-party
 ||chanet.com.cn^$third-party
 ||chinaih.com^$third-party
 ||c1o1.com^$third-party
@@ -671,12 +673,14 @@ u17.com###rdpop
 ||google.com/afsonline/show_afs_search.js$domain=shooter.cn
 shooter.cn###googleSearchUnitIframe
 !---人人影视
-||weddingeeos.com^$third-party
-||admaji.com^$third-party
 ||res.yyets.com/ads/*
 ||copy.ousns.com^$domain=yyets.com
+||6rooms.com/live/$domain=yyets.com
 yyets.com##.adBox
 yyets.com##.block > .box_4:only-child
+!6room
+yyets.com##.games-rec-list
+yyets.com##DIV[style$="width:700px;overflow:hidden;"]
 !---CHD论坛
 !---MySilU论坛
 www.mysilu.com##.a_h,.a_t,.a_pt
