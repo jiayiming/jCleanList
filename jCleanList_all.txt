@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 5kwvj3NBPx59UpMk9e7tog
-! Last modified: 06 Oct 2014 22:22 +0800
+! Checksum: OhtSfAlydTyoZ+wTKLOUaQ
+! Last modified: 12 Oct 2014 00:12 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -106,6 +106,7 @@ http://www.iqiyi.com/v_19rrmn0guc.html
 ||37see.com^$third-party
 ||3dwwwgame.com^$third-party
 ||49ko.com^$third-party
+||565882.com^$third-party
 ||6dad.com^$third-party
 ||70e.com^$third-party
 ||778669.com^$third-party
@@ -685,11 +686,9 @@ yyets.com##DIV[style$="width:700px;overflow:hidden;"]
 !---MySilU论坛
 www.mysilu.com##.a_h,.a_t,.a_pt
 !---TorrenTGui
-/ttg[_-][^l][^\/]+\.[f-p]{3}/$domain=totheglory.im
-||totheglory.im/pic/fangtuo.jpg
-||totheglory.im/pic/playbill/*
+||totheglory.im/pic/1000.jpg
 !---老调网
-||pic9382.com^$third-party
+||lxting.com
 !---PT80
 pt80.net##.a_t
 pt80.net##.a_f
