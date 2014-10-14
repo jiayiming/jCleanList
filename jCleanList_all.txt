@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 4NdG5LtMg+Xt47dF4DN/Sg
-! Last modified: 14 Oct 2014 23:41 +0800
+! Checksum: bcvkNtXxkMP8WKb8DPBb4A
+! Last modified: 14 Oct 2014 23:43 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -28,8 +28,6 @@
 @@||static.youku.com/v1.*/index/js/popup.js
 !http://www.iqiyi.com/v_19rrmisqt8.html
 @@|http://*/ad/*.f4v?*
-http://www.iqiyi.com/v_19rrmn0guc.html
-||www.iqiyi.com/common/flashplayer/*/MainPlayer_*_ad*.swf
 @@||tb1.bdstatic.com/*float*.js$script
 @@||tb1.bdstatic.com/*ad*.js
 @@||im.baidu.com/popup/popup.js*
