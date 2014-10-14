@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: OhtSfAlydTyoZ+wTKLOUaQ
-! Last modified: 12 Oct 2014 00:12 +0800
+! Checksum: 4NdG5LtMg+Xt47dF4DN/Sg
+! Last modified: 14 Oct 2014 23:41 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -501,8 +501,8 @@ bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
 bbs.vc52.cn##.a_pb
 !---远景论坛
-||static.cdn.pcbeta.com/static/image/*_banner.png
-bbs.pcbeta.com##.forum_top + div[class]:last-child
+bbs.pcbeta.com##.forum_top + div + div[class]
+pcbeta.com##.forum_top ~ div[class]
 bbs.pcbeta.com###diynavtop + style + div[class]
 bbs.pcbeta.com##div[style*="width:960px;height:91px;"]
 bbs.pcbeta.com###sitefocus
@@ -582,6 +582,8 @@ we.poppur.com##.a_pt
 !---Chiphell
 ||chiphell.com/activity/*
 !---PCEVA
+!---恩山WIFI论坛
+||right.com.cn/logo/*.gif
 !---软媒论坛
 ||img.vista123.com/images/saayaa468.gif
 bbs.ithome.com###bbs_hl
