@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: bcvkNtXxkMP8WKb8DPBb4A
-! Last modified: 14 Oct 2014 23:43 +0800
+! Checksum: RkRTu9/5qNq45StrGSpN8w
+! Last modified: 18 Oct 2014 14:04 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -26,6 +26,8 @@
 @@||ossweb-img.qq.com/*/guanggao/*$image
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
+!http://www.iqiyi.com/v_19rrn5px64.html
+@@||www.iqiyi.com/*/MainPlayer_*ad*.swf
 !http://www.iqiyi.com/v_19rrmisqt8.html
 @@|http://*/ad/*.f4v?*
 @@||tb1.bdstatic.com/*float*.js$script
@@ -196,9 +198,7 @@ http://stat.
 |http://*/1.gif
 @@||count.tbcdn.cn^
 !---Google
-||google-analytics.com/urchin.js
-||google-analytics.com/ga.js
-||google-analytics.com/analytics.js
+||google-analytics.com^$third-party
 !---Baidu
 ||hm.baidu.com^
 ||nsclick.baidu.com^
@@ -265,14 +265,14 @@ image.baidu.com###relEcom
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
 !tieba0_帖子列表
-!顶部最新游戏横幅
-||tieba.baidu.com/tb/cms/game/*_banner*$image
 !顶部yoyojie&UUU9游戏
 ||upload.yoyojie.com^$domain=tieba.baidu.com
 tieba.baidu.com##.u9_head.clearfix
 !顶部视频互动
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
 tieba.baidu.com##.per_list.j_per_list.per_list_frs
+!置顶游戏广告贴
+tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##.spreadad
@@ -281,6 +281,9 @@ tieba.baidu.com##[id^="dasense_"]
 tieba.baidu.com###aside_ad
 !对联
 tieba.baidu.com###j_ten_years
+!右下角游戏漂浮
+||tieba.baidu.com/tb/cms/game_pop/*
+tieba.baidu.com###game_pop_window
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
 ||s1.bdstatic.com/r/www/cache/baidu_search/*
@@ -841,6 +844,8 @@ v.ku6.com##[class^="aa_"]
 @@||hdslb.com/*/ad*.jpg
 ||acg.tv^$third-party
 bilibili.com##.adsbygoogle
+!pv
+||dns-*.test.bilibili.cc^
 !---AcFun
 acfun.tv##[id^="ad-"]
 !---风云直播
@@ -1019,13 +1024,13 @@ userstyles.org##.ad
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---酷安网
-||image.coolapk.com/group/2014/0409/10002_*$image
-coolapk.com##[data-for="apkUpdateBox"]
 !---淘宝网
 item.taobao.com###J_toolbar
 !---京东商城
+||360buy.com/hotwords.aspx?position=A-index*
 ||fa.jd.com^
 ||fa.360buy.com
+||nfa.jd.com/loadFa.js*
 ||jprice.360buy.com/adslogan/*
 @@||ad.3.cn/ads/*
 !---玩家堂
