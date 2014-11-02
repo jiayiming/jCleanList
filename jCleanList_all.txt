@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: hUqVvm43DjwaefeXOKH8AA
-! Last modified: 29 Oct 2014 00:47 +0800
+! Checksum: Vm/1B3XGZuz71s7TLPW7yw
+! Last modified: 03 Nov 2014 00:24 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -183,6 +183,7 @@
 !---easy ad
 ||addelive.com^$third-party
 ||delivery45.com^$third-party
+||projectwonderful.com^$third-party
 !---testlist
 ||tbjfw.com^$third-party
 
@@ -482,15 +483,14 @@ ithome.com###hl
 ithome.com##.con-recom
 !---CSDN
 ||csdn.net/*ggmm*
-||counter.csdn.net^
-csdn.net##[class^="banner_top"]
+csdn.net##.box.hot
 csdn.net##[class^="ad_"]
-download.csdn.net##[id^="div-gpt-ad-"]
-!新闻页
-csdn.net##.ad_960
+!pv
+||counter.csdn.net^
+!下载页
+download.csdn.net##.AD
 !论坛
 ||bbs.csdn.net/sda/*.htm
-bbs.csdn.net###Topic_Top
 
 !---腾讯各类游戏论坛
 ||ossweb-img.qq.com^$domain=gamebbs.qq.com
@@ -1128,6 +1128,9 @@ gamersky.com###hitix
 !---52pk
 ||5y9nfpes.52pk.com^
 ||market.52pk.com/files/union/*
+!右下角漂浮
+||games.52pk.com/fuchuang/
+bns.52pk.com###swfiframe
 !---脚本之家
 ||img.jb51.net/imgby/*
 jb51.net##[id^="tonglan"]
@@ -1144,12 +1147,12 @@ docin.com###beforeAd
 weather.com.cn##[class^="adpos"]
 weather.com.cn##.post_st
 !---爱词霸
+iciba.com##.head_ad
 !右侧边栏
-||cdn.iciba.com/web/co/ci/*$domain=iciba.com
+||cdn.iciba.com/web/co/ci/*
+||popoi2.www.iciba.com/html/*
 !左侧漂浮
-||cdn.iciba.com/web/static/images/ezfm03.gif$domain=iciba.com
-!右下角漂浮
-||cdn.iciba.com/web/webpaopao/*$domain=iciba.com
+iciba.com###ezfm
 !---海词
 ||dict.dfile.cn/list/slots.php?callback*
 dict.cn###gadsv
