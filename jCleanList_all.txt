@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Vm/1B3XGZuz71s7TLPW7yw
-! Last modified: 03 Nov 2014 00:24 +0800
+! Checksum: XgBadsroVBiEQszTczyA7A
+! Last modified: 06 Nov 2014 23:17 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -27,7 +27,8 @@
 @@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
 !http://www.iqiyi.com/v_19rrn5px64.html
-@@||www.iqiyi.com/*/MainPlayer_*ad*.swf
+!http://v.pps.tv/play_3GUYV2.html
+@@||www.iqiyi.com/*MainPlayer_*ad*.swf
 !http://www.iqiyi.com/v_19rrmisqt8.html
 @@|http://*/ad/*.f4v?*
 @@||tb1.bdstatic.com/*float*.js$script
@@ -272,6 +273,8 @@ image.baidu.com###relEcom
 !itieba
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
+#iPhone提示广告条
+tieba.baidu.com##.wanle_tab_tip
 !烟花
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 !tieba0_帖子列表
@@ -658,17 +661,18 @@ sosg.net###read_promo_top
 sosg.net##.cc[style^="width:100%; height:280px;"]
 !SOS动漫单独修正
 sosg.net##.read_promo
-!---苍雪的世界
+!---緋月GALGAME
 !首页空白
-bbs.9gal.com###top80
-bbs.9gal.com##div[style^="width:640px;height:60px;"]
+bbs.9baka.com###top80
+bbs.9baka.com##div[style^="width:640px;height:60px;"]
 !帖子空白
-bbs.9gal.com##td[width="680"][height="50"]
+bbs.9baka.com##td[width="680"][height="50"]
 !---APTX柯南事务所
 bbs.aptx.cn##.a_pr
 !---天使动漫
-||poco.cn^$domain=tsdm.net
-tsdm.net##.a_pt
+||sinaimg.cn/*20q*.*$domain=tsdm.net
+||sinaimg.cn/*20r30230v3.jpg$domain=tsdm.net
+||sinaimg.cn/*20j*.jpg$domain=tsdm.net
 !---NyaaTorrents
 ||files.nyaa.se/a*.jpg
 !Pixiv
@@ -699,6 +703,7 @@ yyets.com##DIV[style$="width:700px;overflow:hidden;"]
 www.mysilu.com##.a_h,.a_t,.a_pt
 !---TorrenTGui
 ||totheglory.im/pic/1000.jpg
+||totheglory.im/pic/9700.jpg
 !---老调网
 ||lxting.com
 !---PT80
