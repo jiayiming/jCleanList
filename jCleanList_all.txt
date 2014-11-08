@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: XgBadsroVBiEQszTczyA7A
-! Last modified: 06 Nov 2014 23:17 +0800
+! Checksum: 598V4FcbqlucvA6ethwZ9A
+! Last modified: 08 Nov 2014 23:54 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -124,6 +124,7 @@
 ||a3p4.com^$third-party
 ||adkongjian.com^$third-party
 ||admaji.com^$third-party
+||admaster.com.cn^$third-party
 ||adyun.com^$third-party
 ||adsame.com^$third-party
 ||btyou.com^$third-party
@@ -184,6 +185,7 @@
 !---easy ad
 ||addelive.com^$third-party
 ||delivery45.com^$third-party
+||revsci.net^$third-party
 ||projectwonderful.com^$third-party
 !---testlist
 ||tbjfw.com^$third-party
@@ -858,7 +860,10 @@ v.ku6.com##[class^="aa_"]
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
 ||acg.tv^$third-party
+@@||acg.tv/ueZ
+||hdslb.com/u_user/0efee5e1fb45d0835135fe99a5ec0e33.jpg
 bilibili.com##.adsbygoogle
+bilibili.com##.index-promote
 !pv
 ||dns-*.test.bilibili.cc^
 !---AcFun
@@ -866,9 +871,11 @@ acfun.tv##[id^="ad-"]
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
-||yytcdn.com/uploads/page_advertisement/*
+||hc.yinyuetai.com/partner/yyt/*
+||gentags.net^$third-party
+||hztags.net^$third-party
 !pv
-||v.stats.yytcdn.com^
+||log.collect.yinyuetai.com^
 !---17173游戏视频
 ||v.17173cdn.com/upload/vlog/*.swf
 !---爱拍
@@ -1031,7 +1038,6 @@ qdwenxue.com##[class^="show_ggpic_"]
 ||paipai*/images/paipai/gt*.jpg
 paipaitxt.com###pic_div
 
-!---178
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
@@ -1110,7 +1116,7 @@ bbs.duowan.com##.a_pr
 !---178
 ||market.178.com^
 ||178.com/glr.js
-||acg.178.com^*/t_$subdocument,domain=~dmzj.com
+||acg.178.com^*/t_$subdocument
 !pv
 /atcount.php?$domain=178.com
 !每日推荐+收藏提示
