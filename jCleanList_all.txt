@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 598V4FcbqlucvA6ethwZ9A
-! Last modified: 08 Nov 2014 23:54 +0800
+! Checksum: LbfsvzdaVC6oTNxCVQJwxg
+! Last modified: 16 Nov 2014 23:45 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -275,11 +275,12 @@ image.baidu.com###relEcom
 !itieba
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
-#iPhone提示广告条
+!iPhone提示广告条
 tieba.baidu.com##.wanle_tab_tip
 !烟花
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 !tieba0_帖子列表
+||tb1.bdstatic.com/tb/r/*
 ||jiaoyu.baidu.com/tieba/*
 ||youxi.baidu.com/tips/bdtips_min.js
 !顶部yoyojie&UUU9游戏
@@ -295,6 +296,7 @@ tieba.baidu.com###threadListGroupCnt
 tieba.baidu.com##[id^="dasense_"]
 !侧边栏
 tieba.baidu.com###aside_ad
+tieba.baidu.com##.item.live_show_aside
 !对联
 tieba.baidu.com###j_ten_years
 !右下角漂浮
@@ -411,10 +413,11 @@ zol.com.cn##[id^="AD"]
 zol.com.cn##[class^="ad-"]
 zol.com.cn##[id^="ad-"]
 !首页
+!首页横幅
+zol.com.cn##[id*="_ad_"]
 !首页右下角漂浮
 zol.com.cn##.winbox
 !子页
-||img.zol-img.com/compare/ad/*
 zol.com.cn##.hot_tj
 !pv
 ||ca.cbsi.com.cn^
@@ -431,7 +434,6 @@ it168.com##[id^="ADV_"]
 !下载子页
 down.it168.com##[style^=" width:238px;height:80px;"]
 down.it168.com##[style^="width:468px;height:60px;"]
-down.it168.com###down_right_soft
 !论坛右下角漂浮
 it168.com###sitefocus
 !---泡泡网
@@ -666,7 +668,6 @@ sosg.net##.read_promo
 !---緋月GALGAME
 !首页空白
 bbs.9baka.com###top80
-bbs.9baka.com##div[style^="width:640px;height:60px;"]
 !帖子空白
 bbs.9baka.com##td[width="680"][height="50"]
 !---APTX柯南事务所
@@ -860,8 +861,6 @@ v.ku6.com##[class^="aa_"]
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
 ||acg.tv^$third-party
-@@||acg.tv/ueZ
-||hdslb.com/u_user/0efee5e1fb45d0835135fe99a5ec0e33.jpg
 bilibili.com##.adsbygoogle
 bilibili.com##.index-promote
 !pv
@@ -1043,8 +1042,8 @@ paipaitxt.com###pic_div
 mail.google.com##.Bu.y3
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
-!---userscripts.org
-||coinurl.com^$third-party
+!---Greasy Fork
+greasyfork.org###script-show-info-ad
 !---userstyles.org
 userstyles.org##.ad
 !---网页飞信
