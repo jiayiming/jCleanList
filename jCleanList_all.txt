@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: RFnBwO6mkKy1KgKyGYfjEw
-! Last modified: 23 Nov 2014 13:40 +0800
+! Checksum: bOmwWrR1irXvyXkyNHTRGw
+! Last modified: 23 Nov 2014 15:22 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -163,6 +163,7 @@
 ||sharele.cn^$third-party
 ||star8.net^$third-party
 ||tuigoo.com^$third-party
+||twb98.com^$third-party
 ||twcczhu.com^$third-party
 ||ulink.cc^$third-party
 ||union009.com^$third-party
@@ -749,6 +750,7 @@ weibo.com##div[ad-data]
 ||pups.bdimg.com/advert/*
 !pv
 ||*monitor.jpg?xcode
+||pan.baidu.com/api/analytics*
 !---115网盘
 ||static.115img.com/static/delivery/
 !---华为网盘
@@ -1076,6 +1078,9 @@ item.taobao.com###J_toolbar
 ||nfa.jd.com/loadFa.js*
 ||jprice.360buy.com/adslogan/*
 @@||ad.3.cn/ads/*
+!---什么值得买
+||eimg.smzdm.com^
+fx.smzdm.com##.db_eleven
 !---玩家堂
 ||itocp.com/html/gk/*
 !---硬派网
