@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: vnpDVe1tjY8ePdaWIfCkOQ
-! Last modified: 22 Nov 2014 12:26 +0800
+! Checksum: RFnBwO6mkKy1KgKyGYfjEw
+! Last modified: 23 Nov 2014 13:40 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -17,6 +17,7 @@
 |http://*/ggao/*
 |http://*/guanggao/*
 |http://gg.*^
+/960x90_
 /300x250_
 !---白名单区域
 @@|http://*/*ad*.$stylesheet
@@ -287,8 +288,13 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 !顶部yoyojie&UUU9游戏
 ||upload.yoyojie.com^$domain=tieba.baidu.com
 tieba.baidu.com##.u9_head.clearfix
-!顶部视频互动
+!顶部YY游戏直播
+||image.yy.com/yysnapshot/*$domain=tieba.baidu.com
+||img.live.yy.com^$domain=tieba.baidu.com
+tieba.baidu.com###game_live_list
+!顶部美女直播
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
+tieba.baidu.com##.per_list.j_per_list.per_list_frs
 !置顶游戏广告贴
 tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
@@ -800,17 +806,23 @@ iqiyi.com###ad-left-tl
 ||msg.video.qiyi.com^
 ||static.iqiyi.com/js/pingback/*
 !---腾讯视频
-||livew.l.qq.com/livemsg?*
-||ra.gtimg.com/adsame/
+||l.qq.com/p?
+@@||livew.l.qq.com/livemsg?*
+||livep.l.qq.com/livemsg?*
+*/vmind.qqvideo.tc.qq.com/*.mp4
+||gtimg.com/qqlive/*
+||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
 v.qq.com##.mod_ad
+v.qq.com##.action_ad
 www.qq.com###advertisement
+!pv
+||rcgi.video.qq.com^
 !---乐视
 */letv-web/*
 ||ark.letv.com^
 !pv
 ||dc.letv.com^
 !---搜狐视频
-||data.vod.itc.cn/*.mp4
 ||images.sohu.com/ytv/
 ||images.sohu.com/bill/
 !视频首页
@@ -1086,8 +1098,6 @@ expreview.com##.banner
 sohu.com,17173.com##.win17173
 !右下角今日推荐
 17173.com##.gb-newfix-box
-!视频
-||v.17173.com/x/*
 !pv
 ||js.17173.com/ping.js
 !---页游网
