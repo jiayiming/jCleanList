@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: bOmwWrR1irXvyXkyNHTRGw
-! Last modified: 23 Nov 2014 15:22 +0800
+! Checksum: Ibj6EOtMYOfH/KTZP7HKxQ
+! Last modified: 26 Nov 2014 00:06 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -488,6 +488,7 @@ kdslife.com##.ad
 ||adsame.tianjimedia.com
 !---cnBeta
 cnbeta.com##.time
+cnbeta.com##.item.cooperation
 cnbeta.com##.adsbygoogle
 cnbeta.com##.navi
 !招聘
@@ -563,7 +564,6 @@ bbs.feng.com##.a_pb
 ||bmp.ali213.net/JS/*.js
 ||bmp1.ali213.net/JS/*.js
 !---3DM游戏论坛
-||att.3dmgame.com/att/common/cf/*
 !---EZ 游戏社区
 bbs.emu-zone.org##font[style="font-size:0px;color:#FFFFFF"]
 !---电玩巴士
@@ -682,6 +682,8 @@ bbs.9baka.com##td[width="680"][height="50"]
 !---APTX柯南事务所
 bbs.aptx.cn##.a_pr
 !---天使动漫
+||tsdm.net/static/kawayi/*
+|http://*^$popup,domain=tsdm.net
 ||sinaimg.cn/*20q*.*$domain=tsdm.net
 ||sinaimg.cn/*20r30230v3.jpg$domain=tsdm.net
 ||sinaimg.cn/*20j*.jpg$domain=tsdm.net
@@ -1113,10 +1115,11 @@ sohu.com,17173.com##.win17173
 ||static.766.com/a/windows/float.js
 766.com##[class^="abox"]
 !子页
-766.com###banner_top
 766.com##[class^="ad"]
-!子页右侧漂浮
-||dynamic.766.com/upbox2/js/upbox3.js
+!去论坛水印
+bbs.766.com##.jammer
+!pv
+||stats.766.com/stats.js
 !---多玩
 ||market.duowan.com^
 !首页
@@ -1124,8 +1127,6 @@ duowan.com##.promot-box
 duowan.com##.ad
 !子页右下角漂浮
 duowan.com##.dw-live-tips__bd
-!pv
-||stats.766.com/stats.js
 !多玩乐视视频
 ||untitled.dwstatic.com^
 !论坛
