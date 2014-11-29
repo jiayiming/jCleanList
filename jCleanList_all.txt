@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Ibj6EOtMYOfH/KTZP7HKxQ
-! Last modified: 26 Nov 2014 00:06 +0800
+! Checksum: KCwokthyUdfS8pEZQpgvqg
+! Last modified: 30 Nov 2014 00:29 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -409,9 +409,17 @@ sohu.com##.lottery-box
 ||go.sohu.com^
 ||js.mail.sohu.com/pv/*
 !---凤凰网
+||ifengimg.com^*/sparta.js
 ||ifeng.com/tres/recommend/*
+||ifeng.com^*&ADUNITID=
+||ifengimg.com/ifeng/sources/
 ||ifengimg.com/mappa/*
+||ifengimg.com/*/taobaopudi/
 ifeng.com##div[class^="ad"]
+!pv
+||ifengimg.com^*/wrating.js
+||ifengimg.com^*/staytime*
+||ifengimg.com^*/sta_collection.
 !子页右侧栏
 ifeng.com##.label_3
 !---中关村
@@ -683,9 +691,11 @@ bbs.9baka.com##td[width="680"][height="50"]
 bbs.aptx.cn##.a_pr
 !---天使动漫
 ||tsdm.net/static/kawayi/*
-|http://*^$popup,domain=tsdm.net
+||dm.tsdm.net/xinfandongman/*$popup,domain=tsdm.net
+||www.tsdm.net/qxs.php$popup,domain=tsdm.net
+||taobao.com^$popup,domain=tsdm.net
+||loli.cd^$popup,domain=tsdm.net
 ||sinaimg.cn/*20q*.*$domain=tsdm.net
-||sinaimg.cn/*20r30230v3.jpg$domain=tsdm.net
 ||sinaimg.cn/*20j*.jpg$domain=tsdm.net
 !---NyaaTorrents
 ||files.nyaa.se/a*.jpg
@@ -847,7 +857,6 @@ v.qq.com###adPlayer
 ||v.163.com/swf/module/AdvManager*.swf
 !---凤凰网
 !视频首页
-||ifengimg.com/ifeng/sources/
 ||games.ifeng.com/webgame/
 !视频子页
 @@||ifeng.com^*.mp4
@@ -1061,6 +1070,9 @@ paipaitxt.com###pic_div
 mail.google.com##.Bu.y3
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
+!---SOSO搜搜
+soso.com##.sponsored
+soso.com###right
 !---Greasy Fork
 greasyfork.org###script-show-info-ad
 !---userstyles.org
