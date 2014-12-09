@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: KCwokthyUdfS8pEZQpgvqg
-! Last modified: 30 Nov 2014 00:29 +0800
+! Checksum: KlS/Gc7/dmzDb7FVccWHZw
+! Last modified: 09 Dec 2014 19:56 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -302,6 +302,7 @@ tieba.baidu.com###threadListGroupCnt
 ||tieba.baidu.com/tb/zt/spread/*
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##[id^="dasense_"]
+tieba.baidu.com##[data-daid]
 !侧边栏
 tieba.baidu.com###aside_ad
 tieba.baidu.com##.item.live_show_aside
@@ -502,9 +503,18 @@ cnbeta.com##.navi
 !招聘
 cnbeta.com##.cber:nth-child(7)
 !---IT之家
+||ithome.com/*/nod32-side.png
 ||ithome.com/block/*
-ithome.com###hl
-ithome.com##.con-recom
+ithome.com##.adsbygoogle
+!子页
+ithome.com##.bx
+!论坛
+||qpic.cn/mblogpic/$domain=bbs.ithome.com
+bbs.ithome.com###pc_c
+bbs.ithome.com###a87h315s60g
+bbs.ithome.com##[style^="width:960px;height:120px;"]
+!论坛右下角漂浮
+bbs.ithome.com###recommend
 !---CSDN
 ||csdn.net/*ggmm*
 csdn.net##.box.hot
@@ -605,7 +615,7 @@ cngba.com##[class^="ad_"]
 cngba.com##.a_f
 cngba.com##.a_mu
 !---口袋吧
-koudai8.com##.a_pb
+||koudai8.com/newbbs/data/*gg88hb7hbc.jpg
 !---PCINLIFE
 ||we.pcinlife.com/banner/*
 ||we.poppur.com/banner/*
@@ -617,9 +627,7 @@ we.poppur.com##.a_pt
 !---PCEVA
 !---恩山WIFI论坛
 ||right.com.cn/logo/*.gif
-!---软媒论坛
-||img.vista123.com/images/saayaa468.gif
-bbs.ithome.com###bbs_hl
+!---IT之家
 !---999宝藏网
 ||att1.rin9.com/img/*
 !---无忧启动论坛
@@ -898,11 +906,14 @@ acfun.tv##[id^="ad-"]
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
+||yytcdn.com/swf/common/marker.*.swf
+||yinyuetai.com/swf/common/marker.*.swf
 ||hc.yinyuetai.com/partner/yyt/*
 ||gentags.net^$third-party
 ||hztags.net^$third-party
 !pv
 ||log.collect.yinyuetai.com^
+||v.stats.yinyuetai.com^
 !---17173游戏视频
 ||v.17173cdn.com/upload/vlog/*.swf
 !---爱拍
@@ -1061,8 +1072,8 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---红袖添香
 !---派派前后院
 ||paipai.fm/bans/bd.htm*
-||paipai*/images/paipai/tgm.jpg
-||paipai*/images/paipai/gt*.jpg
+||paipai*/images/ddz.jpg
+||paipai*/images/dzpk.jpg
 paipaitxt.com###pic_div
 
 !---Gmail
@@ -1093,8 +1104,7 @@ item.taobao.com###J_toolbar
 ||jprice.360buy.com/adslogan/*
 @@||ad.3.cn/ads/*
 !---什么值得买
-||eimg.smzdm.com^
-fx.smzdm.com##.db_eleven
+||zdmimg.com/data/forum-
 !---玩家堂
 ||itocp.com/html/gk/*
 !---硬派网
@@ -1175,6 +1185,8 @@ gamersky.com###hitix
 !右下角漂浮
 ||games.52pk.com/fuchuang/
 bns.52pk.com###swfiframe
+!---爱搞机
+||knewbi.com/api/knewbi_index/*$third-party
 !---脚本之家
 ||img.jb51.net/imgby/*
 jb51.net##[id^="tonglan"]
