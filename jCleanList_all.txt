@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: KlS/Gc7/dmzDb7FVccWHZw
-! Last modified: 09 Dec 2014 19:56 +0800
+! Checksum: CqWREDSgV9o9VQV9Ri0eaQ
+! Last modified: 13 Dec 2014 17:09 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -302,6 +302,7 @@ tieba.baidu.com###threadListGroupCnt
 ||tieba.baidu.com/tb/zt/spread/*
 ||imgsrc.baidu.com/tieba/pic/item/*$image
 tieba.baidu.com##[id^="dasense_"]
+||tb1.bdstatic.com/tb/cms/ngmis/*
 tieba.baidu.com##[data-daid]
 !侧边栏
 tieba.baidu.com###aside_ad
@@ -360,9 +361,9 @@ tech.qq.com##.kjad2
 finance.qq.com###topAd
 !体育/娱乐/数码/时尚/汽车等板块顶部通用
 qq.com##[id$="_ad"]
-!评论顶部
+!评论
 ||view.news.qq.com/PL_ad*.htm
-qq.com###PL_adT
+||view.news.qq.com/article_qq/ad_article_qq/*
 !---网易
 ||img1.126.net^
 ||img2.126.net^
