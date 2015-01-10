@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: mEAS782X0Ktu5hCObnlyFw
-! Last modified: 10 Jan 2015 16:33 +0800
+! Checksum: nalxFrm0vgCQApxVdtoC6g
+! Last modified: 11 Jan 2015 01:05 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -1069,8 +1069,7 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---红袖添香
 !---派派前后院
 ||paipai.fm/bans/bd.htm*
-||paipai*/images/ddz.jpg
-||paipai*/images/dzpk.jpg
+||paipai*/images/hx*.jpg
 paipaitxt.com###pic_div
 
 !---Gmail
