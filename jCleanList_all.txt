@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: CqWREDSgV9o9VQV9Ri0eaQ
-! Last modified: 13 Dec 2014 17:09 +0800
+! Checksum: mEAS782X0Ktu5hCObnlyFw
+! Last modified: 10 Jan 2015 16:33 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -277,45 +277,41 @@ image.baidu.com###relEcom
 !itieba
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
-!iPhone提示广告条
-tieba.baidu.com##.wanle_tab_tip
 !烟花
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 !tieba0_帖子列表
 ||youxi.baidu.com/r/image/*
 ||tb1.bdstatic.com/tb/r/image/*
 ||jiaoyu.baidu.com/tieba/*
-||youxi.baidu.com/tips/bdtips_min.js
 !顶部yoyojie&UUU9游戏
-||upload.yoyojie.com^$domain=tieba.baidu.com
+||tb1.bdstatic.com/tb/cms/game_cover/*
+||tb2.bdstatic.com/tb/static-comforum/widget/u9_head/*
 tieba.baidu.com##.u9_head.clearfix
 !顶部YY游戏直播
-||image.yy.com/yysnapshot/*$domain=tieba.baidu.com
+||screenshot.dwstatic.com/yysnapshot/*$domain=tieba.baidu.com
 ||img.live.yy.com^$domain=tieba.baidu.com
 tieba.baidu.com###game_live_list
 !顶部美女直播
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
-tieba.baidu.com##.per_list.j_per_list.per_list_frs
 !置顶游戏广告贴
 tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
 ||tieba.baidu.com/tb/zt/spread/*
 ||imgsrc.baidu.com/tieba/pic/item/*$image
-tieba.baidu.com##[id^="dasense_"]
 ||tb1.bdstatic.com/tb/cms/ngmis/*
 tieba.baidu.com##[data-daid]
 !侧边栏
 tieba.baidu.com###aside_ad
-tieba.baidu.com##.item.live_show_aside
 !对联
-tieba.baidu.com###j_ten_years
+||tb1.bdstatic.com/tb/cms/forum_skin/*
+tieba.baidu.com##.advertise_right_frs
 !右下角漂浮
 ||baidu.com/resource/tuisong/*
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
-||s1.bdstatic.com/r/www/cache/baidu_search/*
+||s1.bdstatic.com/r/www/scache/baidu_search/*
+||img.baidu.com/hunter/alog/*
 !帖子顶部横幅
-tieba.baidu.com##.l_banner
 tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
 !帖子1楼底部游戏横幅
@@ -1100,9 +1096,7 @@ item.taobao.com###J_toolbar
 !---京东商城
 ||360buy.com/hotwords.aspx?position=A-index*
 ||fa.jd.com^
-||fa.360buy.com
 ||nfa.jd.com/loadFa.js*
-||jprice.360buy.com/adslogan/*
 @@||ad.3.cn/ads/*
 !---什么值得买
 ||zdmimg.com/data/forum-
@@ -1115,23 +1109,24 @@ inpai.com.cn##.tbad2
 !---超能网
 expreview.com##.banner
 !---17173
-||ue8.17173.itc.cn/*/ggcommon*.js
-||ue8.17173.itc.cn/*/slide_toggle_ads.js
-||17173.com/new/nesbutton*.js
+||ue.17173cdn.com/*/ggcommon*.js
+||ue.17173cdn.com/a/lib/vda/*
+||ue.17173cdn.com/a/lib/setLink.min.js
+||ue.17173cdn.com/a/www/index/2015/js/forsetlink.js
 |http://*/if/$domain=17173.com
-@@||ue8.17173.itc.cn/cache/lib/v2/gamepopup-1.0/gamepopup.js
-17173.com##[class^="ad-pn"]
+||itc.cn/cache/lib/v2/odvmonitor/
 !首页页游隐藏
-17173.com##.box-daily
-!右下角视窗
-||p*.v.17173cdn.com/tfrquk/YWxqaGBf/*.swf
-sohu.com,17173.com##.win17173
+www.17173.com##[class*="Ad17173Duilian"]
+www.17173.com##.pn-daily
+www.17173.com##[class^="ad-"]
+www.17173.com##.ad
 !右下角今日推荐
 17173.com##.gb-newfix-box
 !pv
 ||js.17173.com/ping.js
 !---页游网
-||yeyou.com/2013/new/yeyou-float-window.js
+yeyou.com##[class^="mod-ad-"]
+yeyou.com###ad-yeyou-nitifiction
 !---766
 ||get.766.com^
 ||manads.static.olcdn.com/js/*
