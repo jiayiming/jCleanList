@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: nalxFrm0vgCQApxVdtoC6g
-! Last modified: 11 Jan 2015 01:05 +0800
+! Checksum: A+OKnAHA7TdTaTP/14LfkQ
+! Last modified: 15 Feb 2015 19:55 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -285,7 +285,6 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 ||jiaoyu.baidu.com/tieba/*
 !顶部yoyojie&UUU9游戏
 ||tb1.bdstatic.com/tb/cms/game_cover/*
-||tb2.bdstatic.com/tb/static-comforum/widget/u9_head/*
 tieba.baidu.com##.u9_head.clearfix
 !顶部YY游戏直播
 ||screenshot.dwstatic.com/yysnapshot/*$domain=tieba.baidu.com
@@ -303,13 +302,11 @@ tieba.baidu.com##[data-daid]
 !侧边栏
 tieba.baidu.com###aside_ad
 !对联
-||tb1.bdstatic.com/tb/cms/forum_skin/*
-tieba.baidu.com##.advertise_right_frs
 !右下角漂浮
 ||baidu.com/resource/tuisong/*
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
-||s1.bdstatic.com/r/www/scache/baidu_search/*
+||s1.bdstatic.com/r/*/baidu_search/*
 ||img.baidu.com/hunter/alog/*
 !帖子顶部横幅
 tieba.baidu.com###pb_adbanner
@@ -566,11 +563,12 @@ ooomm.com##.a_mu
 !---塞班智能手机网
 bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder[style="width: 98%"],tr.t_infoline
 !---威锋网
-||feng.com/aoodoo/
+||feng.com/aodoo3/
+!首页logo修复
+@@||feng.com/aodoo3/view.php?what=zone:94
 !论坛logo修复
-@@||feng.com/aoodoo/view.php?what=zone:93
-@@||feng.com/aoodoo/images/*logo.png
-||aoodoo.feng.com^
+@@||feng.com/aodoo3/view.php?what=zone:93
+@@||feng.com/aodoo3/images/*logo.png
 ||feng.com/bbs_v4/index_treasure/
 ||fengbuy.com/recommend-new.php
 bbs.feng.com##.wea_d_panel_980
@@ -736,6 +734,7 @@ www.mysilu.com##.a_h,.a_t,.a_pt
 ||totheglory.im/pic/9700.jpg
 !---老调网
 ||lxting.com
+bestxl.com##IMG[alt="dudu"]
 !---PT80
 pt80.net##.a_t
 pt80.net##.a_f
@@ -1050,6 +1049,8 @@ www.qidian.com##[class^="gg"]
 !顶部游戏
 ||qidian.com/images/*/qd_global/game_$image
 qidian.com##.top_game_info
+!对联
+qidian.com##[id^="DoublePop_"]
 !书页
 ||script.cmfu.com/Script/GameAdAptationInfo.js
 ||qidian.com/javascript/fkkyk.js
@@ -1061,6 +1062,8 @@ qidian.com##div[style*="width:375px;height:63px;"]
 ||qdmm.com/javascript/SNDAADAltern.js
 !右下角漂浮
 qdmm.com###qdass_news_pop
+!书页底部游戏
+qdmm.com##.qd_sms_pop
 !---起点文学网
 !首页
 qdwenxue.com##[class^="wxgg"]
@@ -1069,8 +1072,9 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---红袖添香
 !---派派前后院
 ||paipai.fm/bans/bd.htm*
+paipai.fm##a[style*="/images/hx"]
 ||paipai*/images/hx*.jpg
-paipaitxt.com###pic_div
+paipaitxt.com##a[style*="/images/hx"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
@@ -1094,8 +1098,8 @@ forum.xda-developers.com##.unicorn
 item.taobao.com###J_toolbar
 !---京东商城
 ||360buy.com/hotwords.aspx?position=A-index*
-||fa.jd.com^
 ||nfa.jd.com/loadFa.js*
+@@||360buyimg.com/ads/jfs/*
 @@||ad.3.cn/ads/*
 !---什么值得买
 ||zdmimg.com/data/forum-
