@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: A+OKnAHA7TdTaTP/14LfkQ
-! Last modified: 15 Feb 2015 19:55 +0800
+! Checksum: HQdllb++gx/bNCv92LBC3w
+! Last modified: 14 Mar 2015 15:18 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -327,6 +327,7 @@ zhidao.baidu.com##.widget-ads
 !baike
 @@||baike.bdimg.com/*/adside/*.js
 !wenku1
+@@||img.baidu.com/img/iknow/wenku/ad/wk*.js
 wenku.baidu.com##.banner-wrap
 !music
 ||music.baidu.com/static/html/cbjs.html*
@@ -531,6 +532,10 @@ search.discuz.qq.com##.ad
 !--5d6d
 ||cache.soso.com/30d/js/discuz/relate_subject.js
 ||toutiao.haotui.com/data/js/0.js
+!---V2EX
+||cdn.v2ex.com/friends/lagou/*
+||cdn.v2ex.com/assets/sidebar/*
+www.v2ex.com##.box:nth-child(6) > .inner:nth-child(1)
 !---卡饭论坛
 kafan.cn##.a_f
 kafan.cn##.wp.gg
@@ -920,13 +925,10 @@ aipai.com###pm_rush
 aipai.com###pm_mod_pic
 aipai.com###baidu_gg
 aipai.com###cmt_slnew
-!---激动网
-||86file.megajoy.com
 !---爆米花网
 ||a.baomihua.com^
-!---一财网
-||billing.yicai.com
-||yicai.adsame.com
+!湖南卫士/芒果TV
+||res.hunantv.com^
 
 !---迅雷
 ||biz*.sandai.net^
@@ -1076,6 +1078,8 @@ paipai.fm##a[style*="/images/hx"]
 ||paipai*/images/hx*.jpg
 paipaitxt.com##a[style*="/images/hx"]
 
+!---GitHub
+||collector-cdn.github.com/assets/api.js
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
@@ -1093,10 +1097,11 @@ forum.xda-developers.com##.leaderboard
 forum.xda-developers.com##.unicorn
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
-!---酷安网
 !---淘宝网
 item.taobao.com###J_toolbar
 !---京东商城
+||d.jd.com/cathot/*
+||d.jd.com/hotwords/*
 ||360buy.com/hotwords.aspx?position=A-index*
 ||nfa.jd.com/loadFa.js*
 @@||360buyimg.com/ads/jfs/*
@@ -1127,6 +1132,9 @@ www.17173.com##.ad
 17173.com##.gb-newfix-box
 !pv
 ||js.17173.com/ping.js
+!论坛帖子
+bbs.17173.com##.first-post-ad
+bbs.17173.com##.a_pb
 !---页游网
 yeyou.com##[class^="mod-ad-"]
 yeyou.com###ad-yeyou-nitifiction
@@ -1161,10 +1169,8 @@ bbs.duowan.com##.a_pr
 ||acg.178.com^*/t_$subdocument
 !pv
 /atcount.php?$domain=178.com
-!每日推荐+收藏提示
-||178.com/s/js/tg178.js
 !---艾泽拉斯国家地理论坛
-|http://img4.ngacn.cc/common_res/*_ads*.js*
+||img4.nga.178.com/common_res/js_adscommon.js?*
 !---叶子猪
 ||yktj.yzz.cn^
 yzz.cn##.ad200x340
