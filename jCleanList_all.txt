@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: HQdllb++gx/bNCv92LBC3w
-! Last modified: 14 Mar 2015 15:18 +0800
+! Checksum: QcU4pU3eEdZNO3UOaAYfqg
+! Last modified: 02 Apr 2015 07:07 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -13,6 +13,7 @@
 /[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
 /\/[^\?\#=%]*(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
+://ads.
 |http://*/gg/*
 |http://*/ggao/*
 |http://*/guanggao/*
@@ -187,7 +188,10 @@
 !---easy ad
 ||addelive.com^$third-party
 ||delivery45.com^$third-party
+||exoclick.com^$third-party
 ||revsci.net^$third-party
+||popads.net^$third-party
+||popcash.net^$third-party
 ||projectwonderful.com^$third-party
 !---testlist
 ||tbjfw.com^$third-party
@@ -300,8 +304,8 @@ tieba.baidu.com###threadListGroupCnt
 ||tb1.bdstatic.com/tb/cms/ngmis/*
 tieba.baidu.com##[data-daid]
 !侧边栏
+tieba.baidu.com###encourage_entry
 tieba.baidu.com###aside_ad
-!对联
 !右下角漂浮
 ||baidu.com/resource/tuisong/*
 !tieba1_帖子
@@ -313,10 +317,8 @@ tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
 !帖子1楼底部游戏横幅
 ||tieba.baidu.com/tb/cms/game_test/*
-tieba.baidu.com##.banner_post
-tieba.baidu.com##[id^="BAIDU_CLB_AD_"]
 !侧边栏
-tieba.baidu.com###union_mod
+tieba.baidu.com##.u9_aside
 !zhidao0|zhidao1|zhidao2
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com##.wgt-ads
@@ -768,7 +770,8 @@ weibo.com##div[ad-data]
 ||s.renren.com^
 ||xnimg.cn^*/beacon.js
 !--百度云
-||pups.bdimg.com/advert/*
+||pups.bdimg.com/advert/img/*
+play.baidu.com###pauseAd
 !pv
 ||*monitor.jpg?xcode
 ||pan.baidu.com/api/analytics*
