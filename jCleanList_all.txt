@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: QcU4pU3eEdZNO3UOaAYfqg
-! Last modified: 02 Apr 2015 07:07 +0800
+! Checksum: OqdEzD4KnCXmu9y5mdeJaQ
+! Last modified: 13 Apr 2015 00:19 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -11,6 +11,7 @@
 
 !通用广告猜测
 /[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
+@@/ad[^\.]*\.js[^/]*/[^/]+/\S+\.js/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
 /\/[^\?\#=%]*(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
 ://ads.
@@ -681,9 +682,9 @@ kkkmh.com##.mm-hot
 kkkmh.com##.mm-book
 kkkmh.com##.box[style="margin-top:10px;text-align:center;"]
 !---轻之国度
-||sinaimg.cn^$domain=lightnovel.cn
-||tietuku.com^$domain=lightnovel.cn
 lightnovel.cn###swRoller_1
+lightnovel.cn##.a_mu
+lightnovel.cn##.a_pt
 !---SOSG
 sosg.net##[id^="gad_"]
 !通用风格
@@ -897,10 +898,10 @@ v.ku6.com##[class^="aa_"]
 ||acs.56.com
 !------------------------------------
 !---嗶哩嗶哩
+||acg.tv^$object-subrequest,third-party
 @@||bilibili.com/sppage/ad-*$xmlhttprequest
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
-||acg.tv^$third-party
 bilibili.com##.adsbygoogle
 bilibili.com##.index-promote
 !pv
@@ -930,8 +931,10 @@ aipai.com###baidu_gg
 aipai.com###cmt_slnew
 !---爆米花网
 ||a.baomihua.com^
-!湖南卫士/芒果TV
+!---湖南卫士/芒果TV
 ||res.hunantv.com^
+!---华数TV广电宽屏
+||afpcreative.wasu.cn^
 
 !---迅雷
 ||biz*.sandai.net^
@@ -1108,7 +1111,7 @@ item.taobao.com###J_toolbar
 ||360buy.com/hotwords.aspx?position=A-index*
 ||nfa.jd.com/loadFa.js*
 @@||360buyimg.com/ads/jfs/*
-@@||ad.3.cn/ads/*
+@@||ad.3.cn/ads/mgets?$script,domain=item.jd.com
 !---什么值得买
 ||zdmimg.com/data/forum-
 !---玩家堂
