@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: OqdEzD4KnCXmu9y5mdeJaQ
-! Last modified: 13 Apr 2015 00:19 +0800
+! Checksum: SM/uAVu44bhOjCasJrwwdg
+! Last modified: 03 May 2015 12:12 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -188,6 +188,7 @@
 ||zedo.com^$third-party
 !---easy ad
 ||addelive.com^$third-party
+||adnxs.com^$third-party
 ||delivery45.com^$third-party
 ||exoclick.com^$third-party
 ||revsci.net^$third-party
@@ -498,6 +499,9 @@ cnbeta.com##.time
 cnbeta.com##.item.cooperation
 cnbeta.com##.adsbygoogle
 cnbeta.com##.navi
+!手机下载
+||cnbeta.com/assets/default/images/article/*
+cnbeta.com##.wdj_box
 !招聘
 cnbeta.com##.cber:nth-child(7)
 !---IT之家
@@ -568,8 +572,6 @@ xda.cn##.area-banner-pic
 xda.cn##.duoge_r
 !---OPDA
 ooomm.com##.a_mu
-!---塞班智能手机网
-bbs.dospy.com##div[style="clear: both; margin-top: 5px;"],center>div.maintable>div.spaceborder[style="width: 98%"],tr.t_infoline
 !---威锋网
 ||feng.com/aodoo3/
 !首页logo修复
@@ -1158,17 +1160,12 @@ bbs.766.com##.jammer
 !---多玩
 ||market.duowan.com^
 !首页
-duowan.com##.promot-box
-duowan.com##.ad
-!子页右下角漂浮
-duowan.com##.dw-live-tips__bd
+duowan.com##.ad--col
 !多玩乐视视频
+lol.duowan.com##.full-banner
+||dwstatic.com^*/p/livetip/
 ||untitled.dwstatic.com^
-!论坛
-||img.dwstatic.com/www/$domain=bbs.duowan.com
-||img.dwstatic.com/shouyou/
-bbs.duowan.com##.a_pb
-bbs.duowan.com##.a_pr
+||vupload.duowan.com^
 !---178
 ||market.178.com^
 ||178.com/glr.js
