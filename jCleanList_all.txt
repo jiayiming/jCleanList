@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: cs9qqthH7kG0gYu/9VfOrA
-! Last modified: 23 May 2015 14:47 +0800
+! Checksum: bLiC7kRTpoDfBX8jdjpyzw
+! Last modified: 30 May 2015 19:01 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -190,6 +190,7 @@
 ||2xbpub.com^$third-party
 ||adcash.com^$third-party
 ||addelive.com^$third-party
+||adnium.com^$third-party
 ||adnxs.com^$third-party
 ||clkrev.com^
 ||delivery45.com^$third-party
@@ -202,6 +203,7 @@
 ||popcash.net^$third-party
 ||proffigurufast.com^$third-party
 ||projectwonderful.com^$third-party
+||prscripts.com^$third-party
 ||revsci.net^$third-party
 ||tbjfw.com^$third-party
 ||wsockd.com^$third-party
@@ -462,11 +464,11 @@ it168.com###sitefocus
 ||pcpop.com/js/pcpop_ad.js
 !首页
 www.pcpop.com###addiv3
-www.pcpop.com##.l1:first-child
+www.pcpop.com##.w980>.l1
 pcpop.com##.h493
 www.pcpop.com##[id^="ad_"]
 !新闻页顶部横幅
-pcpop.com##.ad
+pcpop.com##.gg_list
 !---驱动之家
 ||11.mydrivers.com/news/03.js
 ||11.mydrivers.com/news/google468x60.js
@@ -510,16 +512,11 @@ cnbeta.com##.wdj_box
 !招聘
 cnbeta.com##.cber:nth-child(7)
 !---IT之家
-||ithome.com/*/nod32-side.png
 ||ithome.com/block/*
 ithome.com##.adsbygoogle
-!子页
-ithome.com##.bx
 !论坛
 ||qpic.cn/mblogpic/$domain=bbs.ithome.com
-bbs.ithome.com###pc_c
-bbs.ithome.com###a87h315s60g
-bbs.ithome.com##[style^="width:960px;height:120px;"]
+bbs.ithome.com##.bbs_login+div[style^="width:960px;height:60px"]
 !论坛右下角漂浮
 bbs.ithome.com###recommend
 !---CSDN
@@ -995,6 +992,7 @@ hanzify.org##.banner-leader-index
 hanzify.org##.section-title>span[style*="float:right;"]
 hanzify.org##.categorypickdown
 !---zd423
+||zdfans.com/wp-content/upgrade/doujind.gif
 !---小众软件
 ||appinn.com/images/*/youli.jpg
 ||appinn.com/images/*/worktile.png
@@ -1103,6 +1101,10 @@ userstyles.org##.ad
 !---xda-developers
 forum.xda-developers.com##.leaderboard
 forum.xda-developers.com##.unicorn
+!---TechPowerUp
+||tpucdn.com/images/b/*
+!侧栏
+techpowerup.com##.rnav_e
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---淘宝网
@@ -1119,10 +1121,6 @@ item.taobao.com###J_toolbar
 ||zdmimg.com/data/forum-
 !---玩家堂
 ||itocp.com/html/gk/*
-!---硬派网
-inpai.com.cn##[class^="baiduad"]
-inpai.com.cn##.addoc1
-inpai.com.cn##.tbad2
 !---超能网
 expreview.com##.banner
 !---17173
@@ -1174,7 +1172,8 @@ lol.duowan.com##.full-banner
 !pv
 /atcount.php?$domain=178.com
 !---艾泽拉斯国家地理论坛
-||img4.nga.178.com/common_res/js_adscommon.js?*
+||nga.178.com/common_res/js_adscommon.js*
+||nga.178.com/common_res/js_bbs_adslist.js*
 !---叶子猪
 ||yktj.yzz.cn^
 yzz.cn##.ad200x340
@@ -1196,6 +1195,9 @@ gamersky.com###hitix
 bns.52pk.com###swfiframe
 !---爱搞机
 ||knewbi.com/api/knewbi_index/*$third-party
+!---手机乐园
+||css.shouji.com.cn/script/*$subdocument
+||shouji.com.cn/tg/market_73090.gif
 !---脚本之家
 ||img.jb51.net/imgby/*
 jb51.net##[id^="tonglan"]
@@ -1221,3 +1223,15 @@ iciba.com###ezfm
 !---海词
 ||dict.dfile.cn/list/slots.php?callback*
 dict.cn###gadsv
+!---东方财富网
+||same.eastmoney.com/s?*
+eastmoney.com##.h60
+eastmoney.com##.h90
+eastmoney.com##.h160
+!子页
+||cmsjs.eastmoney.com/data/idx_ggzjl.js*
+||finance.eastmoney.com/images/uma.html
+eastmoney.com##.banner
+!行情中心
+quote.eastmoney.com##.adbox
+quote.eastmoney.com##.msdbox_img
