@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: bLiC7kRTpoDfBX8jdjpyzw
-! Last modified: 30 May 2015 19:01 +0800
+! Checksum: naZXVVgu7fdBo3tBmHZ5Jg
+! Last modified: 08 Jun 2015 00:24 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -535,7 +535,6 @@ download.csdn.net##.AD
 !--Discuz
 */common/cf/*
 */data/attachment/common/ad/*
-search.discuz.qq.com##.ad
 !--PHPWind
 ||cs*.phpwind.com/apps.php?appname=ad*
 !--5d6d
@@ -546,25 +545,31 @@ search.discuz.qq.com##.ad
 ||cdn.v2ex.com/assets/sidebar/*
 www.v2ex.com##.box:nth-child(6) > .inner:nth-child(1)
 !---卡饭论坛
-kafan.cn##.a_f
-kafan.cn##.wp.gg
+!官网首页
+kafan.cn##.comeing_show_box
+!论坛
+bbs.kafan.cn##.wp.a_f
 !---精睿论坛
 bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
 bbs.vc52.cn##.a_pb
 !---远景论坛
+||bbs.pcbeta.com/static/image/pcbeta/intel_cp.png
 bbs.pcbeta.com##.forum_top + div + div[class]
-pcbeta.com##.forum_top ~ div[class]
 bbs.pcbeta.com###diynavtop + style + div[class]
 bbs.pcbeta.com##div[style*="width:960px;height:91px;"]
 bbs.pcbeta.com###sitefocus
-!---机锋市场
-apk.gfan.com##DIV[style="width:960px;height:90px;margin-top:10px;"]
+!---机锋网
+gfan.com##.ad_box
+apk.gfan.com##div[style^="width:960px;height:90px;"]
+apk.gfan.com###l
+apk.gfan.com###r
 !---机锋论坛
 bbs.gfan.com##.wpp
+||miniweb.cntv.cn^$domain=bbs.gfan.com
+bbs.gfan.com##div[style^="width:960px;height:90px;"]
 !每页一楼底部
-bbs.gfan.com##.plc.plm>a[href*="apk.gfan.com"]
-bbs.gfan.com##.ad
+bbs.gfan.com##.plc.plm>a
 !---拇指玩
 muzhiwan.com###sitefocus
 muzhiwan.com###focus
@@ -709,9 +714,11 @@ bbs.aptx.cn##.a_pr
 ||dm.tsdm.net/xinfandongman/*$popup,domain=tsdm.net
 ||www.tsdm.net/qxs.php$popup,domain=tsdm.net
 ||taobao.com^$popup,domain=tsdm.net
+||tmall.com^$popup,domain=tsdm.net
 ||loli.cd^$popup,domain=tsdm.net
 ||u72.com.cn^$popup,domain=tsdm.net
-||dj-game.cn^$popup,domain=tsdm.net
+||sinaimg.cn/large/*20r*.jpg$domain=tsdm.net
+@@||sinaimg.cn/large/*20r306y40m.jpg
 ||sinaimg.cn/*20q*.*$domain=tsdm.net
 ||sinaimg.cn/*20j*.jpg$domain=tsdm.net
 !---NyaaTorrents
@@ -1118,7 +1125,7 @@ item.taobao.com###J_toolbar
 ||d.jd.com/cathot/*
 ||d.jd.com/hotwords/*
 !---什么值得买
-||zdmimg.com/data/forum-
+||zdmimg.com/www/delivery/ajs.php*
 !---玩家堂
 ||itocp.com/html/gk/*
 !---超能网
@@ -1178,15 +1185,11 @@ lol.duowan.com##.full-banner
 ||yktj.yzz.cn^
 yzz.cn##.ad200x340
 !---游民星空
-||gamersky.com/ad/
-||gamersky.com/pt3/
+||ja.gamersky.com^
 ||gamersky.com/img/
-||g.badao37.com^$third-party
-!背景
-||gamersky.com/bgpic/*
-gamersky.com###hitix
-!下载页
-||imgf.gamersky.com/img1/dcr300.gif
+||gamersky.com^*.htm$subdocument
+@@||gamersky.com^*/dhgame_
+||gamersky.com/g/gamerskyflash.js
 !---52pk
 ||5y9nfpes.52pk.com^
 ||market.52pk.com/files/union/*
