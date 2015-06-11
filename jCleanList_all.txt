@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: naZXVVgu7fdBo3tBmHZ5Jg
-! Last modified: 08 Jun 2015 00:24 +0800
+! Checksum: RCYlKGzThX33hY7JF9K7mA
+! Last modified: 11 Jun 2015 23:47 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -15,6 +15,7 @@
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
 /\/[^\?\#=%]*(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
 ://ads.
+/adsense/*
 /adserve/*
 |http://*/gg/*
 |http://*/ggao/*
@@ -301,9 +302,11 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 ||youxi.baidu.com/r/image/*
 ||tb1.bdstatic.com/tb/r/image/*
 ||jiaoyu.baidu.com/tieba/*
+!剑灵吧顶部游戏广告
+tieba.baidu.com##.content_top
 !顶部yoyojie&UUU9游戏
-||tb1.bdstatic.com/tb/cms/game_cover/*
-tieba.baidu.com##.u9_head.clearfix
+||bdstatic.com/tb/cms/game_cover/*
+tieba.baidu.com##.u9_head
 !顶部游戏直播
 ||zhanqi.tv^$domain=tieba.baidu.com
 tieba.baidu.com###game_live_list
@@ -313,8 +316,7 @@ tieba.baidu.com###game_live_list
 tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
 ||tieba.baidu.com/tb/zt/spread/*
-||tb1.bdstatic.com/tb/cms/ngmis/*
-tieba.baidu.com##[data-daid]
+tieba.baidu.com##.j_thread_list + LI[class]:not(.j_thread_list)
 !侧边栏
 tieba.baidu.com###encourage_entry
 !tieba1_帖子
@@ -325,6 +327,7 @@ tieba.baidu.com###encourage_entry
 tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
 !帖子1楼底部游戏横幅
+tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
 ||tieba.baidu.com/tb/cms/game_test/*
 !侧边栏
 tieba.baidu.com##.u9_aside
@@ -568,8 +571,10 @@ apk.gfan.com###r
 bbs.gfan.com##.wpp
 ||miniweb.cntv.cn^$domain=bbs.gfan.com
 bbs.gfan.com##div[style^="width:960px;height:90px;"]
-!每页一楼底部
+!帖子一楼底部
 bbs.gfan.com##.plc.plm>a
+!帖子底部空白
+bbs.gfan.com##DIV[style=" height:370px;"]
 !---拇指玩
 muzhiwan.com###sitefocus
 muzhiwan.com###focus
