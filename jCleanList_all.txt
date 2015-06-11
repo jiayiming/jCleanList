@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: RCYlKGzThX33hY7JF9K7mA
-! Last modified: 11 Jun 2015 23:47 +0800
+! Checksum: Cb2Cor4EY/SgcCh8v4ecGA
+! Last modified: 12 Jun 2015 00:04 +0800
 ! Expires: 3 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://jcleanlist.googlecode.com/
@@ -316,6 +316,7 @@ tieba.baidu.com###game_live_list
 tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
 ||tieba.baidu.com/tb/zt/spread/*
+tieba.baidu.com##[data-daid]
 tieba.baidu.com##.j_thread_list + LI[class]:not(.j_thread_list)
 !侧边栏
 tieba.baidu.com###encourage_entry
