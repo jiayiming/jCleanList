@@ -1,11 +1,11 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Cb2Cor4EY/SgcCh8v4ecGA
-! Last modified: 12 Jun 2015 00:04 +0800
-! Expires: 3 days (update frequency)
+! Checksum: kZj7hUIpmr9/ChNC3z6Qag
+! Last modified: 17 Jun 2015 20:12 +0800
+! Expires: 2 days (update frequency)
 ! Coding: utf-8
-! Homepage: https://jcleanlist.googlecode.com/
-! https://jcleanlist.googlecode.com/git/jCleanList_all.txt
+! Homepage: https://github.com/jiayiming/jCleanList
+! https://github.com/jiayiming/jCleanList/raw/master/jCleanList_all.txt
 !----Sina/TX @小蛐蛐
 !----MIT Licensed, NO WARRANTY but Best Wishes----
 
@@ -45,6 +45,7 @@
 
 !---通用广告联盟通用猜测
 |http://*/i.js
+|http://*.com/s.php?id=$script,third-party
 |http://*icast*
 |http://*/*duilian*
 !---google
@@ -275,6 +276,7 @@ http://stat.
 !---Others(Foreign)
 ||histats.com^$third-party
 ||newrelic.com^$third-party
+||ml314.com^$third-party
 ||scorecardresearch.com^$third-party
 ||serving-sys.com^$third-party
 
@@ -800,11 +802,12 @@ dl.vmall.com##[id^="ad_"]
 !去加载中提示
 dl.vmall.com###filelist_marker
 !---迅雷快传
+||img.kuai.xunlei.com/img/v2/fen/
 ||img.kuai.xunlei.com/js/statistics.js
+kuai.xunlei.com##.adv_area
 !---CTdisk
-*/advview.php*$domain=400gb.com|ctdisk.com
-||400gb.com/img/600.gif
-400gb.com##.kk_xshow
+400gb.com,ctfile.com###advLeft
+400gb.com,ctfile.com###advRight
 !---千军万马
 ||go.snsfun.cc^$popup,third-party
 !---ys168
@@ -1004,8 +1007,33 @@ xiazaiba.com##.test-90
 hanzify.org##.banner-leader-index
 hanzify.org##.section-title>span[style*="float:right;"]
 hanzify.org##.categorypickdown
+!---pc6下载站
+||pc6.com/js/jf/*
+||pc6.com/js/address.html*
+pc6.com###topbanner2
+!---未来软件站
+||orsoon.com*zhuanti/img/*
+orsoon.com##[class^="AD"]
+!---飘荡软件
+||piaodown.com/other/js/*
+!----当下软件园
+||downxia.com/zejs/*
+!---飘荡软件
+||piaodown.com/other/*
 !---zd423
 ||zdfans.com/wp-content/upgrade/doujind.gif
+!---异次元
+iplaysoft.com###section_event
+iplaysoft.com###bottom_ad
+iplaysoft.com##.d250
+iplaysoft.com###sidebar_scroll_bdad
+iplaysoft.com##.d336
+iplaysoft.com###sidebar > ul > .widget:first-child
+iplaysoft.com##.widget_dd
+iplaysoft.com###sidebar > ul > .widget:nth-child(3)
+iplaysoft.com##div[style^="width:680px;height:166px;"]
+dl.iplaysoft.com##.adsbygoogle
+dl.iplaysoft.com##center > div[style^="margin-top:15px;"]
 !---小众软件
 ||appinn.com/images/*/youli.jpg
 ||appinn.com/images/*/worktile.png
@@ -1015,19 +1043,6 @@ hanzify.org##.categorypickdown
 ||ax-d.pixfuture.net^$third-party
 appinn.com##.ads
 appinn.com##.adsbygoogle
-!---飘荡软件
-||piaodown.com/other/js/*
-!---pc6下载站
-||pc6.com/js/jf/*
-||pc6.com/js/address.html*
-pc6.com###topbanner2
-!---未来软件站
-||orsoon.com*zhuanti/img/*
-orsoon.com##[class^="AD"]
-!----当下软件园
-||downxia.com/zejs/*
-!---飘荡软件
-||piaodown.com/other/*
 !---晋江言情小说网
 ||jjwxc.net/jjad*html$popup,domain=jjwxc.net
 !首页顶部
@@ -1114,6 +1129,7 @@ userstyles.org##.ad
 !---xda-developers
 forum.xda-developers.com##.leaderboard
 forum.xda-developers.com##.unicorn
+forum.xda-developers.com##.purch-box
 !---TechPowerUp
 ||tpucdn.com/images/b/*
 !侧栏
