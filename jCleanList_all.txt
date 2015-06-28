@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: kZj7hUIpmr9/ChNC3z6Qag
-! Last modified: 17 Jun 2015 20:12 +0800
+! Checksum: BZhaaX7JJhM1cOnk/nRBIg
+! Last modified: 29 Jun 2015 00:10 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -23,6 +23,7 @@
 |http://gg.*^
 /tuiguang/*
 /960x90_
+728x90.jpg|
 /300x250_
 !---白名单区域
 @@|http://*/*ad*.$stylesheet
@@ -130,9 +131,10 @@
 ||adyun.com^$third-party
 ||adsame.com^$third-party
 ||btyou.com^$third-party
+||c1o1.com^$third-party
 ||chanet.com.cn^$third-party
 ||chinaih.com^$third-party
-||c1o1.com^$third-party
+||criteo.com^$third-party
 ||csbew.com^
 ||egooad.com^$third-party
 ||game3737.com^$third-party
@@ -279,6 +281,8 @@ http://stat.
 ||ml314.com^$third-party
 ||scorecardresearch.com^$third-party
 ||serving-sys.com^$third-party
+!---CDN相关Test
+||ajax.cloudflare.com/cdn-cgi/*/cloudflare.min.js^$third-party
 
 !---Google
 www.google.com.hk,www.google.com,encrypted.google.com###tads,#bottomads
@@ -304,6 +308,8 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 ||youxi.baidu.com/r/image/*
 ||tb1.bdstatic.com/tb/r/image/*
 ||jiaoyu.baidu.com/tieba/*
+!领取挽尊卡对话框
+tieba.baidu.com##.dialogJmodal
 !剑灵吧顶部游戏广告
 tieba.baidu.com##.content_top
 !顶部yoyojie&UUU9游戏
@@ -314,6 +320,7 @@ tieba.baidu.com##.u9_head
 tieba.baidu.com###game_live_list
 !顶部美女直播
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
+tieba.baidu.com##.per_list_frs
 !置顶游戏广告贴
 tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
@@ -332,8 +339,8 @@ tieba.baidu.com###pb_adbanner
 !帖子1楼底部游戏横幅
 tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
 ||tieba.baidu.com/tb/cms/game_test/*
-!侧边栏
-tieba.baidu.com##.u9_aside
+!广告贴
+tieba.baidu.com##.frs_act_repost_wrapper_outter
 !zhidao0|zhidao1|zhidao2
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com##.wgt-ads
@@ -365,6 +372,7 @@ qq.com##.adLeft,.adRight
 !首页和子页通用
 qq.com##.l_qq_com
 !新版子页
+||ra.gtimg.com/web/default_fodders/*.swf*$object
 qq.com##.mian-ad
 qq.com##.ad-box
 !板块分页顶部
@@ -389,6 +397,8 @@ qq.com##[id$="_ad"]
 news.163.com##[class*="gg-"]
 !邮箱
 ||mimg.127.net/external/*
+!博客右下角漂浮
+blog.163.com##.postadlayer
 !---有道(词典)
 ||impservice.dictweb.youdao.com^
 ||impservice.dictapp.youdao.com^
@@ -546,10 +556,11 @@ download.csdn.net##.AD
 !--5d6d
 ||cache.soso.com/30d/js/discuz/relate_subject.js
 ||toutiao.haotui.com/data/js/0.js
+||su.bdimg.com/static/dspui/js/uf.js
 !---V2EX
-||cdn.v2ex.com/friends/lagou/*
-||cdn.v2ex.com/assets/sidebar/*
-www.v2ex.com##.box:nth-child(6) > .inner:nth-child(1)
+||cdn.v2ex.*/friends/100offer/*
+v2ex.com##.inner[align="center"]
+||cdn.v2ex.*/assets/sidebar/*
 !---卡饭论坛
 !官网首页
 kafan.cn##.comeing_show_box
@@ -683,21 +694,12 @@ dzh.mop.com##.adarea
 dzh.mop.com##.adarea_top
 
 !---动漫花园
-||share.dmhy.org/*.jpg?$image
-||share.dmhy.org/*.gif?$image
-||share.dmhy.org/*.png?$image
-||share.dmhy.org/shareman*$image
+||share.dmhy.*/*?$image
 share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
 ||bt.ktxp.com/iframe/show_kkkmh.js
 bt.ktxp.com##.item-box2.money
-!---看漫画
-||kkkmh.com/iframe/banner.js
-||kkkmh.com/javascripts/abcde/*
-kkkmh.com##.mm-hot
-kkkmh.com##.mm-book
-kkkmh.com##.box[style="margin-top:10px;text-align:center;"]
 !---轻之国度
 lightnovel.cn###swRoller_1
 lightnovel.cn##.a_mu
@@ -719,6 +721,9 @@ bbs.9baka.com##td[width="680"][height="50"]
 bbs.aptx.cn##.a_pr
 !---天使动漫
 ||tsdm.net/static/kawayi/*
+tsdm.net###pgt + div > p[style="float:left;width:100%"]
+tsdm.net##.a_pb
+!签到弹窗
 ||dm.tsdm.net/xinfandongman/*$popup,domain=tsdm.net
 ||www.tsdm.net/qxs.php$popup,domain=tsdm.net
 ||taobao.com^$popup,domain=tsdm.net
@@ -729,35 +734,28 @@ bbs.aptx.cn##.a_pr
 @@||sinaimg.cn/large/*20r306y40m.jpg
 ||sinaimg.cn/*20q*.*$domain=tsdm.net
 ||sinaimg.cn/*20j*.jpg$domain=tsdm.net
+!TorrenTGui
+||totheglory.im/pic/qlcj.jpg
 !---NyaaTorrents
 ||files.nyaa.se/a*.jpg
 !Pixiv
 ||cache.microad.jp/send_jsonp.js
 pixiv.net##.ads_area
 !---U17
-||s.u17t.com/leaflet/upload/
+||image.mylife.u17t.com^*.gif
+u17.com##.side_top_ad
 u17.com##div[id^="u17-advert"]
-u17.com##.r_ad_drag
-u17.com##.top_ad
-u17.com###ldpop
-u17.com###rdpop
+u17.com##.ad_wrap
 !---射手网
 ||shooter.cn/a/*adv$script
 ||google.com/afsonline/show_afs_search.js$domain=shooter.cn
 shooter.cn###googleSearchUnitIframe
-!---人人影视
-||res.yyets.com/ads/*
-||copy.ousns.com^$domain=yyets.com
-||6rooms.com/live/$domain=yyets.com
-yyets.com##.adBox
-yyets.com##.block > .box_4:only-child
-!6room
-yyets.com##.games-rec-list
-yyets.com##DIV[style$="width:700px;overflow:hidden;"]
-yyets.com##.allsearch>.clearfix:nth-of-type(1)
-!---TorrenTGui
-||totheglory.im/pic/1000.jpg
-||totheglory.im/pic/9700.jpg
+!---人人影视(ZiMuZu)
+||g.ousns.net^
+||6.cn/coop/pub/getRand.php?
+zimuzu.tv##ul.room
+||122.228.236.165^
+||cili001.com/52meiju_700_90.jpg
 !---老调网
 ||img.hdbird.com/langzi/0403/ld.jpg
 !---PT80
@@ -1117,6 +1115,9 @@ paipaitxt.com##a[style*="/images/mxywk.png"]
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
+!---sourceforge
+!下载页
+sourceforge.net##.ad
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
 !---SOSO搜搜
@@ -1142,12 +1143,14 @@ item.taobao.com###J_toolbar
 ||fa.jd.com^
 ||nfa.jd.com^
 @@||ad.3.cn/ads/mgets?$script,domain=item.jd.com
+@@||static.360buyimg.com/ad/re/js/jd_middle.min.js*
 !屏蔽搜索热词
 ||dc.3.cn/cathot/get?*
 ||d.jd.com/cathot/*
 ||d.jd.com/hotwords/*
 !---什么值得买
 ||zdmimg.com/www/delivery/ajs.php*
+smzdm.com##.g_g
 !---玩家堂
 ||itocp.com/html/gk/*
 !---超能网
