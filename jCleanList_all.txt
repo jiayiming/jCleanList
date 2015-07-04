@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: BZhaaX7JJhM1cOnk/nRBIg
-! Last modified: 29 Jun 2015 00:10 +0800
+! Checksum: DJJ4SysLPJQphPCybOk/zg
+! Last modified: 04 Jul 2015 23:42 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -320,7 +320,7 @@ tieba.baidu.com##.u9_head
 tieba.baidu.com###game_live_list
 !顶部美女直播
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
-tieba.baidu.com##.per_list_frs
+tieba.baidu.com##.play_list_panel
 !置顶游戏广告贴
 tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
@@ -350,8 +350,10 @@ zhidao.baidu.com##.cms-slide
 zhidao.baidu.com##.widget-ads
 !baike
 @@||baike.bdimg.com/*/adside/*.js
-!wenku1
+!wenku
+||wenku.bdimg.com/*/widget/ad/*
 @@||img.baidu.com/img/iknow/wenku/ad/wk*.js
+||wenku.baidu.com/tongji/
 wenku.baidu.com##.banner-wrap
 !music
 ||music.baidu.com/static/html/cbjs.html*
@@ -383,6 +385,8 @@ qq.com##[id$="_ad"]
 !评论
 ||view.news.qq.com/PL_ad*.htm
 ||view.news.qq.com/article_qq/ad_article_qq/*
+!动漫频道
+||gtimg.com/comic/newqshou/js/AD2v1.1.js
 !---网易
 ||img1.126.net^
 ||img2.126.net^
@@ -1234,11 +1238,11 @@ jb51.net##.dxy230
 jb51.net###con_all
 jb51.net##.adsbygoogle
 !---豆丁
-||docin.com/app/a_d/*
+||docin.com/docin_adv/
 ||pics.wanlibo.com/js/pagemodulestat.js*
-!跳过广告
-docin.com###beforeAd
+docin.com###docindex_ad
 !---中国天气网
+weather.com.cn##[id^="adpos"]
 weather.com.cn##[class^="adpos"]
 weather.com.cn##.post_st
 !---爱词霸
