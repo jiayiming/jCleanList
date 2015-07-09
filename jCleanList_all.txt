@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 6a7ERG87AcooLOhxiKolFQ
-! Last modified: 09 Jul 2015 23:37 +0800
+! Checksum: Jw8z2LDtAZUzOIk2+JuFWg
+! Last modified: 10 Jul 2015 00:07 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -696,7 +696,8 @@ dzh.mop.com##.adarea
 dzh.mop.com##.adarea_top
 
 !---动漫花园
-||share.dmhy.*/*?$image
+||share.dmhy.org/*?$image
+@@||share.dmhy.org^*/generate-captcha?
 share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
 !---极影动漫
 ||baidu.com$domain=bt.ktxp.com
@@ -1152,7 +1153,7 @@ item.taobao.com###J_toolbar
 ||d.jd.com/cathot/*
 ||d.jd.com/hotwords/*
 !---什么值得买
-||zdmimg.com/www/delivery/ajs.php*
+||zdmimg.com/www/delivery/*
 smzdm.com##.g_g
 !---玩家堂
 ||itocp.com/html/gk/*
