@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: DJJ4SysLPJQphPCybOk/zg
-! Last modified: 04 Jul 2015 23:42 +0800
+! Checksum: 6a7ERG87AcooLOhxiKolFQ
+! Last modified: 09 Jul 2015 23:37 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -305,7 +305,6 @@ tieba.baidu.com##.pc2client
 !烟花
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 !tieba0_帖子列表
-||youxi.baidu.com/r/image/*
 ||tb1.bdstatic.com/tb/r/image/*
 ||jiaoyu.baidu.com/tieba/*
 !领取挽尊卡对话框
@@ -329,6 +328,8 @@ tieba.baidu.com##[data-daid]
 tieba.baidu.com##.j_thread_list + LI[class]:not(.j_thread_list)
 !侧边栏
 tieba.baidu.com###encourage_entry
+tieba.baidu.com##.zyq_bright + div[class]
+tieba.baidu.com##.item.live_show_aside
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
 ||s1.bdstatic.com/r/*/baidu_search/*
@@ -338,9 +339,6 @@ tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
 !帖子1楼底部游戏横幅
 tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
-||tieba.baidu.com/tb/cms/game_test/*
-!广告贴
-tieba.baidu.com##.frs_act_repost_wrapper_outter
 !zhidao0|zhidao1|zhidao2
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com##.wgt-ads
@@ -743,8 +741,9 @@ tsdm.net##.a_pb
 !---NyaaTorrents
 ||files.nyaa.se/a*.jpg
 !Pixiv
-||cache.microad.jp/send_jsonp.js
+||d.pixiv.org^
 pixiv.net##.ads_area
+pixiv.net##.ads_anchor
 !---U17
 ||image.mylife.u17t.com^*.gif
 u17.com##.side_top_ad
@@ -1023,7 +1022,7 @@ orsoon.com##[class^="AD"]
 !---飘荡软件
 ||piaodown.com/other/*
 !---zd423
-||zdfans.com/wp-content/upgrade/doujind.gif
+||zdfans.com/adsens/*.jpg
 !---异次元
 iplaysoft.com###section_event
 iplaysoft.com###bottom_ad
