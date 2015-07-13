@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Jw8z2LDtAZUzOIk2+JuFWg
-! Last modified: 10 Jul 2015 00:07 +0800
+! Checksum: MNPLm3ySDy9B1NqVUQ4wzg
+! Last modified: 14 Jul 2015 00:11 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -13,7 +13,7 @@
 /[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
 @@/ad[^\.]*\.js[^/]*/[^/]+/\S+\.js/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
-/\/[^\?\#=%]*(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
+/\/(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
 ://ads.
 /adsense/*
 /adserve/*
@@ -112,6 +112,7 @@
 ||49ko.com^$third-party
 ||565882.com^$third-party
 ||6dad.com^$third-party
+||6dvip.com^
 ||70e.com^$third-party
 ||778669.com^$third-party
 ||7k7k.com^$third-party,popup
@@ -134,6 +135,7 @@
 ||c1o1.com^$third-party
 ||chanet.com.cn^$third-party
 ||chinaih.com^$third-party
+||cms10086.com^$third-party
 ||criteo.com^$third-party
 ||csbew.com^
 ||egooad.com^$third-party
@@ -165,6 +167,7 @@
 ||qq937.com^$third-party
 ||redu.com^$third-party
 ||resmkt.dipan.com^$third-party
+||rtbs.cn/bi.js
 ||sharele.cn^$third-party
 ||star8.net^$third-party
 ||tuigoo.com^$third-party
@@ -584,22 +587,14 @@ apk.gfan.com##div[style^="width:960px;height:90px;"]
 apk.gfan.com###l
 apk.gfan.com###r
 !---机锋论坛
+||cntv.cn/hezuo/
 bbs.gfan.com##.wpp
-||miniweb.cntv.cn^$domain=bbs.gfan.com
-bbs.gfan.com##div[style^="width:960px;height:90px;"]
 !帖子一楼底部
 bbs.gfan.com##.plc.plm>a
 !帖子底部空白
-bbs.gfan.com##DIV[style=" height:370px;"]
+bbs.gfan.com##div[style=" height:370px;"]
 !---拇指玩
-muzhiwan.com###sitefocus
 muzhiwan.com###focus
-!---XDA.CN
-!论坛首页顶部
-xda.cn##.area-banner-pic
-xda.cn##.duoge_r
-!---OPDA
-ooomm.com##.a_mu
 !---威锋网
 ||feng.com/aodoo3/
 !首页logo修复
@@ -614,27 +609,29 @@ bbs.feng.com##.a_pb
 !---游侠网
 ||bmp.ali213.net/JS/*.js
 ||bmp1.ali213.net/JS/*.js
+www.ali213.net##[id^="ali-ad-"]
+www.ali213.net##.newright
 !---3DM游戏论坛
+bbs.3dmgame.com##.a_h
 !---EZ 游戏社区
 bbs.emu-zone.org##font[style="font-size:0px;color:#FFFFFF"]
 !---电玩巴士
-||inc.tgbus.com/frame^
 ||vista.tgbusdata.cn^
+www.tgbus.com##[class^="guanggao"]
+www.tgbus.com##.r1
+!子页
+||inc.tgbus.com/frame^
 ||tgbus.com/sf/taobao/*
-tgbus.com##.a760x100
-tgbus.com##.a200x375
 tgbus.com##[class^="ad"]
-psp.tgbus.com###neck_970
-!子页侧边栏推荐视频
-tgbus.com##.appe>.video
-!游戏下载页面
-||ol.tgbus.com/iframe/tu/index_down.html
-games.tgbus.com##[style*="width: 960px;height:90px;"]
+tgbus.com###neck_970
+!网游
+ol.tgbus.com##.top1_gg
+ol.tgbus.com##.c1_r1
+ol.tgbus.com##.c2
 !论坛帖子右侧
 bbs.tgbus.com##.a_pr
 !---A9VG电玩部落
-*bbs.a9vg.com/showit*
-bbs.a9vg.com###a9_show
+||bbs.a9vg.com/showit/
 !---玩家网
 !首页
 cngba.com##.ad
@@ -680,8 +677,9 @@ bbs.mydigit.cn##.radio.mb10
 ||erji.net/mf.swf
 erji.net##.t[style="margin:15px auto"]
 !---天涯
-||806.tianya.cn^
+||8*.tianya.cn^
 bbs.tianya.cn###q_topbanner_950_90
+bbs.tianya.cn##.art-view
 !---猫扑
 ||pub.mop.com^
 ||mopimg.cn/tj/
@@ -825,8 +823,7 @@ mediafire.com##.rockmeltAdWrapper
 ||puhtml.com^$third-party
 
 !---视频全局
-||irs01.com^
-||irs01.net^
+||irs01.*^
 ||acs86.com^
 ||mediav.com^
 !------------------------------------
@@ -844,13 +841,16 @@ soku.com##div[id^="ab_"]
 ||stat*.tudou.com^
 !pv
 ||lstat.youku.com^$third-party
-||player.pb.ops.tudou.com/info.php*
 */cv/pl*&uuid=*
 */pos?act=dur*
 !---爱奇异
-||iqiyi.com/player/cupid/*/adplayer.swf
-iqiyi.com##[id^="div_theatre"]
-iqiyi.com###ad-left-tl
+||iqiyi.com/common/flashplayer/*/pageer.swf
+/^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf/$domain=iqiyi.com
+iqiyi.com###adflash
+!播放页
+||qiyipic.com/common/$object-subrequest
+iqiyi.com##div[id^="100000000"]
+iqiyi.com##.play-titleAd
 !pv
 ||msg.video.qiyi.com^
 ||static.iqiyi.com/js/pingback/*
@@ -869,6 +869,8 @@ www.qq.com###advertisement
 !---乐视
 */letv-web/*
 ||ark.letv.com^
+||letvimg.com*gugwl/$object-subrequest
+@@||stat.letv.com/vplay/*
 !pv
 ||dc.letv.com^
 !---搜狐视频
@@ -930,6 +932,9 @@ bilibili.com##.index-promote
 ||dns-*.test.bilibili.cc^
 !---AcFun
 acfun.tv##[id^="ad-"]
+!---吐槽
+||tucao.cc/index.php?m=poster
+tucao.cc##.a2013d
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
