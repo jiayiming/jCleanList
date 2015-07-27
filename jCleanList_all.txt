@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: MNPLm3ySDy9B1NqVUQ4wzg
-! Last modified: 14 Jul 2015 00:11 +0800
+! Checksum: MEOfepRpa2+Xuvo8xkwYVw
+! Last modified: 28 Jul 2015 00:01 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -310,6 +310,8 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 !tieba0_帖子列表
 ||tb1.bdstatic.com/tb/r/image/*
 ||jiaoyu.baidu.com/tieba/*
+!顶部横幅
+tieba.baidu.com##.head_middle
 !领取挽尊卡对话框
 tieba.baidu.com##.dialogJmodal
 !剑灵吧顶部游戏广告
@@ -576,7 +578,7 @@ bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
 bbs.vc52.cn##.a_pb
 !---远景论坛
-||bbs.pcbeta.com/static/image/pcbeta/intel_cp.png
+||bbs.pcbeta.com/static/image/pcbeta/intel_*.png
 bbs.pcbeta.com##.forum_top + div + div[class]
 bbs.pcbeta.com###diynavtop + style + div[class]
 bbs.pcbeta.com##div[style*="width:960px;height:91px;"]
