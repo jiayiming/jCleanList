@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: MEOfepRpa2+Xuvo8xkwYVw
-! Last modified: 28 Jul 2015 00:01 +0800
+! Checksum: 3FnvCxdjvck1zZDdRvl0Ow
+! Last modified: 02 Aug 2015 23:16 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -293,8 +293,6 @@ www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 !---众里寻他千百度
 !百度全局
 ||a.baidu.com
-!搜索+推广
-www.baidu.com###content_right
 !image_All
 image.baidu.com###relEcom
 !tieba_All
@@ -312,8 +310,6 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 ||jiaoyu.baidu.com/tieba/*
 !顶部横幅
 tieba.baidu.com##.head_middle
-!领取挽尊卡对话框
-tieba.baidu.com##.dialogJmodal
 !剑灵吧顶部游戏广告
 tieba.baidu.com##.content_top
 !顶部yoyojie&UUU9游戏
@@ -332,6 +328,7 @@ tieba.baidu.com###threadListGroupCnt
 tieba.baidu.com##[data-daid]
 tieba.baidu.com##.j_thread_list + LI[class]:not(.j_thread_list)
 !侧边栏
+tieba.baidu.com##.aside_region.my_app
 tieba.baidu.com###encourage_entry
 tieba.baidu.com##.zyq_bright + div[class]
 tieba.baidu.com##.item.live_show_aside
@@ -578,7 +575,7 @@ bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
 bbs.vc52.cn##.a_pb
 !---远景论坛
-||bbs.pcbeta.com/static/image/pcbeta/intel_*.png
+||bbs.pcbeta.com/event/win10.gif
 bbs.pcbeta.com##.forum_top + div + div[class]
 bbs.pcbeta.com###diynavtop + style + div[class]
 bbs.pcbeta.com##div[style*="width:960px;height:91px;"]
