@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 3FnvCxdjvck1zZDdRvl0Ow
-! Last modified: 02 Aug 2015 23:16 +0800
+! Checksum: rSlRtIpNbv20SPgCAWPV/g
+! Last modified: 24 Aug 2015 00:19 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -23,7 +23,7 @@
 |http://gg.*^
 /tuiguang/*
 /960x90_
-728x90.jpg|
+_728x90.
 /300x250_
 !---白名单区域
 @@|http://*/*ad*.$stylesheet
@@ -69,8 +69,6 @@
 ||tanx.com
 !---union
 ||union.youdao.com^$third-party
-||union.netease.com^$third-party
-||union.163.com^$third-party
 ||union.ijinshan.com^$third-party
 !---allyes
 ||allyes.*^$third-party
@@ -242,7 +240,7 @@ http://stat.
 !分享
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---TX
-||pingtcss.qq.com^$third-party
+||pingjs.qq.com^
 ||btrace.qq.com^
 ||gdt.qq.com^
 ||isdspeed.qq.com^
@@ -263,7 +261,6 @@ http://stat.
 ||dwtracking.sdo.com^
 !---Others(China)
 ||51yes.com^$third-party
-||api.pixnet.tv/count^
 ||brand.sogou.com^
 ||baifendian.com^$third-party
 ||css.aliyun.com^$third-party
@@ -279,11 +276,15 @@ http://stat.
 ||v2.jiathis.com^$third-party
 ||wrating.com^$third-party
 !---Others(Foreign)
+||exponential.com^$third-party
+||go-mpulse.net^$third-party
 ||histats.com^$third-party
+||kontera.com/javascript/lib/KonaLibInline.js$third-party
 ||newrelic.com^$third-party
 ||ml314.com^$third-party
 ||scorecardresearch.com^$third-party
 ||serving-sys.com^$third-party
+||statcounter.com^$third-party
 !---CDN相关Test
 ||ajax.cloudflare.com/cdn-cgi/*/cloudflare.min.js^$third-party
 
@@ -592,6 +593,8 @@ bbs.gfan.com##.wpp
 bbs.gfan.com##.plc.plm>a
 !帖子底部空白
 bbs.gfan.com##div[style=" height:370px;"]
+!---52samsung
+||bbs.52samsung.com/samsungadv/*
 !---拇指玩
 muzhiwan.com###focus
 !---威锋网
@@ -653,7 +656,6 @@ we.poppur.com##.a_h
 we.poppur.com##.a_pt
 !---Chiphell
 ||chiphell.com/activity/*
-!---PCEVA
 !---恩山WIFI论坛
 ||right.com.cn/logo/*.gif
 !---IT之家
@@ -829,14 +831,17 @@ mediafire.com##.rockmeltAdWrapper
 !-----优酷+土豆共通
 ||atm.youku.com^
 !---优酷
-@@||valf.atm.youku.com^
+@@||val*.atm.youku.com^
+||hudong.pl.youku.com/interact/player/get/plugins?
+||hudong.pl.youku.com/interact/web/get/timeLinePlugin?
 youku.com##div[id^="ab_"]
 soku.com##div[id^="ab_"]
 !pv
 ||hz.youku.com^
 ||static.youku.com/*/paycenter/*$script
+||p-log.ykimg.com^
+||urchin.lstat.youku.com/index/js/urchin.js
 !---土豆
-||js.tudouui.com/bin/lingtong/app
 ||stat*.tudou.com^
 !pv
 ||lstat.youku.com^$third-party
@@ -1027,7 +1032,7 @@ orsoon.com##[class^="AD"]
 !---飘荡软件
 ||piaodown.com/other/*
 !---zd423
-||zdfans.com/adsens/*.jpg
+||zdfans.com/Picture/kiees.jpg
 !---异次元
 iplaysoft.com###section_event
 iplaysoft.com###bottom_ad
@@ -1113,9 +1118,16 @@ qdmm.com##.qd_sms_pop
 qdwenxue.com##[class^="wxgg"]
 !目录
 qdwenxue.com##[class^="show_ggpic_"]
+!---腾讯云起书院
+||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
+||paipai*/images/xjwy.png
+||paipai.fm/images/9dj.png
 ||paipai*/images/mxywk.png
+paipai.fm##a[style*="/images/xjwy.png"]
+paipai.fm##a[style*="/images/9dj.png"]
 paipai.fm##a[style*="/images/mxywk.png"]
+paipaitxt.com##a[style*="/images/xjwy.png"]
 paipaitxt.com##a[style*="/images/mxywk.png"]
 
 !---GitHub
@@ -1200,6 +1212,8 @@ bbs.766.com##.jammer
 ||market.duowan.com^
 !首页
 duowan.com##.ad--col
+!论坛
+||game.yy.com/resource/fodder/$domain=bbs.duowan.com
 !多玩乐视视频
 lol.duowan.com##.full-banner
 ||dwstatic.com^*/p/livetip/
