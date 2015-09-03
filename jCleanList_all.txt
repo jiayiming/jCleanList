@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: rSlRtIpNbv20SPgCAWPV/g
-! Last modified: 24 Aug 2015 00:19 +0800
+! Checksum: keZ5UDPqOMC9vvsudIgVDQ
+! Last modified: 03 Sep 2015 23:44 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -197,6 +197,7 @@ _728x90.
 ||addelive.com^$third-party
 ||adnium.com^$third-party
 ||adnxs.com^$third-party
+||carambo.la^$third-party
 ||clkrev.com^
 ||delivery45.com^$third-party
 ||directrev.com^$third-party
@@ -737,7 +738,7 @@ tsdm.net##.a_pb
 ||sinaimg.cn/*20q*.*$domain=tsdm.net
 ||sinaimg.cn/*20j*.jpg$domain=tsdm.net
 !TorrenTGui
-||totheglory.im/pic/qlcj.jpg
+||totheglory.im/pic/qlcjnew.jpg
 !---NyaaTorrents
 ||files.nyaa.se/a*.jpg
 !Pixiv
@@ -1033,6 +1034,7 @@ orsoon.com##[class^="AD"]
 ||piaodown.com/other/*
 !---zd423
 ||zdfans.com/Picture/kiees.jpg
+||zdfans.com/Picture/2345zj.gif
 !---异次元
 iplaysoft.com###section_event
 iplaysoft.com###bottom_ad
@@ -1122,11 +1124,9 @@ qdwenxue.com##[class^="show_ggpic_"]
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
 ||paipai*/images/xjwy.png
-||paipai.fm/images/9dj.png
-||paipai*/images/mxywk.png
+||paipai.fm/images/tssj.png
 paipai.fm##a[style*="/images/xjwy.png"]
-paipai.fm##a[style*="/images/9dj.png"]
-paipai.fm##a[style*="/images/mxywk.png"]
+paipai.fm##a[style*="/images/tssj.png"]
 paipaitxt.com##a[style*="/images/xjwy.png"]
 paipaitxt.com##a[style*="/images/mxywk.png"]
 
