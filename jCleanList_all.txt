@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: keZ5UDPqOMC9vvsudIgVDQ
-! Last modified: 03 Sep 2015 23:44 +0800
+! Checksum: 6MtDwpBXu3YdS1MXYOjW1w
+! Last modified: 13 Sep 2015 22:21 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -122,6 +122,7 @@ _728x90.
 ||88210212.com^$third-party
 ||8le8le.com^$third-party
 ||91wan.com^$third-party
+||9377co.com^
 ||9w1an.com^$third-party
 ||a3p4.com^$third-party
 ||adkongjian.com^$third-party
@@ -136,6 +137,7 @@ _728x90.
 ||cms10086.com^$third-party
 ||criteo.com^$third-party
 ||csbew.com^
+||dazhantai.com^$third-party
 ||egooad.com^$third-party
 ||game3737.com^$third-party
 ||gamediad.com^$third-party
@@ -153,11 +155,13 @@ _728x90.
 ||keyrun.cn^$third-party
 ||keytui.com^$third-party
 ||kfwan.com^$third-party
+||ku9377.com
 ||kuqi.com^$third-party
 ||miaozhen.com^$third-party
 ||maxreturn.cn^$third-party
 ||myad.cn^$third-party
 ||netgy.com^$third-party
+||niuxgame77.com^$third-party
 ||ok8848.com^$third-party
 ||onetad.com^$third-party
 ||qiyou.com^$third-party
@@ -288,6 +292,9 @@ http://stat.
 ||statcounter.com^$third-party
 !---CDN相关Test
 ||ajax.cloudflare.com/cdn-cgi/*/cloudflare.min.js^$third-party
+!天朝加速Test
+||platform.twitter.com/widgets.js$third-party
+||connect.facebook.net/en_US/fbevents.js$third-party
 
 !---Google
 www.google.com.hk,www.google.com,encrypted.google.com###tads,#bottomads
@@ -331,6 +338,7 @@ tieba.baidu.com##[data-daid]
 tieba.baidu.com##.j_thread_list + LI[class]:not(.j_thread_list)
 !侧边栏
 tieba.baidu.com##.aside_region.my_app
+tieba.baidu.com##.aside_region.life_helper
 tieba.baidu.com###encourage_entry
 tieba.baidu.com##.zyq_bright + div[class]
 tieba.baidu.com##.item.live_show_aside
@@ -528,9 +536,9 @@ cnbeta.com##.time
 cnbeta.com##.item.cooperation
 cnbeta.com##.adsbygoogle
 cnbeta.com##.navi
-!手机下载
-||cnbeta.com/assets/default/images/article/*
-cnbeta.com##.wdj_box
+!豌豆荚
+||cnbeta.com/assets/images/wdj_*.jpg
+cnbeta.com##div[style^="border-bottom:2px solid #ccc;"]
 !招聘
 cnbeta.com##.cber:nth-child(7)
 !---IT之家
@@ -740,11 +748,12 @@ tsdm.net##.a_pb
 !TorrenTGui
 ||totheglory.im/pic/qlcjnew.jpg
 !---NyaaTorrents
-||files.nyaa.se/a*.jpg
+||files.nyaa.eu/a*.jpg
 !Pixiv
 ||d.pixiv.org^
 pixiv.net##.ads_area
 pixiv.net##.ads_anchor
+pixiv.net##.ad-footer
 !---U17
 ||image.mylife.u17t.com^*.gif
 u17.com##.side_top_ad
@@ -760,6 +769,8 @@ shooter.cn###googleSearchUnitIframe
 zimuzu.tv##ul.room
 ||122.228.236.165^
 ||cili001.com/52meiju_700_90.jpg
+!---电影天堂
+||dy2018.com/dianyq/
 !---老调网
 ||img.hdbird.com/langzi/0403/ld.jpg
 !---PT80
@@ -771,7 +782,6 @@ unstat.baidu.com$domain=pt80.net
 ||zasv.net/data/attachment/forum/*
 ||zasv.com/somic.gif
 ||libdd.com^$third-party
-||srcdd.com^$third-party
 ||papaapp.com^$third-party
 
 !---新浪微薄
@@ -1035,6 +1045,8 @@ orsoon.com##[class^="AD"]
 !---zd423
 ||zdfans.com/Picture/kiees.jpg
 ||zdfans.com/Picture/2345zj.gif
+zdfans.com##.adsbygoogle
+zdfans.com##.widget_d_banner
 !---异次元
 iplaysoft.com###section_event
 iplaysoft.com###bottom_ad
