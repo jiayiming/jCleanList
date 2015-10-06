@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 6MtDwpBXu3YdS1MXYOjW1w
-! Last modified: 13 Sep 2015 22:21 +0800
+! Checksum: olImOt39+5vkXWIicIy4DQ
+! Last modified: 06 Oct 2015 17:20 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -226,7 +226,6 @@ _728x90.
 ||dwtrack.*^
 |http://track.
 http://stat.
-|http://count.
 */count.js
 |http://*/c.gif
 |http://*/1.gif
@@ -302,6 +301,13 @@ www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 !---众里寻他千百度
 !百度全局
 ||a.baidu.com
+!搜索
+www.baidu.com###content_left > div[class][style]:not([id])
+www.baidu.com###content_left > [id*="00"]:not(.result) > div
+www.baidu.com###content_right > table > tbody > tr > td > div:not(#con-ar)
+!搜索_pv
+||baidu.com^*/c.gif?
+||baidu.com^*/w.gif?
 !image_All
 image.baidu.com###relEcom
 !tieba_All
@@ -351,6 +357,7 @@ tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
 !帖子1楼底部游戏横幅
 tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
+tieba.baidu.com##[data-isautoreply]
 !zhidao0|zhidao1|zhidao2
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com##.wgt-ads
@@ -585,11 +592,13 @@ bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
 bbs.vc52.cn##.a_pb
 !---远景论坛
-||bbs.pcbeta.com/event/win10.gif
+||bbs.pcbeta.com/static/image/microsoftstore/*x*.jpg
 bbs.pcbeta.com##.forum_top + div + div[class]
 bbs.pcbeta.com###diynavtop + style + div[class]
 bbs.pcbeta.com##div[style*="width:960px;height:91px;"]
 bbs.pcbeta.com###sitefocus
+bbs.pcbeta.com##.a_pt
+bbs.pcbeta.com##.a_pb
 !---机锋网
 gfan.com##.ad_box
 apk.gfan.com##div[style^="width:960px;height:90px;"]
@@ -948,8 +957,8 @@ bilibili.com##.index-promote
 !---AcFun
 acfun.tv##[id^="ad-"]
 !---吐槽
-||tucao.cc/index.php?m=poster
-tucao.cc##.a2013d
+||tucao.tv/index.php?m=poster
+tucao.tv##.a2013d
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
