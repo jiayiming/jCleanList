@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: olImOt39+5vkXWIicIy4DQ
-! Last modified: 06 Oct 2015 17:20 +0800
+! Checksum: 6XpGjv/Dl7UKOTGsFYgMow
+! Last modified: 17 Oct 2015 23:54 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -43,6 +43,8 @@ _728x90.
 @@||map.bdstatic.com/*/common/widget/ui/Popup/*
 @@||ry.tbcdn.cn/apps/ivy/*
 @@||dpfile.com/combos/*ad*.js
+!OneDrive
+@@||spoprod-a.akamaihd.net/files/onedrive-website-release-*ad*.js
 
 !---通用广告联盟通用猜测
 |http://*/i.js
@@ -121,6 +123,7 @@ _728x90.
 ||84787111.com^$third-party
 ||88210212.com^$third-party
 ||8le8le.com^$third-party
+||8ox.cn^$third-party
 ||91wan.com^$third-party
 ||9377co.com^
 ||9w1an.com^$third-party
@@ -160,6 +163,7 @@ _728x90.
 ||miaozhen.com^$third-party
 ||maxreturn.cn^$third-party
 ||myad.cn^$third-party
+||mytanwan.com^$third-party
 ||netgy.com^$third-party
 ||niuxgame77.com^$third-party
 ||ok8848.com^$third-party
@@ -780,8 +784,9 @@ zimuzu.tv##ul.room
 ||cili001.com/52meiju_700_90.jpg
 !---电影天堂
 ||dy2018.com/dianyq/
-!---老调网
-||img.hdbird.com/langzi/0403/ld.jpg
+!---我飞网
+||115.28.6.94:8090/js/s
+||img.hdbird.com/langzi/
 !---PT80
 pt80.net##.a_t
 pt80.net##.a_f
@@ -959,6 +964,11 @@ acfun.tv##[id^="ad-"]
 !---吐槽
 ||tucao.tv/index.php?m=poster
 tucao.tv##.a2013d
+!---斗鱼
+||douyutv.com/upload/signs/*.swf
+douyutv.com##div[id^="sign_p_"]
+douyutv.com##.dy_top_gg
+douyutv.com##[id^="js_room_"]
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
