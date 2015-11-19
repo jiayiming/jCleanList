@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 6XpGjv/Dl7UKOTGsFYgMow
-! Last modified: 17 Oct 2015 23:54 +0800
+! Checksum: RpSZBXVULLrEP4pvwdDdJg
+! Last modified: 20 Nov 2015 00:12 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -549,9 +549,8 @@ cnbeta.com##.adsbygoogle
 cnbeta.com##.navi
 !豌豆荚
 ||cnbeta.com/assets/images/wdj_*.jpg
+||tigerbrokers.com/activity/quotation/cnbeta/*
 cnbeta.com##div[style^="border-bottom:2px solid #ccc;"]
-!招聘
-cnbeta.com##.cber:nth-child(7)
 !---IT之家
 ||ithome.com/block/*
 ithome.com##.adsbygoogle
@@ -814,15 +813,14 @@ t.qq.com###homeBannerNew
 ||s.renren.com^
 ||xnimg.cn^*/beacon.js
 !--百度云
-||pups.bdimg.com/advert/img/*
-play.baidu.com###pauseAd
+||pan.bdstatic.com/*/qianbao_*.jpg
+pan.baidu.com###share-ad-bottom
 !pv
 ||*monitor.jpg?xcode
 ||pan.baidu.com/api/analytics*
 !---115网盘
 ||static.115img.com/static/delivery/
 !---华为网盘
-|http://*.com/netdisk/download/ads/*
 ||hiad.vmall.com^
 dl.vmall.com##[id^="ad_"]
 !去加载中提示
@@ -878,10 +876,11 @@ soku.com##div[id^="ab_"]
 iqiyi.com###adflash
 !播放页
 ||qiyipic.com/common/$object-subrequest
+@@||qiyipic.com/common/fix/default_player_16_9.png
 iqiyi.com##div[id^="100000000"]
 iqiyi.com##.play-titleAd
+iqiyi.com###leftad
 !pv
-||msg.video.qiyi.com^
 ||static.iqiyi.com/js/pingback/*
 !---腾讯视频
 ||l.qq.com/p?
@@ -952,6 +951,7 @@ v.ku6.com##[class^="aa_"]
 !------------------------------------
 !---嗶哩嗶哩
 ||acg.tv^$object-subrequest,third-party
+||hdslb.com/u_user/$object-subrequest,domain=bilibili.com
 @@||bilibili.com/sppage/ad-*$xmlhttprequest
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
@@ -1066,6 +1066,7 @@ orsoon.com##[class^="AD"]
 ||zdfans.com/Picture/2345zj.gif
 zdfans.com##.adsbygoogle
 zdfans.com##.widget_d_banner
+zdfans.com##.meta>p:last-child
 !---异次元
 iplaysoft.com###section_event
 iplaysoft.com###bottom_ad
@@ -1271,6 +1272,8 @@ yzz.cn##.ad200x340
 !---52pk
 ||5y9nfpes.52pk.com^
 ||market.52pk.com/files/union/*
+!子页市场部
+||52pk.com/style/style/files/images/bd_3.gif
 !右下角漂浮
 ||games.52pk.com/fuchuang/
 bns.52pk.com###swfiframe
