@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: RpSZBXVULLrEP4pvwdDdJg
-! Last modified: 20 Nov 2015 00:12 +0800
+! Checksum: vq7Vj2RCfyuuSfmgK/U8uw
+! Last modified: 08 Dec 2015 00:17 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -329,6 +329,8 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 ||jiaoyu.baidu.com/tieba/*
 !顶部横幅
 tieba.baidu.com##.head_middle
+!春运
+||baidu.com/*/2016chunyun/
 !剑灵吧顶部游戏广告
 tieba.baidu.com##.content_top
 !顶部yoyojie&UUU9游戏
@@ -553,7 +555,11 @@ cnbeta.com##.navi
 cnbeta.com##div[style^="border-bottom:2px solid #ccc;"]
 !---IT之家
 ||ithome.com/block/*
+||ithome.com/js/money/
 ithome.com##.adsbygoogle
+ithome.com###hd_float
+!pv
+||ithome.com/ithome/HitCount.*
 !论坛
 ||qpic.cn/mblogpic/$domain=bbs.ithome.com
 bbs.ithome.com##.bbs_login+div[style^="width:960px;height:60px"]
@@ -965,10 +971,12 @@ acfun.tv##[id^="ad-"]
 ||tucao.tv/index.php?m=poster
 tucao.tv##.a2013d
 !---斗鱼
-||douyutv.com/upload/signs/*.swf
-douyutv.com##div[id^="sign_p_"]
+||douyutv.com/upload/signs/*
+douyutv.com##[id^="sign_p"]
+douyutv.com###chat-top-ad
+douyutv.com##.chat-right-ad
 douyutv.com##.dy_top_gg
-douyutv.com##[id^="js_room_"]
+douyutv.com###dy_bottom_shadow
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
@@ -1155,12 +1163,10 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-||paipai*/images/xjwy.png
+||paipai.fm/images/dzs.png
 ||paipai.fm/images/tssj.png
-paipai.fm##a[style*="/images/xjwy.png"]
+paipai.fm##a[style*="/images/dzs.png"]
 paipai.fm##a[style*="/images/tssj.png"]
-paipaitxt.com##a[style*="/images/xjwy.png"]
-paipaitxt.com##a[style*="/images/mxywk.png"]
 
 !---GitHub
 ||collector-cdn.github.com/assets/api.js
