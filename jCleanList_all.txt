@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: vq7Vj2RCfyuuSfmgK/U8uw
-! Last modified: 08 Dec 2015 00:17 +0800
+! Checksum: BHcdbGZgCJLNH3A347wkcA
+! Last modified: 30 Jan 2016 16:09 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -62,7 +62,7 @@ _728x90.
 ||eiv.baidu.com^
 ||cbjs.baidu.com^
 ||drmcmm.baidu.com^
-||spcode.baidu.com^
+||dup.baidustatic.com^
 ||cb.baidu.com^
 ||ecma.bdimg.com^
 !---alimama/taobao
@@ -329,10 +329,9 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 ||jiaoyu.baidu.com/tieba/*
 !顶部横幅
 tieba.baidu.com##.head_middle
-!春运
-||baidu.com/*/2016chunyun/
 !剑灵吧顶部游戏广告
-tieba.baidu.com##.content_top
+||bdstatic.com/tb/cms/ngmis/
+tieba.baidu.com##.game-head-game-info-wrapper.clearfix
 !顶部yoyojie&UUU9游戏
 ||bdstatic.com/tb/cms/game_cover/*
 tieba.baidu.com##.u9_head
@@ -341,11 +340,9 @@ tieba.baidu.com##.u9_head
 tieba.baidu.com###game_live_list
 !顶部美女直播
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
-tieba.baidu.com##.play_list_panel
 !置顶游戏广告贴
 tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
-||tieba.baidu.com/tb/zt/spread/*
 tieba.baidu.com##[data-daid]
 tieba.baidu.com##.j_thread_list + LI[class]:not(.j_thread_list)
 !侧边栏
@@ -364,6 +361,9 @@ tieba.baidu.com###pb_adbanner
 !帖子1楼底部游戏横幅
 tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
 tieba.baidu.com##[data-isautoreply]
+!回复框右侧_duoku
+||tieba.baidu.com/game/duoku/*
+tieba.baidu.com###duoku_servers_list
 !zhidao0|zhidao1|zhidao2
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com##.wgt-ads
@@ -525,7 +525,7 @@ drivers.mydrivers.com##.baidu_box
 !---太平洋电脑网
 ||pconline.com.cn/js/ivy.js
 */ivy/image/*
-||ivy.pconline.com.cn/adpuba/*
+/adpuba/*
 ||img*.pcgames.com.cn^$object
 ||img0.pconline.com.cn/ivy/*$object
 ||pcgames.com.cn/g/*
@@ -549,6 +549,7 @@ cnbeta.com##.time
 cnbeta.com##.item.cooperation
 cnbeta.com##.adsbygoogle
 cnbeta.com##.navi
+cnbeta.com###job_box
 !豌豆荚
 ||cnbeta.com/assets/images/wdj_*.jpg
 ||tigerbrokers.com/activity/quotation/cnbeta/*
@@ -725,10 +726,9 @@ dzh.mop.com##.adarea_top
 ||share.dmhy.org/*?$image
 @@||share.dmhy.org^*/generate-captcha?
 share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
-!---极影动漫
-||baidu.com$domain=bt.ktxp.com
-||bt.ktxp.com/iframe/show_kkkmh.js
-bt.ktxp.com##.item-box2.money
+!---简单动漫
+||36dm.com/js/*
+||36dm.com/images/680acgsou.gif
 !---轻之国度
 lightnovel.cn###swRoller_1
 lightnovel.cn##.a_mu
@@ -1070,11 +1070,8 @@ orsoon.com##[class^="AD"]
 !---飘荡软件
 ||piaodown.com/other/*
 !---zd423
-||zdfans.com/Picture/kiees.jpg
-||zdfans.com/Picture/2345zj.gif
 zdfans.com##.adsbygoogle
 zdfans.com##.widget_d_banner
-zdfans.com##.meta>p:last-child
 !---异次元
 iplaysoft.com###section_event
 iplaysoft.com###bottom_ad
@@ -1163,13 +1160,11 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-||paipai.fm/images/dzs.png
-||paipai.fm/images/tssj.png
-paipai.fm##a[style*="/images/dzs.png"]
-paipai.fm##a[style*="/images/tssj.png"]
+||paipai.fm/images/wsdzz.png
+||paipai.fm/images/fbdl.png
+paipai.fm##a[style*="/images/wsdzz.png"]
+paipai.fm##a[style*="/images/fbdl.png"]
 
-!---GitHub
-||collector-cdn.github.com/assets/api.js
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
@@ -1200,8 +1195,6 @@ item.taobao.com###J_toolbar
 !---京东商城
 ||fa.jd.com^
 ||nfa.jd.com^
-@@||ad.3.cn/ads/mgets?$script,domain=item.jd.com
-@@||static.360buyimg.com/ad/re/js/jd_middle.min.js*
 !屏蔽搜索热词
 ||dc.3.cn/cathot/get?*
 ||d.jd.com/cathot/*
