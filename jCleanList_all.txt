@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: BHcdbGZgCJLNH3A347wkcA
-! Last modified: 30 Jan 2016 16:09 +0800
+! Checksum: lBX1ruNe2d18Jd3kg9vphg
+! Last modified: 24 Mar 2016 23:33 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -115,9 +115,10 @@ _728x90.
 ||6dvip.com^
 ||70e.com^$third-party
 ||778669.com^$third-party
+||77power.com^
+||77union.cn^$third-party
 ||7k7k.com^$third-party,popup
 ||7pk.com^$third-party
-||77union.cn^$third-party
 ||83you.com^$third-party
 ||84232.com^$third-party
 ||84787111.com^$third-party
@@ -176,6 +177,8 @@ _728x90.
 ||rtbs.cn/bi.js
 ||sharele.cn^$third-party
 ||star8.net^$third-party
+||ta80.com^$third-party
+||tui1999.com^$third-party
 ||tuigoo.com^$third-party
 ||twb98.com^$third-party
 ||twcczhu.com^$third-party
@@ -203,6 +206,7 @@ _728x90.
 ||2xbpub.com^$third-party
 ||adcash.com^$third-party
 ||addelive.com^$third-party
+||adnetworkperformance.com^$third-party
 ||adnium.com^$third-party
 ||adnxs.com^$third-party
 ||carambo.la^$third-party
@@ -340,6 +344,8 @@ tieba.baidu.com##.u9_head
 tieba.baidu.com###game_live_list
 !顶部美女直播
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
+!置顶推广贴
+tieba.baidu.com##.j_df_card.thread_top
 !置顶游戏广告贴
 tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
@@ -821,6 +827,8 @@ t.qq.com###homeBannerNew
 !--百度云
 ||pan.bdstatic.com/*/qianbao_*.jpg
 pan.baidu.com###share-ad-bottom
+!屏蔽查询本地管家
+|http://127.0.0.1:1000*/guanjia*
 !pv
 ||*monitor.jpg?xcode
 ||pan.baidu.com/api/analytics*
@@ -1161,9 +1169,9 @@ qdwenxue.com##[class^="show_ggpic_"]
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
 ||paipai.fm/images/wsdzz.png
-||paipai.fm/images/fbdl.png
+||paipai.fm/images/jyjx.png
 paipai.fm##a[style*="/images/wsdzz.png"]
-paipai.fm##a[style*="/images/fbdl.png"]
+paipai.fm##a[style*="/images/jyjx.png"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
