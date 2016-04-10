@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: HqwXGtg2Azwgdft3zhzWig
-! Last modified: 31 Mar 2016 23:24 +0800
+! Checksum: J16g1LtyHp3ig+2/EvF4mw
+! Last modified: 10 Apr 2016 14:16 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -120,9 +120,9 @@ _728x90.
 ||7k7k.com^$third-party,popup
 ||7pk.com^$third-party
 ||83you.com^$third-party
-||84232.com^$third-party
 ||84787111.com^$third-party
 ||88210212.com^$third-party
+||88rpg.net^$third-party
 ||8le8le.com^$third-party
 ||8ox.cn^$third-party
 ||91wan.com^$third-party
@@ -159,13 +159,11 @@ _728x90.
 ||keyrun.cn^$third-party
 ||keytui.com^$third-party
 ||kfwan.com^$third-party
-||ku9377.com
 ||kuqi.com^$third-party
 ||miaozhen.com^$third-party
 ||maxreturn.cn^$third-party
 ||myad.cn^$third-party
 ||mytanwan.com^$third-party
-||netgy.com^$third-party
 ||niuxgame77.com^$third-party
 ||ok8848.com^$third-party
 ||onetad.com^$third-party
@@ -175,12 +173,11 @@ _728x90.
 ||redu.com^$third-party
 ||resmkt.dipan.com^$third-party
 ||rtbs.cn/bi.js
+||s8dj.com^$third-party
 ||sharele.cn^$third-party
 ||star8.net^$third-party
-||ta80.com^$third-party
 ||tui1999.com^$third-party
 ||tuigoo.com^$third-party
-||twb98.com^$third-party
 ||twcczhu.com^$third-party
 ||ulink.cc^$third-party
 ||union009.com^$third-party
@@ -238,6 +235,7 @@ http://stat.
 |http://*/c.gif
 |http://*/1.gif
 @@||count.tbcdn.cn^
+/__utm.gif
 !---Google
 ||google-analytics.com^$third-party
 !---Baidu
@@ -436,6 +434,8 @@ blog.163.com##.postadlayer
 ||impservice.dictweb.youdao.com^
 ||impservice.dictapp.youdao.com^
 dict.youdao.com###topImgAd
+!---网易云音乐
+||p*.music.126.net/*.jpg|
 !---新浪
 ||sinaimg.cn/unipro/pub/suda*.js
 sina.com.cn##[id^="ad_"]
@@ -751,8 +751,7 @@ bbs.9baka.com##td[width="680"][height="50"]
 !---APTX柯南事务所
 bbs.aptx.cn##.a_pr
 !---天使动漫
-||tsdm.net/static/kawayi/*
-tsdm.net###pgt + div > p[style="float:left;width:100%"]
+||tsdmw.net/img01/MP3/
 tsdm.net##.a_pb
 !签到弹窗
 ||dm.tsdm.net/xinfandongman/*$popup,domain=tsdm.net
@@ -766,7 +765,6 @@ tsdm.net##.a_pb
 ||sinaimg.cn/*20q*.*$domain=tsdm.net
 ||sinaimg.cn/*20j*.jpg$domain=tsdm.net
 !TorrenTGui
-||totheglory.im/pic/qlcjnew.jpg
 !---NyaaTorrents
 ||files.nyaa.eu/a*.jpg
 !Pixiv
@@ -809,6 +807,7 @@ unstat.baidu.com$domain=pt80.net
 ||biz.weibo.com^
 ||wbpctips.mobile.sina.cn/adfront/*
 weibo.com##div[ad-data]
+weibo.com##.WB_cardwrap[feedtype="ad"]
 !---腾讯微薄
 ||gtimg.com^*/ad/
 t.qq.com###homeBannerNew
@@ -960,15 +959,11 @@ v.ku6.com##[class^="aa_"]
 ||acs.56.com
 !------------------------------------
 !---嗶哩嗶哩
-||acg.tv^$object-subrequest,third-party
-||hdslb.com/u_user/$object-subrequest,domain=bilibili.com
-@@||bilibili.com/sppage/ad-*$xmlhttprequest
+||bilibili.com/html/ads-arc.js
+||hdslb.com/js/core-v5/picment.
+||hdslb.com/group1/$object-subrequest,domain=bilibili.com
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
-bilibili.com##.adsbygoogle
-bilibili.com##.index-promote
-!pv
-||dns-*.test.bilibili.cc^
 !---AcFun
 acfun.tv##[id^="ad-"]
 !---吐槽
@@ -1101,11 +1096,10 @@ appinn.com##.adsbygoogle
 ||jjwxc.net/jjad*html$popup,domain=jjwxc.net
 !首页顶部
 jjwxc.net##table[style*="width:984px;height:92px;"]
-!书页横幅
-||static.jjwxc.net/scripts/richMedia.js
-jjwxc.net##[id^="adp_jjwxc"]
 !阅读页顶部横幅
 jjwxc.net##DIV[style="height: 90px;"]
+!去水印
+jjwxc.net##.noveltext>FONT[color]
 !---小说阅读网
 ||readnovel.com/js/*
 !书简介页面
@@ -1268,10 +1262,10 @@ lol.duowan.com##.full-banner
 yzz.cn##.ad200x340
 !---游民星空
 ||ja.gamersky.com^
-||gamersky.com/img/
 ||gamersky.com^*.htm$subdocument
-@@||gamersky.com^*/dhgame_
-||gamersky.com/g/gamerskyflash.js
+||changyan.sohu.com/activity/advert_static/*
+||changyan.sohu.com/stat/
+gamersky.com##div[style*="width:970px;height:90px;"]
 !---52pk
 ||5y9nfpes.52pk.com^
 ||market.52pk.com/files/union/*
