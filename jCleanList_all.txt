@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: zr1BJws7SFYb9TdMpsAIqw
-! Last modified: 05 May 2016 22:56 +0800
+! Checksum: tK1We1vXPNdSOZz6HijVAQ
+! Last modified: 05 May 2016 23:31 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -560,6 +560,7 @@ cnbeta.com##.item.cooperation
 cnbeta.com##.navi
 cnbeta.com###job_box
 ||static.cnbetacdn.com/*/ba42ba5244d1874.gif
+||static.cnbetacdn.com/*/bdbfebe89226e6a.png
 !---IT之家
 ||ithome.com/block/*
 ||ithome.com/js/money/
