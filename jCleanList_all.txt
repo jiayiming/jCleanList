@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: J16g1LtyHp3ig+2/EvF4mw
-! Last modified: 10 Apr 2016 14:16 +0800
+! Checksum: zr1BJws7SFYb9TdMpsAIqw
+! Last modified: 05 May 2016 22:56 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -65,6 +65,7 @@ _728x90.
 ||dup.baidustatic.com^
 ||cb.baidu.com^
 ||ecma.bdimg.com^
+||ubmcmm.baidustatic.com^
 !---alimama/taobao
 ||alimama.cn^$third-party
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
@@ -342,6 +343,8 @@ tieba.baidu.com##.u9_head
 tieba.baidu.com###game_live_list
 !顶部美女直播
 ||image.cache.xiu8.com^$domain=tieba.baidu.com
+!置顶指引+收起指引按钮
+tieba.baidu.com###pagelet_frs-header\/pagelet\/head_content_middle
 !置顶推广贴
 tieba.baidu.com##.j_df_card.thread_top
 !置顶游戏广告贴
@@ -355,6 +358,7 @@ tieba.baidu.com##.aside_region.life_helper
 tieba.baidu.com###encourage_entry
 tieba.baidu.com##.zyq_bright + div[class]
 tieba.baidu.com##.item.live_show_aside
+tieba.baidu.com##.diamond-mall-aside
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
 ||s1.bdstatic.com/r/*/baidu_search/*
@@ -617,6 +621,8 @@ apk.gfan.com##div[style^="width:960px;height:90px;"]
 apk.gfan.com###l
 apk.gfan.com###r
 !---机锋论坛
+||gfan.com/leshiflash/*
+bbs.gfan.com##.a_h
 ||cntv.cn/hezuo/
 bbs.gfan.com##.wpp
 !帖子一楼底部
@@ -962,6 +968,7 @@ v.ku6.com##[class^="aa_"]
 ||bilibili.com/html/ads-arc.js
 ||hdslb.com/js/core-v5/picment.
 ||hdslb.com/group1/$object-subrequest,domain=bilibili.com
+||acg.tv^$object,object-subrequest,domain=bilibili.com
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
 !---AcFun
@@ -971,11 +978,12 @@ acfun.tv##[id^="ad-"]
 tucao.tv##.a2013d
 !---斗鱼
 ||douyutv.com/upload/signs/*
-douyutv.com##[id^="sign_p"]
-douyutv.com###chat-top-ad
-douyutv.com##.chat-right-ad
-douyutv.com##.dy_top_gg
-douyutv.com###dy_bottom_shadow
+douyu.com##.room-ad-top
+douyu.com###js-live-room-normal-equal-left
+douyu.com##.focus-lead
+douyu.com##.live-lead
+douyu.com##.task-lead
+douyu.com##.giftbox
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
@@ -1191,12 +1199,12 @@ techpowerup.com##.rnav_e
 !---淘宝网
 item.taobao.com###J_toolbar
 !---京东商城
-||fa.jd.com^
 ||nfa.jd.com^
 !屏蔽搜索热词
 ||dc.3.cn/cathot/get?*
 ||d.jd.com/cathot/*
 ||d.jd.com/hotwords/*
+||ai.jd.com/index/hotWords.php?*
 !---什么值得买
 ||zdmimg.com/www/delivery/*
 smzdm.com##.g_g
