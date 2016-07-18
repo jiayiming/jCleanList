@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: tK1We1vXPNdSOZz6HijVAQ
-! Last modified: 05 May 2016 23:31 +0800
+! Checksum: EfwjU2eXFvs15Ir5i0dhEw
+! Last modified: 18 Jul 2016 22:27 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -235,7 +235,8 @@ http://stat.
 */count.js
 |http://*/c.gif
 |http://*/1.gif
-@@||count.tbcdn.cn^
+.com/v.gif?
+/track.gif?
 /__utm.gif
 !---Google
 ||google-analytics.com^$third-party
@@ -329,22 +330,19 @@ tieba.baidu.com##.pc2client
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 !tieba0_帖子列表
 ||tb1.bdstatic.com/tb/r/image/*
-||jiaoyu.baidu.com/tieba/*
+||bdstatic.com/??/tb/_/diamond_mall_frs_aside_*.js
 !顶部横幅
 tieba.baidu.com##.head_middle
-!剑灵吧顶部游戏广告
-||bdstatic.com/tb/cms/ngmis/
-tieba.baidu.com##.game-head-game-info-wrapper.clearfix
 !顶部yoyojie&UUU9游戏
 ||bdstatic.com/tb/cms/game_cover/*
-tieba.baidu.com##.u9_head
-!顶部游戏直播
-||zhanqi.tv^$domain=tieba.baidu.com
+tieba.baidu.com###com_u9_head
+!顶部游戏直播+AcFun
+||cdn.aixifan.com/dotnet/artemis/u/cms/*$third-party
 tieba.baidu.com###game_live_list
-!顶部美女直播
-||image.cache.xiu8.com^$domain=tieba.baidu.com
+!顶部视频精选
+||bdstatic.com/??/tb/_/video_frs_head_
+tieba.baidu.com###video_frs_head
 !置顶指引+收起指引按钮
-tieba.baidu.com###pagelet_frs-header\/pagelet\/head_content_middle
 !置顶推广贴
 tieba.baidu.com##.j_df_card.thread_top
 !置顶游戏广告贴
@@ -559,8 +557,12 @@ cnbeta.com##.time
 cnbeta.com##.item.cooperation
 cnbeta.com##.navi
 cnbeta.com###job_box
-||static.cnbetacdn.com/*/ba42ba5244d1874.gif
-||static.cnbetacdn.com/*/bdbfebe89226e6a.png
+cnbeta.com##.adsbygoogle
+||static.cnbetacdn.com/article/2016/0716/4d41c2cce1f9693.gif
+||static.cnbetacdn.com/article/2016/0711/e282b173bc17d1e.jpg
+||static.cnbetacdn.com/article/2016/0627/49cdee71325feda.jpg
+||static.cnbetacdn.com/article/2016/0331/ba42ba5244d1874.gif
+||static.cnbetacdn.com/frontend/250x200.png
 !---IT之家
 ||ithome.com/block/*
 ||ithome.com/js/money/
@@ -772,6 +774,7 @@ tsdm.net##.a_pb
 ||sinaimg.cn/*20q*.*$domain=tsdm.net
 ||sinaimg.cn/*20j*.jpg$domain=tsdm.net
 !TorrenTGui
+||totheglory.im/pic/meibubanner.jpg
 !---NyaaTorrents
 ||files.nyaa.eu/a*.jpg
 !Pixiv
@@ -985,6 +988,17 @@ douyu.com##.focus-lead
 douyu.com##.live-lead
 douyu.com##.task-lead
 douyu.com##.giftbox
+douyu.com##.rmd-tip
+douyu.com##.super-rmd-bg.tggcontrol
+!---战旗
+||dlpic.cdn.zhanqi.tv/*/love-*
+!首页
+zhanqi.tv##.skinA-bg
+!直播页
+zhanqi.tv##.login-money
+zhanqi.tv##.dayday-btn.js-room-gift-area-banner
+zhanqi.tv##.activity-show.js-activity-show
+zhanqi.tv###js-room-flash-banner-panel
 !---风云直播
 ||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
@@ -1167,10 +1181,10 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-||paipai.fm/images/wsdzz.png
-||paipai.fm/images/jyjx.png
-paipai.fm##a[style*="/images/wsdzz.png"]
-paipai.fm##a[style*="/images/jyjx.png"]
+||paipai.fm/images/xyj.png
+||paipai.fm/images/oksg.png
+paipai.fm##a[style*="/images/xyj.png"]
+paipai.fm##a[style*="/images/oksg.png"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
