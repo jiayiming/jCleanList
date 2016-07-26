@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: EfwjU2eXFvs15Ir5i0dhEw
-! Last modified: 18 Jul 2016 22:27 +0800
+! Checksum: S4pfn9HEP1/oiozqGSrwJQ
+! Last modified: 26 Jul 2016 23:47 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -66,8 +66,9 @@ _728x90.
 ||cb.baidu.com^
 ||ecma.bdimg.com^
 ||ubmcmm.baidustatic.com^
-!---alimama/taobao
+!---alipay/alimama/taobao
 ||alimama.cn^$third-party
+||alicdn.com/g/mm/afp-cdn/JS/
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
 ||tanx.com
 !---union
@@ -252,7 +253,7 @@ http://stat.
 !分享
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---TX
-||pingjs.qq.com^
+||pinghot.qq.com/pingd?
 ||btrace.qq.com^
 ||gdt.qq.com^
 ||isdspeed.qq.com^
@@ -558,6 +559,7 @@ cnbeta.com##.item.cooperation
 cnbeta.com##.navi
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
+||static.cnbetacdn.com/article/2016/0720/03b42f6c89b1b26.jpg
 ||static.cnbetacdn.com/article/2016/0716/4d41c2cce1f9693.gif
 ||static.cnbetacdn.com/article/2016/0711/e282b173bc17d1e.jpg
 ||static.cnbetacdn.com/article/2016/0627/49cdee71325feda.jpg
@@ -905,12 +907,12 @@ iqiyi.com###leftad
 ||l.qq.com/p?
 @@||livew.l.qq.com/livemsg?*
 ||livep.l.qq.com/livemsg?*
+||imgcache.qq.com/*/MediaPlugin.swf
 */vmind.qqvideo.tc.qq.com/*.mp4
 ||gtimg.com/qqlive/*
 ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
 v.qq.com##.mod_ad
 v.qq.com##.action_ad
-www.qq.com###advertisement
 !pv
 ||rcgi.video.qq.com^
 !---乐视
@@ -982,6 +984,7 @@ acfun.tv##[id^="ad-"]
 tucao.tv##.a2013d
 !---斗鱼
 ||douyutv.com/upload/signs/*
+||douyucdn.cn/upload/signs/*
 douyu.com##.room-ad-top
 douyu.com###js-live-room-normal-equal-left
 douyu.com##.focus-lead
@@ -1181,9 +1184,9 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-||paipai.fm/images/xyj.png
+||paipai.fm/images/xxd2.png
 ||paipai.fm/images/oksg.png
-paipai.fm##a[style*="/images/xyj.png"]
+paipai.fm##a[style*="/images/xxd2.png"]
 paipai.fm##a[style*="/images/oksg.png"]
 
 !---Gmail
