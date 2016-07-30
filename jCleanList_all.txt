@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: yd1MQsgLgR3m67fJDtw8rA
-! Last modified: 30 Jul 2016 13:56 +0800
+! Checksum: e1HuNo4wBH3Gkxbjjppk9A
+! Last modified: 30 Jul 2016 23:59 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -254,7 +254,6 @@ http://stat.
 !分享
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---TX
-||pingjs.qq.com^
 ||ping*.qq.com/pingd?
 ||btrace.qq.com^
 ||gdt.qq.com^
