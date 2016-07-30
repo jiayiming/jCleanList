@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: S4pfn9HEP1/oiozqGSrwJQ
-! Last modified: 26 Jul 2016 23:47 +0800
+! Checksum: yd1MQsgLgR3m67fJDtw8rA
+! Last modified: 30 Jul 2016 13:56 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -66,6 +66,7 @@ _728x90.
 ||cb.baidu.com^
 ||ecma.bdimg.com^
 ||ubmcmm.baidustatic.com^
+||su.bdimg.com/static/dspui/js/
 !---alipay/alimama/taobao
 ||alimama.cn^$third-party
 ||alicdn.com/g/mm/afp-cdn/JS/
@@ -253,7 +254,8 @@ http://stat.
 !分享
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---TX
-||pinghot.qq.com/pingd?
+||pingjs.qq.com^
+||ping*.qq.com/pingd?
 ||btrace.qq.com^
 ||gdt.qq.com^
 ||isdspeed.qq.com^
@@ -343,14 +345,12 @@ tieba.baidu.com###game_live_list
 !顶部视频精选
 ||bdstatic.com/??/tb/_/video_frs_head_
 tieba.baidu.com###video_frs_head
-!置顶指引+收起指引按钮
 !置顶推广贴
 tieba.baidu.com##.j_df_card.thread_top
-!置顶游戏广告贴
-tieba.baidu.com###threadListGroupCnt
 !列表内推广贴
 tieba.baidu.com##[data-daid]
-tieba.baidu.com##.j_thread_list + LI[class]:not(.j_thread_list)
+tieba.baidu.com##.j_thread_list:not([data-field])
+tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
 !侧边栏
 tieba.baidu.com##.aside_region.my_app
 tieba.baidu.com##.aside_region.life_helper
@@ -405,18 +405,21 @@ qq.com##.adLeft,.adRight
 qq.com##.l_qq_com
 !新版子页
 ||ra.gtimg.com/web/default_fodders/*.swf*$object
+qq.com##.body-Top-Ad
 qq.com##.mian-ad
 qq.com##.ad-box
 !板块分页顶部
 tech.qq.com##.kjad2
-finance.qq.com###topAd
 !体育/娱乐/数码/时尚/汽车等板块顶部通用
 qq.com##[id$="_ad"]
 !评论
-||view.news.qq.com/PL_ad*.htm
 ||view.news.qq.com/article_qq/ad_article_qq/*
 !动漫频道
 ||gtimg.com/comic/newqshou/js/AD2v1.1.js
+!去登录时提示手机二维码
+ptlogin2.qq.com###qr_tips
+!游戏人生
+igame.qq.com###\5f overlay_
 !---网易
 ||img1.126.net^
 ||img2.126.net^
@@ -559,10 +562,9 @@ cnbeta.com##.item.cooperation
 cnbeta.com##.navi
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
+||static.cnbetacdn.com/article/2016/0729/c8a0d37220a9f20.png
 ||static.cnbetacdn.com/article/2016/0720/03b42f6c89b1b26.jpg
 ||static.cnbetacdn.com/article/2016/0716/4d41c2cce1f9693.gif
-||static.cnbetacdn.com/article/2016/0711/e282b173bc17d1e.jpg
-||static.cnbetacdn.com/article/2016/0627/49cdee71325feda.jpg
 ||static.cnbetacdn.com/article/2016/0331/ba42ba5244d1874.gif
 ||static.cnbetacdn.com/frontend/250x200.png
 !---IT之家
@@ -876,10 +878,11 @@ mediafire.com##.rockmeltAdWrapper
 ||atm.youku.com^
 !---优酷
 @@||val*.atm.youku.com^
-||hudong.pl.youku.com/interact/player/get/plugins?
 ||hudong.pl.youku.com/interact/web/get/timeLinePlugin?
-youku.com##div[id^="ab_"]
+youku.com###lotteryToolbar
+youku.com###lotteryToolbarBig
 soku.com##div[id^="ab_"]
+soku.com##.sb_ad
 !pv
 ||hz.youku.com^
 ||static.youku.com/*/paycenter/*$script
@@ -892,14 +895,12 @@ soku.com##div[id^="ab_"]
 */cv/pl*&uuid=*
 */pos?act=dur*
 !---爱奇异
-||iqiyi.com/common/flashplayer/*/pageer.swf
-/^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/[0-9]{8}/[0-9a-z]{32}.swf/$domain=iqiyi.com
+||iqiyi.com/show2?cb=
 iqiyi.com###adflash
 !播放页
-||qiyipic.com/common/$object-subrequest
-@@||qiyipic.com/common/fix/default_player_16_9.png
+||info.vip.iqiyi.com/promotion/
+||qiyipic.com/common/fix/default_player_16_9.png
 iqiyi.com##div[id^="100000000"]
-iqiyi.com##.play-titleAd
 iqiyi.com###leftad
 !pv
 ||static.iqiyi.com/js/pingback/*
