@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: e1HuNo4wBH3Gkxbjjppk9A
-! Last modified: 30 Jul 2016 23:59 +0800
+! Checksum: H6++HLG1oEXNEL3FjaASfw
+! Last modified: 08 Aug 2016 06:47 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -321,6 +321,7 @@ www.baidu.com###content_right > table > tbody > tr > td > div:not(#con-ar)
 !image_All
 image.baidu.com###relEcom
 !tieba_All
+tieba.baidu.com##.tpoint-skin
 !pv
 ||static.tieba.baidu.com/tb/img/hive.gif*
 ||static.tieba.baidu.com/tb/img/track.gif?*
@@ -366,7 +367,8 @@ tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
 !帖子1楼底部游戏横幅
 tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
-tieba.baidu.com##[data-isautoreply]
+!楼层广告
+tieba.baidu.com##.j_l_post:not([data-field])
 !回复框右侧_duoku
 ||tieba.baidu.com/game/duoku/*
 tieba.baidu.com###duoku_servers_list
@@ -561,6 +563,7 @@ cnbeta.com##.item.cooperation
 cnbeta.com##.navi
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
+||static.cnbetacdn.com/article/2016/0803/7196125f52383b8.jpg
 ||static.cnbetacdn.com/article/2016/0729/c8a0d37220a9f20.png
 ||static.cnbetacdn.com/article/2016/0720/03b42f6c89b1b26.jpg
 ||static.cnbetacdn.com/article/2016/0716/4d41c2cce1f9693.gif
@@ -1110,14 +1113,17 @@ iplaysoft.com##div[style^="width:680px;height:166px;"]
 dl.iplaysoft.com##.adsbygoogle
 dl.iplaysoft.com##center > div[style^="margin-top:15px;"]
 !---小众软件
-||appinn.com/images/*/youli.jpg
-||appinn.com/images/*/worktile.png
-||appinn.com/images/*/mockplus_0.png
-||appinn.com/images/*/300x150.png
-@@||appinn.com^*down.gif
+||appinn.com/images/201507/teambition.png
+||appinn.com/images/201509/be.png
+||appinn.com/images/201606/worktile.png
+||appinn.com/images/201606/jiandaoyun.png
+||appinn.com/images/201607/yomail.jpg
+||appinn.com/images/201607/huoban.png
+||appinn.com/images/201607/lx.jpg
 ||ax-d.pixfuture.net^$third-party
-appinn.com##.ads
 appinn.com##.adsbygoogle
+!---TTrar天天资讯
+||ttrar.com/js/
 !---晋江言情小说网
 ||jjwxc.net/jjad*html$popup,domain=jjwxc.net
 !首页顶部
@@ -1185,9 +1191,9 @@ qdwenxue.com##[class^="show_ggpic_"]
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
 ||paipai.fm/images/xxd2.png
-||paipai.fm/images/oksg.png
+||paipai.fm/images/zxy.png
 paipai.fm##a[style*="/images/xxd2.png"]
-paipai.fm##a[style*="/images/oksg.png"]
+paipai.fm##a[style*="/images/zxy.png"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
