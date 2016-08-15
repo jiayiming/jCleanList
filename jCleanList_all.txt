@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: H6++HLG1oEXNEL3FjaASfw
-! Last modified: 08 Aug 2016 06:47 +0800
+! Checksum: l10a4l/SS9OIwgpN6r5BwQ
+! Last modified: 16 Aug 2016 00:19 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -336,27 +336,23 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 ||bdstatic.com/??/tb/_/diamond_mall_frs_aside_*.js
 !顶部横幅
 tieba.baidu.com##.head_middle
-!顶部yoyojie&UUU9游戏
-||bdstatic.com/tb/cms/game_cover/*
-tieba.baidu.com###com_u9_head
+!顶部游戏
+||bdstatic.com/tb/cms/ngmis/*
+tieba.baidu.com##.game-head-game-info-wrapper
 !顶部游戏直播+AcFun
 ||cdn.aixifan.com/dotnet/artemis/u/cms/*$third-party
 tieba.baidu.com###game_live_list
 !顶部视频精选
-||bdstatic.com/??/tb/_/video_frs_head_
+||bdstatic.com/*/tb/_/video_frs_head_
 tieba.baidu.com###video_frs_head
-!置顶推广贴
-tieba.baidu.com##.j_df_card.thread_top
 !列表内推广贴
 tieba.baidu.com##[data-daid]
 tieba.baidu.com##.j_thread_list:not([data-field])
 tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
 !侧边栏
 tieba.baidu.com##.aside_region.my_app
-tieba.baidu.com##.aside_region.life_helper
 tieba.baidu.com###encourage_entry
 tieba.baidu.com##.zyq_bright + div[class]
-tieba.baidu.com##.item.live_show_aside
 tieba.baidu.com##.diamond-mall-aside
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
@@ -369,6 +365,14 @@ tieba.baidu.com###pb_adbanner
 tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
 !楼层广告
 tieba.baidu.com##.j_l_post:not([data-field])
+!贴吧触点推广
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1224761005,"]
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480174042,"]
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480194257,"]
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1990070693,"]
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":50012654,"]
+!楼层商业推广
+tieba.baidu.com##.j_l_post[data-field$="adblock!'\7d "]
 !回复框右侧_duoku
 ||tieba.baidu.com/game/duoku/*
 tieba.baidu.com###duoku_servers_list
@@ -563,11 +567,10 @@ cnbeta.com##.item.cooperation
 cnbeta.com##.navi
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
+||static.cnbetacdn.com/article/2016/0812/ddbdefe1d288401.jpg
+||static.cnbetacdn.com/article/2016/0810/a719d664af79ed3.jpg
 ||static.cnbetacdn.com/article/2016/0803/7196125f52383b8.jpg
-||static.cnbetacdn.com/article/2016/0729/c8a0d37220a9f20.png
-||static.cnbetacdn.com/article/2016/0720/03b42f6c89b1b26.jpg
 ||static.cnbetacdn.com/article/2016/0716/4d41c2cce1f9693.gif
-||static.cnbetacdn.com/article/2016/0331/ba42ba5244d1874.gif
 ||static.cnbetacdn.com/frontend/250x200.png
 !---IT之家
 ||ithome.com/block/*
@@ -977,7 +980,7 @@ v.ku6.com##[class^="aa_"]
 ||bilibili.com/html/ads-arc.js
 ||hdslb.com/js/core-v5/picment.
 ||hdslb.com/group1/$object-subrequest,domain=bilibili.com
-||acg.tv^$object,object-subrequest,domain=bilibili.com
+||hdslb.com/bfs/archive/$object-subrequest,domain=bilibili.com
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
 !---AcFun
@@ -1122,6 +1125,8 @@ dl.iplaysoft.com##center > div[style^="margin-top:15px;"]
 ||appinn.com/images/201607/lx.jpg
 ||ax-d.pixfuture.net^$third-party
 appinn.com##.adsbygoogle
+!---小俊博客
+||xiaojun911.com/d/js/acmsd/
 !---TTrar天天资讯
 ||ttrar.com/js/
 !---晋江言情小说网
@@ -1190,9 +1195,9 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-||paipai.fm/images/xxd2.png
+||paipai.fm/images/cq.png
 ||paipai.fm/images/zxy.png
-paipai.fm##a[style*="/images/xxd2.png"]
+paipai.fm##a[style*="/images/cq.png"]
 paipai.fm##a[style*="/images/zxy.png"]
 
 !---Gmail
