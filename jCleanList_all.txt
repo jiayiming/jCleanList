@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: l10a4l/SS9OIwgpN6r5BwQ
-! Last modified: 16 Aug 2016 00:19 +0800
+! Checksum: R+Y6W4iMv/+ezCVu5TOhzQ
+! Last modified: 22 Aug 2016 07:27 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -373,6 +373,8 @@ tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1990070693,
 tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":50012654,"]
 !楼层商业推广
 tieba.baidu.com##.j_l_post[data-field$="adblock!'\7d "]
+tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87\""]:not([data-field*="\"user_id\":1180601200,"])
+tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="\"user_id\":2"]):not([data-field*="\"user_id\":3"]):not([data-field*="\"user_id\":4"]):not([data-field*="\"user_id\":5"]):not([data-field*="\"user_id\":6"]):not([data-field*="\"user_id\":7"]):not([data-field*="\"user_id\":8"]):not([data-field*="\"user_id\":9"])
 !回复框右侧_duoku
 ||tieba.baidu.com/game/duoku/*
 tieba.baidu.com###duoku_servers_list
@@ -567,6 +569,7 @@ cnbeta.com##.item.cooperation
 cnbeta.com##.navi
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
+||static.cnbetacdn.com/article/2016/0817/0f83e2d06af4f0e.jpg
 ||static.cnbetacdn.com/article/2016/0812/ddbdefe1d288401.jpg
 ||static.cnbetacdn.com/article/2016/0810/a719d664af79ed3.jpg
 ||static.cnbetacdn.com/article/2016/0803/7196125f52383b8.jpg
@@ -825,6 +828,8 @@ unstat.baidu.com$domain=pt80.net
 !---新浪微薄
 ||biz.weibo.com^
 ||wbpctips.mobile.sina.cn/adfront/*
+||sinajs.cn/t6/home/js/pl/guide/adforfqy/
+||sinajs.cn/t6/home/js/pl/guide/bigday/
 weibo.com##div[ad-data]
 weibo.com##.WB_cardwrap[feedtype="ad"]
 !---腾讯微薄
@@ -839,8 +844,6 @@ t.qq.com###homeBannerNew
 ||s.renren.com^
 ||xnimg.cn^*/beacon.js
 !--百度云
-||pan.bdstatic.com/*/qianbao_*.jpg
-pan.baidu.com###share-ad-bottom
 !屏蔽查询本地管家
 |http://127.0.0.1:1000*/guanjia*
 !pv
@@ -882,7 +885,6 @@ mediafire.com##.rockmeltAdWrapper
 !-----优酷+土豆共通
 ||atm.youku.com^
 !---优酷
-@@||val*.atm.youku.com^
 ||hudong.pl.youku.com/interact/web/get/timeLinePlugin?
 youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
@@ -911,11 +913,11 @@ iqiyi.com###leftad
 ||static.iqiyi.com/js/pingback/*
 !---腾讯视频
 ||l.qq.com/p?
-@@||livew.l.qq.com/livemsg?*
 ||livep.l.qq.com/livemsg?*
 ||imgcache.qq.com/*/MediaPlugin.swf
 */vmind.qqvideo.tc.qq.com/*.mp4
 ||gtimg.com/qqlive/*
+/qqlive/conf/playerlottery/*
 ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
 v.qq.com##.mod_ad
 v.qq.com##.action_ad
@@ -981,8 +983,12 @@ v.ku6.com##[class^="aa_"]
 ||hdslb.com/js/core-v5/picment.
 ||hdslb.com/group1/$object-subrequest,domain=bilibili.com
 ||hdslb.com/bfs/archive/$object-subrequest,domain=bilibili.com
+bilibili.com##.bilibili-player-promote-panel
+||hdslb.com/bfs/archive/*_468x60.jpg
+||hdslb.com/bfs/archive/*_870x72.jpg
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
+bilibili.com##.ad-f
 !---AcFun
 acfun.tv##[id^="ad-"]
 !---吐槽
@@ -999,6 +1005,7 @@ douyu.com##.task-lead
 douyu.com##.giftbox
 douyu.com##.rmd-tip
 douyu.com##.super-rmd-bg.tggcontrol
+douyu.com##.pay-task
 !---战旗
 ||dlpic.cdn.zhanqi.tv/*/love-*
 !首页
@@ -1116,6 +1123,7 @@ iplaysoft.com##div[style^="width:680px;height:166px;"]
 dl.iplaysoft.com##.adsbygoogle
 dl.iplaysoft.com##center > div[style^="margin-top:15px;"]
 !---小众软件
+||appinn.com/images/201608/teambition.jpg
 ||appinn.com/images/201507/teambition.png
 ||appinn.com/images/201509/be.png
 ||appinn.com/images/201606/worktile.png
@@ -1195,9 +1203,9 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-||paipai.fm/images/cq.png
+||paipai.fm/images/dmbj.png
 ||paipai.fm/images/zxy.png
-paipai.fm##a[style*="/images/cq.png"]
+paipai.fm##a[style*="/images/dmbj.png"]
 paipai.fm##a[style*="/images/zxy.png"]
 
 !---Gmail
@@ -1230,10 +1238,11 @@ item.taobao.com###J_toolbar
 !---京东商城
 ||nfa.jd.com^
 !屏蔽搜索热词
-||dc.3.cn/cathot/get?*
 ||d.jd.com/cathot/*
 ||d.jd.com/hotwords/*
 ||ai.jd.com/index/hotWords.php?*
+!https://plus.jd.com/index
+@@||misc.360buyimg.com/*pls-ad*
 !---什么值得买
 ||zdmimg.com/www/delivery/*
 smzdm.com##.g_g
