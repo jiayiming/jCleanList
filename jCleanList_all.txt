@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: R+Y6W4iMv/+ezCVu5TOhzQ
-! Last modified: 22 Aug 2016 07:27 +0800
+! Checksum: hLjKHKiFVFnEWl8okbWi2A
+! Last modified: 03 Sep 2016 23:25 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -39,6 +39,8 @@ _728x90.
 !http://www.iqiyi.com/v_19rrmisqt8.html
 @@|http://*/ad/*.f4v?*
 @@||tb1.bdstatic.com/*float*.js$script
+!百度图片搜索
+@@||bdstatic.com/static/common/widget/ui/admanager/ad/ad_e6aa693.js
 @@||im.baidu.com/popup/popup.js*
 @@||map.bdstatic.com/*/common/widget/ui/Popup/*
 @@||ry.tbcdn.cn/apps/ivy/*
@@ -189,6 +191,7 @@ _728x90.
 ||unionsky.cn^$third-party
 ||unionsky2.cn^$third-party
 ||wauee.com^$third-party
+||whytoss.com^
 ||woniu666.com^$third-party
 ||xi666.com^$third-party
 ||xcy8.com^
@@ -267,6 +270,10 @@ http://stat.
 ||beacon.sina.com.cn^
 !---163
 ||analytics.163.com^
+!---Sohu
+||changyan.sohu.com/stat/
+!---360
+||s.360.cn^
 !---Xunlei
 ||analytics-union.xunlei.com^
 ||analytics-union.sandai.net^
@@ -997,11 +1004,11 @@ tucao.tv##.a2013d
 !---斗鱼
 ||douyutv.com/upload/signs/*
 ||douyucdn.cn/upload/signs/*
+douyu.com##.f-sign-cont
+douyu.com##.lol-ad
 douyu.com##.room-ad-top
 douyu.com###js-live-room-normal-equal-left
 douyu.com##.focus-lead
-douyu.com##.live-lead
-douyu.com##.task-lead
 douyu.com##.giftbox
 douyu.com##.rmd-tip
 douyu.com##.super-rmd-bg.tggcontrol
@@ -1084,11 +1091,18 @@ crsky.com###recommend-new
 crsky.com###recommend-useful
 crsky.com##.mirror-adr>span[style^="float:right;padding-right:5px;"]
 !---绿色软件联盟
-||xdowns.com/new/ggdown.html
-xdowns.com##.co_content52
+||xdowns.com/ggco.js
+||xdowns.com/info.js
+||xdowns.com/js/lefttuijian.js
+!---第一站
+||onegreen.net/MyFile/
 !---下载吧
 ||www.xiazaiba.com/data/xzb_haha.js
+||83133.com/api/
 xiazaiba.com##.test-90
+xiazaiba.com##.test-300
+!隐藏高速下载
+xiazaiba.com##.dl-item:first-child
 !---汉化新世纪
 ||hanzify.org/*/ak47/yingsu.jpg
 hanzify.org##.banner-leader-index
@@ -1099,12 +1113,9 @@ hanzify.org##.categorypickdown
 ||pc6.com/js/address.html*
 pc6.com###topbanner2
 !---未来软件站
-||orsoon.com*zhuanti/img/*
-orsoon.com##[class^="AD"]
-!---飘荡软件
-||piaodown.com/other/js/*
-!----当下软件园
-||downxia.com/zejs/*
+||orsoon.com*/zhuanti/
+||orsoon.com/images/*.gif
+orsoon.com##[class^="ad_"]
 !---飘荡软件
 ||piaodown.com/other/*
 !---zd423
@@ -1204,9 +1215,9 @@ qdwenxue.com##[class^="show_ggpic_"]
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
 ||paipai.fm/images/dmbj.png
-||paipai.fm/images/zxy.png
+||paipai.fm/images/xljs.png
 paipai.fm##a[style*="/images/dmbj.png"]
-paipai.fm##a[style*="/images/zxy.png"]
+paipai.fm##a[style*="/images/xljs.png"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
@@ -1234,7 +1245,6 @@ techpowerup.com##.rnav_e
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---淘宝网
-item.taobao.com###J_toolbar
 !---京东商城
 ||nfa.jd.com^
 !屏蔽搜索热词
@@ -1243,6 +1253,9 @@ item.taobao.com###J_toolbar
 ||ai.jd.com/index/hotWords.php?*
 !https://plus.jd.com/index
 @@||misc.360buyimg.com/*pls-ad*
+!---当当网
+!pv
+||click.dangdang.com/js_tracker.js
 !---什么值得买
 ||zdmimg.com/www/delivery/*
 smzdm.com##.g_g
@@ -1253,8 +1266,6 @@ expreview.com##.banner
 !---17173
 ||ue.17173cdn.com/*/ggcommon*.js
 ||ue.17173cdn.com/a/lib/vda/*
-||ue.17173cdn.com/a/lib/setLink.min.js
-||ue.17173cdn.com/a/www/index/2015/js/forsetlink.js
 |http://*/if/$domain=17173.com
 ||itc.cn/cache/lib/v2/odvmonitor/
 !首页页游隐藏
@@ -1262,27 +1273,13 @@ www.17173.com##[class*="Ad17173Duilian"]
 www.17173.com##.pn-daily
 www.17173.com##[class^="ad-"]
 www.17173.com##.ad
-!右下角今日推荐
-17173.com##.gb-newfix-box
 !pv
 ||js.17173.com/ping.js
 !论坛帖子
 bbs.17173.com##.first-post-ad
-bbs.17173.com##.a_pb
 !---页游网
 yeyou.com##[class^="mod-ad-"]
 yeyou.com###ad-yeyou-nitifiction
-!---766
-||get.766.com^
-||manads.static.olcdn.com/js/*
-||static.766.com/a/windows/float.js
-766.com##[class^="abox"]
-!子页
-766.com##[class^="ad"]
-!去论坛水印
-bbs.766.com##.jammer
-!pv
-||stats.766.com/stats.js
 !---多玩
 ||market.duowan.com^
 !首页
@@ -1325,6 +1322,9 @@ bns.52pk.com###swfiframe
 !---手机乐园
 ||css.shouji.com.cn/script/*$subdocument
 ||shouji.com.cn/tg/market_73090.gif
+!---apkpure
+apkpure.com##.ad-left
+apkpure.com##.ad-right
 !---脚本之家
 ||img.jb51.net/imgby/*
 jb51.net##[id^="tonglan"]
