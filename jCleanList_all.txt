@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: hLjKHKiFVFnEWl8okbWi2A
-! Last modified: 03 Sep 2016 23:25 +0800
+! Checksum: XpXyuVqBHzew0NAt4miaUg
+! Last modified: 10 Sep 2016 22:37 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -43,6 +43,7 @@ _728x90.
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/ad_e6aa693.js
 @@||im.baidu.com/popup/popup.js*
 @@||map.bdstatic.com/*/common/widget/ui/Popup/*
+@@||10086.cn/cmpop/images/index/ad
 @@||ry.tbcdn.cn/apps/ivy/*
 @@||dpfile.com/combos/*ad*.js
 !OneDrive
@@ -144,10 +145,12 @@ _728x90.
 ||chanet.com.cn^$third-party
 ||chinaih.com^$third-party
 ||cms10086.com^$third-party
+||cnbole.net^
 ||criteo.com^$third-party
 ||csbew.com^
 ||dazhantai.com^$third-party
 ||egooad.com^$third-party
+||fd7c.com^
 ||game3737.com^$third-party
 ||gamediad.com^$third-party
 ||gs307.com^$third-party
@@ -437,15 +440,14 @@ igame.qq.com###\5f overlay_
 !---网易
 ||img1.126.net^
 ||img2.126.net^
-||adgeo.163.com^
 ||www.163.com/special/*.html$subdocument
 163.com##.ad
-163.com##.ad-main
 !新闻子页
-||impservice2.youdao.com^
-||gongheshengshi.com/adiframe/
-163.com##.ep-area
-news.163.com##[class*="gg-"]
+||impservice*.youdao.com^
+163.com##.post_adtop_main
+163.com##[class^="gg"]
+!pv
+||stat.ws.126.net^
 !邮箱
 ||mimg.127.net/external/*
 !博客右下角漂浮
@@ -576,6 +578,8 @@ cnbeta.com##.item.cooperation
 cnbeta.com##.navi
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
+cnbeta.com##.content>p:nth-last-child(2),.content>p:last-child
+||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
 ||static.cnbetacdn.com/article/2016/0817/0f83e2d06af4f0e.jpg
 ||static.cnbetacdn.com/article/2016/0812/ddbdefe1d288401.jpg
 ||static.cnbetacdn.com/article/2016/0810/a719d664af79ed3.jpg
@@ -656,21 +660,24 @@ bbs.gfan.com##div[style=" height:370px;"]
 !---拇指玩
 muzhiwan.com###focus
 !---威锋网
-||feng.com/aodoo3/
+||yes1.feng.com^$domain=feng.com
+feng.com##.dd305
 !首页logo修复
-@@||feng.com/aodoo3/view.php?what=zone:94
+@@||feng.com/view.php?what=zone:216&
+@@||feng.com/images/560a0b6b83143.png
 !论坛logo修复
-@@||feng.com/aodoo3/view.php?what=zone:93
-@@||feng.com/aodoo3/images/*logo.png
-||feng.com/bbs_v4/index_treasure/
-||fengbuy.com/recommend-new.php
-bbs.feng.com##.wea_d_panel_980
-bbs.feng.com##.a_pb
+@@/view.php?what=zone:93&$domain=feng.com
+@@||feng.com/images/%*logo.png
+bbs.feng.com##.wea_d_panel_980.a_t
+bbs.feng.com##.fl_row
 !---游侠网
 ||bmp.ali213.net/JS/*.js
 ||bmp1.ali213.net/JS/*.js
 www.ali213.net##[id^="ali-ad-"]
 www.ali213.net##.newright
+!---3DM
+||3c.3dmgame.com^
+3dmgame.com##.ad_top
 !---3DM游戏论坛
 bbs.3dmgame.com##.a_h
 !---EZ 游戏社区
@@ -818,6 +825,8 @@ zimuzu.tv##ul.room
 ||cili001.com/52meiju_700_90.jpg
 !---电影天堂
 ||dy2018.com/dianyq/
+!---Mp4Ba
+mp4ba.com###ad_list_middle
 !---我飞网
 ||115.28.6.94:8090/js/s
 ||img.hdbird.com/langzi/
@@ -935,6 +944,8 @@ v.qq.com##.action_ad
 ||ark.letv.com^
 ||letvimg.com*gugwl/$object-subrequest
 @@||stat.letv.com/vplay/*
+!http://www.zhiboba.cc/pindao/dongfangweishi.html
+@@||letv.com*/tuiguang/$subdocument
 !pv
 ||dc.letv.com^
 !---搜狐视频
@@ -1014,7 +1025,7 @@ douyu.com##.rmd-tip
 douyu.com##.super-rmd-bg.tggcontrol
 douyu.com##.pay-task
 !---战旗
-||dlpic.cdn.zhanqi.tv/*/love-*
+||zhanqi.tv/*/love-*
 !首页
 zhanqi.tv##.skinA-bg
 !直播页
@@ -1052,12 +1063,9 @@ aipai.com###cmt_slnew
 
 !---迅雷看看
 ||biz*.sandai.net^
+||biz*.kankan.com^
+||cpm.cm.kankan.com^
 kankan.com##[id^="cm"]
-!---VeryCD
-||sp.vcimg.com
-www.verycd.com##div[style*="width:960px;height:90px;"],div[style*="width:250px;height:200px;padding:4px;"]
-!下载页顶部横幅
-verycd.com##IFRAME[height="70"][width="980"]:first-child
 !---SimpleCD
 simplecd.me##[class^="ad-"]
 !---华军软件园
@@ -1215,16 +1223,16 @@ qdwenxue.com##[class^="show_ggpic_"]
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
 ||paipai.fm/images/dmbj.png
-||paipai.fm/images/xljs.png
+||paipai.fm/images/hc.png
 paipai.fm##a[style*="/images/dmbj.png"]
-paipai.fm##a[style*="/images/xljs.png"]
+paipai.fm##a[style*="/images/hc.png"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
 mail.google.com##.Bu.y3
 !---sourceforge
-!下载页
-sourceforge.net##.ad
+!pv
+||analytics.slashdotmedia.com^
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
 !---SOSO搜搜
@@ -1236,15 +1244,14 @@ greasyfork.org###script-show-info-ad
 userstyles.org##.ad
 !---xda-developers
 forum.xda-developers.com##.leaderboard
-forum.xda-developers.com##.unicorn
 forum.xda-developers.com##.purch-box
+forum.xda-developers.com##.postbit-wrapper.xda-box
 !---TechPowerUp
 ||tpucdn.com/images/b/*
 !侧栏
 techpowerup.com##.rnav_e
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
-!---淘宝网
 !---京东商城
 ||nfa.jd.com^
 !屏蔽搜索热词
