@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: XpXyuVqBHzew0NAt4miaUg
-! Last modified: 10 Sep 2016 22:37 +0800
+! Checksum: b21+UYX8W/tGudITlrtx/Q
+! Last modified: 15 Sep 2016 15:17 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -29,9 +29,7 @@ _728x90.
 @@|http://*/*ad*.$stylesheet
 @@||qq.com^*ADTAG*
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
-@@||ossweb-img.qq.com/images/gameshop/ad/*
 @@||ossweb-img.qq.com/*/guanggao/*$image
-@@||mail.qq.com/*readmail_ad_conversation$subdocument
 @@||static.youku.com/v1.*/index/js/popup.js
 !http://www.iqiyi.com/v_19rrn5px64.html
 !http://v.pps.tv/play_3GUYV2.html
@@ -362,12 +360,14 @@ tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
 !侧边栏
 tieba.baidu.com##.aside_region.my_app
 tieba.baidu.com###encourage_entry
-tieba.baidu.com##.zyq_bright + div[class]
 tieba.baidu.com##.diamond-mall-aside
+tieba.baidu.com###pagelet_frs-aside\/pagelet\/ad
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
 ||s1.bdstatic.com/r/*/baidu_search/*
 ||img.baidu.com/hunter/alog/*
+!右上角浮动广告
+tieba.baidu.com##.switch_radios + div[class]
 !帖子顶部横幅
 tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
@@ -382,6 +382,7 @@ tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480194257,
 tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1990070693,"]
 tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":50012654,"]
 !楼层商业推广
+||adscdn.baidu.com/baichuan/*
 tieba.baidu.com##.j_l_post[data-field$="adblock!'\7d "]
 tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87\""]:not([data-field*="\"user_id\":1180601200,"])
 tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="\"user_id\":2"]):not([data-field*="\"user_id\":3"]):not([data-field*="\"user_id\":4"]):not([data-field*="\"user_id\":5"]):not([data-field*="\"user_id\":6"]):not([data-field*="\"user_id\":7"]):not([data-field*="\"user_id\":8"]):not([data-field*="\"user_id\":9"])
@@ -1127,31 +1128,33 @@ orsoon.com##[class^="ad_"]
 !---飘荡软件
 ||piaodown.com/other/*
 !---zd423
+zdfans.com##.content>span:first-child
 zdfans.com##.adsbygoogle
 zdfans.com##.widget_d_banner
 !---异次元
+iplaysoft.com##.adsbygoogle
 iplaysoft.com###section_event
 iplaysoft.com###bottom_ad
-iplaysoft.com##.d250
-iplaysoft.com###sidebar_scroll_bdad
+iplaysoft.com##.widget_c_white
+iplaysoft.com##.widget[style^="width:300px;height:250px;"]
+iplaysoft.com###sidebar_scroll
+!子页
+iplaysoft.com##div[style^="width:336px;height:280px;"]
 iplaysoft.com##.d336
-iplaysoft.com###sidebar > ul > .widget:first-child
-iplaysoft.com##.widget_dd
-iplaysoft.com###sidebar > ul > .widget:nth-child(3)
 iplaysoft.com##div[style^="width:680px;height:166px;"]
-dl.iplaysoft.com##.adsbygoogle
 dl.iplaysoft.com##center > div[style^="margin-top:15px;"]
 !---小众软件
+||appinn.com/images/201609/lx.jpg
+||appinn.com/images/201609/huoban.jpg
 ||appinn.com/images/201608/teambition.jpg
-||appinn.com/images/201507/teambition.png
 ||appinn.com/images/201509/be.png
 ||appinn.com/images/201606/worktile.png
 ||appinn.com/images/201606/jiandaoyun.png
 ||appinn.com/images/201607/yomail.jpg
-||appinn.com/images/201607/huoban.png
-||appinn.com/images/201607/lx.jpg
 ||ax-d.pixfuture.net^$third-party
 appinn.com##.adsbygoogle
+!---精品绿色便携软件
+portablesoft.org##.adsbygoogle
 !---小俊博客
 ||xiaojun911.com/d/js/acmsd/
 !---TTrar天天资讯
@@ -1332,6 +1335,7 @@ bns.52pk.com###swfiframe
 !---apkpure
 apkpure.com##.ad-left
 apkpure.com##.ad-right
+apkpure.com###disqus_thread
 !---脚本之家
 ||img.jb51.net/imgby/*
 jb51.net##[id^="tonglan"]
