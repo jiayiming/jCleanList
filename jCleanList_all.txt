@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: b21+UYX8W/tGudITlrtx/Q
-! Last modified: 15 Sep 2016 15:17 +0800
+! Checksum: eYvFQP9iYDXjeDlSBuzPNw
+! Last modified: 01 Oct 2016 11:58 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -160,6 +160,8 @@ _728x90.
 ||innity.*^$third-party
 ||ipinyou.$third-party
 ||jntmedia.cn^$third-party
+||jointreport-switch.com^$third-party
+||jtxh.net^$third-party
 ||kejet.net^$third-party
 ||keydot.net^$third-party
 ||keyrun.cn^$third-party
@@ -170,7 +172,7 @@ _728x90.
 ||maxreturn.cn^$third-party
 ||myad.cn^$third-party
 ||mytanwan.com^$third-party
-||niuxgame77.com^$third-party
+||niuxgame77.com
 ||ok8848.com^$third-party
 ||onetad.com^$third-party
 ||qiyou.com^$third-party
@@ -344,6 +346,8 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 ||bdstatic.com/??/tb/_/diamond_mall_frs_aside_*.js
 !顶部横幅
 tieba.baidu.com##.head_middle
+tieba.baidu.com##.head_ad_tag
+tieba.baidu.com##.head_ad_pop
 !顶部游戏
 ||bdstatic.com/tb/cms/ngmis/*
 tieba.baidu.com##.game-head-game-info-wrapper
@@ -376,16 +380,17 @@ tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
 !楼层广告
 tieba.baidu.com##.j_l_post:not([data-field])
 !贴吧触点推广
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1224761005,"]
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480174042,"]
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480194257,"]
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1990070693,"]
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":50012654,"]
+tieba.baidu.com##.j_post_list_item[data-info^="\7b \"un\":\"\\u623f\\u4ea7\\u5c0f\\u7ad9\\u957f\""]
+tieba.baidu.com##.j_post_list_item[data-info^="\7b \"un\":\"\\u623f\\u4ea7\\u5feb\\u8baf\\u5927\\u7ba1\\u5bb6\""]
+tieba.baidu.com##.j_post_list_item[data-info^="\7b \"un\":\"\\u623f\\u4ea7\\u901f\\u8baf\""]
+tieba.baidu.com##.j_post_list_item[data-info^="\7b \"un\":\"\\u8d34\\u5427\\u89e6\\u70b9\\u63a8\\u5e7f\""]
 !楼层商业推广
 ||adscdn.baidu.com/baichuan/*
-tieba.baidu.com##.j_l_post[data-field$="adblock!'\7d "]
 tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87\""]:not([data-field*="\"user_id\":1180601200,"])
 tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="\"user_id\":2"]):not([data-field*="\"user_id\":3"]):not([data-field*="\"user_id\":4"]):not([data-field*="\"user_id\":5"]):not([data-field*="\"user_id\":6"]):not([data-field*="\"user_id\":7"]):not([data-field*="\"user_id\":8"]):not([data-field*="\"user_id\":9"])
+!其他广告
+tieba.baidu.com##.j_thread_list[data-field^="\7b \"id\":4419048726,"]
+tieba.baidu.com##.j_thread_list[data-field^="\7b \"id\":4756933479,"]
 !回复框右侧_duoku
 ||tieba.baidu.com/game/duoku/*
 tieba.baidu.com###duoku_servers_list
@@ -393,11 +398,15 @@ tieba.baidu.com###duoku_servers_list
 zhidao.baidu.com##div[class^="ad"]
 zhidao.baidu.com##.wgt-ads
 !zhidao2侧边栏
+zhidao.baidu.com###left-promotion
+zhidao.baidu.com##.ec-ad
+zhidao.baidu.com##.ec_sma_im
 zhidao.baidu.com##.cms-slide
 !zhidao3搜索
 zhidao.baidu.com##.widget-ads
 !baike
-@@||baike.bdimg.com/*/adside/*.js
+baike.baidu.com###fc_guess_like_new
+baike.baidu.com###bottom-promotion
 !wenku
 ||wenku.bdimg.com/*/widget/ad/*
 @@||img.baidu.com/img/iknow/wenku/ad/wk*.js
@@ -724,13 +733,9 @@ we.poppur.com##.a_pt
 ||chiphell.com/activity/*
 !---恩山WIFI论坛
 ||right.com.cn/logo/*.gif
-!---IT之家
-!---999宝藏网
-||att1.rin9.com/img/*
 !---无忧启动论坛
-||bbs.wuyou.com/0000/*
+||bbs.wuyou.net/0000/*
 bbs.wuyou.net##.a_t
-bbs.wuyou.com##.a_t
 !---数码之家
 ||img.mydigit.net/advpic/*
 bbs.mydigit.cn##.radio.mb10
@@ -740,13 +745,21 @@ bbs.mydigit.cn##.radio.mb10
 !---iMP3随身影音论坛
 ||imp3.net/data/js/$script
 !---耳机大家坛
-||photo.erji.com^
-||erji.net/mf.swf
-erji.net##.t[style="margin:15px auto"]
+||61.164.108.184^*.gif
+@@||61.164.108.184/tb/*.gif
+||pic3.hifidiy.net/www/2016/aune/erjinetAd.jpg
+erji.net##.a_t
 !---天涯
 ||8*.tianya.cn^
-bbs.tianya.cn###q_topbanner_950_90
+||tianyaui.com/qy/adsame/ads.js
+||dol.tianya.cn/s?z=tianya&
+||tianyaui.com/global/broadcast/*/bc_play_ebook_
+||userlogo.tianya.cn/adsp/*
 bbs.tianya.cn##.art-view
+!帖子页面1楼底部聚焦广告
+||focus.tianya.cn/shang/bbs/index.shtml
+!pv
+||static.tianyaui.com^*/stat_20080313.js
 !---猫扑
 ||pub.mop.com^
 ||mopimg.cn/tj/
@@ -877,9 +890,12 @@ dl.vmall.com###filelist_marker
 ||img.kuai.xunlei.com/img/v2/fen/
 ||img.kuai.xunlei.com/js/statistics.js
 kuai.xunlei.com##.adv_area
-!---CTdisk
-400gb.com,ctfile.com###advLeft
-400gb.com,ctfile.com###advRight
+!---城通网盘
+||ctfile.com/iz.php?
+||doubleclick.tv002.com^
+400gb.com,ctfile.com###ad_left
+400gb.com,ctfile.com###ad_right
+400gb.com,ctfile.com##.row-fluid.text-center
 !---千军万马
 ||go.snsfun.cc^$popup,third-party
 !---ys168
@@ -907,6 +923,8 @@ youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
 soku.com##div[id^="ab_"]
 soku.com##.sb_ad
+!搜索左栏
+||tip.soku.com/searches/soku/kubox/v4/sideads.json
 !pv
 ||hz.youku.com^
 ||static.youku.com/*/paycenter/*$script
@@ -1144,12 +1162,12 @@ iplaysoft.com##.d336
 iplaysoft.com##div[style^="width:680px;height:166px;"]
 dl.iplaysoft.com##center > div[style^="margin-top:15px;"]
 !---小众软件
+||appinn.com/images/201609/bearychat.png
+||appinn.com/images/201609/jdy.jpg
 ||appinn.com/images/201609/lx.jpg
 ||appinn.com/images/201609/huoban.jpg
 ||appinn.com/images/201608/teambition.jpg
-||appinn.com/images/201509/be.png
 ||appinn.com/images/201606/worktile.png
-||appinn.com/images/201606/jiandaoyun.png
 ||appinn.com/images/201607/yomail.jpg
 ||ax-d.pixfuture.net^$third-party
 appinn.com##.adsbygoogle
