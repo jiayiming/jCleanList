@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: eYvFQP9iYDXjeDlSBuzPNw
-! Last modified: 01 Oct 2016 11:58 +0800
+! Checksum: rfG+3R84FkskMUwdLWvvqQ
+! Last modified: 20 Oct 2016 06:50 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -91,23 +91,16 @@ _728x90.
 !---popup
 ||resmkt.dipan.com^$popup
 !---others(no_video_ad)
-||000wan.com^$third-party
 ||033.com^$third-party
-||100fenlm.cn^$third-party
 ||1133.cc^$third-party
 ||114la.com^$third-party
 ||116b.com^$third-party
-||155game.com^$third-party
 ||1717gs.com^$third-party
-||17leyi.com^$third-party
 ||17kuxun.com^$third-party
 ||198game.$third-party
 ||1lo0.net^$third-party
 ||201071.com^
-||2bj.cc^$third-party
 ||3393.com^$third-party
-||33hy.com^$third-party
-||333wan.com^$third-party
 ||336.com^$third-party
 ||37cs.com^$third-party
 ||37pk49.com^$third-party
@@ -120,19 +113,20 @@ _728x90.
 ||70e.com^$third-party
 ||778669.com^$third-party
 ||77power.com^
-||77union.cn^$third-party
 ||7k7k.com^$third-party,popup
 ||7pk.com^$third-party
 ||83you.com^$third-party
 ||84787111.com^$third-party
 ||88210212.com^$third-party
 ||88rpg.net^$third-party
+||892155.com^
 ||8le8le.com^$third-party
 ||8ox.cn^$third-party
 ||91wan.com^$third-party
 ||9377co.com^
 ||9w1an.com^$third-party
 ||a3p4.com^$third-party
+||a3p4.net^
 ||adkongjian.com^$third-party
 ||admaji.com^$third-party
 ||admaster.com.cn^$third-party
@@ -141,7 +135,6 @@ _728x90.
 ||btyou.com^$third-party
 ||c1o1.com^$third-party
 ||chanet.com.cn^$third-party
-||chinaih.com^$third-party
 ||cms10086.com^$third-party
 ||cnbole.net^
 ||criteo.com^$third-party
@@ -150,10 +143,8 @@ _728x90.
 ||egooad.com^$third-party
 ||fd7c.com^
 ||game3737.com^$third-party
-||gamediad.com^$third-party
 ||gs307.com^$third-party
 ||heima8.com^$third-party
-||heroclick.cn^$third-party
 ||i3z.cn^$third-party
 ||ifocus.cn^$third-party
 ||ihualun.com^$third-party
@@ -166,11 +157,8 @@ _728x90.
 ||keydot.net^$third-party
 ||keyrun.cn^$third-party
 ||keytui.com^$third-party
-||kfwan.com^$third-party
 ||kuqi.com^$third-party
 ||miaozhen.com^$third-party
-||maxreturn.cn^$third-party
-||myad.cn^$third-party
 ||mytanwan.com^$third-party
 ||niuxgame77.com
 ||ok8848.com^$third-party
@@ -178,7 +166,6 @@ _728x90.
 ||qiyou.com^$third-party
 ||qling.com^$third-party
 ||qq937.com^$third-party
-||redu.com^$third-party
 ||resmkt.dipan.com^$third-party
 ||rtbs.cn/bi.js
 ||s8dj.com^$third-party
@@ -193,7 +180,6 @@ _728x90.
 ||unionli.com^$third-party
 ||unionsky.cn^$third-party
 ||unionsky2.cn^$third-party
-||wauee.com^$third-party
 ||whytoss.com^
 ||woniu666.com^$third-party
 ||xi666.com^$third-party
@@ -201,12 +187,9 @@ _728x90.
 ||xp3366.com^$third-party
 ||xsu.cc^$third-party
 ||yigao.com^$third-party
-||yiqiwin.com^$third-party
 ||youle55.com^$third-party
-||youxitui.net^$third-party
 ||youxjia.com^$third-party
 ||yoyi.com.cn^$third-party
-||zdy.cc^$third-party
 ||zedo.com^$third-party
 !---easy ad
 ||2xbpub.com^$third-party
@@ -364,8 +347,8 @@ tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
 !侧边栏
 tieba.baidu.com##.aside_region.my_app
 tieba.baidu.com###encourage_entry
-tieba.baidu.com##.diamond-mall-aside
 tieba.baidu.com###pagelet_frs-aside\/pagelet\/ad
+tieba.baidu.com##.u9_aside
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
 ||s1.bdstatic.com/r/*/baidu_search/*
@@ -586,14 +569,11 @@ kdslife.com##.ad
 cnbeta.com##.time
 cnbeta.com##.item.cooperation
 cnbeta.com##.navi
+cnbeta.com###jzl_reco
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
 cnbeta.com##.content>p:nth-last-child(2),.content>p:last-child
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
-||static.cnbetacdn.com/article/2016/0817/0f83e2d06af4f0e.jpg
-||static.cnbetacdn.com/article/2016/0812/ddbdefe1d288401.jpg
-||static.cnbetacdn.com/article/2016/0810/a719d664af79ed3.jpg
-||static.cnbetacdn.com/article/2016/0803/7196125f52383b8.jpg
 ||static.cnbetacdn.com/article/2016/0716/4d41c2cce1f9693.gif
 ||static.cnbetacdn.com/frontend/250x200.png
 !---IT之家
@@ -757,7 +737,7 @@ erji.net##.a_t
 ||userlogo.tianya.cn/adsp/*
 bbs.tianya.cn##.art-view
 !帖子页面1楼底部聚焦广告
-||focus.tianya.cn/shang/bbs/index.shtml
+||focus.tianya.cn/shang/*/index.shtml
 !pv
 ||static.tianyaui.com^*/stat_20080313.js
 !---猫扑
@@ -838,17 +818,12 @@ zimuzu.tv##ul.room
 ||122.228.236.165^
 ||cili001.com/52meiju_700_90.jpg
 !---电影天堂
-||dy2018.com/dianyq/
+||dy2018.com/jsdd/
 !---Mp4Ba
 mp4ba.com###ad_list_middle
 !---我飞网
-||115.28.6.94:8090/js/s
-||img.hdbird.com/langzi/
 !---PT80
-pt80.net##.a_t
-pt80.net##.a_f
-!帖子底部百度搜索
-unstat.baidu.com$domain=pt80.net
+||fj.pt80.net^
 !---杂碎后院
 ||zasv.net/data/attachment/forum/*
 ||zasv.com/somic.gif
@@ -1038,7 +1013,9 @@ douyu.com##.f-sign-cont
 douyu.com##.lol-ad
 douyu.com##.room-ad-top
 douyu.com###js-live-room-normal-equal-left
+douyu.com##.chat-top-ad
 douyu.com##.focus-lead
+douyu.com##.his-sign-cont
 douyu.com##.giftbox
 douyu.com##.rmd-tip
 douyu.com##.super-rmd-bg.tggcontrol
@@ -1162,11 +1139,11 @@ iplaysoft.com##.d336
 iplaysoft.com##div[style^="width:680px;height:166px;"]
 dl.iplaysoft.com##center > div[style^="margin-top:15px;"]
 !---小众软件
+||appinn.com/images/201610/teambition.png
 ||appinn.com/images/201609/bearychat.png
 ||appinn.com/images/201609/jdy.jpg
 ||appinn.com/images/201609/lx.jpg
 ||appinn.com/images/201609/huoban.jpg
-||appinn.com/images/201608/teambition.jpg
 ||appinn.com/images/201606/worktile.png
 ||appinn.com/images/201607/yomail.jpg
 ||ax-d.pixfuture.net^$third-party
@@ -1243,10 +1220,10 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-||paipai.fm/images/dmbj.png
+||paipai.fm/images/jzwl.png
 ||paipai.fm/images/hc.png
 paipai.fm##a[style*="/images/dmbj.png"]
-paipai.fm##a[style*="/images/hc.png"]
+paipai.fm##a[style*="/images/jzwl.png"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
@@ -1326,8 +1303,8 @@ lol.duowan.com##.full-banner
 !pv
 /atcount.php?$domain=178.com
 !---艾泽拉斯国家地理论坛
-||nga.178.com/common_res/js_adscommon.js*
-||nga.178.com/common_res/js_bbs_adslist.js*
+||nga.*/proxy/cache_attach/ds_list.js
+||nga.*/common_res/js_adscommon.js
 !---叶子猪
 ||yktj.yzz.cn^
 yzz.cn##.ad200x340
