@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: rfG+3R84FkskMUwdLWvvqQ
-! Last modified: 20 Oct 2016 06:50 +0800
+! Checksum: 8rvpdd99ZUKSo3uM9fZaSg
+! Last modified: 26 Oct 2016 00:04 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -360,20 +360,16 @@ tieba.baidu.com###pb_adbanner
 ||tb1.bdstatic.com/tb/cms/img/tieba_index_banner*.png
 !帖子1楼底部游戏横幅
 tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
-!楼层广告
-tieba.baidu.com##.j_l_post:not([data-field])
 !贴吧触点推广
-tieba.baidu.com##.j_post_list_item[data-info^="\7b \"un\":\"\\u623f\\u4ea7\\u5c0f\\u7ad9\\u957f\""]
-tieba.baidu.com##.j_post_list_item[data-info^="\7b \"un\":\"\\u623f\\u4ea7\\u5feb\\u8baf\\u5927\\u7ba1\\u5bb6\""]
-tieba.baidu.com##.j_post_list_item[data-info^="\7b \"un\":\"\\u623f\\u4ea7\\u901f\\u8baf\""]
-tieba.baidu.com##.j_post_list_item[data-info^="\7b \"un\":\"\\u8d34\\u5427\\u89e6\\u70b9\\u63a8\\u5e7f\""]
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1224761005,"]
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480174042,"]
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480194257,"]
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1990070693,"]
+tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":50012654,"]
 !楼层商业推广
 ||adscdn.baidu.com/baichuan/*
 tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87\""]:not([data-field*="\"user_id\":1180601200,"])
 tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="\"user_id\":2"]):not([data-field*="\"user_id\":3"]):not([data-field*="\"user_id\":4"]):not([data-field*="\"user_id\":5"]):not([data-field*="\"user_id\":6"]):not([data-field*="\"user_id\":7"]):not([data-field*="\"user_id\":8"]):not([data-field*="\"user_id\":9"])
-!其他广告
-tieba.baidu.com##.j_thread_list[data-field^="\7b \"id\":4419048726,"]
-tieba.baidu.com##.j_thread_list[data-field^="\7b \"id\":4756933479,"]
 !回复框右侧_duoku
 ||tieba.baidu.com/game/duoku/*
 tieba.baidu.com###duoku_servers_list
@@ -576,6 +572,7 @@ cnbeta.com##.content>p:nth-last-child(2),.content>p:last-child
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
 ||static.cnbetacdn.com/article/2016/0716/4d41c2cce1f9693.gif
 ||static.cnbetacdn.com/frontend/250x200.png
+static.cnbetacdn.com/article/2016/1024/a8cfbdf06c0db33.jpg
 !---IT之家
 ||ithome.com/block/*
 ||ithome.com/js/money/
@@ -794,15 +791,15 @@ tsdm.net##.a_pb
 ||sinaimg.cn/*20q*.*$domain=tsdm.net
 ||sinaimg.cn/*20j*.jpg$domain=tsdm.net
 !TorrenTGui
-||totheglory.im/pic/meibubanner.jpg
+||totheglory.im/pic/wycq/161020_1000x100.png
 !---NyaaTorrents
-||files.nyaa.eu/a*.jpg
+||files.nyaa.se/b*.jpg
 !Pixiv
 ||d.pixiv.org^
 pixiv.net##.ads_area
 pixiv.net##.ads_anchor
 pixiv.net##.ad-footer
-!---U17
+!---有妖气
 ||image.mylife.u17t.com^*.gif
 u17.com##.side_top_ad
 u17.com##div[id^="u17-advert"]
@@ -1014,6 +1011,7 @@ douyu.com##.lol-ad
 douyu.com##.room-ad-top
 douyu.com###js-live-room-normal-equal-left
 douyu.com##.chat-top-ad
+douyu.com##.chat-right-ad
 douyu.com##.focus-lead
 douyu.com##.his-sign-cont
 douyu.com##.giftbox
@@ -1220,9 +1218,7 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-||paipai.fm/images/jzwl.png
-||paipai.fm/images/hc.png
-paipai.fm##a[style*="/images/dmbj.png"]
+paipai.fm##a[style*="/images/rxsg3.png"]
 paipai.fm##a[style*="/images/jzwl.png"]
 
 !---Gmail
