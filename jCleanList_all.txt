@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 8rvpdd99ZUKSo3uM9fZaSg
-! Last modified: 26 Oct 2016 00:04 +0800
+! Checksum: 9MoCxo12c2WzIZfLfUlknw
+! Last modified: 09 Nov 2016 00:12 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -572,7 +572,8 @@ cnbeta.com##.content>p:nth-last-child(2),.content>p:last-child
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
 ||static.cnbetacdn.com/article/2016/0716/4d41c2cce1f9693.gif
 ||static.cnbetacdn.com/frontend/250x200.png
-static.cnbetacdn.com/article/2016/1024/a8cfbdf06c0db33.jpg
+||static.cnbetacdn.com/article/2016/1024/a8cfbdf06c0db33.jpg
+||static.cnbetacdn.com/article/2016/1028/491b2f9c786b733.png
 !---IT之家
 ||ithome.com/block/*
 ||ithome.com/js/money/
@@ -864,6 +865,7 @@ dl.vmall.com###filelist_marker
 kuai.xunlei.com##.adv_area
 !---城通网盘
 ||ctfile.com/iz.php?
+||ctfile.com/popjump.php?$popup
 ||doubleclick.tv002.com^
 400gb.com,ctfile.com###ad_left
 400gb.com,ctfile.com###ad_right
@@ -1218,8 +1220,8 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-paipai.fm##a[style*="/images/rxsg3.png"]
-paipai.fm##a[style*="/images/jzwl.png"]
+paipai.fm##a[style*="/images/arpg.png"]
+paipai.fm##a[style*="/images/dtx.png"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
@@ -1301,6 +1303,7 @@ lol.duowan.com##.full-banner
 !---艾泽拉斯国家地理论坛
 ||nga.*/proxy/cache_attach/ds_list.js
 ||nga.*/common_res/js_adscommon.js
+||ngacn.cc/common_res/js_adscommon.js
 !---叶子猪
 ||yktj.yzz.cn^
 yzz.cn##.ad200x340
@@ -1326,14 +1329,10 @@ bns.52pk.com###swfiframe
 !---apkpure
 apkpure.com##.ad-left
 apkpure.com##.ad-right
+apkpure.com##.ad-right-img
 apkpure.com###disqus_thread
 !---脚本之家
-||img.jb51.net/imgby/*
-jb51.net##[id^="tonglan"]
-jb51.net##.mainad
-jb51.net##.dxy230
-jb51.net###con_all
-jb51.net##.adsbygoogle
+||img.jb51.net^$script
 !---豆丁
 ||docin.com/docin_adv/
 ||pics.wanlibo.com/js/pagemodulestat.js*
