@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: V8bY+A0ZrzXjH0l4tOi/Eg
-! Last modified: 08 Jan 2017 19:27 +0800
+! Checksum: +olSgQYEGoD+csIcymyUcg
+! Last modified: 24 Jan 2017 19:08 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -567,12 +567,8 @@ cnbeta.com###jzl_reco
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
 cnbeta.com##.content>p:nth-last-child(2),.content>p:last-child
-||static.cnbetacdn.com/article/2016/1215/fe25956add33ea7.png
-||static.cnbetacdn.com/article/2016/1125/c92e6dffb1f6b8e.jpg
-||static.cnbetacdn.com/article/2016/1024/a8cfbdf06c0db33.jpg
-||static.cnbetacdn.com/article/2016/1117/8f6d1ff99d64b71.jpg
+||static.cnbetacdn.com/article/2017/0113/44d63c3f1dd214f.png
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
-||static.cnbetacdn.com/article/2016/0716/4d41c2cce1f9693.gif
 ||static.cnbetacdn.com/frontend/250x200.png
 !---IT之家
 ||ithome.com/block/*
@@ -996,14 +992,18 @@ v.ku6.com##[class^="aa_"]
 ||acs.56.com
 !------------------------------------
 !---嗶哩嗶哩
-||bilibili.com/html/ads-arc.js
-||bilibili.com/x/web-show/res/locs?*&pf=0&ids=40%
 ||hdslb.com/js/core-v5/picment.
 ||hdslb.com/group1/$object-subrequest,domain=bilibili.com
 ||hdslb.com/bfs/archive/$object-subrequest,domain=bilibili.com
+||hdslb.com/bfs/$object-subrequest
+||api.bilibili.com/x/ad/
+||bilibili.com/x/web-show/res/loc?*&aid=
+||bilibili.com/x/web-show/res/loc?pf=0&id=128
+||bilibili.com/x/web-show/res/loc?pf=0&id=160
+||bilibili.com/x/web-show/res/locs?*&pf=0&ids=124%
+||bilibili.com/x/web-show/res/locs?*&pf=0&ids=40%
+||bilibili.com/x/web-show/res/locs?*=getAdCallback&
 bilibili.com##.bilibili-player-promote-panel
-||hdslb.com/bfs/archive/*_468x60.jpg
-||hdslb.com/bfs/archive/*_870x72.jpg
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
 bilibili.com##.ad-f
@@ -1255,6 +1255,9 @@ forum.xda-developers.com##.postbit-wrapper.xda-box
 techpowerup.com##.rnav_e
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
+!---天猫
+!去访问验证
+detail.tmall.com##.sufei-tb-dialog.sufei-tb-overlay
 !---京东商城
 ||nfa.jd.com^
 !屏蔽搜索热词
