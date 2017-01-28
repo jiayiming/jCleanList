@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: +olSgQYEGoD+csIcymyUcg
-! Last modified: 24 Jan 2017 19:08 +0800
+! Checksum: YmtsCtpM1JC7gXKhwmSUnA
+! Last modified: 28 Jan 2017 15:52 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -36,7 +36,7 @@ _728x90.
 @@||www.iqiyi.com/*MainPlayer_*ad*.swf
 !http://www.iqiyi.com/v_19rrmisqt8.html
 @@|http://*/ad/*.f4v?*
-@@||tb1.bdstatic.com/*float*.js$script
+@@||bdstatic.com/??*,*,*,
 !百度图片搜索
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/ad_e6aa693.js
 @@||im.baidu.com/popup/popup.js*
@@ -85,9 +85,6 @@ _728x90.
 ||j.wit.qq.com^$third-party
 !---sdo
 ||snyu.com^$third-party
-!---naqigs
-||naqigs.com^$third-party
-||i.na7.cc^$third-party
 !---popup
 ||resmkt.dipan.com^$popup
 !---others(no_video_ad)
@@ -97,7 +94,6 @@ _728x90.
 ||116b.com^$third-party
 ||1717gs.com^$third-party
 ||17kuxun.com^$third-party
-||198game.$third-party
 ||1lo0.net^$third-party
 ||201071.com^
 ||3393.com^$third-party
@@ -244,6 +240,8 @@ http://stat.
 ||api.share.baidu.com
 !分享
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
+!---ali
+||alicdn.com/alilog/
 !---TX
 ||ping*.qq.com/pingd?
 ||btrace.qq.com^
@@ -784,18 +782,13 @@ bbs.9baka.com##td[width="680"][height="50"]
 bbs.aptx.cn##.a_pr
 !---天使动漫
 ||tsdmw.net/img01/MP3/
-tsdm.net##.a_pb
+tsdm.me,tsdm.net,tsdm.tw##td[colspan="5"]:first-child:last-child
+tsdm.me##.a_pt
+tsdm.me##.a_pb
 !签到弹窗
-||dm.tsdm.net/xinfandongman/*$popup,domain=tsdm.net
-||www.tsdm.net/qxs.php$popup,domain=tsdm.net
-||taobao.com^$popup,domain=tsdm.net
-||tmall.com^$popup,domain=tsdm.net
-||loli.cd^$popup,domain=tsdm.net
-||u72.com.cn^$popup,domain=tsdm.net
-||sinaimg.cn/large/*20r*.jpg$domain=tsdm.net
-@@||sinaimg.cn/large/*20r306y40m.jpg
-||sinaimg.cn/*20q*.*$domain=tsdm.net
-||sinaimg.cn/*20j*.jpg$domain=tsdm.net
+||taobao.com^$popup,domain=tsdm.me
+||tmall.com^$popup,domain=tsdm.me
+||xmds.opd2c.com^$popup,domain=tsdm.me
 !TorrenTGui
 ||totheglory.im/pic/wycq/161020_1000x100.png
 !---NyaaTorrents
@@ -903,6 +896,7 @@ soku.com##.sb_ad
 !搜索左栏
 ||tip.soku.com/searches/soku/kubox/v4/sideads.json
 !pv
+||youku.com/cms/tool/pub/get_putdata.
 ||hz.youku.com^
 ||static.youku.com/*/paycenter/*$script
 ||p-log.ykimg.com^
