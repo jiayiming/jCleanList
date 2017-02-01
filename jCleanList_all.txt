@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: YmtsCtpM1JC7gXKhwmSUnA
-! Last modified: 28 Jan 2017 15:52 +0800
+! Checksum: HdjF6d57Lx5Xt9xjGIY31Q
+! Last modified: 02 Feb 2017 00:30 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -31,6 +31,9 @@ _728x90.
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||ossweb-img.qq.com/*/guanggao/*$image
 @@||static.youku.com/v1.*/index/js/popup.js
+!http://v.youku.com/v_show/id_XMTM0OTQ2NTA2MA==.html
+@@||k.youku.com/player/getFlvPath/sid/*ad*$object-subrequest
+@@|http://*/youku/*ad*.flv$object-subrequest
 !http://www.iqiyi.com/v_19rrn5px64.html
 !http://v.pps.tv/play_3GUYV2.html
 @@||www.iqiyi.com/*MainPlayer_*ad*.swf
@@ -70,6 +73,7 @@ _728x90.
 ||su.bdimg.com/static/dspui/js/
 !---alipay/alimama/taobao
 ||alimama.cn^$third-party
+||alimama.alicdn.com/tkapi.js
 ||alicdn.com/g/mm/afp-cdn/JS/
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
 ||tanx.com
@@ -283,6 +287,7 @@ http://stat.
 ||v2.jiathis.com^$third-party
 ||wrating.com^$third-party
 !---Others(Foreign)
+||criteo.net^$third-party
 ||exponential.com^$third-party
 ||go-mpulse.net^$third-party
 ||histats.com^$third-party
@@ -790,7 +795,7 @@ tsdm.me##.a_pb
 ||tmall.com^$popup,domain=tsdm.me
 ||xmds.opd2c.com^$popup,domain=tsdm.me
 !TorrenTGui
-||totheglory.im/pic/wycq/161020_1000x100.png
+||totheglory.im/pic/picad/*
 !---NyaaTorrents
 ||files.nyaa.se/b*.jpg
 !Pixiv
