@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: HdjF6d57Lx5Xt9xjGIY31Q
-! Last modified: 02 Feb 2017 00:30 +0800
+! Checksum: fwHGTUBRGyu5a5M8y/cUVQ
+! Last modified: 09 Feb 2017 06:57 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -310,12 +310,19 @@ www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 !百度全局
 ||a.baidu.com
 !搜索
+||bdstatic.com^*/plugins/every_cookie_
+||bdstatic.com^*/tam-ogel/
 www.baidu.com###content_left > div[class][style]:not([id])
 www.baidu.com###content_left > [id*="00"]:not(.result) > div
 www.baidu.com###content_right > table > tbody > tr > td > div:not(#con-ar)
+www.baidu.com###\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"] > .t > a[href^="http://www.baidu.com/baidu.php?"]
+www.baidu.com###\32 ~ #\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"]
+www.baidu.com###\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"] > .c-abstract:nth-child(2)
+www.baidu.com###\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"] > .c-abstract:nth-child(2) + .f13:last-child
 !搜索_pv
 ||baidu.com^*/c.gif?
 ||baidu.com^*/w.gif?
+||sp*.baidu.com^*.gif?
 !image_All
 image.baidu.com###relEcom
 !tieba_All
@@ -354,6 +361,8 @@ tieba.baidu.com##.u9_aside
 ||tieba.baidu.com/f/urlcheck?*
 ||s1.bdstatic.com/r/*/baidu_search/*
 ||fex.bdstatic.com/hunter/alog/*
+!新搜索
+||bdstatic.com/tb/static-pb/widget/baidusearch/
 !帖子顶部横幅
 tieba.baidu.com###pb_adbanner
 !帖子1楼底部游戏横幅
@@ -566,7 +575,6 @@ kdslife.com##.ad
 cnbeta.com##.time
 cnbeta.com##.item.cooperation
 cnbeta.com##.navi
-cnbeta.com###jzl_reco
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
 cnbeta.com##.content>p:nth-last-child(2),.content>p:last-child
@@ -574,10 +582,10 @@ cnbeta.com##.content>p:nth-last-child(2),.content>p:last-child
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
 ||static.cnbetacdn.com/frontend/250x200.png
 !---IT之家
-||ithome.com/block/*
 ||ithome.com/js/money/
-ithome.com##.adsbygoogle
+||lapin365.com/Shared/RenderLapinBlock?
 ithome.com###hd_float
+digi.ithome.com##li[style="padding-bottom:0;height:90px"]
 !pv
 ||ithome.com/ithome/HitCount.*
 !论坛
