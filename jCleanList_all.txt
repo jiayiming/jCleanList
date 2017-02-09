@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: fwHGTUBRGyu5a5M8y/cUVQ
-! Last modified: 09 Feb 2017 06:57 +0800
+! Checksum: GwEK85Svw3oNI7h4w2poVA
+! Last modified: 10 Feb 2017 00:24 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -288,12 +288,16 @@ http://stat.
 ||wrating.com^$third-party
 !---Others(Foreign)
 ||criteo.net^$third-party
+||demdex.net^$third-party
 ||exponential.com^$third-party
 ||go-mpulse.net^$third-party
 ||histats.com^$third-party
 ||kontera.com/javascript/lib/KonaLibInline.js$third-party
 ||newrelic.com^$third-party
 ||ml314.com^$third-party
+||omtrdc.net^$third-party
+!nvidia加速
+||pricespider.com^$third-party
 ||scorecardresearch.com^$third-party
 ||serving-sys.com^$third-party
 ||statcounter.com^$third-party
@@ -1234,7 +1238,7 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-paipai.fm##a[style*="/images/ry.png"]
+paipai.fm##a[style*="/images/dtss.png"]
 paipai.fm##a[style*="/images/jxqy.png"]
 
 !---Gmail
