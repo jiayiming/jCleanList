@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: GwEK85Svw3oNI7h4w2poVA
-! Last modified: 10 Feb 2017 00:24 +0800
+! Checksum: aoFBPi9ReANtRuVMiUN1DA
+! Last modified: 17 Feb 2017 07:04 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -582,6 +582,7 @@ cnbeta.com##.navi
 cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
 cnbeta.com##.content>p:nth-last-child(2),.content>p:last-child
+||static.cnbetacdn.com/article/2017/0216/7f494f4f9ccad6c.jpg
 ||static.cnbetacdn.com/article/2017/0113/44d63c3f1dd214f.png
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
 ||static.cnbetacdn.com/frontend/250x200.png
@@ -1012,12 +1013,13 @@ v.ku6.com##[class^="aa_"]
 ||bilibili.com/x/web-show/res/loc?pf=0&id=128
 ||bilibili.com/x/web-show/res/loc?pf=0&id=160
 ||bilibili.com/x/web-show/res/locs?*&pf=0&ids=124%
-||bilibili.com/x/web-show/res/locs?*&pf=0&ids=40%
+||bilibili.com/x/web-show/res/locs?*&pf=0&ids=4
 ||bilibili.com/x/web-show/res/locs?*=getAdCallback&
 bilibili.com##.bilibili-player-promote-panel
 @@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
 bilibili.com##.ad-f
+bilibili.com##.ad-e1
 !---AcFun
 acfun.tv##[id^="ad-"]
 !---吐槽
@@ -1239,7 +1241,7 @@ qdwenxue.com##[class^="show_ggpic_"]
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
 paipai.fm##a[style*="/images/dtss.png"]
-paipai.fm##a[style*="/images/jxqy.png"]
+paipai.fm##a[style*="/images/smcs.png"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
