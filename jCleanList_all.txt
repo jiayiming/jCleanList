@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: aoFBPi9ReANtRuVMiUN1DA
-! Last modified: 17 Feb 2017 07:04 +0800
+! Checksum: FV+QkpfscHFkPuRkrrjdqA
+! Last modified: 26 Feb 2017 20:35 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -576,16 +576,12 @@ kdslife.com##.ad
 !---天极网
 ||adsame.tianjimedia.com
 !---cnBeta
-cnbeta.com##.time
-cnbeta.com##.item.cooperation
-cnbeta.com##.navi
-cnbeta.com###job_box
 cnbeta.com##.adsbygoogle
-cnbeta.com##.content>p:nth-last-child(2),.content>p:last-child
-||static.cnbetacdn.com/article/2017/0216/7f494f4f9ccad6c.jpg
-||static.cnbetacdn.com/article/2017/0113/44d63c3f1dd214f.png
+cnbeta.com##.tks
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
-||static.cnbetacdn.com/frontend/250x200.png
+!子页
+||cnbetacdn.com/frontend/vipics/*_300x250.png
+cnbeta.com##.article-global
 !---IT之家
 ||ithome.com/js/money/
 ||lapin365.com/Shared/RenderLapinBlock?
@@ -1133,9 +1129,15 @@ hanzify.org##.banner-leader-index
 hanzify.org##.section-title>span[style*="float:right;"]
 hanzify.org##.categorypickdown
 !---pc6下载站
-||pc6.com/js/jf/*
-||pc6.com/js/address.html*
-pc6.com###topbanner2
+||pc6.com/img/
+||pc6.com/js/jf/
+||entry.baidu.com^
+pc6.com##.Advbox
+pc6.com##dl.content-box + div[style]
+pc6.com##.ad2
+!屏蔽高速下载广告
+pc6.com##h3[style="margin:5px 0 -5px 0"]
+pc6.com###gaosuxiazai
 !---未来软件站
 ||orsoon.com*/zhuanti/
 ||orsoon.com/images/*.gif
@@ -1159,13 +1161,11 @@ iplaysoft.com##.d336
 iplaysoft.com##div[style^="width:680px;height:166px;"]
 dl.iplaysoft.com##center > div[style^="margin-top:15px;"]
 !---小众软件
-||appinn.com/images/201610/chuangketie.jpg
-||appinn.com/images/201610/teambition.png
-||appinn.com/images/201609/jdy.jpg
-||appinn.com/images/201609/lx.jpg
-||appinn.com/images/201609/huoban.jpg
-||appinn.com/images/201606/worktile.png
-||appinn.com/images/201607/yomail.jpg
+||appinn.com/images/*/ckt.png
+||appinn.com/images/*/teambition.png
+||appinn.com/images/*/jdy.jpg
+||appinn.com/images/*/worktile.png
+||appinn.com/images/*/yomail.png
 ||ax-d.pixfuture.net^$third-party
 appinn.com##.adsbygoogle
 !---精品绿色便携软件
@@ -1255,6 +1255,7 @@ mail.google.com##.Bu.y3
 soso.com##.sponsored
 soso.com###right
 !---Greasy Fork
+greasyfork.org##.ad
 greasyfork.org###script-show-info-ad
 !---userstyles.org
 userstyles.org##.ad
