@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: FV+QkpfscHFkPuRkrrjdqA
-! Last modified: 26 Feb 2017 20:35 +0800
+! Checksum: ecL/Fbkj1dmaRdhXcpaVhg
+! Last modified: 09 Mar 2017 23:19 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -204,6 +204,7 @@ _728x90.
 ||delivery45.com^$third-party
 ||directrev.com^$third-party
 ||directrev.com^$popup,third-party
+||earnify.com^$third-party
 ||exoclick.com^$third-party
 ||oclaserver.com^$third-party
 ||oclasrv.com^$third-party
@@ -1240,7 +1241,7 @@ qdwenxue.com##[class^="show_ggpic_"]
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/Banner/
 !---派派前后院
-paipai.fm##a[style*="/images/dtss.png"]
+paipai.fm##a[style*="/images/jwzl.png"]
 paipai.fm##a[style*="/images/smcs.png"]
 
 !---Gmail
