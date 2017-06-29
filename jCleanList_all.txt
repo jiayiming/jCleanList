@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: GT4oyU0SYcu/TEcbvlWO9A
-! Last modified: 02 May 2017 21:47 +0800
+! Checksum: WmbDUpRaib2LZpO7V8Gh2g
+! Last modified: 29 Jun 2017 22:52 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -144,6 +144,7 @@ _728x90.
 ||egooad.com^$third-party
 ||fd7c.com^
 ||game3737.com^$third-party
+||ge95.com^
 ||gs307.com^$third-party
 ||heima8.com^$third-party
 ||i3z.cn^$third-party
@@ -250,7 +251,6 @@ http://stat.
 !分享
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---ali
-||alicdn.com/alilog/
 !---TX
 ||ping*.qq.com/pingd?
 ||btrace.qq.com^
@@ -288,6 +288,7 @@ http://stat.
 ||imrworldwide.com^$third-party
 ||linezing.com^$third-party
 ||mmstat.com^$third-party
+||msg.71.am^
 ||users.51.la^$third-party
 ||v2.jiathis.com^$third-party
 ||wrating.com^$third-party
@@ -336,6 +337,8 @@ www.baidu.com###\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"] > .c-abstract:
 image.baidu.com###relEcom
 !tieba_All
 tieba.baidu.com##.tpoint-skin
+!底部下载app领现金红包
+tieba.baidu.com###fixed_bar.showBar
 !pv
 ||static.tieba.baidu.com/tb/img/track.gif?*
 !itieba
@@ -353,7 +356,6 @@ tieba.baidu.com##.head_ad_pop
 tieba.baidu.com##.game-head-game-info-wrapper
 !顶部游戏直播+AcFun
 ||cdn.aixifan.com/dotnet/artemis/u/cms/*$third-party
-tieba.baidu.com###game_live_list
 !顶部视频精选
 ||bdstatic.com/*/tb/_/video_frs_head_
 tieba.baidu.com###video_frs_head
@@ -583,11 +585,12 @@ kdslife.com##.ad
 !---天极网
 ||adsame.tianjimedia.com
 !---cnBeta
+||cnbeta.com/js/pages/inteladv.js
 cnbeta.com##.adsbygoogle
+cnbeta.com##.item.cooperation
+cnbeta.com###\5f bbezsed8bto
 cnbeta.com##.tks
-||static.cnbetacdn.com/article/2017/0501/1f82f8c162e8bbb.png
-||static.cnbetacdn.com/article/2017/0501/e6f657fa18eeb2b.png
-||static.cnbetacdn.com/article/2017/0330/821b934f7a97070.png
+||static.cnbetacdn.com/article/2017/0609/eaf378b6ecf8431.png
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
 !子页
 ||cnbetacdn.com/frontend/vipics/*_300x250.png
@@ -727,6 +730,8 @@ we.poppur.com##.a_h
 we.poppur.com##.a_pt
 !---Chiphell
 ||chiphell.com/activity/*
+!---宽带技术网
+chinadsl.net##.jammer
 !---恩山WIFI论坛
 ||right.com.cn/logo/*.gif
 !---无忧启动论坛
@@ -807,10 +812,11 @@ bbs.9baka.com##td[width="680"][height="50"]
 bbs.aptx.cn##.a_pr
 !---天使动漫
 ||tsdmw.net/img01/MP3/
-tsdm.me,tsdm.net,tsdm.tw##td[colspan="5"]:first-child:last-child
+tsdm.me##td[colspan="5"]:first-child:last-child
 tsdm.me##.a_pt
 tsdm.me##.a_pb
 tsdm.me###tsdmadv_arch
+tsdm.me##P[style="float:left;width:100%"]
 !签到弹窗
 ||taobao.com^$popup,domain=tsdm.me
 ||tmall.com^$popup,domain=tsdm.me
@@ -956,6 +962,7 @@ v.qq.com##.action_ad
 !pv
 ||rcgi.video.qq.com^
 !---乐视
+|http://*/letv-gug/
 */letv-web/*
 ||ark.letv.com^
 ||letvimg.com*gugwl/$object-subrequest
@@ -1014,21 +1021,14 @@ v.ku6.com##[class^="aa_"]
 !------------------------------------
 !---嗶哩嗶哩
 ||hdslb.com/js/core-v5/picment.
-||hdslb.com/group1/$object-subrequest,domain=bilibili.com
-||hdslb.com/bfs/archive/$object-subrequest,domain=bilibili.com
 ||hdslb.com/bfs/$object-subrequest
-||api.bilibili.com/x/ad/
 ||bilibili.com/x/web-show/res/loc?*&aid=
-||bilibili.com/x/web-show/res/loc?pf=0&id=128
 ||bilibili.com/x/web-show/res/loc?pf=0&id=160
-||bilibili.com/x/web-show/res/locs?*&pf=0&ids=124%
 ||bilibili.com/x/web-show/res/locs?*&pf=0&ids=4
-||bilibili.com/x/web-show/res/locs?*=getAdCallback&
-bilibili.com##.bilibili-player-promote-panel
-@@||bilibili.com/html/ads-index.js
 @@||hdslb.com/*/ad*.jpg
 bilibili.com##.ad-f
 bilibili.com##.ad-e1
+bilibili.com##.gg-floor-module
 live.bilibili.com##.live-ad-full
 !---AcFun
 acfun.tv##[id^="ad-"]
@@ -1037,15 +1037,15 @@ acfun.tv##[id^="ad-"]
 tucao.tv##.a2013d
 !---斗鱼
 ||douyucdn.cn/upload/signs/*
+||staticlive.douyucdn.cn/storage/webpic_resources/
 douyu.com##.f-sign-cont
-douyu.com##.lol-ad
 douyu.com##.room-ad-top
+douyu.com##.sq-ad
 douyu.com###js-live-room-normal-equal-left
+douyu.com##.chat-ad
 douyu.com##.chat-top-ad
 douyu.com##.chat-right-ad
-douyu.com##.focus-lead
 douyu.com##.his-sign-cont
-douyu.com##.giftbox
 douyu.com##.rmd-tip
 douyu.com##.super-rmd-bg.tggcontrol
 douyu.com##.pay-task
@@ -1238,6 +1238,7 @@ yunqi.qq.com##.topBanner
 ||chuangshi.qq.com/upload/cmsv2/
 !---派派前后院
 paipai.fm##a[href*="gamezixia.php?jump="]
+paipai.fm##a[href*="/game-yyj/"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
