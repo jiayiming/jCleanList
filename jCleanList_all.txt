@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: WmbDUpRaib2LZpO7V8Gh2g
-! Last modified: 29 Jun 2017 22:52 +0800
+! Checksum: 5GV9ZqABtgmiSD8DaD6yqg
+! Last modified: 05 Jul 2017 23:44 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -360,9 +360,15 @@ tieba.baidu.com##.game-head-game-info-wrapper
 ||bdstatic.com/*/tb/_/video_frs_head_
 tieba.baidu.com###video_frs_head
 !列表内推广贴
+||bj.bcebos.com/fc-feed/0/pic/
 tieba.baidu.com##[data-daid]
 tieba.baidu.com##.j_thread_list:not([data-field])
 tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
+!顶部iqiyi视频播放器横幅
+tieba.baidu.com##.activity_iframe_container
+!首页两侧横幅和背景
+||imgsrc.baidu.com/*/42a7d933c895d14318a3fc8579f082025baf07ba.jpg
+tieba.baidu.com##.j_couplet
 !侧边栏
 tieba.baidu.com##.aside_region.my_app
 tieba.baidu.com###encourage_entry
