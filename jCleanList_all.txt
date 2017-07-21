@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 5GV9ZqABtgmiSD8DaD6yqg
-! Last modified: 05 Jul 2017 23:44 +0800
+! Checksum: C4UYLlFiUBI35SYkMd9FMg
+! Last modified: 21 Jul 2017 23:07 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -598,6 +598,7 @@ cnbeta.com###\5f bbezsed8bto
 cnbeta.com##.tks
 ||static.cnbetacdn.com/article/2017/0609/eaf378b6ecf8431.png
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
+||static.cnbetacdn.com/article/2017/0702/7682a320da6b2aa.jpg
 !子页
 ||cnbetacdn.com/frontend/vipics/*_300x250.png
 cnbeta.com##.article-global
@@ -823,6 +824,7 @@ tsdm.me##.a_pt
 tsdm.me##.a_pb
 tsdm.me###tsdmadv_arch
 tsdm.me##P[style="float:left;width:100%"]
+tsdm.me###pgt+div
 !签到弹窗
 ||taobao.com^$popup,domain=tsdm.me
 ||tmall.com^$popup,domain=tsdm.me
@@ -1052,10 +1054,10 @@ douyu.com##.chat-ad
 douyu.com##.chat-top-ad
 douyu.com##.chat-right-ad
 douyu.com##.his-sign-cont
-douyu.com##.rmd-tip
 douyu.com##.super-rmd-bg.tggcontrol
 douyu.com##.pay-task
 douyu.com##.expanded.fishop-anchor-recommands-box
+douyu.com##div.vigour-progress
 !---战旗
 ||zhanqi.tv/*/love-*
 !首页
