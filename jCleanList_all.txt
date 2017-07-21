@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: C4UYLlFiUBI35SYkMd9FMg
-! Last modified: 21 Jul 2017 23:07 +0800
+! Checksum: kYtRl3C/Xv6XW84rteiqMg
+! Last modified: 21 Jul 2017 23:15 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -1057,7 +1057,7 @@ douyu.com##.his-sign-cont
 douyu.com##.super-rmd-bg.tggcontrol
 douyu.com##.pay-task
 douyu.com##.expanded.fishop-anchor-recommands-box
-douyu.com##div.vigour-progress
+douyu.com##div[class^="vigour-"]
 !---战旗
 ||zhanqi.tv/*/love-*
 !首页
