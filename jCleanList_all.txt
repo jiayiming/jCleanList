@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: juGblK2GTNZRAIxVd0upXA
-! Last modified: 23 Jul 2017 00:27 +0800
+! Checksum: ug+vhmcv1xoXPZ/6DEa15w
+! Last modified: 27 Aug 2017 22:33 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -49,6 +49,8 @@ _728x90.
 @@||dpfile.com/combos/*ad*.js
 !OneDrive
 @@||spoprod-a.akamaihd.net/files/onedrive-website-release-*ad*.js
+!My Digital Life
+@@||forums.mydigitallife.net/css.php*_ad_*$stylesheet
 
 !---通用广告联盟通用猜测
 |http://*/i.js
@@ -74,6 +76,7 @@ _728x90.
 ||su.bdimg.com/static/dspui/js/
 !---alipay/alimama/taobao
 ||alimama.cn^$third-party
+||alimama.com^$third-party
 ||alimama.alicdn.com/tkapi.js
 ||alicdn.com/g/mm/afp-cdn/JS/
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
@@ -204,6 +207,7 @@ _728x90.
 ||adnetworkperformance.com^$third-party
 ||adnium.com^$third-party
 ||adnxs.com^$third-party
+||amazon-adsystem.com^$third-party
 ||carambo.la^$third-party
 ||clkrev.com^
 ||delivery45.com^$third-party
@@ -287,6 +291,7 @@ http://stat.
 ||kutongji.com^$third-party
 ||imrworldwide.com^$third-party
 ||linezing.com^$third-party
+||log.outbrain.com^
 ||mmstat.com^$third-party
 ||msg.71.am^
 ||users.51.la^$third-party
@@ -294,17 +299,20 @@ http://stat.
 ||wrating.com^$third-party
 !---Others(Foreign)
 ||criteo.net^$third-party
+||crsspxl.com^$third-party
 ||demdex.net^$third-party
 ||exponential.com^$third-party
 ||go-mpulse.net^$third-party
+||gridsumdissector.com^$third-party
 ||histats.com^$third-party
 ||kontera.com/javascript/lib/KonaLibInline.js$third-party
 ||newrelic.com^$third-party
 ||ml314.com^$third-party
 ||omtrdc.net^$third-party
+||quantserve.com^$third-party
+||scorecardresearch.com^$third-party
 !nvidia加速
 ||pricespider.com^$third-party
-||scorecardresearch.com^$third-party
 ||serving-sys.com^$third-party
 ||statcounter.com^$third-party
 !---CDN相关Test
@@ -312,6 +320,7 @@ http://stat.
 !天朝加速Test
 ||platform.twitter.com/widgets.js$third-party
 ||connect.facebook.net/en_US/fbevents.js$third-party
+||facebook.com/v*/plugins/page.php$third-party
 
 !---Google
 www.google.com.hk,www.google.com,encrypted.google.com###tads,#bottomads
@@ -445,14 +454,14 @@ tech.qq.com##.kjad2
 qq.com##[id$="_ad"]
 !评论
 ||view.news.qq.com/article_qq/ad_article_qq/*
+!体育首页
+||gtimg.com/sports/*qingyan*.swf
 !数码子页
 digi.tech.qq.com###macAD
 !动漫频道
 ||gtimg.com/comic/newqshou/js/AD2v1.1.js
 !去登录时提示手机二维码
 ptlogin2.qq.com###qr_tips
-!游戏人生
-igame.qq.com###\5f overlay_
 !---网易
 ||img1.126.net^
 ||img2.126.net^
@@ -596,9 +605,10 @@ cnbeta.com##.adsbygoogle
 cnbeta.com##.item.cooperation
 cnbeta.com###\5f bbezsed8bto
 cnbeta.com##.tks
-||static.cnbetacdn.com/article/2017/0609/eaf378b6ecf8431.png
+||union2.cnbetacdn.com^
 ||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
-||static.cnbetacdn.com/article/2017/0702/7682a320da6b2aa.jpg
+||static.cnbetacdn.com/article/2017/0817/4e6d50de2d8ea1b.png
+||static.cnbetacdn.com/article/2017/0820/8f2e0217733f842.jpg
 !子页
 ||cnbetacdn.com/frontend/vipics/*_300x250.png
 cnbeta.com##.article-global
@@ -825,15 +835,25 @@ tsdm.me##.a_pb
 tsdm.me###tsdmadv_arch
 tsdm.me##P[style="float:left;width:100%"]
 tsdm.me###pgt+div
+!右侧漂浮资讯
+tsdm.me###ts_sidebar_base
 !签到弹窗
 ||taobao.com^$popup,domain=tsdm.me
 ||tmall.com^$popup,domain=tsdm.me
 ||xmds.opd2c.com^$popup,domain=tsdm.me
-!TorrenTGui
+||www.upupoo.com^$popup,domain=tsdm.me
+!---78动漫论坛
+78dm.net##.adv
+bbs.78dm.net##.a_mu
+bbs.78dm.net##.bm.a_c
+bbs.78dm.net##.a_p
+!主站
+||78dm.net/uploads/imgs/2013/*980
+!---TorrenTGui
 ||totheglory.im/pic/picad/*
 !---NyaaTorrents
 ||files.nyaa.se/b*.jpg
-!Pixiv
+!---Pixiv
 ||d.pixiv.org^
 pixiv.net##.ads_area
 pixiv.net##.ads_anchor
@@ -856,9 +876,6 @@ zimuzu.tv##ul.room
 !---电影天堂
 ||dy2018.com/jsdd/
 ||xiacaidd.com/xiacai/ad/
-!---Mp4Ba
-mp4ba.com###ad_list_middle
-!---我飞网
 !---PT80
 ||fj.pt80.net^
 !---杂碎后院
@@ -966,7 +983,8 @@ iqiyi.com###leftad
 /qqlive/conf/playerlottery/*
 ||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
 v.qq.com##.mod_ad
-v.qq.com##.action_ad
+v.qq.com##.mod_pop_guide
+v.qq.com##._x_webtips_window_iframe
 !pv
 ||rcgi.video.qq.com^
 !---乐视
@@ -1058,8 +1076,9 @@ douyu.com##.super-rmd-bg.tggcontrol
 douyu.com##.pay-task
 douyu.com##.expanded.fishop-anchor-recommands-box
 douyu.com##div[class^="vigour-"]
-!武林大会
-douyu.com##a.fan-carnival-pop
+!七夕
+douyu.com##.moon-wrap
+douyu.com##.moon-love-pop
 !---战旗
 ||zhanqi.tv/*/love-*
 !首页
@@ -1095,7 +1114,8 @@ aipai.com###cmt_slnew
 !---湖南卫士/芒果TV
 ||res.hunantv.com^
 !---华数TV广电宽屏
-||afpcreative.wasu.cn^
+||delivery.wasu.cn^
+wasu.cn##div[class^="play_ads"]
 
 !---迅雷看看
 ||biz*.sandai.net^
@@ -1360,10 +1380,14 @@ bns.52pk.com###swfiframe
 ||css.shouji.com.cn/script/*$subdocument
 ||shouji.com.cn/tg/market_73090.gif
 !---apkpure
+||image.winudf.com/v2/upload/promopure/*
 apkpure.com##.ad-left
 apkpure.com##.ad-right
 apkpure.com##.ad-right-img
 apkpure.com###disqus_thread
+!---apkmirror
+apkmirror.com##.gooWidget
+apkmirror.com##.amazon-ad
 !---脚本之家
 ||img.jb51.net^$script
 !---豆丁
