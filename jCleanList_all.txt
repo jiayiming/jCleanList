@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: ug+vhmcv1xoXPZ/6DEa15w
-! Last modified: 27 Aug 2017 22:33 +0800
+! Checksum: mW67ZLUtwRbgjPFUUV2iPQ
+! Last modified: 28 Oct 2017 14:54 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -28,6 +28,8 @@ _728x90.
 !---白名单区域
 @@|http://*/*ad*.$stylesheet
 @@||qq.com^*ADTAG*
+!https://act.qzone.qq.com/vip/2017/qzone-msd
+@@||qzonestyle.gtimg.cn/qzone/qzact/common.pc/popup/popup.js
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||ossweb-img.qq.com/*/guanggao/*$image
 @@||static.youku.com/v1.*/index/js/popup.js
@@ -251,17 +253,21 @@ http://stat.
 ||imgstat.baidu.com^
 ||cbjslog.baidu.com^
 ||pos.baidu.com^
-||api.share.baidu.com
+||sp*.baidu.com^*.gif?
 !分享
+||api.share.baidu.com
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---ali
+||alicdn.com/alilog/
 !---TX
 ||ping*.qq.com/pingd?
 ||btrace.qq.com^
 ||gdt.qq.com^
 ||isdspeed.qq.com^
+||qq.com/kvcollect?
 ||tajs.qq.com^
 ||tcss.qq.com^
+||report.qq.com^
 !---Sina
 ||tjs.sjs.sinajs.cn/open/analytics/js/suda.js
 ||js.t.sinajs.cn/open/analytics/js/suda.js
@@ -355,9 +361,11 @@ tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
 !烟花
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
+tieba.baidu.com##.firework-wrap
 !tieba0_帖子列表
 ||tb1.bdstatic.com/tb/r/image/*
 !顶部横幅
+||bdstatic.com/tb/cms/*980-120.jpg
 tieba.baidu.com##.head_middle
 tieba.baidu.com##.head_ad_pop
 !顶部游戏
@@ -436,15 +444,14 @@ image.baidu.com###ecomContainer
 video.baidu.com##[monkey="ecom"]
 video.baidu.com##.popular
 !---腾讯网
-||adsrich.qq.com^
-||adsfile.qq.com^
 ||l.qq.com/lview?
+||cm.l.qq.com^
+||gtimg.com/web/default_fodders/*.swf$object
 !首页通用
 qq.com##.adLeft,.adRight
 !首页和子页通用
 qq.com##.l_qq_com
 !新版子页
-||ra.gtimg.com/web/default_fodders/*.swf*$object
 qq.com##.body-Top-Ad
 qq.com##.mian-ad
 qq.com##.ad-box
@@ -600,15 +607,15 @@ kdslife.com##.ad
 !---天极网
 ||adsame.tianjimedia.com
 !---cnBeta
-||cnbeta.com/js/pages/inteladv.js
 cnbeta.com##.adsbygoogle
 cnbeta.com##.item.cooperation
-cnbeta.com###\5f bbezsed8bto
 cnbeta.com##.tks
+cnbeta.com##.cbv
 ||union2.cnbetacdn.com^
-||static.cnbetacdn.com/article/2016/0909/451018482b888c5.jpg
-||static.cnbetacdn.com/article/2017/0817/4e6d50de2d8ea1b.png
-||static.cnbetacdn.com/article/2017/0820/8f2e0217733f842.jpg
+||static.cnbetacdn.com/article/2017/0905/451018482b888c5.jpg
+||static.cnbetacdn.com/article/2017/1019/1fa2f4d3e13ec7b.jpg
+||static.cnbetacdn.com/article/2017/1016/65086df3391b6af.jpg
+||static.cnbetacdn.com/article/2017/1016/a33ddade5a81d55.jpg
 !子页
 ||cnbetacdn.com/frontend/vipics/*_300x250.png
 cnbeta.com##.article-global
@@ -945,6 +952,7 @@ mediafire.com##.rockmeltAdWrapper
 !------------------------------------
 !-----优酷+土豆共通
 ||atm.youku.com^
+@@||gm.mmstat.com/yt/youkuplayer.fdl.h5send
 !---优酷
 ||hudong.pl.youku.com/interact/web/get/timeLinePlugin?
 youku.com###lotteryToolbar
@@ -978,12 +986,9 @@ iqiyi.com###leftad
 !---腾讯视频
 ||l.qq.com/p?
 ||livep.l.qq.com/livemsg?*
-*/vmind.qqvideo.tc.qq.com/*.mp4
+|http://*.tc.qq.com/*.mp4?vkey=
 ||gtimg.com/qqlive/*
-/qqlive/conf/playerlottery/*
-||qq.com/minivideo_v1/vd/res/enttencentvideo.xml
 v.qq.com##.mod_ad
-v.qq.com##.mod_pop_guide
 v.qq.com##._x_webtips_window_iframe
 !pv
 ||rcgi.video.qq.com^
@@ -1064,6 +1069,7 @@ tucao.tv##.a2013d
 !---斗鱼
 ||douyucdn.cn/upload/signs/*
 ||staticlive.douyucdn.cn/storage/webpic_resources/
+douyu.com##.lol-ad
 douyu.com##.f-sign-cont
 douyu.com##.room-ad-top
 douyu.com##.sq-ad
@@ -1380,11 +1386,11 @@ bns.52pk.com###swfiframe
 ||css.shouji.com.cn/script/*$subdocument
 ||shouji.com.cn/tg/market_73090.gif
 !---apkpure
-||image.winudf.com/v2/upload/promopure/*
+||promopure.com^
+||a.apkpure.com^
 apkpure.com##.ad-left
 apkpure.com##.ad-right
-apkpure.com##.ad-right-img
-apkpure.com###disqus_thread
+apkpure.com##div[style*="width:100%; height:250px;"]
 !---apkmirror
 apkmirror.com##.gooWidget
 apkmirror.com##.amazon-ad
