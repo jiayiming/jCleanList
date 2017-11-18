@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: mW67ZLUtwRbgjPFUUV2iPQ
-! Last modified: 28 Oct 2017 14:54 +0800
+! Checksum: j9egZODuyKE6D8OkVPG4+Q
+! Last modified: 18 Nov 2017 16:49 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -147,6 +147,7 @@ _728x90.
 ||csbew.com^
 ||dazhantai.com^$third-party
 ||egooad.com^$third-party
+||fastapi.net^$third-party
 ||fd7c.com^
 ||game3737.com^$third-party
 ||ge95.com^
@@ -381,11 +382,6 @@ tieba.baidu.com###video_frs_head
 tieba.baidu.com##[data-daid]
 tieba.baidu.com##.j_thread_list:not([data-field])
 tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
-!顶部iqiyi视频播放器横幅
-tieba.baidu.com##.activity_iframe_container
-!首页两侧横幅和背景
-||imgsrc.baidu.com/*/42a7d933c895d14318a3fc8579f082025baf07ba.jpg
-tieba.baidu.com##.j_couplet
 !侧边栏
 tieba.baidu.com##.aside_region.my_app
 tieba.baidu.com###encourage_entry
@@ -607,15 +603,13 @@ kdslife.com##.ad
 !---天极网
 ||adsame.tianjimedia.com
 !---cnBeta
+cnbeta.com##.cnbeta-side-sponsor
 cnbeta.com##.adsbygoogle
 cnbeta.com##.item.cooperation
 cnbeta.com##.tks
 cnbeta.com##.cbv
 ||union2.cnbetacdn.com^
 ||static.cnbetacdn.com/article/2017/0905/451018482b888c5.jpg
-||static.cnbetacdn.com/article/2017/1019/1fa2f4d3e13ec7b.jpg
-||static.cnbetacdn.com/article/2017/1016/65086df3391b6af.jpg
-||static.cnbetacdn.com/article/2017/1016/a33ddade5a81d55.jpg
 !子页
 ||cnbetacdn.com/frontend/vipics/*_300x250.png
 cnbeta.com##.article-global
@@ -1118,7 +1112,7 @@ aipai.com###cmt_slnew
 !---爆米花网
 ||a.baomihua.com^
 !---湖南卫士/芒果TV
-||res.hunantv.com^
+||da.mgtv.com^
 !---华数TV广电宽屏
 ||delivery.wasu.cn^
 wasu.cn##div[class^="play_ads"]
