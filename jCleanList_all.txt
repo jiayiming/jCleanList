@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: j9egZODuyKE6D8OkVPG4+Q
-! Last modified: 18 Nov 2017 16:49 +0800
+! Checksum: 22iAYKFqX/9o6jt5kWkpHw
+! Last modified: 15 Jan 2018 00:57 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -13,7 +13,6 @@
 /[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
 @@/ad[^\.]*\.js[^/]*/[^/]+/\S+\.js/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
-/\/(?:popup|tan|tanchuang|float)([_\d][^\.\/]*)?\.js$/
 ://ads.
 /adsense/*
 /adserve/*
@@ -22,30 +21,31 @@
 |http://*/guanggao/*
 |http://gg.*^
 /tuiguang/*
+/popup1.js
+/popup2.js
+/popup3.js
+/popup_
+/tan.js
+/tan1.js
+/tanchuang.
+/float.js
 /960x90_
 _728x90.
 /300x250_
 !---白名单区域
 @@|http://*/*ad*.$stylesheet
 @@||qq.com^*ADTAG*
-!https://act.qzone.qq.com/vip/2017/qzone-msd
-@@||qzonestyle.gtimg.cn/qzone/qzact/common.pc/popup/popup.js
 @@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
-@@||ossweb-img.qq.com/*/guanggao/*$image
-@@||static.youku.com/v1.*/index/js/popup.js
+@@||ossweb-img.qq.com/images/clientpop/idata_ad/*
 !http://v.youku.com/v_show/id_XMTM0OTQ2NTA2MA==.html
 @@||k.youku.com/player/getFlvPath/sid/*ad*$object-subrequest
 @@|http://*/youku/*ad*.flv$object-subrequest
-!http://www.iqiyi.com/v_19rrn5px64.html
-!http://v.pps.tv/play_3GUYV2.html
-@@||www.iqiyi.com/*MainPlayer_*ad*.swf
-!http://www.iqiyi.com/v_19rrmisqt8.html
-@@|http://*/ad/*.f4v?*
 @@||bdstatic.com/??*,*,*,
 !百度图片搜索
 @@||bdstatic.com/static/common/widget/ui/admanager/ad/ad_e6aa693.js
-@@||im.baidu.com/popup/popup.js*
-@@||map.bdstatic.com/*/common/widget/ui/Popup/*
+@@||map.bdstatic.com/*/pkg/initmap_ad*.js
+!网易云
+@@||music.126.net/*/ad*.mp3$media
 @@||10086.cn/cmpop/images/index/ad
 @@||ry.tbcdn.cn/apps/ivy/*
 @@||dpfile.com/combos/*ad*.js
@@ -76,11 +76,12 @@ _728x90.
 ||ecma.bdimg.com^
 ||ubmcmm.baidustatic.com^
 ||su.bdimg.com/static/dspui/js/
-!---alipay/alimama/taobao
+!---alipay/aliyun/alimama/taobao
 ||alimama.cn^$third-party
 ||alimama.com^$third-party
 ||alimama.alicdn.com/tkapi.js
 ||alicdn.com/g/mm/afp-cdn/JS/
+||oa-panther.data.aliyun.com^
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
 ||tanx.com
 !---union
@@ -95,8 +96,6 @@ _728x90.
 ||j.wit.qq.com^$third-party
 !---sdo
 ||snyu.com^$third-party
-!---popup
-||resmkt.dipan.com^$popup
 !---others(no_video_ad)
 ||033.com^$third-party
 ||1133.cc^$third-party
@@ -255,11 +254,10 @@ http://stat.
 ||cbjslog.baidu.com^
 ||pos.baidu.com^
 ||sp*.baidu.com^*.gif?
+||push.zhanzhang.baidu.com^
 !分享
 ||api.share.baidu.com
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
-!---ali
-||alicdn.com/alilog/
 !---TX
 ||ping*.qq.com/pingd?
 ||btrace.qq.com^
@@ -269,6 +267,7 @@ http://stat.
 ||tajs.qq.com^
 ||tcss.qq.com^
 ||report.qq.com^
+||qq.com/qqcom/
 !---Sina
 ||tjs.sjs.sinajs.cn/open/analytics/js/suda.js
 ||js.t.sinajs.cn/open/analytics/js/suda.js
@@ -447,6 +446,7 @@ video.baidu.com##.popular
 qq.com##.adLeft,.adRight
 !首页和子页通用
 qq.com##.l_qq_com
+qq.com##.ad-banner
 !新版子页
 qq.com##.body-Top-Ad
 qq.com##.mian-ad
@@ -455,10 +455,11 @@ qq.com##.ad-box
 tech.qq.com##.kjad2
 !体育/娱乐/数码/时尚/汽车等板块顶部通用
 qq.com##[id$="_ad"]
-!评论
-||view.news.qq.com/article_qq/ad_article_qq/*
 !体育首页
-||gtimg.com/sports/*qingyan*.swf
+||gtimg.com/qqlive/
+||gtimg.com/sports/0$object
+||gtimg.com/sports/000
+||gtimg.com/sports/images/30090.jpg
 !数码子页
 digi.tech.qq.com###macAD
 !动漫频道
@@ -608,18 +609,16 @@ cnbeta.com##.adsbygoogle
 cnbeta.com##.item.cooperation
 cnbeta.com##.tks
 cnbeta.com##.cbv
-||union2.cnbetacdn.com^
-||static.cnbetacdn.com/article/2017/0905/451018482b888c5.jpg
-!子页
-||cnbetacdn.com/frontend/vipics/*_300x250.png
-cnbeta.com##.article-global
+cnbeta.com##.tac
 !---IT之家
-||ithome.com/js/money/
+||ithome.com/file/js/money/
 ||lapin365.com/Shared/RenderLapinBlock?
+ithome.com##.indexV2 > div > a
+ithome.com##.bx-recom2
 ithome.com###hd_float
 digi.ithome.com##li[style="padding-bottom:0;height:90px"]
 !pv
-||ithome.com/ithome/HitCount.*
+||ithome.com/api/hitcount/
 !论坛
 ||qpic.cn/mblogpic/$domain=bbs.ithome.com
 bbs.ithome.com##.bbs_login+div[style^="width:960px;height:60px"]
@@ -830,19 +829,19 @@ bbs.9baka.com##td[width="680"][height="50"]
 bbs.aptx.cn##.a_pr
 !---天使动漫
 ||tsdmw.net/img01/MP3/
-tsdm.me##td[colspan="5"]:first-child:last-child
+tsdm.me##.a_c
 tsdm.me##.a_pt
 tsdm.me##.a_pb
-tsdm.me###tsdmadv_arch
-tsdm.me##P[style="float:left;width:100%"]
 tsdm.me###pgt+div
+tsdm.me##td[colspan="5"]:first-child:last-child
 !右侧漂浮资讯
 tsdm.me###ts_sidebar_base
 !签到弹窗
 ||taobao.com^$popup,domain=tsdm.me
-||tmall.com^$popup,domain=tsdm.me
-||xmds.opd2c.com^$popup,domain=tsdm.me
-||www.upupoo.com^$popup,domain=tsdm.me
+||777dm.net^$popup,domain=tsdm.me
+||dm.tsdm.tv^$popup,domain=tsdm.me
+||loli.cd^$popup,domain=tsdm.me
+||masadora.net^$popup,domain=tsdm.me
 !---78动漫论坛
 78dm.net##.adv
 bbs.78dm.net##.a_mu
@@ -936,6 +935,13 @@ ys168.com###zdy_wz0
 mediafire.com##.ad
 !下载页顶部横幅
 mediafire.com##.rockmeltAdWrapper
+!uploadocean
+@@|http://$image,third-party,domain=uploadocean.com
+@@|https://$image,third-party,domain=uploadocean.com
+@@||ajax.googleapis.com^$script,third-party,domain=uploadocean.com
+@@||maxcdn.bootstrapcdn.com^$domain=uploadocean.com
+|http://$script,third-party,xmlhttprequest,domain=uploadocean.com
+|https://$script,third-party,xmlhttprequest,domain=uploadocean.com
 !---UsersCloud
 ||puhtml.com^$third-party
 
@@ -983,9 +989,12 @@ iqiyi.com###leftad
 |http://*.tc.qq.com/*.mp4?vkey=
 ||gtimg.com/qqlive/*
 v.qq.com##.mod_ad
+v.qq.com##.mod_ad_side
+v.qq.com##.player_bg_ad
 v.qq.com##._x_webtips_window_iframe
 !pv
 ||rcgi.video.qq.com^
+||x.l.qq.com^
 !---乐视
 |http://*/letv-gug/
 */letv-web/*
@@ -1069,16 +1078,12 @@ douyu.com##.room-ad-top
 douyu.com##.sq-ad
 douyu.com###js-live-room-normal-equal-left
 douyu.com##.chat-ad
-douyu.com##.chat-top-ad
 douyu.com##.chat-right-ad
 douyu.com##.his-sign-cont
-douyu.com##.super-rmd-bg.tggcontrol
-douyu.com##.pay-task
-douyu.com##.expanded.fishop-anchor-recommands-box
-douyu.com##div[class^="vigour-"]
-!七夕
-douyu.com##.moon-wrap
-douyu.com##.moon-love-pop
+douyu.com###js-guess-start
+douyu.com##.guess-user-reminding-out
+douyu.com##.task-recommendTip
+douyu.com###right_col_peck
 !---战旗
 ||zhanqi.tv/*/love-*
 !首页
