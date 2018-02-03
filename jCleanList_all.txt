@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 22iAYKFqX/9o6jt5kWkpHw
-! Last modified: 15 Jan 2018 00:57 +0800
+! Checksum: oPUP12Kd8+7ahvMogMeW/g
+! Last modified: 03 Feb 2018 20:58 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -148,6 +148,7 @@ _728x90.
 ||egooad.com^$third-party
 ||fastapi.net^$third-party
 ||fd7c.com^
+||g2.ousns.net^
 ||game3737.com^$third-party
 ||ge95.com^
 ||gs307.com^$third-party
@@ -236,6 +237,7 @@ _728x90.
 ||dwtrack.*^
 |http://track.
 http://stat.
+|http://count.
 */count.js
 @@||img.linkstars.com/union/dp/count.js*
 |http://*/c.gif
@@ -868,11 +870,9 @@ u17.com##.ad_wrap
 ||google.com/afsonline/show_afs_search.js$domain=shooter.cn
 shooter.cn###googleSearchUnitIframe
 !---人人影视(ZiMuZu)
-||g.ousns.net^
-||6.cn/coop/pub/getRand.php?
+||zmzjstu.com/g3/ad-cp/
+||zmzjstu.com/g3/tool
 zimuzu.tv##ul.room
-||122.228.236.165^
-||cili001.com/52meiju_700_90.jpg
 !---电影天堂
 ||dy2018.com/jsdd/
 ||xiacaidd.com/xiacai/ad/
@@ -1400,9 +1400,14 @@ apkmirror.com##.amazon-ad
 ||pics.wanlibo.com/js/pagemodulestat.js*
 docin.com###docindex_ad
 !---中国天气网
+||mc.weather.com.cn^
+||analyse.weather.com.cn^
 weather.com.cn##[id^="adpos"]
-weather.com.cn##[class^="adpos"]
 weather.com.cn##.post_st
+!新版
+weather.com.cn##.tong
+weather.com.cn##.ad4
+weather.com.cn##div[style^="width:300px;height:250px;"]
 !---爱词霸
 iciba.com##.head_ad
 !右侧边栏
