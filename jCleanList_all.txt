@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: lRduAb9aCodtFgMoNqWS9g
-! Last modified: 11 Mar 2018 14:42 +0800
+! Checksum: mt+bLjg+ts6Y6giqeFsZew
+! Last modified: 27 Mar 2018 14:23 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -55,6 +55,8 @@ _728x90.
 @@||ry.tbcdn.cn/apps/ivy/*
 !OneDrive
 @@||spoprod-a.akamaihd.net/files/onedrive-website-release-*ad*.js
+!Others
+@@||adidas.com*^
 
 !---通用广告联盟通用猜测
 |http://*/i.js
@@ -239,6 +241,8 @@ _728x90.
 |https://*/pv.*
 |http://pv.*
 |https://pv.*
+!修复道客88文档无法显示
+@@||static.doc88.com/assets/pv.swf
 ||track.
 ||stat.
 ||count.
@@ -252,6 +256,7 @@ _728x90.
 /__utm.gif
 !---Google
 ||google-analytics.com^$third-party
+||googletagmanager.com/gtm.js
 ||googletagmanager.com/gtag/$third-party
 !---Baidu
 ||hm.baidu.com^
@@ -996,7 +1001,6 @@ soku.com##div[id^="ab_"]
 ||tip.soku.com/searches/soku/kubox/v4/sideads.json
 !pv
 ||youku.com/cms/tool/pub/get_putdata.
-||g.alicdn.com/security/umscript/
 ||hudong.alicdn.com/api/data/v2/
 !---爱奇异
 @@||qiyipic.com/image/*/ad/*.jpg
@@ -1019,6 +1023,7 @@ iqiyi.com##div[id^="100000000"]
 ||livep.l.qq.com/livemsg?*
 |http://*.tc.qq.com/*.mp4?vkey=
 ||gtimg.com/qqlive/*
+v.qq.com##.mod_row_box_ad
 v.qq.com##.mod_ad
 v.qq.com##.mod_ad_side
 v.qq.com##.player_bg_ad
@@ -1115,6 +1120,7 @@ douyu.com##.room-ad-bottom
 douyu.com##.his-sign-cont
 douyu.com##.guess-user-reminding-out
 douyu.com###right_col_peck
+||videojj.com/liveos-sdk/*/Pic.Default.js
 !---战旗
 ||zhanqi.tv/*/love-*
 !首页
