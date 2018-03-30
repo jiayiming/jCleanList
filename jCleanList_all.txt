@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: mt+bLjg+ts6Y6giqeFsZew
-! Last modified: 27 Mar 2018 14:23 +0800
+! Checksum: 3sYrtXVw0o1wU7rhe69LXA
+! Last modified: 30 Mar 2018 22:01 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -23,8 +23,7 @@
 |http://gg.*^
 /tuiguang/*
 /popup1.js
-/popup2.js
-/popup_
+/popup_*.js
 /tan.js
 /tan1.js
 /tanchuang.
@@ -388,7 +387,6 @@ tieba.baidu.com##.firework-wrap
 !tieba0_帖子列表
 ||tb1.bdstatic.com/tb/r/image/*
 !顶部横幅
-||bdstatic.com/tb/cms/*980-120.jpg
 tieba.baidu.com##.head_middle
 tieba.baidu.com##.head_ad_pop
 !顶部游戏
@@ -1345,22 +1343,17 @@ smzdm.com##.g_g
 !---超能网
 expreview.com##.banner
 !---17173
-||ue.17173cdn.com/*/ggcommon*.js
+||ue.17173cdn.com/*/js/adm2.js
+||ue.17173cdn.com/*/stats/lp.min.js
 ||ue.17173cdn.com/a/lib/vda/*
-|http://*/if/$domain=17173.com
-||itc.cn/cache/lib/v2/odvmonitor/
-!首页页游隐藏
-www.17173.com##[class*="Ad17173Duilian"]
-www.17173.com##.pn-daily
-www.17173.com##[class^="ad-"]
-www.17173.com##.ad
+www.17173.com##.Ad17173Banner2
+www.17173.com##.ad17173Corner1
 !pv
+||17173cdn.com/a/www/index/2016v2/js/seed.js
+||log1.17173.com^
 ||js.17173.com/ping.js
 !论坛帖子
 bbs.17173.com##.first-post-ad
-!---页游网
-yeyou.com##[class^="mod-ad-"]
-yeyou.com###ad-yeyou-nitifiction
 !---多玩
 ||gt.duowan.com^
 ||da.duowan.com/loc/
