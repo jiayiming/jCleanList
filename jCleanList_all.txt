@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 3sYrtXVw0o1wU7rhe69LXA
-! Last modified: 30 Mar 2018 22:01 +0800
+! Checksum: LaKDyMPxaCHI0d0QTQWnvQ
+! Last modified: 21 Apr 2018 23:51 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -17,6 +17,7 @@
 /adpic/*
 /adsense/*
 /adserve/*
+/adbox/*
 |http://*/gg/*
 |http://*/ggao/*
 |http://*/guanggao/*
@@ -95,6 +96,7 @@ _728x90.
 !---sina
 !---sohu
 ||images.sohu.com/cs/
+||itc.cn/base/core/gg_
 !---tx/qq
 ||j.wit.qq.com^$third-party
 !---sdo
@@ -103,14 +105,10 @@ _728x90.
 ||033.com^$third-party
 ||1133.cc^$third-party
 ||114la.com^$third-party
-||1717gs.com^$third-party
-||17kuxun.com^$third-party
 ||1lo0.net^$third-party
 ||201071.com^
 ||3393.com^$third-party
-||336.com^$third-party
 ||37cs.com^$third-party
-||37pk49.com^$third-party
 ||37see.com^$third-party
 ||3dwwwgame.com^$third-party
 ||49ko.com^$third-party
@@ -122,14 +120,11 @@ _728x90.
 ||77power.com^
 ||7k7k.com^$third-party,popup
 ||7pk.com^$third-party
-||83you.com^$third-party
 ||84787111.com^$third-party
-||88210212.com^$third-party
 ||88rpg.net^$third-party
 ||892155.com^
 ||8le8le.com^$third-party
 ||8ox.cn^$third-party
-||91wan.com^$third-party
 ||9377co.com^
 ||9w1an.com^$third-party
 ||a3p4.com^$third-party
@@ -139,7 +134,6 @@ _728x90.
 ||admaster.com.cn^$third-party
 ||adyun.com^$third-party
 ||adsame.com^$third-party
-||btyou.com^$third-party
 ||c1o1.com^$third-party
 ||cee1.iteye.com^
 ||chanet.com.cn^$third-party
@@ -151,12 +145,10 @@ _728x90.
 ||egooad.com^$third-party
 ||fastapi.net^$third-party
 ||fd7c.com^
-||g2.ousns.net^
 ||game3737.com^$third-party
 ||ge95.com^
 ||gs307.com^$third-party
 ||heima8.com^$third-party
-||i3z.cn^$third-party
 ||ifocus.cn^$third-party
 ||ihualun.com^$third-party
 ||imneinei.com^
@@ -167,7 +159,6 @@ _728x90.
 ||jointreport-switch.com^$third-party
 ||jtxh.net^$third-party
 ||kejet.net^$third-party
-||keydot.net^$third-party
 ||keyrun.cn^$third-party
 ||keytui.com^$third-party
 ||kiwihk.net^$third-party
@@ -186,6 +177,7 @@ _728x90.
 ||s8dj.com^$third-party
 ||sharele.cn^$third-party
 ||star8.net^$third-party
+||tagtic.cn^
 ||tui1999.com^$third-party
 ||tuigoo.com^$third-party
 ||twcczhu.com^$third-party
@@ -193,7 +185,6 @@ _728x90.
 ||union009.com^$third-party
 ||union178.com^$third-party
 ||unionli.com^$third-party
-||unionsky.cn^$third-party
 ||unionsky2.cn^$third-party
 ||whytoss.com^
 ||woniu666.com^$third-party
@@ -289,6 +280,7 @@ _728x90.
 ||analytics.163.com^
 !---Sohu
 ||sohu.com/stat/
+||itc.cn/pv/
 !---360
 ||s.360.cn^
 !---Xunlei
@@ -478,7 +470,8 @@ qq.com##.ad-box
 qq.com##[id$="_ad"]
 !体育首页
 ||gtimg.com/qqlive/
-||gtimg.com/sports/0$object
+||gtimg.com/sports/0*.swf
+||gtimg.com/sports/sports/*.swf
 ||gtimg.com/sports/000
 ||gtimg.com/sports/*/qingyang*
 !体育其他分区
@@ -646,17 +639,12 @@ cnbeta.com##.tac
 !---IT之家
 ||ithome.com/file/js/money/
 ||lapin365.com/Shared/RenderLapinBlock?
-ithome.com##.indexV2 > div > a
 ithome.com##.bx-recom2
-ithome.com###hd_float
-digi.ithome.com##li[style="padding-bottom:0;height:90px"]
+ithome.com##.con-recom
 !pv
 ||ithome.com/api/hitcount/
 !论坛
-||qpic.cn/mblogpic/$domain=bbs.ithome.com
 bbs.ithome.com##.bbs_login+div[style^="width:960px;height:60px"]
-!论坛右下角漂浮
-bbs.ithome.com###recommend
 !---CSDN
 www.csdn.net##.slide-outer.right_top
 csdn.net##.box.hot
@@ -704,24 +692,12 @@ bbs.pcbeta.com##div[style*="width:960px;height:91px;"]
 bbs.pcbeta.com###sitefocus
 bbs.pcbeta.com##.a_pt
 bbs.pcbeta.com##.a_pb
-!---机锋网
-gfan.com##.ad_box
-apk.gfan.com##div[style^="width:960px;height:90px;"]
-apk.gfan.com###l
-apk.gfan.com###r
 !---机锋论坛
-||gfan.com/leshiflash/*
 bbs.gfan.com##.a_h
-||cntv.cn/hezuo/
-bbs.gfan.com##.wpp
 !帖子一楼底部
 bbs.gfan.com##.plc.plm>a
-!帖子底部空白
-bbs.gfan.com##div[style=" height:370px;"]
 !---52samsung
 ||bbs.52samsung.com/samsungadv/*
-!---拇指玩
-muzhiwan.com###focus
 !---威锋网
 ||yes1.feng.com^$domain=feng.com
 feng.com##.dd305
@@ -941,16 +917,9 @@ t.qq.com###homeBannerNew
 ||s.renren.com^
 ||xnimg.cn^*/beacon.js
 !--百度云
-!屏蔽查询本地管家
-|http://127.0.0.1:1000*/guanjia*
 !pv
-!---115网盘
-||static.115img.com/static/delivery/
-!---华为网盘
-||hiad.vmall.com^
-dl.vmall.com##[id^="ad_"]
-!去加载中提示
-dl.vmall.com###filelist_marker
+||*monitor.jpg?xcode
+||pan.baidu.com/api/analytics*
 !---迅雷快传
 ||img.kuai.xunlei.com/js/statistics.js
 !---城通网盘
@@ -964,13 +933,6 @@ dl.vmall.com###filelist_marker
 ctfile.com###alipay-qhb
 !---ys168
 ys168.com###zdy_wz0
-!---MediaFire
-||mediafire.com/templates/linkto/default-
-||sparkstudios.com^$domain=mediafire.com
-||adsupply.com^$domain=mediafire.com
-mediafire.com##.ad
-!下载页顶部横幅
-mediafire.com##.rockmeltAdWrapper
 !uploadocean
 @@|http://$image,third-party,domain=uploadocean.com
 @@|https://$image,third-party,domain=uploadocean.com
@@ -989,17 +951,15 @@ mediafire.com##.rockmeltAdWrapper
 !-----优酷+土豆共通
 ||atm.youku.com^
 @@||gm.mmstat.com/yt/youkuplayer.fdl.h5send
-||lstat.youku.com^$third-party
 !---优酷
+||cibntv.net/youku/*.mp4?
 ||acs.youku.com
+||youku.com/cms/tool/pub/get_putdata.
+||hudong.alicdn.com/api/data/v2/
+||tip.soku.com/searches/*/sideads.json
 youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
 soku.com##div[id^="ab_"]
-!搜索左栏
-||tip.soku.com/searches/soku/kubox/v4/sideads.json
-!pv
-||youku.com/cms/tool/pub/get_putdata.
-||hudong.alicdn.com/api/data/v2/
 !---爱奇异
 @@||qiyipic.com/image/*/ad/*.jpg
 ||cupid.iqiyi.com^
@@ -1042,14 +1002,19 @@ v.qq.com##._x_webtips_window_iframe
 !---搜狐视频
 ||images.sohu.com/ytv/
 ||images.sohu.com/bill/
+||vm.aty.sohu.com/qs?*AdType=
+||vm.aty.sohu.com/pvlog?
 !HTML5
 ||m.aty.sohu.com^
 !视频首页
 tv.sohu.com##.areaAdv
 !pv
-||js.tv.itc.cn/hdpv.js
+||sohu.com/ctr.gif?
 ||sohu.com/pvlog*
-||hd.sohu.com.cn/dov.do*
+||click.hd.sohu.com.cn^
+||tv.sohu.com/upload/trace/
+||v.blog.sohu.com/dostat.do?
+||js.tv.itc.cn/hdpv.js
 !---新浪视频
 ||pfp.sina.com.cn^
 !pv
@@ -1069,19 +1034,9 @@ cntv.cn##[id^="div-gpt-ad-"]
 @@||web-play.pptv.com^
 ||asimgs.pplive.cn
 pptv.com##[id^="afp_"]
-!---酷6
-!外链fix
-@@||pic.snyu.com/sdk*/Main.swf$domain=~ku6.com
-||aa.sdo.com^
-!主站播放时候
-||gug.ku6cdn.com^
-ku6.com##.ku6_ad
-v.ku6.com##[class^="aa_"]
-!404垃圾连接
-||st.vq.ku6.cn^
-||stat.ku6.com^
 !---56.com
 ||acs.56.com
+||56img.com/script/fn/stat/
 !------------------------------------
 !---嗶哩嗶哩
 ||hdslb.com/js/core-v5/picment.
@@ -1103,21 +1058,12 @@ tucao.tv##.a2013d
 ||douyucdn.cn/upload/signs/*
 ||cs-op.douyucdn.cn/nggsys/*
 ||douyu.com/dygev/*.swf
-douyu.com##.great-recom
-douyu.com##.row.row-3
-douyu.com##.row.row-4
 douyu.com##.lol-ad
 douyu.com##.f-sign-cont
 douyu.com##.room-ad-top
-douyu.com##.sq-ad
-douyu.com##.chat-ad
-douyu.com##.chat-right-ad
-douyu.com##.tab-content.promote
 douyu.com##.room-ad-video-down
 douyu.com##.room-ad-bottom
-douyu.com##.his-sign-cont
-douyu.com##.guess-user-reminding-out
-douyu.com###right_col_peck
+douyu.com##.tab-content.promote
 ||videojj.com/liveos-sdk/*/Pic.Default.js
 !---战旗
 ||zhanqi.tv/*/love-*
