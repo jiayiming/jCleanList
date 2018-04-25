@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: LaKDyMPxaCHI0d0QTQWnvQ
-! Last modified: 21 Apr 2018 23:51 +0800
+! Checksum: eN2MfOe4LGQDRRK/fYGAXA
+! Last modified: 25 Apr 2018 22:40 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -1065,6 +1065,8 @@ douyu.com##.room-ad-video-down
 douyu.com##.room-ad-bottom
 douyu.com##.tab-content.promote
 ||videojj.com/liveos-sdk/*/Pic.Default.js
+!---虎牙
+@@||msstatic.com/huya/*/login/yy/sdk_udb_ad*.js
 !---战旗
 ||zhanqi.tv/*/love-*
 !首页
@@ -1103,6 +1105,7 @@ aipai.com###cmt_slnew
 ||js.player.cntv.cn/creator/fingerprint2.js
 ||vdp2precv.app.cntvwb.cn/gs.gif?
 !---湖南卫士/芒果TV
+@@||player.mgtv.com/mgtv_v6_ad/ad.swf
 ||da.mgtv.com^
 !---华数TV广电宽屏
 ||delivery.wasu.cn^
@@ -1348,8 +1351,10 @@ bns.52pk.com###swfiframe
 ||shouji.com.cn/tg/market_73090.gif
 !---apkpure
 ||promopure.com^
+||dealspure.com/outpromotion/apkpuredown
 ||a.apkpure.com^
 apkpure.com##.ad-left
+apkpure.com##.ad-left+div+div[style]
 apkpure.com##.ad-right
 apkpure.com##div[style*="width:100%; height:250px;"]
 !---apkmirror
