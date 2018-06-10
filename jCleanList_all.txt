@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: eN2MfOe4LGQDRRK/fYGAXA
-! Last modified: 25 Apr 2018 22:40 +0800
+! Checksum: DD1b+5nwsTi7tmZq1cjnAA
+! Last modified: 10 Jun 2018 15:44 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -9,7 +9,7 @@
 !----Sina/TX @小蛐蛐
 !----MIT Licensed, NO WARRANTY but Best Wishes----
 
-!通用广告猜测
+!---通用广告猜测
 /[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
 ://ads.
@@ -19,11 +19,12 @@
 /adserve/*
 /adbox/*
 |http://*/gg/*
-|http://*/ggao/*
-|http://*/guanggao/*
 |http://gg.*^
+/ggao/*
+/ggpic/*
+/guanggao.
+/guanggao/*
 /tuiguang/*
-/popup1.js
 /popup_*.js
 /tan.js
 /tan1.js
@@ -32,13 +33,13 @@
 /960x90_
 _728x90.
 /300x250_
+_300x250.
 !---白名单区域
 !duowan|dianping|https://plus.jd.com/index
 @@|http://*ad*,*.js
 @@|https://*ad*,*.js
 @@|http://*/*_ad*.$stylesheet
 @@|https://*/*_ad*.$stylesheet
-@@|http://*mail.*ad*$script,xmlhttprequest,subdocument,object-subrequest
 @@||qq.com^*ADTAG=*
 @@||ossweb-img.qq.com/images/clientpop/idata_ad/*
 !百度全局
@@ -63,7 +64,7 @@ _728x90.
 ||union.$third-party
 |http://*.com/s.php?id=$script,third-party
 |http://*icast*
-|http://*/*duilian*
+/duilian.
 !---google
 */pagead/*
 */gampad/*
@@ -188,7 +189,6 @@ _728x90.
 ||unionsky2.cn^$third-party
 ||whytoss.com^
 ||woniu666.com^$third-party
-||xi666.com^$third-party
 ||xcy8.com^
 ||xp3366.com^$third-party
 ||xsu.cc^$third-party
@@ -224,25 +224,27 @@ _728x90.
 ||tbjfw.com^$third-party
 ||wsockd.com^$third-party
 
-!---通用分析统计站点猜测
-*/tongji.js
+!---通用统计分析站点猜测
 |http://*/tj.js
+|https://*/tj.js
 |http://*/pv.*
 |https://*/pv.*
 |http://pv.*
 |https://pv.*
 !修复道客88文档无法显示
 @@||static.doc88.com/assets/pv.swf
-||track.
-||stat.
 ||count.
-*/count.js
+||stat.
+||track.
+/beacon.js
+/count.js
 @@||img.linkstars.com/union/dp/count.js*
-|http://*/c.gif
-|http://*/1.gif
-/v.gif?
+/tongji.js
+/1.gif?
+/c.gif?
 /click.gif?
 /track.gif?
+/v.gif?
 /__utm.gif
 !---Google
 ||google-analytics.com^$third-party
@@ -262,6 +264,8 @@ _728x90.
 ||api.share.baidu.com
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
 !---TX
+||pingjs.qq.com^
+@@||pingjs.qq.com^$~third-party
 ||ping*.qq.com/pingd?
 ||btrace.qq.com^
 ||gdt.qq.com^
@@ -272,8 +276,8 @@ _728x90.
 ||report.qq.com^
 ||qq.com/qqcom/
 !---Sina
-||tjs.sjs.sinajs.cn/open/analytics/js/suda.js
-||js.t.sinajs.cn/open/analytics/js/suda.js
+!tjs.sjs.sinajs.cn/open/analytics/js/suda.js|js.t.sinajs.cn/open/analytics/js/suda.js
+||sinajs.cn/open/analytics/
 ||rs.sinajs.cn^
 ||beacon.sina.com.cn^
 !---163
@@ -330,6 +334,9 @@ _728x90.
 ||quantserve.com^$third-party
 ||scorecardresearch.com^$third-party
 ||stack-sonar.com^$third-party
+||taboola.com/tb?
+||taboola.com^*/log/
+||taboolasyndication.com^*/log/
 !nvidia加速
 ||pricespider.com^$third-party
 ||serving-sys.com^$third-party
@@ -361,7 +368,7 @@ www.baidu.com###\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"] > .c-abstract:
 !搜索_pv
 ||baidu.com^*/c.gif?
 ||baidu.com^*/w.gif?
-||sp*.baidu.com^*.gif?
+||baidu.com^*/wb.gif?
 !image_All
 image.baidu.com###relEcom
 !tieba_All
@@ -385,7 +392,7 @@ tieba.baidu.com##.head_ad_pop
 ||bdstatic.com/tb/cms/ngmis/*
 tieba.baidu.com##.game-head-game-info-wrapper
 !顶部游戏直播+AcFun
-||cdn.aixifan.com/dotnet/artemis/u/cms/*$third-party
+||cdn.aixifan.com/dotnet/artemis/u/cms/*$domain=tieba.baidu.com
 !顶部视频精选
 ||bdstatic.com/*/tb/_/video_frs_head_
 tieba.baidu.com###video_frs_head
@@ -469,7 +476,6 @@ qq.com##.ad-box
 !体育/娱乐/数码/时尚/汽车等板块顶部通用
 qq.com##[id$="_ad"]
 !体育首页
-||gtimg.com/qqlive/
 ||gtimg.com/sports/0*.swf
 ||gtimg.com/sports/sports/*.swf
 ||gtimg.com/sports/000
@@ -602,15 +608,11 @@ mydrivers.com##.adggg1
 !驱动子页
 drivers.mydrivers.com##.baidu_box
 !---太平洋电脑网
-||pconline.com.cn/js/ivy.js
-*/ivy/image/*
+||ivy.pconline.com.cn^
 /adpuba/*
 ||img*.pcgames.com.cn^$object
 ||img0.pconline.com.cn/ivy/*$object
 ||pcgames.com.cn/g/*
-||js.3conline.com/js/pconilne/qzgb/area_lmt2012.js
-!论坛
-||pconline.com.cn/itbbs09/js/itbbs09_wd.js
 !pv
 ||count*.pconline.com.cn^
 !---电脑之家
@@ -627,10 +629,13 @@ kdslife.com##.ad
 ||yesky.com/monitorjs/imp-
 !---cnBeta
 ||cnbetacdn.com/frontend/vipics/
-||taboola.com/libtrc/cnbeta/loader.js
-cnbeta.com##[id^="_"].item
+||taboola.com/libtrc/cnbeta*/loader.js
 cnbeta.com##.cnbeta-side-sponsor
 cnbeta.com##.adsbygoogle
+cnbeta.com##.ctcloud
+cnbeta.com##a[href^="http://www.ctyun.cn/"]
+cnbeta.com##a[href^="http://click.aliyun.com/"]
+cnbeta.com##a[href*="cloud.tencent."]
 cnbeta.com###upcoming_box
 cnbeta.com##.item.cooperation
 cnbeta.com##.tks
@@ -639,7 +644,9 @@ cnbeta.com##.tac
 !---IT之家
 ||ithome.com/file/js/money/
 ||lapin365.com/Shared/RenderLapinBlock?
+ithome.com##.AdblockBanner
 ithome.com##.bx-recom2
+ithome.com##a[href*="/lapin."]
 ithome.com##.con-recom
 !pv
 ||ithome.com/api/hitcount/
@@ -856,11 +863,8 @@ tsdm.me###ts_sidebar_base
 ||tsdm.me/weibo.html
 !签到弹窗
 ||taobao.com^$popup,domain=tsdm.me
-||777dm.net^$popup,domain=tsdm.me
+||tmall.com^$popup,domain=tsdm.me
 ||dm.tsdm.tv^$popup,domain=tsdm.me
-||loli.cd^$popup,domain=tsdm.me
-||masadora.net^$popup,domain=tsdm.me
-||zhaidianshe.com^$popup,domain=tsdm.me
 !---78动漫论坛
 78dm.net##.adv
 bbs.78dm.net##.a_mu
@@ -1037,20 +1041,20 @@ pptv.com##[id^="afp_"]
 !---56.com
 ||acs.56.com
 ||56img.com/script/fn/stat/
-!------------------------------------
 !---嗶哩嗶哩
-||hdslb.com/js/core-v5/picment.
+@@||hdslb.com/*/ad*.jpg
 ||hdslb.com/bfs/$object-subrequest
 ||bilibili.com/x/web-show/res/loc?*&aid=
 ||bilibili.com/x/web-show/res/loc?pf=0&id=160
-||bilibili.com/x/web-show/res/locs?*&pf=0&ids=4
-@@||hdslb.com/*/ad*.jpg
-bilibili.com##.ad-f
-bilibili.com##.ad-e1
+||data.bilibili.com/v/web/web_page_view?*
+||hdslb.com/bfs/seed/log/report/
+bilibili.com##.online + .adpos
 bilibili.com##.gg-floor-module
-live.bilibili.com##.live-ad-full
 !---AcFun
-acfun.tv##[id^="ad-"]
+||aixifan.com^*/sensorsdata
+||tongji.aixifan.com^
+acfun.cn##.ac-ad-img
+acfun.cn##.ad-line
 !---吐槽
 ||tucao.tv/index.php?m=poster
 tucao.tv##.a2013d
@@ -1058,6 +1062,8 @@ tucao.tv##.a2013d
 ||douyucdn.cn/upload/signs/*
 ||cs-op.douyucdn.cn/nggsys/*
 ||douyu.com/dygev/*.swf
+||douyu.com/lapi/sign/web/getinfo
+||douyucdn.cn/resource/common/tongzhuo/game_info.json
 douyu.com##.lol-ad
 douyu.com##.f-sign-cont
 douyu.com##.room-ad-top
@@ -1067,6 +1073,12 @@ douyu.com##.tab-content.promote
 ||videojj.com/liveos-sdk/*/Pic.Default.js
 !---虎牙
 @@||msstatic.com/huya/*/login/yy/sdk_udb_ad*.js
+!---熊猫TV
+panda.tv##.room-banner-images
+panda.tv##[class^="liveosTag_"]
+panda.tv##[class^="closeBtn_"]
+!---火猫
+huomao.com###stream-delay-tip
 !---战旗
 ||zhanqi.tv/*/love-*
 !首页
@@ -1076,19 +1088,15 @@ zhanqi.tv##.login-money
 zhanqi.tv##.dayday-btn.js-room-gift-area-banner
 zhanqi.tv##.activity-show.js-activity-show
 zhanqi.tv###js-room-flash-banner-panel
-!---风云直播
-||resource.dl.kukuplay.com/upload/*.swf
 !---音悦台
-||yytcdn.com/swf/common/marker.*.swf
 ||yinyuetai.com/swf/common/marker.*.swf
-||hc.yinyuetai.com/partner/yyt/*
-||gentags.net^$third-party
-||hztags.net^$third-party
 !pv
 ||log.collect.yinyuetai.com^
 ||v.stats.yinyuetai.com^
 !---17173游戏视频
-||v.17173cdn.com/upload/vlog/*.swf
+||alllget.com^$third-party
+||qtmojo.com^$third-party
+v.17173.com##.side-ad
 !---爱拍
 ||aipai.com/rsd/
 ||aipai.com/app/www/*/ADPlayer*.swf
@@ -1098,13 +1106,13 @@ aipai.com###pm_mod_pic
 aipai.com###baidu_gg
 aipai.com###cmt_slnew
 !---爆米花网
-||a.baomihua.com^
+||resource.baomihua.com^
 !---CNTV
 ||bjcathay.com/s?z=
 ||cctv.com/Library/a2.js
 ||js.player.cntv.cn/creator/fingerprint2.js
 ||vdp2precv.app.cntvwb.cn/gs.gif?
-!---湖南卫士/芒果TV
+!---芒果TV
 @@||player.mgtv.com/mgtv_v6_ad/ad.swf
 ||da.mgtv.com^
 !---华数TV广电宽屏
@@ -1172,17 +1180,21 @@ pc6.com###gaosuxiazai
 zdfans.com##.adsbygoogle
 zdfans.com##.widget_d_banner
 !---异次元
+||bdx.playnext.cn^
+||iplaysoft.com/tempads/
 iplaysoft.com##.adsbygoogle
 iplaysoft.com###section_event
 iplaysoft.com###bottom_ad
-iplaysoft.com##.widget_c_white
-iplaysoft.com##.widget[style^="width:300px;height:250px;"]
-iplaysoft.com###sidebar_scroll
+iplaysoft.com###sidebar > ul > .widget:first-child
+iplaysoft.com###sidebar > ul > .widget:nth-child(3)
+iplaysoft.com##.widget[style]
+iplaysoft.com##div[style*="width:3"][style*="height:2"]
+iplaysoft.com###sidebar_scroll_bdad
 !子页
-iplaysoft.com##div[style^="width:336px;height:280px;"]
-iplaysoft.com##.d336
-iplaysoft.com##div[style^="width:680px;height:166px;"]
-dl.iplaysoft.com##center > div[style^="margin-top:15px;"]
+iplaysoft.com##.d250
+iplaysoft.com##div[style="margin:-10px 0 0 0;overflow:hidden"]
+iplaysoft.com##div[style^="margin-top:20px;padding:35px 0 20px 0;"]
+dl.iplaysoft.com##DIV[style^="width:250px;height:250px;"]
 !---小众软件
 ||appinn.com/images/*.jpg|
 ||appinn.com/images/*.png|
@@ -1196,57 +1208,39 @@ portablesoft.org##.adsbygoogle
 !---TTrar天天资讯
 ||ttrar.com/js/
 !---晋江言情小说网
-||jjwxc.net/jjad*html$popup,domain=jjwxc.net
 !首页顶部
 jjwxc.net##table[style*="width:984px;height:92px;"]
 !阅读页顶部横幅
-jjwxc.net##DIV[style="height: 90px;"]
-!去水印
-jjwxc.net##.noveltext>FONT[color]
+jjwxc.net##div[style="height: 90px;"]
+!中部横幅
+||jjwxc.net/adsmanage.php?
+jjwxc.net##div.tc>table[width="984"]
 !---潇湘书院
-||images.xxsy.net/js/guanggao/*
-||xxsy.net/js/20110801/global/rightfloat.js
-!首页
-xxsy.net###banner
-!书介绍页
-xxsy.net##.sider_banner
-xxsy.net###interact>.list
-xxsy.net##.rightbanner
-xxsy.net###movebooks
-!书章节列表+书正文
-xxsy.net##.bigbanner1
-!---(起点中文网|起点女生网)公共
+!---起点中文网|起点女生网
 ||uedas.*^
-||o.if.*.com/js/o.js
-||a.game.qidian.com^
-||cj.qidian.com^
-!首页
+!中文网首页
 ||qidian.com/ejs/qd/js/index/bannerTop.
 www.qidian.com###tr-banner
 www.qidian.com###banner-two
 www.qidian.com###banner3
 www.qidian.com###banner4
+!---女生网首页
+||qdmm.com/ejs/qd/js/index/bannerTop.
+www.qdmm.com###banner-two
+www.qdmm.com###banner3
+www.qdmm.com###banner4
 !书介绍
-||qidian.qpic.cn/qidian_common/
 book.qidian.com###j-topBgBox
 book.qidian.com###j-topHeadBox
 book.qidian.com##.games-op-wrap
 book.qidian.com##.right-op-wrap
 !书页
-||qidian.com/javascript/abc.htm
-.qidian.com/gameBox.
-!---起点女生网
-||qidian.com/Javascript/ksjlajUysi
-!首页
-qdmm.com##.b_show_img
-!书页底部游戏
-qdmm.com##.qd_sms_pop
+.qidian.com/pageops.
 !---腾讯云起书院
-yunqi.qq.com##.topBanner
 ||chuangshi.qq.com/upload/cmsv2/
+yunqi.qq.com##.topBanner
 !---派派前后院
 paipai.fm##a[href*="gamezixia.php?jump="]
-paipai.fm##a[href*="/game-yyj/"]
 
 !---Gmail
 ||mail.google.com^*&view=ad&*$domain=mail.google.com
@@ -1287,6 +1281,8 @@ detail.tmall.com##.sufei-tb-dialog.sufei-tb-overlay
 !---什么值得买
 ||zdmimg.com/www/delivery/*
 smzdm.com##.g_g
+smzdm.com##.feed-stuff
+smzdm.com##.side-stuff
 !---玩家堂
 ||itocp.com/html/gk/*
 !---超能网
@@ -1300,7 +1296,7 @@ www.17173.com##.ad17173Corner1
 !pv
 ||17173cdn.com/a/www/index/2016v2/js/seed.js
 ||log1.17173.com^
-||js.17173.com/ping.js
+||17173.com/ping.js
 !论坛帖子
 bbs.17173.com##.first-post-ad
 !---多玩
