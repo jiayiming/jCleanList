@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: F9zHl+paKx8Mh6Nm+S+uiA
-! Last modified: 24 Jun 2018 11:45 +0800
+! Checksum: TPROp3anF5YRjKl/9/Ghng
+! Last modified: 24 Jun 2018 15:14 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -276,7 +276,7 @@ _300x250.
 ||btrace.qq.com^
 ||gdt.qq.com^
 ||isdspeed.qq.com^
-||qq.com/kvcollect?
+||qq.com/collect?
 ||tajs.qq.com^
 ||tcss.qq.com^
 ||report.qq.com^
@@ -1044,18 +1044,15 @@ iqiyi.com##div[id^="100000000"]
 ||static.iqiyi.com/js/pingback/*
 ||baidu.com/x.js?
 !---腾讯视频
+||l.qq.com/livemsg?*
 ||l.qq.com/p?
-||livep.l.qq.com/livemsg?*
-|http://*.tc.qq.com/*.mp4?vkey=
+/vlive.qqvideo.tc.qq.com/*.mp4?
 ||gtimg.com/qqlive/*
-v.qq.com##.mod_row_box_ad
+||btrace.video.qq.com
+@@||btrace.video.qq.com/kvcollect?*load*
 v.qq.com##.mod_ad
-v.qq.com##.mod_ad_side
 v.qq.com##.player_bg_ad
 v.qq.com##._x_webtips_window_iframe
-!pv
-||rcgi.video.qq.com^
-||x.l.qq.com^
 !---乐视
 |http://*/letv-gug/
 */letv-web/*
