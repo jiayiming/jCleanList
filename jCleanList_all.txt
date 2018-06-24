@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 01I/UOg8SUkVNqZeBws/MA
-! Last modified: 16 Jun 2018 15:50 +0800
+! Checksum: F9zHl+paKx8Mh6Nm+S+uiA
+! Last modified: 24 Jun 2018 11:45 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -56,12 +56,13 @@ _300x250.
 @@|http://*/youku/*ad*.flv$object-subrequest
 !网易云
 @@||music.126.net/*/ad*.mp3$media
-@@||10086.cn/cmpop/images/index/ad
-@@||ry.tbcdn.cn/apps/ivy/*
 !OneDrive
 @@||spoprod-a.akamaihd.net/files/onedrive-website-release-*ad*.js
 !Others
+@@||10086.cn/cmpop/images/index/ad
 @@||adidas.com*^
+@@||srcb.com/*/advert/
+@@||ry.tbcdn.cn/apps/ivy/*
 
 !---通用广告联盟通用猜测
 |http://*/i.js
@@ -227,6 +228,7 @@ _300x250.
 ||static-cn.plista.com^
 ||tbjfw.com^$third-party
 ||wsockd.com^$third-party
+@@|https://www.pixiv.net/member_illust.php?$document
 
 !---通用统计分析站点猜测
 |http://*/tj.js
@@ -467,6 +469,7 @@ video.baidu.com##.popular
 !---腾讯网
 ||l.qq.com/lview?
 ||cm.l.qq.com^
+||gtimg.com^*/ad/
 ||gtimg.com/web/default_fodders/*.swf$object
 !首页通用
 qq.com##.adLeft,.adRight
@@ -495,22 +498,42 @@ ptlogin2.qq.com###qr_tips
 !---网易
 ||img1.126.net^
 ||img2.126.net^
-||www.163.com/special/*.html$subdocument
-163.com##.ad
-!新闻子页
-||impservice*.youdao.com^
+||yt-adp.nosdn.127.net^
+||popme.163.com^
+||analytics.163.com^
+||analytics.126.net^
+www.163.com##.ad_hover_href
+www.163.com##.hp_textlink_ad
+www.163.com##.mod_r_ad
+www.163.com##.mod_index_ad
+!新闻首页
+||bobo.com/api/show/
+||bobo.com/recommend/
+news.163.com##.index_top_ad
+news.163.com##.mod_top_news_ad
+news.163.com##.mod_ad_r
+news.163.com##.mod_bobo
+ent.163.com##.idx_top_ad
+!各类子页
 163.com##.post_adtop_main
-163.com##[class^="gg"]
-!pv
-||stat.ws.126.net^
+163.com##.right_ad_item
+!图片新闻子页
+163.com##.btm-ad
+163.com##div[id^="div-gpt-ad"]
+163.com##.ep-love
+163.com##.ad-mobile-news-pic
+163.com##.gallery-guess-wrapper
+!评论
+||bobo.com/special/*
+comment.tie.163.com##.top-banner
 !邮箱
 ||mimg.127.net/external/*
 !博客右下角漂浮
 blog.163.com##.postadlayer
-!---有道(词典)
-||impservice.dictweb.youdao.com^
+!---有道翻译
+||impservice.youdao.com^
 ||impservice.dictapp.youdao.com^
-dict.youdao.com###topImgAd
+youdao.com###topImgAd
 !---网易云音乐
 ||p*.music.126.net/*.jpg|
 !---新浪
@@ -611,21 +634,31 @@ mydrivers.com##.adggg1
 !驱动子页
 drivers.mydrivers.com##.baidu_box
 !---太平洋电脑网
-||ivy.pconline.com.cn^
 /adpuba/*
-||img*.pcgames.com.cn^$object
-||img0.pconline.com.cn/ivy/*$object
-||pcgames.com.cn/g/*
-!pv
+||ivy.pconline.com.cn^
+||pconline.com.cn/_hux_/
+||pconline.com.cn/test.kilo.test15./
+||pconline.com.cn/jrzcz/*/intf
+||heatmap.pconline.com.cn/hmx/
 ||count*.pconline.com.cn^
+pconline.com.cn##.ivy > .ivy-wrap
+pconline.com.cn##.box.best
+pconline.com.cn##.pcauto-cooperation
+dl.pconline.com.cn##.block-jcz
+dl.pconline.com.cn##.rela-best
+!---太平洋游戏网
+||pcgames.com.cn*/index.js
+pcgames.com.cn##.artbottomlink
 !---电脑之家
 ||js-1.pchome.net^$script
-pchome.net,kdslife.com##[id^="ad"]
+||pf-2.pchome.net/pf.php
+download.pchome.net###pchome_970_90_a
+download.pchome.net##.adsbygoogle
+download.pchome.net##a[href*=".222bz.com/"]
+download.pchome.net##a[href*=".downok.com"]
 !---宽带山
-@@||js-1.pchome.net/*/ipub/$script,domain=kdslife.com
-||btn.pchome.net^
-kdslife.com##[id^="AD"]
-kdslife.com##.ad
+kdslife.com##div[class^="ad"]
+club.kdslife.com###slideBox
 !---天极网
 ||tianjimedia.com/s?z=
 ||201*.myhard.com^
@@ -681,6 +714,9 @@ download.csdn.net##.AD
 ||cache.soso.com/30d/js/discuz/relate_subject.js
 ||toutiao.haotui.com/data/js/0.js
 ||su.bdimg.com/static/dspui/js/uf.js
+!---知乎
+||zhimg.com/*|adx*.jpg
+||zhihu-web-analytics.zhihu.com^
 !---V2EX
 ||cdn.v2ex.*/friends/100offer/*
 v2ex.com##.inner[align="center"]
@@ -936,13 +972,11 @@ yxdown.com###tl_adv
 
 !---新浪微薄
 ||biz.weibo.com^
-||wbpctips.mobile.sina.cn/adfront/*
 ||sinajs.cn/t6/home/js/pl/guide/adforfqy/
 ||sinajs.cn/t6/home/js/pl/guide/bigday/
 weibo.com##div[ad-data]
 weibo.com##.WB_cardwrap[feedtype="ad"]
 !---腾讯微薄
-||gtimg.com^*/ad/
 t.qq.com###homeBannerNew
 !---人人网
 ||ebp.renren.com^
@@ -953,7 +987,6 @@ t.qq.com###homeBannerNew
 ||s.renren.com^
 ||xnimg.cn^*/beacon.js
 !--百度云
-!pv
 ||*monitor.jpg?xcode
 ||pan.baidu.com/api/analytics*
 !---迅雷快传
@@ -988,7 +1021,10 @@ ys168.com###zdy_wz0
 ||atm.youku.com^
 @@||gm.mmstat.com/yt/youkuplayer.fdl.h5send
 !---优酷
+||cibntv.net/youku/*.mp4?
 ||acs.youku.com
+@@||cibntv.net/youku/*.mp4?$domain=vku.youku.com
+@@||acs.youku.com^$domain=vku.youku.com
 ||youku.com/cms/tool/pub/get_putdata.
 ||hudong.alicdn.com/api/data/v2/
 ||tip.soku.com/searches/*/sideads.json
