@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: TPROp3anF5YRjKl/9/Ghng
-! Last modified: 24 Jun 2018 15:14 +0800
+! Checksum: ipIR+AOOyHvu6ursjKZ2+g
+! Last modified: 01 Jul 2018 22:25 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -103,10 +103,8 @@ _300x250.
 ||images.sohu.com/cs/
 ||itc.cn/base/core/gg_
 ||sohu.com/api/labs/hotnews/c/load?
-!---tx/qq
+!---tx
 ||j.wit.qq.com^$third-party
-!---sdo
-||snyu.com^$third-party
 !---others(no_video_ad)
 ||033.com^$third-party
 ||1133.cc^$third-party
@@ -253,11 +251,11 @@ _300x250.
 /track.gif?
 /v.gif?
 /__utm.gif
-!---Google
+!---google
 ||google-analytics.com^$third-party
 ||googletagmanager.com/gtm.js
 ||googletagmanager.com/gtag/$third-party
-!---Baidu
+!---baidu
 ||hm.baidu.com^
 ||nsclick.baidu.com^
 ||sclick.baidu.com^
@@ -270,7 +268,7 @@ _300x250.
 !分享
 ||api.share.baidu.com
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
-!---TX
+!---tx
 /pingd?
 @@||pingjs.qq.com^$~third-party
 ||btrace.qq.com^
@@ -281,24 +279,20 @@ _300x250.
 ||tcss.qq.com^
 ||report.qq.com^
 ||qq.com/qqcom/
-!---Sina
+!---sina
 !tjs.sjs.sinajs.cn/open/analytics/js/suda.js|js.t.sinajs.cn/open/analytics/js/suda.js
 ||sinajs.cn/open/analytics/
 ||rs.sinajs.cn^
 ||beacon.sina.com.cn^
 !---163
 ||analytics.163.com^
-!---Sohu
+!---sohu
 ||sohu.com/stat/
 ||itc.cn/pv/
 !---360
 ||s.360.cn^
-!---Xunlei
+!---xunlei
 ||analytics-union.xunlei.com^
-||analytics-union.sandai.net^
-!---SD
-||ipic.staticsdo.com^
-||dwtracking.sdo.com^
 !---Others(China)
 ||50bang.org^$third-party
 ||51yes.com^$third-party
@@ -311,7 +305,6 @@ _300x250.
 ||css.aliyun.com^$third-party
 ||ggxt.net^$third-party
 ||hitslink.com^$third-party
-||kutongji.com^$third-party
 ||imrworldwide.com^$third-party
 ||linezing.com^$third-party
 ||log.outbrain.com^
@@ -347,8 +340,6 @@ _300x250.
 ||pricespider.com^$third-party
 ||serving-sys.com^$third-party
 ||statcounter.com^$third-party
-!---CDN相关Test
-||ajax.cloudflare.com/cdn-cgi/*/cloudflare.min.js^$third-party
 !天朝加速Test
 ||platform.twitter.com/widgets.js$third-party
 ||connect.facebook.net/en_US/fbevents.js$third-party
@@ -1046,7 +1037,7 @@ iqiyi.com##div[id^="100000000"]
 !---腾讯视频
 ||l.qq.com/livemsg?*
 ||l.qq.com/p?
-/vlive.qqvideo.tc.qq.com/*.mp4?
+/variety.tc.qq.com/*.mp4?
 ||gtimg.com/qqlive/*
 ||btrace.video.qq.com
 @@||btrace.video.qq.com/kvcollect?*load*
@@ -1109,6 +1100,7 @@ pptv.com##[id^="afp_"]
 ||hdslb.com/bfs/seed/log/report/
 bilibili.com##.online + .adpos
 bilibili.com##.gg-floor-module
+bilibili.com###slide_ad
 !---AcFun
 ||aixifan.com^*/sensorsdata
 ||tongji.aixifan.com^
