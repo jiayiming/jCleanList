@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: ipIR+AOOyHvu6ursjKZ2+g
-! Last modified: 01 Jul 2018 22:25 +0800
+! Checksum: zM6JuzAVgNPzKe+SI/vfbg
+! Last modified: 15 Jul 2018 15:14 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -11,7 +11,7 @@
 
 !---通用广告猜测
 /[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
-/[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|pic|flash|top|frame|page|client|service|detail|sence|sponsor|serv|vertimg)/
+/[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|flash|top|frame|page|client|service|detail|sponsor)/
 ://ads.
 /ads/*
 /adbox/*
@@ -226,7 +226,6 @@ _300x250.
 ||static-cn.plista.com^
 ||tbjfw.com^$third-party
 ||wsockd.com^$third-party
-@@|https://www.pixiv.net/member_illust.php?$document
 
 !---通用统计分析站点猜测
 |http://*/tj.js
@@ -284,8 +283,6 @@ _300x250.
 ||sinajs.cn/open/analytics/
 ||rs.sinajs.cn^
 ||beacon.sina.com.cn^
-!---163
-||analytics.163.com^
 !---sohu
 ||sohu.com/stat/
 ||itc.cn/pv/
@@ -497,6 +494,7 @@ www.163.com##.ad_hover_href
 www.163.com##.hp_textlink_ad
 www.163.com##.mod_r_ad
 www.163.com##.mod_index_ad
+www.163.com##.mod_ad_text
 !新闻首页
 ||bobo.com/api/show/
 ||bobo.com/recommend/
@@ -813,9 +811,11 @@ dzh.mop.com##.adarea_top
 share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
 share.dmhy.org##div[id$="_ad"]
 !---ACG搜
-||acgsou.com/js/*
+||acgsou.com/js/
 ||acgsou.com/images/*.jpg
 ||acgsou.com/images/bdacg.gif
+||acgsou.com/qxads/
+||xavingtsun.com/kdksd/
 !---简单动漫
 ||36dm.com/js/*
 ||36dm.com/images/*.jpg
@@ -849,8 +849,6 @@ tsdm.me###ts_sidebar_base
 !屏蔽微博
 ||tsdm.me/weibo.html
 !签到弹窗
-||taobao.com^$popup,domain=tsdm.me
-||tmall.com^$popup,domain=tsdm.me
 ||dm.tsdm.tv^$popup,domain=tsdm.me
 !---78动漫论坛
 78dm.net##.adv
@@ -859,8 +857,6 @@ bbs.78dm.net##.bm.a_c
 bbs.78dm.net##.a_p
 !主站
 ||78dm.net/uploads/imgs/2013/*980
-!---TorrenTGui
-||totheglory.im/pic/picad/*
 !---Nyaa
 sukebei.nyaa.si##.servers-cost-money
 !---Pixiv
@@ -1047,7 +1043,6 @@ v.qq.com##._x_webtips_window_iframe
 !---乐视
 |http://*/letv-gug/
 */letv-web/*
-||ark.letv.com^
 ||letvimg.com*gugwl/$object-subrequest
 @@||stat.letv.com/vplay/*
 !http://www.zhiboba.cc/pindao/dongfangweishi.html
@@ -1124,6 +1119,7 @@ douyu.com##.tab-content.promote
 ||videojj.com/liveos-sdk/*/Pic.Default.js
 !---虎牙
 @@||msstatic.com/huya/*/login/yy/sdk_udb_ad*.js
+||g.huya.com^
 !---熊猫TV
 panda.tv##.room-banner-images
 panda.tv##[class^="liveosTag_"]
@@ -1331,6 +1327,8 @@ detail.tmall.com##.sufei-tb-dialog.sufei-tb-overlay
 ||click.dangdang.com/js_tracker.js
 !---什么值得买
 ||zdmimg.com/www/delivery/*
+smzdm.com##.logo-special
+smzdm.com##.banner-stuff
 smzdm.com##.g_g
 smzdm.com##.feed-stuff
 smzdm.com##.side-stuff
@@ -1362,14 +1360,18 @@ apkmirror.com##.amazon-ad
 ||pics.wanlibo.com/js/pagemodulestat.js*
 docin.com###docindex_ad
 !---中国天气网
-||mc.weather.com.cn^
+||cbdm.weathercn.com^
+||baizhan.net/coop/hezuo/
+||eastday.com/jsfile/kuaiya_
 ||analyse.weather.com.cn^
-weather.com.cn##[id^="adpos"]
-weather.com.cn##.post_st
-!新版
+||bshare.cn/js/libs/fingerprint2.min.js
+||optimix.asia^$third-party
 weather.com.cn##.tong
 weather.com.cn##.ad4
-weather.com.cn##div[style^="width:300px;height:250px;"]
+!旧版
+weather.com.cn##.post_st
+!---纯真
+||uniondm.cz88.net^
 !---爱词霸
 iciba.com##.head_ad
 !右侧边栏
