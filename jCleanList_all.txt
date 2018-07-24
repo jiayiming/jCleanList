@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: zM6JuzAVgNPzKe+SI/vfbg
-! Last modified: 15 Jul 2018 15:14 +0800
+! Checksum: OrRseKfoJ3WBMmd0l2+5mw
+! Last modified: 24 Jul 2018 22:51 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -86,6 +86,7 @@ _300x250.
 ||ecma.bdimg.com^
 ||ubmcmm.baidustatic.com^
 ||su.bdimg.com/static/dspui/js/
+||bu1.duba.com^
 !---alipay/aliyun/alimama/taobao
 ||alimama.cn^$third-party
 ||alimama.com^$third-party
@@ -94,6 +95,8 @@ _300x250.
 ||oa-panther.data.aliyun.com^
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
 ||tanx.com
+!---jd
+||u-x.jd.com/static/js/auto.js
 !---union
 ||union.youdao.com^$third-party
 !---allyes
@@ -195,6 +198,7 @@ _300x250.
 ||xcy8.com^
 ||xp3366.com^$third-party
 ||xsu.cc^$third-party
+||xtgreat.com^$third-party
 ||yigao.com^$third-party
 ||youle55.com^$third-party
 ||youxjia.com^$third-party
@@ -494,7 +498,10 @@ www.163.com##.ad_hover_href
 www.163.com##.hp_textlink_ad
 www.163.com##.mod_r_ad
 www.163.com##.mod_index_ad
-www.163.com##.mod_ad_text
+!分区首页顶部
+163.com##.channel_relative_2016
+ent.163.com##.idx_top_ad
+money.163.com##.top_ad
 !新闻首页
 ||bobo.com/api/show/
 ||bobo.com/recommend/
@@ -614,6 +621,8 @@ pcpop.com##.gg_list
 ||11.mydrivers.com/news/03.js
 ||11.mydrivers.com/news/google468x60.js
 ||mydrivers.com/news/2017/db_
+||mydrivers.com/images/qunying.jpg
+||js.idgdmg.com.cn^
 www.mydrivers.com##div[style^="width:1100px; height:90px;"]
 !子页顶部
 ||mydrivers.com/inc/*.js
@@ -876,7 +885,11 @@ imdb.com##.aux-content-widget-2
 !---人人影视(ZiMuZu)
 ||zmzjstu.com/g3/ad-cp/
 ||zmzjstu.com/g3/tool
+||91dict.com/dub_banner.jpg
 ||xianliao.me^
+||lx167.com^
+||ousns.net^
+zmz003.com##.ad-box
 !---电影天堂
 ||dy2018.com/jsdd/
 ||xiacaidd.com/xiacai/ad/
@@ -932,6 +945,7 @@ lol.duowan.com##.full-banner
 !---艾泽拉斯国家地理论坛
 ||nga*/proxy/cache_attach/ds_list.js
 ||nga*/common_res/js_adscommon.js
+||anquan.org/static/outer/js/aq_auth.js
 !---游久网
 ||gg.uuu9.com^
 uuu9.com###top
@@ -990,12 +1004,11 @@ ctfile.com###alipay-qhb
 !---ys168
 ys168.com###zdy_wz0
 !uploadocean
-@@|http://$image,third-party,domain=uploadocean.com
-@@|https://$image,third-party,domain=uploadocean.com
 @@||ajax.googleapis.com^$script,third-party,domain=uploadocean.com
 @@||maxcdn.bootstrapcdn.com^$domain=uploadocean.com
 |http://$script,third-party,xmlhttprequest,domain=uploadocean.com
 |https://$script,third-party,xmlhttprequest,domain=uploadocean.com
+||imgur.com^$image,domain=uploadocean.com
 !---UsersCloud
 ||puhtml.com^$third-party
 
