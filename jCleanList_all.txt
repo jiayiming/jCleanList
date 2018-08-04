@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: OrRseKfoJ3WBMmd0l2+5mw
-! Last modified: 24 Jul 2018 22:51 +0800
+! Checksum: MuMqvJ2f//dt3rF7DjKrrw
+! Last modified: 04 Aug 2018 14:45 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -212,6 +212,7 @@ _300x250.
 ||adnium.com^$third-party
 ||adnxs.com^$third-party
 ||amazon-adsystem.com^$third-party
+||buysellads.com^$third-party
 ||carambo.la^$third-party
 ||clkrev.com^
 ||delivery45.com^$third-party
@@ -682,6 +683,10 @@ ithome.com##.AdblockBanner
 ithome.com##.bx-recom2
 ithome.com##a[href*="/lapin."]
 ithome.com##.con-recom
+!移动版
+||ithome.com/m/images/index/open-app*
+m.ithome.com##.open-app-banner
+m.ithome.com##.open-app
 !pv
 ||ithome.com/api/hitcount/
 !论坛
@@ -712,6 +717,8 @@ download.csdn.net##.AD
 ||cache.soso.com/30d/js/discuz/relate_subject.js
 ||toutiao.haotui.com/data/js/0.js
 ||su.bdimg.com/static/dspui/js/uf.js
+!---MIUI论坛
+miui.com##.app_download
 !---知乎
 ||zhimg.com/*|adx*.jpg
 ||zhihu-web-analytics.zhihu.com^
@@ -946,6 +953,8 @@ lol.duowan.com##.full-banner
 ||nga*/proxy/cache_attach/ds_list.js
 ||nga*/common_res/js_adscommon.js
 ||anquan.org/static/outer/js/aq_auth.js
+!移动版
+bbs.ngacn.cc##div[style$="width: 100%; line-height: 3em; text-align: center; z-index: 6;"]
 !---游久网
 ||gg.uuu9.com^
 uuu9.com###top
@@ -1003,11 +1012,11 @@ t.qq.com###homeBannerNew
 ctfile.com###alipay-qhb
 !---ys168
 ys168.com###zdy_wz0
-!uploadocean
-@@||ajax.googleapis.com^$script,third-party,domain=uploadocean.com
+!UploadOcean
+||uploadocean.com/js/share.js
+@@|https://ajax.*^$third-party,script,domain=uploadocean.com
 @@||maxcdn.bootstrapcdn.com^$domain=uploadocean.com
-|http://$script,third-party,xmlhttprequest,domain=uploadocean.com
-|https://$script,third-party,xmlhttprequest,domain=uploadocean.com
+|https://$third-party,script,domain=uploadocean.com
 ||imgur.com^$image,domain=uploadocean.com
 !---UsersCloud
 ||puhtml.com^$third-party
@@ -1023,8 +1032,7 @@ ys168.com###zdy_wz0
 !---优酷
 ||cibntv.net/youku/*.mp4?
 ||acs.youku.com
-@@||cibntv.net/youku/*.mp4?$domain=vku.youku.com
-@@||acs.youku.com^$domain=vku.youku.com
+@@acs.youku.com/h5/mtop.youku.live.
 ||youku.com/cms/tool/pub/get_putdata.
 ||hudong.alicdn.com/api/data/v2/
 ||tip.soku.com/searches/*/sideads.json
@@ -1037,7 +1045,6 @@ soku.com##div[id^="ab_"]
 @@||cupid.iqiyi.com/crossdomain.xml
 @@||cupid.iqiyi.com/show2?a=qc_
 !播放页
-||qiyipic.com/common/fix/default_player_16_9.png
 ||mixer.video.iqiyi.com/jp/mixin/resources/
 iqiyi.com##div[id^="100000000"]
 !pv
@@ -1307,9 +1314,10 @@ paipai.fm##a[href*="gamezixia.php?jump="]
 mail.google.com##.Bu.y3
 !---sourceforge
 ||a.fsdn.com/*/bizx-prebid.js
-!pv
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
+!---HTML5test
+html5test.com###footerad
 !---Greasy Fork
 greasyfork.org##.ad
 greasyfork.org###script-show-info-ad
@@ -1317,14 +1325,13 @@ greasyfork.org###script-show-info-ad
 userstyles.org##.ad
 !---xda-developers
 forum.xda-developers.com##.leaderboard
-forum.xda-developers.com##.purch-box
 forum.xda-developers.com##.postbit-wrapper.xda-box
 !---Mobilism
 forum.mobilism.org##.FIOnDemandWrapper
 !---TechPowerUp
-||tpucdn.com/images/b/*
+||techpowerup.com/njutrvceser/
 !侧栏
-techpowerup.com##.rnav_e
+techpowerup.com##figure.mnmuzjsddc
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---天猫
