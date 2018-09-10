@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: x/XoIOAPZEvuUQspZ+TXAg
-! Last modified: 31 Aug 2018 21:57 +0800
+! Checksum: cliRQfxwU3TsBCDBBuW96A
+! Last modified: 10 Sep 2018 22:28 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -867,7 +867,6 @@ tsdm.me###ts_sidebar_base
 !签到弹窗
 ||*.com^$popup,domain=tsdm.me
 ||dm.tsdm.tv^$popup,domain=tsdm.me
-@@||tsdm.me^$popup,domain=tsdm.me
 @@||baidu.com^$popup,domain=tsdm.me
 !---78动漫论坛
 78dm.net##.adv
@@ -953,11 +952,11 @@ lol.duowan.com##.full-banner
 ||178.com/glr.js
 ||atcount.178.com^
 !---艾泽拉斯国家地理论坛
+||nga*/nga_classic/js_dslist_default.js
 ||nga*/proxy/cache_attach/ds_list.js
-||nga*/common_res/js_adscommon.js
 ||anquan.org/static/outer/js/aq_auth.js
 !移动版
-bbs.ngacn.cc##div[style$="width: 100%; line-height: 3em; text-align: center; z-index: 6;"]
+bbs.nga.cn##div[style$="width: 100%; line-height: 3em; text-align: center; z-index: 6;"]
 !---游久网
 ||gg.uuu9.com^
 uuu9.com###top
