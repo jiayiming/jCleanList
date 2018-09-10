@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: cliRQfxwU3TsBCDBBuW96A
-! Last modified: 10 Sep 2018 22:28 +0800
+! Checksum: hvRyzK9HhoWnxPnvJt8YmA
+! Last modified: 11 Sep 2018 00:17 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -952,7 +952,7 @@ lol.duowan.com##.full-banner
 ||178.com/glr.js
 ||atcount.178.com^
 !---艾泽拉斯国家地理论坛
-||nga*/nga_classic/js_dslist_default.js
+||nga*/common_res/js_dscommon.js
 ||nga*/proxy/cache_attach/ds_list.js
 ||anquan.org/static/outer/js/aq_auth.js
 !移动版
