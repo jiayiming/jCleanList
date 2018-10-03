@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: hvRyzK9HhoWnxPnvJt8YmA
-! Last modified: 11 Sep 2018 00:17 +0800
+! Checksum: ehp1Gpf7gngqYUBm9M8wow
+! Last modified: 03 Oct 2018 15:11 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -368,15 +368,8 @@ www.baidu.com###\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"] > .c-abstract:
 ||baidu.com^*/c.gif?
 ||baidu.com^*/w.gif?
 ||baidu.com^*/wb.gif?
-!image_All
-image.baidu.com###relEcom
 !tieba_All
-tieba.baidu.com##.tpoint-skin
-!底部下载app领现金红包
-tieba.baidu.com###fixed_bar.showBar
-!pv
-||static.tieba.baidu.com/tb/img/track.gif?*
-!itieba
+!i贴吧
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
 !烟花
@@ -384,36 +377,20 @@ tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 tieba.baidu.com##.firework-wrap
 !tieba0_帖子列表
 ||tb1.bdstatic.com/tb/r/image/*
-!顶部横幅
-tieba.baidu.com##.head_middle
-tieba.baidu.com##.head_ad_pop
 !顶部游戏
 ||bdstatic.com/tb/cms/ngmis/*
 tieba.baidu.com##.game-head-game-info-wrapper
-!顶部游戏直播+AcFun
-||cdn.aixifan.com/dotnet/artemis/u/cms/*$domain=tieba.baidu.com
-!顶部视频精选
-||bdstatic.com/*/tb/_/video_frs_head_
-tieba.baidu.com###video_frs_head
 !列表内推广贴
-||bj.bcebos.com/fc-feed/0/pic/
-tieba.baidu.com##[data-daid]
 tieba.baidu.com##.j_thread_list:not([data-field])
 tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
 !侧边栏
-tieba.baidu.com##.aside_region.my_app
-tieba.baidu.com###encourage_entry
+||bdstatic.com/tb/img/frs-aside/
+tieba.baidu.com##.app_download_box
+tieba.baidu.com##.nani_app_download_box
 tieba.baidu.com###pagelet_frs-aside\/pagelet\/ad
-tieba.baidu.com##.u9_aside
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
-||s1.bdstatic.com/r/*/baidu_search/*
-!新搜索
 ||bdstatic.com/tb/static-pb/widget/baidusearch/
-!帖子顶部横幅
-tieba.baidu.com###pb_adbanner
-!帖子1楼底部游戏横幅
-tieba.baidu.com##.l_post + DIV[class]:not(.l_post)
 !贴吧触点推广
 tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1224761005,"]
 tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480174042,"]
@@ -421,13 +398,16 @@ tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480194257,
 tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1990070693,"]
 tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":50012654,"]
 !楼层商业推广
-||adscdn.baidu.com/baichuan/*
-||bj.bcebos.com/fc-feed/4/pic/*
+||fc-feed.cdn.bcebos.com^
 tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87\""]:not([data-field*="\"user_id\":1180601200,"])
 tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="\"user_id\":2"]):not([data-field*="\"user_id\":3"]):not([data-field*="\"user_id\":4"]):not([data-field*="\"user_id\":5"]):not([data-field*="\"user_id\":6"]):not([data-field*="\"user_id\":7"]):not([data-field*="\"user_id\":8"]):not([data-field*="\"user_id\":9"])
 !回复框右侧_duoku
 ||tieba.baidu.com/game/duoku/*
 tieba.baidu.com###duoku_servers_list
+!tieba移动版
+tieba.baidu.com##.appPromote
+tieba.baidu.com##li.tl_shadow[class$=" "]
+tieba.baidu.com##li.post_list_item + li[class]:not(.post_list_item)
 !zhidao0|zhidao1|zhidao2
 ||bdstatic.com/*/iknow/qb/select-search.png
 ||iknowpc.bdimg.com/*/search-relate/*
@@ -723,9 +703,10 @@ miui.com##.app_download
 ||zhimg.com/*|adx*.jpg
 ||zhihu-web-analytics.zhihu.com^
 !---V2EX
-||cdn.v2ex.*/friends/100offer/*
+||v2ex.*/assets/sidebar/
 v2ex.com##.inner[align="center"]
-||cdn.v2ex.*/assets/sidebar/*
+v2ex.com##.sidebar_units
+v2ex.com##.sidebar_compliance
 !---卡饭论坛
 !官网首页
 kafan.cn##.comeing_show_box
@@ -834,8 +815,7 @@ share.dmhy.org##div[id$="_ad"]
 ||xavingtsun.com/kdksd/
 !---简单动漫
 ||36dm.com/js/*
-||36dm.com/images/*.jpg
-||36dm.com/images/680acgsou.gif
+||36dm.com/qxads/
 !---轻之国度
 lightnovel.cn###swRoller_1
 lightnovel.cn##.a_mu
@@ -902,6 +882,7 @@ zmz003.com##.ad-box
 !---电影天堂
 ||dy2018.com/jsdd/
 ||xiacaidd.com/xiacai/ad/
+||xtianqi.com.cn/xxjs/img/dytt8*.gif
 !---PT80
 ||fj.pt80.net^
 !---杂碎后院
