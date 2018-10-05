@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: diUOqMpZEikeAR9TwANRbg
-! Last modified: 05 Oct 2018 01:38 +0800
+! Checksum: PjQ1y2zLUKrMZ6sTx+6Z6g
+! Last modified: 05 Oct 2018 18:20 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -1049,25 +1049,13 @@ v.qq.com##.mod_ad
 v.qq.com##.player_bg_ad
 v.qq.com##._x_webtips_window_iframe
 !---乐视
-|http://*/letv-gug/
-*/letv-web/*
-||letvimg.com*gugwl/$object-subrequest
-@@||stat.letv.com/vplay/*
-!http://www.zhiboba.cc/pindao/dongfangweishi.html
-@@||letv.com*/tuiguang/$subdocument
 !pv
 ||dc.letv.com^
 !---搜狐视频
 ||images.sohu.com/ytv/
-||vm.aty.sohu.com/qs?*AdType=
-||vm.aty.sohu.com/pvlog?
-!HTML5
-||m.aty.sohu.com^
-!视频首页
-tv.sohu.com##.areaAdv
+||v.aty.sohu.com^
 !pv
 ||sohu.com/ctr.gif?
-||sohu.com/pvlog*
 ||click.hd.sohu.com.cn^
 ||tv.sohu.com/upload/trace/
 ||v.blog.sohu.com/dostat.do?
@@ -1107,8 +1095,9 @@ bilibili.com###slide_ad
 !---AcFun
 ||aixifan.com^*/sensorsdata
 ||tongji.aixifan.com^
+||imgs.aixifan.com/cms/$object-subrequest
 acfun.cn##.ac-ad-img
-acfun.cn##.ad-line
+acfun.cn##.area-ad
 !---吐槽
 ||tucao.tv/index.php?m=poster
 tucao.tv##.a2013d
@@ -1133,7 +1122,8 @@ panda.tv##.room-banner-images
 panda.tv##[class^="liveosTag_"]
 panda.tv##[class^="closeBtn_"]
 !---火猫
-huomao.com###stream-delay-tip
+@@||ad.qvb.qcloud.com^
+||aclog2.huomaotv.cn^
 !---战旗
 ||zhanqi.tv/*/love-*
 !首页
