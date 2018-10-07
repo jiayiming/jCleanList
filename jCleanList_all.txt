@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: PjQ1y2zLUKrMZ6sTx+6Z6g
-! Last modified: 05 Oct 2018 18:20 +0800
+! Checksum: fo4ixyb3mDMAMHSksUGo+w
+! Last modified: 07 Oct 2018 16:49 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -885,6 +885,9 @@ zmz003.com##.ad-box
 !---RARBT
 ||sinaimg.cn^$image,domain=rarbt.com
 rarbt.com##.hd+div.cl[style]
+!---99mp4
+||qiqivv.com^
+||jianbaimei.com^
 !---PT80
 ||fj.pt80.net^
 !---杂碎后院
