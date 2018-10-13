@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: fo4ixyb3mDMAMHSksUGo+w
-! Last modified: 07 Oct 2018 16:49 +0800
+! Checksum: AyivOVr3tt/2tnP7y8ZU3w
+! Last modified: 14 Oct 2018 02:41 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -390,13 +390,8 @@ tieba.baidu.com##.nani_app_download_box
 tieba.baidu.com###pagelet_frs-aside\/pagelet\/ad
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
+||bdstatic.com/r/*/baidu_search/
 ||bdstatic.com/tb/static-pb/widget/baidusearch/
-!贴吧触点推广
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1224761005,"]
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480174042,"]
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1480194257,"]
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":1990070693,"]
-tieba.baidu.com##.l_post[data-field^="\7b \"author\":\7b \"user_id\":50012654,"]
 !楼层商业推广
 ||fc-feed.cdn.bcebos.com^
 tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87\""]:not([data-field*="\"user_id\":1180601200,"])
@@ -882,12 +877,17 @@ zmz003.com##.ad-box
 !---电影天堂
 ||dy2018.com/jsdd/
 ||dy2018.com/js17/pf.js
+!---圣城
+||cnscg.com/template/default/style/t6/*x*.png
+||cnscg.com/template/default/style/t6/*.gif
+||www.cnscg.com/template/default/style/t6/480x60_
 !---RARBT
 ||sinaimg.cn^$image,domain=rarbt.com
 rarbt.com##.hd+div.cl[style]
 !---99mp4
 ||qiqivv.com^
 ||jianbaimei.com^
+||x-ssp.com^
 !---PT80
 ||fj.pt80.net^
 !---杂碎后院
