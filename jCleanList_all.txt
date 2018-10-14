@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: AyivOVr3tt/2tnP7y8ZU3w
-! Last modified: 14 Oct 2018 02:41 +0800
+! Checksum: p5PhdL+Hzi4L1wOi+cAqTQ
+! Last modified: 14 Oct 2018 21:27 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -1306,6 +1306,7 @@ greasyfork.org###script-show-info-ad
 userstyles.org##.ad
 !---xda-developers
 forum.xda-developers.com##.leaderboard
+forum.xda-developers.com##div[style*="max-height:250px;"]
 forum.xda-developers.com##.postbit-wrapper.xda-box
 !---Mobilism
 forum.mobilism.org##.FIOnDemandWrapper
@@ -1323,6 +1324,10 @@ detail.tmall.com##.sufei-tb-dialog.sufei-tb-overlay
 !屏蔽搜索热词
 ||f.3.cn/recommend/hotwords/
 ||cds.3.cn/hotwords/
+!移动版
+m.jd.com###m_common_tip
+m.jd.com###pannelSeat
+pro.m.jd.com##[id^="content_"]
 !---当当网
 !pv
 ||click.dangdang.com/js_tracker.js
@@ -1360,6 +1365,13 @@ apkmirror.com##.amazon-ad
 ||docin.com/docin_adv/
 ||pics.wanlibo.com/js/pagemodulestat.js*
 docin.com###docindex_ad
+!--AccuWeather
+||ooyala.com/static/v4/production/latest/analytics-plugin/
+||e0mn.com/v4/
+accuweather.com###header-davek
+accuweather.com###aadTop300
+accuweather.com##.sidebar-telmet-promo
+accuweather.com###aadBot300
 !---中国天气网
 ||cbdm.weathercn.com^
 ||baizhan.net/coop/hezuo/
