@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: p5PhdL+Hzi4L1wOi+cAqTQ
-! Last modified: 14 Oct 2018 21:27 +0800
+! Checksum: T8OMoKpbbMX2yGX3fpdyYA
+! Last modified: 22 Oct 2018 21:46 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -46,6 +46,7 @@ _300x250.
 @@|https://*/*_ad*.$stylesheet
 @@||qq.com^*ADTAG=*
 @@||ossweb-img.qq.com/images/clientpop/idata_ad/*
+@@||wx.qq.com^*/index_ad
 !百度全局
 @@||bdstatic.com/??*,*,*,
 !百度地图
@@ -485,7 +486,6 @@ news.163.com##.index_top_ad
 news.163.com##.mod_top_news_ad
 news.163.com##.mod_ad_r
 news.163.com##.mod_bobo
-ent.163.com##.idx_top_ad
 !各类子页
 163.com##.post_adtop_main
 163.com##.right_ad_item
@@ -1105,18 +1105,20 @@ acfun.cn##.area-ad
 ||tucao.tv/index.php?m=poster
 tucao.tv##.a2013d
 !---斗鱼
-||douyucdn.cn/upload/signs/*
-||cs-op.douyucdn.cn/nggsys/*
-||douyu.com/dygev/*.swf
-||douyu.com/lapi/sign/web/getinfo
+||lxdns.com/html5/douyu.com
+||v.smtcdns.net^$domain=douyu.com
+||douyucdn.cn/nggsys/
 ||douyucdn.cn/resource/common/tongzhuo/game_info.json
+||yuba.douyu.com/iframe/group/
 douyu.com##.lol-ad
+douyu.com##.DropPane-ad
 douyu.com##.f-sign-cont
-douyu.com##.room-ad-top
-douyu.com##.room-ad-video-down
-douyu.com##.room-ad-bottom
-douyu.com##.tab-content.promote
-||videojj.com/liveos-sdk/*/Pic.Default.js
+douyu.com##.his-sign-cont
+douyu.com##.layout-Player-asideAdvert
+douyu.com##.guess-user-reminding-out
+douyu.com##.Bottom-ad
+douyu.com##.Bottom-advert
+douyu.com##.tab-content.Bottom-promote
 !---虎牙
 @@||msstatic.com/huya/*/login/yy/sdk_udb_ad*.js
 ||g.huya.com^
@@ -1263,7 +1265,6 @@ jjwxc.net##div[style="height: 90px;"]
 !中部横幅
 ||jjwxc.net/adsmanage.php?
 jjwxc.net##div.tc>table[width="984"]
-!---潇湘书院
 !---起点中文网|起点女生网
 ||uedas.*^
 !中文网首页
