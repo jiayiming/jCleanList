@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: T8OMoKpbbMX2yGX3fpdyYA
-! Last modified: 22 Oct 2018 21:46 +0800
+! Checksum: 8gSG5oJS6k1rIfjXCi9VgA
+! Last modified: 24 Oct 2018 22:17 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -401,9 +401,10 @@ tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="
 ||tieba.baidu.com/game/duoku/*
 tieba.baidu.com###duoku_servers_list
 !tieba移动版
+||bdstatic.com/*/fc-feed/
 tieba.baidu.com##.appPromote
 tieba.baidu.com##li.tl_shadow[class$=" "]
-tieba.baidu.com##li.post_list_item + li[class]:not(.post_list_item)
+tieba.baidu.com##ul.list>li[class]:not(.post_list_item)
 !zhidao0|zhidao1|zhidao2
 ||bdstatic.com/*/iknow/qb/select-search.png
 ||iknowpc.bdimg.com/*/search-relate/*
@@ -439,31 +440,24 @@ video.baidu.com##.popular
 ||l.qq.com/lview?
 ||cm.l.qq.com^
 ||gtimg.com^*/ad/
-||gtimg.com/web/default_fodders/*.swf$object
+||gtimg.com/web/crystal/
 !首页通用
-qq.com##.adLeft,.adRight
+www.qq.com##.qq-gg
 !首页和子页通用
 qq.com##.l_qq_com
-qq.com##.ad-banner
 !新版子页
 qq.com##.body-Top-Ad
 qq.com##.ad-box
-!板块分页顶部
-!体育/娱乐/数码/时尚/汽车等板块顶部通用
+!分区顶部(体育/娱乐/数码/时尚/汽车等分区顶部通用)
 qq.com##[id$="_ad"]
 !体育首页
-||gtimg.com/sports/0*.swf
 ||gtimg.com/sports/sports/*.swf
 ||gtimg.com/sports/000
-||gtimg.com/sports/*/qingyang*
-!体育其他分区
-sports.qq.com###flashShowAd
-!科技首页
-tech.qq.com##.kjad2
+sports.qq.com##.he_ad
+!体育其他分区(NBA)
+sports.qq.com##.ad-banner
 !动漫频道
-||gtimg.com/comic/newqshou/js/AD2v1.1.js
-!去登录时提示手机二维码
-ptlogin2.qq.com###qr_tips
+new.qq.com##.g-top-box
 !---网易
 ||img1.126.net^
 ||img2.126.net^
