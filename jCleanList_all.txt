@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 8gSG5oJS6k1rIfjXCi9VgA
-! Last modified: 24 Oct 2018 22:17 +0800
+! Checksum: bFXjzgwQZ1qVMPZfISLXqA
+! Last modified: 05 Nov 2018 21:01 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -22,6 +22,7 @@
 /adsense/*
 /adserve/*
 /adtag.
+&adType=
 |http://*/gg/*
 |http://gg.*^
 /ggao/*
@@ -44,6 +45,8 @@ _300x250.
 @@|https://*ad*,*.js
 @@|http://*/*_ad*.$stylesheet
 @@|https://*/*_ad*.$stylesheet
+!https://www.microsoft.com/zh-cn/download/details.aspx?id=26368
+@@|https://*/*-ad*$stylesheet
 @@||qq.com^*ADTAG=*
 @@||ossweb-img.qq.com/images/clientpop/idata_ad/*
 @@||wx.qq.com^*/index_ad
@@ -61,7 +64,7 @@ _300x250.
 @@||spoprod-a.akamaihd.net/files/onedrive-website-release-*ad*.js
 !Others
 @@||10086.cn/cmpop/images/index/ad
-@@||adidas.com*^
+@@||adidas.*^
 @@||srcb.com/*/advert/
 @@||ry.tbcdn.cn/apps/ivy/*
 
@@ -550,19 +553,14 @@ ifeng.com##.label_3
 !---中关村
 ||p.zol-img.com.cn^
 ||pic.zol-img.com.cn^
-zol.com.cn##[id^="AD"]
-zol.com.cn##[class^="ad-"]
-zol.com.cn##[id^="ad-"]
-!首页
-!首页横幅
-zol.com.cn##[id*="_ad_"]
 !首页右下角漂浮
-zol.com.cn##.winbox
+zol.com.cn##.today-hot-layer
 !子页
+||zol.com.cn/channel/index.php?c=active_tmall&
+||zol.com.cn/active/*tmall
+||so.com/sug-hot?
 zol.com.cn##.hot_tj
-!pv
-||ca.cbsi.com.cn^
-||icon.zol-img.com.cn/mainpage/js/click.js?*
+zol.com.cn##.ad-box
 !---手机中国
 ||pic.cnmo-img.com.cn
 !---IT168
@@ -588,17 +586,14 @@ www.pcpop.com##[id^="ad_"]
 !新闻页顶部横幅
 pcpop.com##.gg_list
 !---驱动之家
-||11.mydrivers.com/news/03.js
-||11.mydrivers.com/news/google468x60.js
 ||mydrivers.com/news/2017/db_
-||mydrivers.com/images/qunying.jpg
-||js.idgdmg.com.cn^
-www.mydrivers.com##div[style^="width:1100px; height:90px;"]
+www.mydrivers.com##div[style*="width:1300px; height:90px;"]
+www.mydrivers.com##DIV[style^="width:1300px;height:90px;"]
 !子页顶部
 ||mydrivers.com/inc/*.js
-mydrivers.com##div>table[style="border: 1px solid #5A7EA0"]
-mydrivers.com##.btnNext + div:last-child
-mydrivers.com##.adggg1
+news.mydrivers.com##.baidu
+news.mydrivers.com##.ad_warp
+news.mydrivers.com##.news_info>div[style^="width:728px; height:"]
 !驱动子页
 drivers.mydrivers.com##.baidu_box
 !---太平洋电脑网
@@ -794,6 +789,7 @@ dzh.mop.com##.adarea_top
 !---动漫花园
 ||share.dmhy.org/*?$image
 @@||share.dmhy.org^*/generate-captcha?
+||weishengkj.cn^
 share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
 share.dmhy.org##div[id$="_ad"]
 !---ACG搜
@@ -1109,6 +1105,8 @@ douyu.com##.DropPane-ad
 douyu.com##.f-sign-cont
 douyu.com##.his-sign-cont
 douyu.com##.layout-Player-asideAdvert
+douyu.com##.peck-tips
+douyu.com###treasure
 douyu.com##.guess-user-reminding-out
 douyu.com##.Bottom-ad
 douyu.com##.Bottom-advert
@@ -1142,15 +1140,12 @@ zhanqi.tv###js-room-flash-banner-panel
 ||qtmojo.com^$third-party
 v.17173.com##.side-ad
 !---爱拍
-||aipai.com/rsd/
-||aipai.com/app/www/*/ADPlayer*.swf
-aipai.com##.pmp_random
-aipai.com###pm_rush
-aipai.com###pm_mod_pic
-aipai.com###baidu_gg
-aipai.com###cmt_slnew
+||atiws.aipai.com^
+||weplay.cn/aipai/player/game_video/videoAdvert_
 !---爆米花网
 ||resource.baomihua.com^
+||djs.baomihua.com^
+||pvstat.baomihua.com^
 !---CNTV
 ||bjcathay.com/s?z=
 ||cctv.com/Library/a2.js
@@ -1158,6 +1153,7 @@ aipai.com###cmt_slnew
 ||vdp2precv.app.cntvwb.cn/gs.gif?
 !---芒果TV
 @@||player.mgtv.com/mgtv_v6_ad/ad.swf
+@@||mgtv.com/sdk/*/ad-sdk.js
 ||da.mgtv.com^
 !---华数TV广电宽屏
 ||delivery.wasu.cn^
@@ -1286,8 +1282,8 @@ yunqi.qq.com##.topBanner
 paipai.fm##a[href*="gamezixia.php?jump="]
 
 !---Gmail
-||mail.google.com^*&view=ad&*$domain=mail.google.com
-mail.google.com##.Bu.y3
+||mail.google.com^*&view=ad&
+mail.google.com##.aKB
 !---sourceforge
 ||a.fsdn.com/*/bizx-prebid.js
 !---腾讯邮箱
@@ -1337,19 +1333,20 @@ smzdm.com##.side-stuff
 ||itocp.com/html/gk/*
 !---超能网
 expreview.com##.banner
-!---爱搞机
-||knewbi.com/api/knewbi_index/*$third-party
+!---充电头
+www.chongdiantou.com##.asb
 !---手机乐园
 ||css.shouji.com.cn/script/*$subdocument
 ||shouji.com.cn/tg/market_73090.gif
 !---apkpure
-||promopure.com^
-||dealspure.com/outpromotion/apkpuredown
 ||a.apkpure.com^
+||dealspure.com/images/promotion/
+||vk.com^$third-party
 apkpure.com##.ad-left
 apkpure.com##.ad-left+div+div[style]
 apkpure.com##.ad-right
 apkpure.com##div[style*="width:100%; height:250px;"]
+apkpure.com##.slide-wrap
 !---apkmirror
 apkmirror.com##.gooWidget
 apkmirror.com##.amazon-ad
@@ -1392,13 +1389,4 @@ iciba.com###ezfm
 dict.cn###gadsv
 !---东方财富网
 ||same.eastmoney.com/s?*
-eastmoney.com##.h60
-eastmoney.com##.h90
-eastmoney.com##.h160
-!子页
-||cmsjs.eastmoney.com/data/idx_ggzjl.js*
-||finance.eastmoney.com/images/uma.html
-eastmoney.com##.banner
-!行情中心
-quote.eastmoney.com##.adbox
-quote.eastmoney.com##.msdbox_img
+||eastmoney.com/same/
