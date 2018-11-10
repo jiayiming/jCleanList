@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: bFXjzgwQZ1qVMPZfISLXqA
-! Last modified: 05 Nov 2018 21:01 +0800
+! Checksum: 7u+UD92cFxqk6Fm00ArE2A
+! Last modified: 10 Nov 2018 22:52 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -54,6 +54,8 @@ _300x250.
 @@||bdstatic.com/??*,*,*,
 !百度地图
 @@||map.bdstatic.com/*/pkg/initmap_ad*.js
+!淘宝/聚划算
+@@||g.alicdn.com^*/??*,*,*,
 !优酷
 !http://v.youku.com/v_show/id_XMTM0OTQ2NTA2MA==.html
 @@||k.youku.com/player/getFlvPath/sid/*ad*$object-subrequest
@@ -437,8 +439,10 @@ music.baidu.com##.adm
 ||image.baidu.com/pv/*
 image.baidu.com##.text-link-ads
 !video0
-video.baidu.com##[monkey="ecom"]
-video.baidu.com##.popular
+video.baidu.com##.section-ad
+v.baidu.com##.section.full-collunm-ad
+!jingyan1
+jingyan.baidu.com###bottom-ads-container
 !---腾讯网
 ||l.qq.com/lview?
 ||cm.l.qq.com^
@@ -677,14 +681,10 @@ download.csdn.net##.AD
 */data/attachment/common/ad/*
 !--PHPWind
 ||cs*.phpwind.com/apps.php?appname=ad*
-!--5d6d
-||cache.soso.com/30d/js/discuz/relate_subject.js
-||toutiao.haotui.com/data/js/0.js
-||su.bdimg.com/static/dspui/js/uf.js
 !---MIUI论坛
 miui.com##.app_download
 !---知乎
-||zhimg.com/*|adx*.jpg
+||zhihu.com/api/*banners/
 ||zhihu-web-analytics.zhihu.com^
 !---V2EX
 ||v2ex.*/assets/sidebar/
