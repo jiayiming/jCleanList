@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 7u+UD92cFxqk6Fm00ArE2A
-! Last modified: 10 Nov 2018 22:52 +0800
+! Checksum: NZ49oUOnGmBr2MU9P7S90w
+! Last modified: 22 Dec 2018 17:25 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -17,6 +17,7 @@
 /adbox/*
 /advert_
 /advert/*
+/advertisement.
 /advertising_
 /adpic/*
 /adsense/*
@@ -100,20 +101,20 @@ _300x250.
 ||alicdn.com/g/mm/afp-cdn/JS/
 ||oa-panther.data.aliyun.com^
 ||img.uu1001.cn^$third-party,domain=~alimama.com|~taobao.com
-||tanx.com
-!---jd
-||u-x.jd.com/static/js/auto.js
-!---union
+||tanx.com^
+!---tx
+||j.wit.qq.com^$third-party
+!---163
+_yad_jsonp_
 ||union.youdao.com^$third-party
-!---allyes
-||allyes.*^$third-party
-!---sina
 !---sohu
 ||images.sohu.com/cs/
 ||itc.cn/base/core/gg_
 ||sohu.com/api/labs/hotnews/c/load?
-!---tx
-||j.wit.qq.com^$third-party
+!---jd
+||u-x.jd.com/static/js/auto.js
+!---allyes
+||allyes.*^$third-party
 !---others(no_video_ad)
 ||033.com^$third-party
 ||1133.cc^$third-party
@@ -374,6 +375,9 @@ www.baidu.com###\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"] > .c-abstract:
 ||baidu.com^*/c.gif?
 ||baidu.com^*/w.gif?
 ||baidu.com^*/wb.gif?
+!搜索移动版
+www.baidu.com##.ec_wise_ad
+www.baidu.com##.se-tabitem
 !tieba_All
 !i贴吧
 tieba.baidu.com##.pc2client
@@ -655,24 +659,22 @@ ithome.com##.con-recom
 ||ithome.com/m/images/index/open-app*
 m.ithome.com##.open-app-banner
 m.ithome.com##.open-app
+m.ithome.com##.lapin
 !pv
 ||ithome.com/api/hitcount/
 !论坛
 bbs.ithome.com##.bbs_login+div[style^="width:960px;height:60px"]
 !---CSDN
 www.csdn.net##.slide-outer.right_top
-csdn.net##.box.hot
-csdn.net##[class^="ad_"]
-blog.csdn.net###yd_a_d_feed_11
-blog.csdn.net###homepageArticles
-!右下角漂浮
-blog.csdn.net###layerd
-!pv
-||counter.csdn.net^
-!下载页
-download.csdn.net##.AD
-!论坛
-||bbs.csdn.net/sda/*.htm
+!blog
+||csdnimg.cn/check-adblock/
+||csdnimg.cn/lib/fuckadblock/
+||rabc1.iteye.com^
+blog.csdn.net##.fourth_column
+blog.csdn.net##.csdn-tracking-statistics[style="height:250px;"]
+blog.csdn.net##[id^="kp_box_"]
+!bbs
+bbs.csdn.net##.post_recommend
 
 !---腾讯各类游戏论坛
 ||ossweb-img.qq.com^$domain=gamebbs.qq.com
@@ -790,6 +792,7 @@ dzh.mop.com##.adarea_top
 ||share.dmhy.org/*?$image
 @@||share.dmhy.org^*/generate-captcha?
 ||weishengkj.cn^
+||bebi.com^
 share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
 share.dmhy.org##div[id$="_ad"]
 !---ACG搜
@@ -990,6 +993,12 @@ t.qq.com###homeBannerNew
 ctfile.com###alipay-qhb
 !---ys168
 ys168.com###zdy_wz0
+!DoUploads
+||pushnest.com^$third-party
+||bodelen.com^$third-party
+||douploads.com/images/StartDownload.gif
+douploads.com###adblockinfo
+douploads.com##.adsbygoogle
 !UploadOcean
 ||uploadocean.com/js/share.js
 @@|https://ajax.*^$third-party,script,domain=uploadocean.com
@@ -1347,6 +1356,7 @@ apkpure.com##.ad-left+div+div[style]
 apkpure.com##.ad-right
 apkpure.com##div[style*="width:100%; height:250px;"]
 apkpure.com##.slide-wrap
+apkpure.com##.ad-right-600
 !---apkmirror
 apkmirror.com##.gooWidget
 apkmirror.com##.amazon-ad
