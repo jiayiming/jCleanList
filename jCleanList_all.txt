@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: NZ49oUOnGmBr2MU9P7S90w
-! Last modified: 22 Dec 2018 17:25 +0800
+! Checksum: 9Hccd0L1R67prQWRZKd6rQ
+! Last modified: 08 Mar 2019 22:41 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -63,6 +63,12 @@ _300x250.
 @@|http://*/youku/*ad*.flv$object-subrequest
 !网易云
 @@||music.126.net/*/ad*.mp3$media
+!工行
+@@||icbc.com.cn/*ad*
+!建行
+@@||ccb.com/cn/v3/js/adv.js
+@@||adv.ccb.com^
+@@||adv.ccb.com^
 !OneDrive
 @@||spoprod-a.akamaihd.net/files/onedrive-website-release-*ad*.js
 !Others
@@ -639,15 +645,13 @@ club.kdslife.com###slideBox
 ||taboola.com/libtrc/cnbeta*/loader.js
 cnbeta.com##.cnbeta-side-sponsor
 cnbeta.com##.adsbygoogle
-cnbeta.com##.ctcloud
-cnbeta.com##a[href^="http://www.ctyun.cn/"]
-cnbeta.com##a[href^="http://click.aliyun.com/"]
-cnbeta.com##a[href*="cloud.tencent."]
-cnbeta.com###upcoming_box
-cnbeta.com##.item.cooperation
-cnbeta.com##.tks
 cnbeta.com##.cbv
+cnbeta.com##.tks
+cnbeta.com###upcoming_box
+cnbeta.com##.article-topic
+cnbeta.com##.article-global
 cnbeta.com##.tac
+m.cnbeta.com##.cbimage-fixed
 !---IT之家
 ||ithome.com/file/js/money/
 ||lapin365.com/Shared/RenderLapinBlock?
@@ -690,7 +694,7 @@ miui.com##.app_download
 ||zhihu-web-analytics.zhihu.com^
 !---V2EX
 ||v2ex.*/assets/sidebar/
-v2ex.com##.inner[align="center"]
+v2ex.com##.adsbygoogle
 v2ex.com##.sidebar_units
 v2ex.com##.sidebar_compliance
 !---卡饭论坛
@@ -823,19 +827,18 @@ bbs.9baka.com###top80
 bbs.9baka.com##td[width="680"][height="50"]
 !---天使动漫
 ||tsdmw.net/img01/MP3/
-tsdm.me##.a_c
-tsdm.me##.a_pt
-tsdm.me##.a_pb
-tsdm.me###pgt+div
-tsdm.me##td[colspan="5"]:first-child:last-child
+tsdm.love##.a_c
+tsdm.love##.a_pt
+tsdm.love##.a_pb
+tsdm.love###pgt+div>p[style="float:left;width:100%"]
 !右侧漂浮资讯
-tsdm.me###ts_sidebar_base
+tsdm.love###ts_sidebar_base
 !屏蔽微博
-||tsdm.me/weibo.html
+||tsdm.love/weibo.html
 !签到弹窗
-||*.com^$popup,domain=tsdm.me
-||dm.tsdm.tv^$popup,domain=tsdm.me
-@@||baidu.com^$popup,domain=tsdm.me
+||*.com^$popup,domain=tsdm.love
+||*.net^$popup,domain=tsdm.love
+@@||baidu.com^$popup,domain=tsdm.love
 !---78动漫论坛
 78dm.net##.adv
 bbs.78dm.net##.a_mu
@@ -901,6 +904,8 @@ bbs.3dmgame.com##.a_h
 !---游民星空
 ||ja*.gamersky.com^
 ||gamersky.com/common/tg/
+gamersky.com##.ad_r
+gamersky.com##.lxyygg,.yyimg
 !---17173
 ||ue.17173cdn.com/*/js/adm2.js
 ||ue.17173cdn.com/*/stats/lp.min.js
@@ -1040,16 +1045,17 @@ iqiyi.com##div[id^="100000000"]
 !---腾讯视频
 ||l.qq.com/livemsg?*
 ||l.qq.com/p?
-||vd.l.qq.com^
-||ltsdl.qq.com^
-/vlive.qqvideo.tc.qq.com/*.mp4?
-/variety.tc.qq.com/*.mp4?
+@@||qq.com/proxyhttp?
+.qq.com/*.mp4?*sdtfrom=&
+.qq.com/*.mp4?*sdtfrom=|
+||qq.com^*.ts?
+://apd-*.qq.com/
 ||gtimg.com/qqlive/*
 ||btrace.video.qq.com
 @@||btrace.video.qq.com/kvcollect?*load*
 v.qq.com##.mod_ad
 v.qq.com##.player_bg_ad
-v.qq.com##._x_webtips_window_iframe
+v.qq.com##txpdiv[data-role="hd-ad-adapter-interactivelayer"]
 !---乐视
 !pv
 ||dc.letv.com^
@@ -1225,9 +1231,6 @@ pc6.com###gaosuxiazai
 ##A[href*=".qpzqxz.com"]
 !---飘荡软件
 ||piaodown.com/other/*
-!---zd423
-zdfans.com##.adsbygoogle
-zdfans.com##.widget_d_banner
 !---异次元
 ||bdx.playnext.cn^
 ||iplaysoft.com/tempads/
@@ -1244,12 +1247,14 @@ iplaysoft.com##.d250
 iplaysoft.com##div[style="margin:-10px 0 0 0;overflow:hidden"]
 iplaysoft.com##div[style^="margin-top:20px;padding:35px 0 20px 0;"]
 dl.iplaysoft.com##DIV[style^="width:250px;height:250px;"]
+!---心海e站(烈火)
+||hrtsea.com/*/Wondershare-Data-Recovery-Banner.jpg
 !---小众软件
 ||appinn.com/images/*.jpg|
 ||appinn.com/images/*.png|
-@@||appinn.com/images/*/thumbs/
+@@||appinn.com/images/*/down.png
 appinn.com##.adsbygoogle
-appinn.com###gfd
+appinn.com##.featured-section.clearfix
 !---精品绿色便携软件
 portablesoft.org##.adsbygoogle
 !---小俊博客
@@ -1290,6 +1295,9 @@ yunqi.qq.com##.topBanner
 !---派派前后院
 paipai.fm##a[href*="gamezixia.php?jump="]
 
+!----Speedtest
+||aaxads.com^$third-party
+||betrad.com^$third-party
 !---Gmail
 ||mail.google.com^*&view=ad&
 mail.google.com##.aKB
@@ -1357,6 +1365,7 @@ apkpure.com##.ad-right
 apkpure.com##div[style*="width:100%; height:250px;"]
 apkpure.com##.slide-wrap
 apkpure.com##.ad-right-600
+apkpure.com##.adsbypure
 !---apkmirror
 apkmirror.com##.gooWidget
 apkmirror.com##.amazon-ad
@@ -1397,6 +1406,15 @@ iciba.com###ezfm
 !---海词
 ||dict.dfile.cn/list/slots.php?callback*
 dict.cn###gadsv
+!---飞客茶馆
+||ptf.flyert.com/hot/
+flyertea.com##.forumlistad
+!移动版
+flyertea.com##[class=" "]
+!---我爱卡
+bbs.51credit.com###threadlisttableid>tbody:not([id])
+!移动版
+bbs.51credit.com##li[data-id]
 !---东方财富网
 ||same.eastmoney.com/s?*
 ||eastmoney.com/same/
