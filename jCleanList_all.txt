@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 9Hccd0L1R67prQWRZKd6rQ
-! Last modified: 08 Mar 2019 22:41 +0800
+! Checksum: 7qZXXu4zU2pQzebjpLVchA
+! Last modified: 10 Mar 2019 00:22 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -853,6 +853,9 @@ sukebei.nyaa.si##.servers-cost-money
 pixiv.net##.ads_area
 pixiv.net##.ads_anchor
 pixiv.net##.ad-footer
+!---KuKu动漫
+||kukudm.com/js/
+||kukudm.com/top.htm
 !---有妖气
 ||image.mylife.u17t.com^*.gif
 u17.com##div[id^="u17-advert"]
@@ -1369,6 +1372,8 @@ apkpure.com##.adsbypure
 !---apkmirror
 apkmirror.com##.gooWidget
 apkmirror.com##.amazon-ad
+!---猫途鹰
+www.tripadvisor.cn##.ad
 !---脚本之家
 ||jb51.net^$script,domain=~tools.jb51.net
 ||changyan.itc.cn$script,domain=jb51.net
