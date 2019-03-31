@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 7qZXXu4zU2pQzebjpLVchA
-! Last modified: 10 Mar 2019 00:22 +0800
+! Checksum: OJ/nqTiF0AxQc92CelTFAg
+! Last modified: 31 Mar 2019 23:09 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -547,23 +547,18 @@ www.sohu.com##div[class*="-news"] .list16:last-child li:last-child
 !新闻首页
 news.sohu.com##.god-wrapper
 !---凤凰网
-||ifeng.com/tres/recommend/*
+||deliver.ifeng.com^
 ||ifeng.com/a_if/
 ||ifeng.com/ssi-incs/
 ||ifengimg.com/ifeng/sources/
-||ifengimg.com/mappa/*
-||ifengimg.com/iis/iis_
-||ifengimg.com/a/2016/*600.
-||ifengimg.com/a/201*.swf
-ifeng.com##div[class^="ad"]
+||ifengimg.com/web/d/
+||ifengimg.com/iamsImg/
+||ifengimg.com/feather/
+ifeng.com##div[c]
+gentie.ifeng.com##[class^="ad_"]
 !pv
-||stadig.ifeng.com^
-||deliver.ifeng.com^
-||ifengimg.com^*/wrating.js
-||ifengimg.com^*/staytime*
-||ifengimg.com^*/sta_collection.
-!子页右侧栏
-ifeng.com##.label_3
+||stadig*.ifeng.com^
+||ifengimg.com^*/stat.pcifeng.js
 !---中关村
 ||p.zol-img.com.cn^
 ||pic.zol-img.com.cn^
@@ -854,8 +849,8 @@ pixiv.net##.ads_area
 pixiv.net##.ads_anchor
 pixiv.net##.ad-footer
 !---KuKu动漫
-||kukudm.com/js/
-||kukudm.com/top.htm
+||kukukkk.com/js/
+||kukukkk.com/top.htm
 !---有妖气
 ||image.mylife.u17t.com^*.gif
 u17.com##div[id^="u17-advert"]
@@ -988,8 +983,8 @@ t.qq.com###homeBannerNew
 !--百度云
 ||*monitor.jpg?xcode
 ||pan.baidu.com/api/analytics*
-!---迅雷快传
-||img.kuai.xunlei.com/js/statistics.js
+!---Lanzous
+lanzous.com##div[style*="height: 110px;width: 990px;"],div[style*="height: 225px;width: 300px"]
 !---城通网盘
 ||ctfile.com/iz.php?
 ||ctfile.com/popjump.php?$popup
@@ -1080,7 +1075,6 @@ v.qq.com###adPlayer
 ||g.163.com^
 ||v.163.com/swf/module/AdvManager*.swf
 !---凤凰网视频
-||ifengimg.com/md/*/v_responsive
 ||ifengimg.com*/rdn_*.js
 !---CNTV
 ||a.cntv.cn^
