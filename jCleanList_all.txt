@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: OJ/nqTiF0AxQc92CelTFAg
-! Last modified: 31 Mar 2019 23:09 +0800
+! Checksum: nBODXdL2TIc9/FOE9+N+7w
+! Last modified: 22 Apr 2019 00:30 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -637,7 +637,7 @@ club.kdslife.com###slideBox
 ||yesky.com/monitorjs/imp-
 !---cnBeta
 ||cnbetacdn.com/frontend/vipics/
-||taboola.com/libtrc/cnbeta*/loader.js
+||taboola.com.cn/libtrc/cnbeta*/loader.js
 cnbeta.com##.cnbeta-side-sponsor
 cnbeta.com##.adsbygoogle
 cnbeta.com##.cbv
@@ -1104,35 +1104,36 @@ bilibili.com###slide_ad
 acfun.cn##.ac-ad-img
 acfun.cn##.area-ad
 !---吐槽
-||tucao.tv/index.php?m=poster
-tucao.tv##.a2013d
+tucao.one##div[style="margin-top:20px;"]
+tucao.one##div[style^="margin-top:16px;overflow:hidden;"]
 !---斗鱼
 ||lxdns.com/html5/douyu.com
 ||v.smtcdns.net^$domain=douyu.com
 ||douyucdn.cn/nggsys/
 ||douyucdn.cn/resource/common/tongzhuo/game_info.json
-||yuba.douyu.com/iframe/group/
 douyu.com##.lol-ad
 douyu.com##.DropPane-ad
-douyu.com##.f-sign-cont
-douyu.com##.his-sign-cont
 douyu.com##.layout-Player-asideAdvert
 douyu.com##.peck-tips
 douyu.com###treasure
 douyu.com##.guess-user-reminding-out
+!我的关注
+douyu.com##.layout-Banner-item
+!手机绑定提示
+douyu.com##.BindPanels
+!直播间底部
+||yuba.douyu.com/iframe/group/
 douyu.com##.Bottom-ad
 douyu.com##.Bottom-advert
-douyu.com##.tab-content.Bottom-promote
 !---虎牙
 @@||msstatic.com/huya/*/login/yy/sdk_udb_ad*.js
 ||g.huya.com^
-!---熊猫TV
-panda.tv##.room-banner-images
-panda.tv##[class^="liveosTag_"]
-panda.tv##[class^="closeBtn_"]
 !---火猫
-@@||ad.qvb.qcloud.com^
-||aclog2.huomaotv.cn^
+||myqcloud.com^*/AdvSDK.js
+||abc.huomao.com^
+||aclog*.huomaotv.cn^
+!h5播放器右下角酷游电竞
+||sdkcdn.videojj.com^*_adstag_web_
 !---战旗
 ||zhanqi.tv/*/love-*
 !首页
