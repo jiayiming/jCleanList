@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: nBODXdL2TIc9/FOE9+N+7w
-! Last modified: 22 Apr 2019 00:30 +0800
+! Checksum: YsT9I+KRkKDFozOpMyShKw
+! Last modified: 18 May 2019 17:44 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -121,7 +121,7 @@ _yad_jsonp_
 ||u-x.jd.com/static/js/auto.js
 !---allyes
 ||allyes.*^$third-party
-!---others(no_video_ad)
+!---china ad
 ||033.com^$third-party
 ||1133.cc^$third-party
 ||114la.com^$third-party
@@ -216,6 +216,7 @@ _yad_jsonp_
 ||youle55.com^$third-party
 ||youxjia.com^$third-party
 ||yoyi.com.cn^$third-party
+||yzaosite.com^
 ||zedo.com^$third-party
 !---easy ad
 ||2xbpub.com^$third-party
@@ -233,12 +234,15 @@ _yad_jsonp_
 ||directrev.com^$popup,third-party
 ||earnify.com^$third-party
 ||exoclick.com^$third-party
+||infolinks.com^$third-party
+||megdexchange.com^$popup
 ||oclaserver.com^$third-party
 ||oclasrv.com^$third-party
 ||popads.net^$third-party
 ||popcash.net^$third-party
 ||proffigurufast.com^$third-party
 ||projectwonderful.com^$third-party
+||propellerclick.com^$third-party
 ||prscripts.com^$third-party
 ||revsci.net^$third-party
 ||static-cn.plista.com^
@@ -288,6 +292,7 @@ _yad_jsonp_
 !---tx
 /pingd?
 @@||pingjs.qq.com^$~third-party
+@@||tajs.qq.com/stats?$~third-party
 ||btrace.qq.com^
 ||gdt.qq.com^
 ||isdspeed.qq.com^
@@ -330,19 +335,20 @@ _yad_jsonp_
 ||wrating.com^$third-party
 !---Others(Foreign)
 ||analytics.slashdotmedia.com^
-||fls-na.amazon.com^
 ||criteo.net^$third-party
 ||crsspxl.com^$third-party
 ||demdex.net^$third-party
 ||exponential.com^$third-party
+||engine.addroplet.com^
+||fls-na.amazon.com^
 ||go-mpulse.net^$third-party
 ||gridsumdissector.com^$third-party
 ||histats.com^$third-party
 ||licdn.com/li.lms-analytics/
 ||insightexpressai.com^$third-party
 ||kontera.com/javascript/lib/KonaLibInline.js$third-party
-||newrelic.com^$third-party
 ||ml314.com^$third-party
+||newrelic.com^$third-party
 ||omtrdc.net^$third-party
 ||openx.net^$third-party
 ||quantserve.com^$third-party
@@ -417,9 +423,11 @@ tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="
 tieba.baidu.com###duoku_servers_list
 !tieba移动版
 ||bdstatic.com/*/fc-feed/
+||paimgcdn-feed.baidu.com^
 tieba.baidu.com##.appPromote
-tieba.baidu.com##li.tl_shadow[class$=" "]
+tieba.baidu.com##ul.threads_list>li[class]:not([data-tid])
 tieba.baidu.com##ul.list>li[class]:not(.post_list_item)
+tieba.baidu.com##.father-cut-recommend-normal-box
 !zhidao0|zhidao1|zhidao2
 ||bdstatic.com/*/iknow/qb/select-search.png
 ||iknowpc.bdimg.com/*/search-relate/*
@@ -748,16 +756,13 @@ bbs.mydigit.cn##.radio.mb10
 52pojie.cn##.a_pt
 52pojie.cn##.a_pb
 !---家电论坛
-||pic.jdunion.com/tianyi/*.swf
-jd-bbs.com##.wp[style="padding:10px; border:1px solid #9db3c5"]
 ||pic.jdbbs.com^
 ||pic.jd-bbs.com^
 ||att.jd-bbs.com/portal/$image
-jd-bbs.com##.wp.a_t
-jd-bbs.com##.wp.a_f
-jd-bbs.com##.bm.a_c
-!---iMP3随身影音论坛
-||imp3.net/data/js/$script
+jdbbs.com##.wp.a_f
+jdbbs.com##.bm.a_c
+jdbbs.com###sitefocus
+jdbbs.com##div[style$="margin:0 auto; width:1000px; height:100px;"]
 !---耳机大家坛
 ||61.164.108.184^*.gif
 @@||61.164.108.184/tb/*.gif
@@ -790,19 +795,32 @@ dzh.mop.com##.adarea_top
 !---动漫花园
 ||share.dmhy.org/*?$image
 @@||share.dmhy.org^*/generate-captcha?
-||weishengkj.cn^
 ||bebi.com^
 share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
 share.dmhy.org##div[id$="_ad"]
+!---末日动漫资源库
+||acgnx.se/images/cXG30.gif
+||acgnx.se/images/sW2sY.gif
+||acgnx.se/images/NKb92.gif
+||acgnx.se/images/Muz5IiK.png
+||acgnx.se/images/xAXI8.gif
+||acgnx.se/images/yAJh7.gif
+||analytics.acgnx.se^
+acgnx.se##div.banner
+acgnx.se##div.box[style="overflow:hidden;"]
+!---简单动漫
+||36dm.*/images/top
+||36dm.*/images/ny
+||36dm.*/images/tb
+||36dm.*/images/bd
+||36dm.*/images/l001
+||36dm.*/js/
+36dm.com##.main>.text_center
+36dm.com,36dm.club##div.box[style="overflow:hidden;"]
 !---ACG搜
 ||acgsou.com/js/
 ||acgsou.com/images/*.jpg
 ||acgsou.com/images/bdacg.gif
-||acgsou.com/qxads/
-||xavingtsun.com/kdksd/
-!---简单动漫
-||36dm.com/js/*
-||36dm.com/qxads/
 !---轻之国度
 lightnovel.cn###swRoller_1
 lightnovel.cn##.a_mu
@@ -1107,10 +1125,11 @@ acfun.cn##.area-ad
 tucao.one##div[style="margin-top:20px;"]
 tucao.one##div[style^="margin-top:16px;overflow:hidden;"]
 !---斗鱼
-||lxdns.com/html5/douyu.com
-||v.smtcdns.net^$domain=douyu.com
+||p2psdk.wscdns.com^
+||accelh5.p2p.8686c.com^
 ||douyucdn.cn/nggsys/
 ||douyucdn.cn/resource/common/tongzhuo/game_info.json
+||g.wan.douyu.com^
 douyu.com##.lol-ad
 douyu.com##.DropPane-ad
 douyu.com##.layout-Player-asideAdvert
@@ -1121,10 +1140,15 @@ douyu.com##.guess-user-reminding-out
 douyu.com##.layout-Banner-item
 !手机绑定提示
 douyu.com##.BindPanels
+!竞猜提示
+douyu.com##.guessIconReminding
 !直播间底部
-||yuba.douyu.com/iframe/group/
 douyu.com##.Bottom-ad
-douyu.com##.Bottom-advert
+!直播间底部鱼吧讨论
+||yuba.douyu.com/iframe/
+douyu.com##.Bottom-yubaIframe
+!直播间底部相关推荐->热门推广
+douyu.com##.Bottom-recommend>div:last-of-type
 !---虎牙
 @@||msstatic.com/huya/*/login/yy/sdk_udb_ad*.js
 ||g.huya.com^
@@ -1367,6 +1391,9 @@ apkpure.com##.adsbypure
 !---apkmirror
 apkmirror.com##.gooWidget
 apkmirror.com##.amazon-ad
+!---DeviantArt
+deviantart.com##.da-custom-ad-box
+deviantart.com##.ad-container
 !---猫途鹰
 www.tripadvisor.cn##.ad
 !---脚本之家
