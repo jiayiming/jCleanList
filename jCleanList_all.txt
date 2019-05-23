@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: YsT9I+KRkKDFozOpMyShKw
-! Last modified: 18 May 2019 17:44 +0800
+! Checksum: Jm4nCoklpMYo2/NFH8bA6w
+! Last modified: 24 May 2019 00:39 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -67,7 +67,6 @@ _300x250.
 @@||icbc.com.cn/*ad*
 !建行
 @@||ccb.com/cn/v3/js/adv.js
-@@||adv.ccb.com^
 @@||adv.ccb.com^
 !OneDrive
 @@||spoprod-a.akamaihd.net/files/onedrive-website-release-*ad*.js
@@ -534,7 +533,9 @@ youdao.com###topImgAd
 ||d3.sina.com.cn^
 ||d4.sina.com.cn^
 ||d5.sina.com.cn^
+||n.sinaimg.cn^*app$image
 ||sina.com.cn/litong/
+||sbeacon.sina.com.cn^
 sina.com.cn##.sinaads
 !首页顶部
 www.sina.com.cn##.top-ads
@@ -542,6 +543,11 @@ www.sina.com.cn##.top-ads
 sina.com.cn##.top-banner
 !体育首页
 sports.sina.com.cn###sinaadsbox
+!新浪财经外汇
+||n.sinaimg.cn/default/*forex
+||n.sinaimg.cn/finance/*waihui
+finance.sina.com.cn##.ibbank + .figures
+finance.sina.com.cn##[data-sudaclick*="ads_"]
 !---搜狐
 ||images.sohu.com/bill/
 ||go.sohu.com^
@@ -1062,16 +1068,14 @@ iqiyi.com##div[id^="100000000"]
 ||l.qq.com/livemsg?*
 ||l.qq.com/p?
 @@||qq.com/proxyhttp?
-.qq.com/*.mp4?*sdtfrom=&
-.qq.com/*.mp4?*sdtfrom=|
-||qq.com^*.ts?
-://apd-*.qq.com/
+||qq.com^*.ts?index=0
+||qq.com/flv/
+||vhotwsh.video.qq.com^
 ||gtimg.com/qqlive/*
-||btrace.video.qq.com
+||btrace.video.qq.com^
 @@||btrace.video.qq.com/kvcollect?*load*
 v.qq.com##.mod_ad
 v.qq.com##.player_bg_ad
-v.qq.com##txpdiv[data-role="hd-ad-adapter-interactivelayer"]
 !---乐视
 !pv
 ||dc.letv.com^
@@ -1430,9 +1434,6 @@ iciba.com##.head_ad
 ||popoi2.www.iciba.com/html/*
 !左侧漂浮
 iciba.com###ezfm
-!---海词
-||dict.dfile.cn/list/slots.php?callback*
-dict.cn###gadsv
 !---飞客茶馆
 ||ptf.flyert.com/hot/
 flyertea.com##.forumlistad
@@ -1444,4 +1445,4 @@ bbs.51credit.com###threadlisttableid>tbody:not([id])
 bbs.51credit.com##li[data-id]
 !---东方财富网
 ||same.eastmoney.com/s?*
-||eastmoney.com/same/
+||fundact.eastmoney.com/banner/
