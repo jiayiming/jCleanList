@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: C4PtEReLGD+JjRzseOoNgQ
-! Last modified: 12 Jun 2019 22:37 +0800
+! Checksum: 7CKRm6MdRIUnvc7HX8ro5Q
+! Last modified: 30 Jun 2019 01:08 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -70,6 +70,8 @@ _300x250.
 @@||adv.ccb.com^
 !OneDrive
 @@||spoprod-a.akamaihd.net/files/onedrive-website-release-*ad*.js
+!My Digital Life Forums
+@@||mydigitallife.net/css.php*ads
 !Others
 @@||10086.cn/cmpop/images/index/ad
 @@||adidas.*^
@@ -403,29 +405,27 @@ tieba.baidu.com##.pc2client
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 tieba.baidu.com##.firework-wrap
 !tieba0_帖子列表
-||tb1.bdstatic.com/tb/r/image/*
-!顶部游戏
+!顶部+背景游戏
 ||bdstatic.com/tb/cms/ngmis/*
-tieba.baidu.com##.game-head-game-info-wrapper
+||baidu.com/forum/pic/item/d40735fae6cd7b89a4a59262012442a7d8330e01.jpg
+tieba.baidu.com###plat_recom_carousel
+tieba.baidu.com##.j_couplet
+!PC端底部通栏弹层1000x120
+||bdstatic.com/tb/cms/*%e5%ba%95%e9%83%a8
 !列表内推广贴
 tieba.baidu.com##.j_thread_list:not([data-field])
 tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
 !侧边栏
-||bdstatic.com/tb/img/frs-aside/
 tieba.baidu.com##.app_download_box
-tieba.baidu.com##.nani_app_download_box
 tieba.baidu.com###pagelet_frs-aside\/pagelet\/ad
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
-||bdstatic.com/r/*/baidu_search/
 ||bdstatic.com/tb/static-pb/widget/baidusearch/
+tieba.baidu.com##.top_toutu_admarks
 !楼层商业推广
 ||fc-feed.cdn.bcebos.com^
 tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87\""]:not([data-field*="\"user_id\":1180601200,"])
 tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="\"user_id\":2"]):not([data-field*="\"user_id\":3"]):not([data-field*="\"user_id\":4"]):not([data-field*="\"user_id\":5"]):not([data-field*="\"user_id\":6"]):not([data-field*="\"user_id\":7"]):not([data-field*="\"user_id\":8"]):not([data-field*="\"user_id\":9"])
-!回复框右侧_duoku
-||tieba.baidu.com/game/duoku/*
-tieba.baidu.com###duoku_servers_list
 !tieba移动版
 ||bdstatic.com/*/fc-feed/
 ||paimgcdn-feed.baidu.com^
@@ -453,6 +453,8 @@ baike.baidu.com###bottom-promotion
 ||eduad.baidu.com^
 ||wenku.baidu.com/tongji/
 wenku.baidu.com##.banner-wrap
+!jingyan移动版
+jingyan.baidu.com##aside[class^="wgt-ad-"],.wgt-rel-exp,.exp-container>div:last-child
 !music
 ||music.baidu.com/static/html/cbjs.html*
 music.baidu.com##.adm
