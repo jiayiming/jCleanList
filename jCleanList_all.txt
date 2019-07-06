@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 7CKRm6MdRIUnvc7HX8ro5Q
-! Last modified: 30 Jun 2019 01:08 +0800
+! Checksum: Ed9pprEM8kit+m5tcBJa1g
+! Last modified: 06 Jul 2019 14:42 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -420,6 +420,7 @@ tieba.baidu.com##.app_download_box
 tieba.baidu.com###pagelet_frs-aside\/pagelet\/ad
 !tieba1_帖子
 ||tieba.baidu.com/f/urlcheck?*
+||bdstatic.com/r/www/cache/baidu_search/
 ||bdstatic.com/tb/static-pb/widget/baidusearch/
 tieba.baidu.com##.top_toutu_admarks
 !楼层商业推广
@@ -829,13 +830,12 @@ acgnx.se##div.banner
 acgnx.se##div.box[style="overflow:hidden;"]
 !---简单动漫
 ||36dm.*/images/top
-||36dm.*/images/ny
-||36dm.*/images/tb
 ||36dm.*/images/bd
-||36dm.*/images/l001
+||36dm.*/images/36
 ||36dm.*/js/
 36dm.com##.main>.text_center
 36dm.com,36dm.club##div.box[style="overflow:hidden;"]
+36dm.com,36dm.club##div[style="margin-bottom:10px;"]
 !---ACG搜
 ||acgsou.com/js/
 ||acgsou.com/images/*.jpg
@@ -898,13 +898,12 @@ u17.com##.ad_wrap
 imdb.com##.aux-content-widget-2
 @@||ssl-images-amazon.com/images/*/video/*/airy.ads.*.js
 !---人人影视(ZiMuZu)
-||zmzjstu.com/g3/ad-cp/
-||zmzjstu.com/g3/tool
-||91dict.com/dub_banner.jpg
-||xianliao.me^
-||lx167.com^
+||jstucdn.com/g3/
+||jstucdn.com/js/ad_
+||lx167.com^$third-party
+||nqtnu.cn/V.aspx?Bln=
 ||ousns.net^
-zmz003.com##.ad-box
+got001.com##.ad-box
 !---电影天堂
 ||dy2018.com/jsdd/
 ||dy2018.com/js17/pf.js
