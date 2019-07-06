@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: Ed9pprEM8kit+m5tcBJa1g
-! Last modified: 06 Jul 2019 14:42 +0800
+! Checksum: 1EnbKEPeUzP0emF5RtKwng
+! Last modified: 06 Jul 2019 14:45 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -390,9 +390,9 @@ www.baidu.com###\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"] > .c-abstract:
 ||baidu.com^*/w.gif?
 ||baidu.com^*/wb.gif?
 !搜索移动版
-www.baidu.com##.ec_wise_ad
-www.baidu.com##.se-tabitem
-www.baidu.com##.page-banner
+www.baidu.com,m.baidu.com##.ec_wise_ad
+www.baidu.com,m.baidu.com##.se-tabitem
+www.baidu.com,m.baidu.com##.page-banner
 !百科移动版
 www.baidu.com,baike.baidu.com,wapbaike.baidu.com##.qtqy-container,.relative-shop-flow,.relative-shop-flow+div,.BK-after-content-wrapper>ul
 !知道移动版
