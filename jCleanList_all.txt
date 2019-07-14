@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 1EnbKEPeUzP0emF5RtKwng
-! Last modified: 06 Jul 2019 14:45 +0800
+! Checksum: 8U9W5QnZOvZZHNiHONphcQ
+! Last modified: 14 Jul 2019 23:32 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -713,7 +713,7 @@ bbs.csdn.net##.post_recommend
 !---MIUI论坛
 miui.com##.app_download
 !---知乎
-||zhihu.com/api/*banners/
+||sugar.zhihu.com^
 ||zhihu-web-analytics.zhihu.com^
 !---V2EX
 ||v2ex.*/assets/sidebar/
@@ -1301,9 +1301,7 @@ dl.iplaysoft.com##DIV[style^="width:250px;height:250px;"]
 !---心海e站(烈火)
 ||hrtsea.com/*/Wondershare-Data-Recovery-Banner.jpg
 !---小众软件
-||appinn.com/images/*.jpg|
-||appinn.com/images/*.png|
-@@||appinn.com/images/*/down.png
+||appinn.net/images/*.jpg|
 appinn.com##.adsbygoogle
 appinn.com##.featured-section.clearfix
 !---精品绿色便携软件
@@ -1352,7 +1350,7 @@ paipai.fm##a[href*="gamezixia.php?jump="]
 !---Gmail
 ||mail.google.com^*&view=ad&
 mail.google.com##.aKB
-!---sourceforge
+!---SourceForge
 ||a.fsdn.com/*/bizx-prebid.js
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
@@ -1373,6 +1371,11 @@ forum.mobilism.org##.FIOnDemandWrapper
 ||techpowerup.com/njutrvceser/
 !侧栏
 techpowerup.com##figure.mnmuzjsddc
+!MORA
+||sonylabelgate.112.2o7.net^
+||point.widget.rakuten.co.jp^
+||facebook.com/plugins/like.php
+##.package_adBox
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
 !---天猫
