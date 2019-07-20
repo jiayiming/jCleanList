@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: ZSOtYhV/nNu6i77x2yn/lA
-! Last modified: 20 Jul 2019 16:55 +0800
+! Checksum: qQ6WEc5WAmsAHty4m5WOpA
+! Last modified: 20 Jul 2019 17:32 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -1349,7 +1349,6 @@ paipai.fm##a[href*="gamezixia.php?jump="]
 mail.google.com##.aKB
 !---SourceForge
 ||a.fsdn.com/*/bizx-prebid.js
-||a.fsdn.com/con/js/sftheme/cmp.js
 sourceforge.net###project-nel
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
