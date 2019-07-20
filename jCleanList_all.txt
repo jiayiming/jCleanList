@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 8U9W5QnZOvZZHNiHONphcQ
-! Last modified: 14 Jul 2019 23:32 +0800
+! Checksum: ZSOtYhV/nNu6i77x2yn/lA
+! Last modified: 20 Jul 2019 16:55 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -288,6 +288,7 @@ _yad_jsonp_
 ||pos.baidu.com^
 ||sp*.baidu.com^*.gif?
 ||push.zhanzhang.baidu.com^
+||baidu.com/x.js?
 !分享
 ||api.share.baidu.com
 ||bdimg.share.baidu.com/static/js/shell_v2.js?*
@@ -429,8 +430,10 @@ tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u
 tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="\"user_id\":2"]):not([data-field*="\"user_id\":3"]):not([data-field*="\"user_id\":4"]):not([data-field*="\"user_id\":5"]):not([data-field*="\"user_id\":6"]):not([data-field*="\"user_id\":7"]):not([data-field*="\"user_id\":8"]):not([data-field*="\"user_id\":9"])
 !tieba移动版
 ||bdstatic.com/*/fc-feed/
+||bdstatic.com/tb/mobile/sglobal/widget/app_wakeup_component/img/
 ||paimgcdn-feed.baidu.com^
-tieba.baidu.com##.appPromote
+tieba.baidu.com##.appPromote,.appBottomPromote
+tieba.baidu.com##.ui_image_header_bottom
 tieba.baidu.com##ul.threads_list>li[class]:not([data-tid])
 tieba.baidu.com##ul.list>li[class]:not(.post_list_item)
 tieba.baidu.com##.father-cut-recommend-normal-box
@@ -1060,35 +1063,29 @@ douploads.com##.adsbygoogle
 !------------------------------------
 !-----优酷+土豆共通
 ||atm.youku.com^
-@@||gm.mmstat.com/yt/youkuplayer.fdl.h5send
 !---优酷
-||cibntv.net/youku/*.mp4?
+||valipl.*cibntv.net^
+||pl-ali.youku.com^
 ||acs.youku.com
-@@acs.youku.com/h5/mtop.youku.live.
-||youku.com/cms/tool/pub/get_putdata.
+||cmstool.youku.com^
+||sealine.youku.com/yk/html?
 ||hudong.alicdn.com/api/data/v2/
 ||tip.soku.com/searches/*/sideads.json
 youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
 soku.com##div[id^="ab_"]
 !---爱奇异
-@@||qiyipic.com/image/*/ad/*.jpg
 ||cupid.iqiyi.com^
-@@||cupid.iqiyi.com/crossdomain.xml
-@@||cupid.iqiyi.com/show2?a=qc_
-!播放页
-||mixer.video.iqiyi.com/jp/mixin/resources/
-iqiyi.com##div[id^="100000000"]
-!pv
-||static.iqiyi.com/js/pingback/*
-||baidu.com/x.js?
+||iqiyi.com/js/player_v1/sdk/comscore.
+||qy.net/tmpstats.gif?
+iqiyi.com##div[id^="100000"]
 !---腾讯视频
 ||l.qq.com/livemsg?*
 ||l.qq.com/p?
 @@||qq.com/proxyhttp?
 ||qq.com^*.ts?index=0
 ||qq.com^*p201.1.mp4?
-/moviets.tc.qq.com/
+/moviets.tc.qq.com/*
 ||gtimg.com/qqlive/
 ||btrace.video.qq.com^
 @@||btrace.video.qq.com/kvcollect?*load*
@@ -1352,6 +1349,8 @@ paipai.fm##a[href*="gamezixia.php?jump="]
 mail.google.com##.aKB
 !---SourceForge
 ||a.fsdn.com/*/bizx-prebid.js
+||a.fsdn.com/con/js/sftheme/cmp.js
+sourceforge.net###project-nel
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
 !---HTML5test
