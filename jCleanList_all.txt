@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: qQ6WEc5WAmsAHty4m5WOpA
-! Last modified: 20 Jul 2019 17:32 +0800
+! Checksum: 8dmvVa7JPfOJRIJH6BmzQA
+! Last modified: 16 Aug 2019 23:58 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -336,6 +336,7 @@ _yad_jsonp_
 ||users.51.la^$third-party
 ||v2.jiathis.com^$third-party
 ||wrating.com^$third-party
+||xianliao.me^
 !---Others(Foreign)
 ||analytics.slashdotmedia.com^
 ||criteo.net^$third-party
@@ -423,7 +424,9 @@ tieba.baidu.com###pagelet_frs-aside\/pagelet\/ad
 ||tieba.baidu.com/f/urlcheck?*
 ||bdstatic.com/r/www/cache/baidu_search/
 ||bdstatic.com/tb/static-pb/widget/baidusearch/
+||aod-image-material.cdn.bcebos.com^
 tieba.baidu.com##.top_toutu_admarks
+tieba.baidu.com##.cps_wrap
 !楼层商业推广
 ||fc-feed.cdn.bcebos.com^
 tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87\""]:not([data-field*="\"user_id\":1180601200,"])
