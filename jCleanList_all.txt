@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: 8dmvVa7JPfOJRIJH6BmzQA
-! Last modified: 16 Aug 2019 23:58 +0800
+! Checksum: YNI6niocJHNrE3q2Qeg3TQ
+! Last modified: 19 Aug 2019 01:17 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -630,6 +630,8 @@ pcpop.com##.gg_list
 www.mydrivers.com##div[style*="width:1300px; height:90px;"]
 www.mydrivers.com##div[style^="width:1300px;height:90px;"]
 mydrivers.com##.duilian
+!3分钟警告
+mydrivers.com###a_showhotnews_list_dia
 !子页
 news.mydrivers.com##.adsbygoogle
 news.mydrivers.com##.baidu
@@ -911,15 +913,15 @@ imdb.com##.aux-content-widget-2
 ||ousns.net^
 got001.com##.ad-box
 !---电影天堂
+||dy2018.com/js17/
 ||dy2018.com/jsdd/
-||dy2018.com/js17/pf.js
 !---圣城
 ||cnscg.com/template/default/style/t6/*x*.png
 ||cnscg.com/template/default/style/t6/*.gif
 ||www.cnscg.com/template/default/style/t6/480x60_
 !---RARBT
-||sinaimg.cn^$image,domain=rarbt.com
-rarbt.com##.hd+div.cl[style]
+||sinaimg.cn^$image,domain=rarbt.cc
+rarbt.cc##.hd+div.cl[style]
 !---99mp4
 ||qiqivv.com^
 ||jianbaimei.com^
