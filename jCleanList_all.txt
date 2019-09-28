@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: H/2SRmLc6TjBiwOGNTZ8zw
-! Last modified: 24 Sep 2019 21:33 +0800
+! Checksum: w/noD6L3F0yAzcdjaP98BA
+! Last modified: 28 Sep 2019 17:57 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -268,6 +268,7 @@ _yad_jsonp_
 @@||img.linkstars.com/union/dp/count.js*
 /count.php?
 /tongji.js
+/trackad.
 /1.gif?
 /c.gif?
 /click.gif?
@@ -440,6 +441,7 @@ tieba.baidu.com##.j_l_post:not([data-field*="\"user_id\":1"]):not([data-field*="
 ||bdstatic.com/tb/mobile/sglobal/widget/app_wakeup_component/img/
 ||paimgcdn-feed.baidu.com^
 tieba.baidu.com##.appPromote,.appBottomPromote
+tieba.baidu.com##.tl_shadow_for_app
 tieba.baidu.com##.ui_image_header_bottom
 tieba.baidu.com##ul.threads_list>li[class]:not([data-tid])
 tieba.baidu.com##ul.list>li[class]:not(.post_list_item)
@@ -704,16 +706,15 @@ m.ithome.com##.lapin
 !论坛
 bbs.ithome.com##.bbs_login+div[style^="width:960px;height:60px"]
 !---CSDN
-www.csdn.net##.slide-outer.right_top
+||csdnimg.cn^*adb
+csdn.net##.banner-ad-box
+csdn.net##[id^="kp_box_"]
 !blog
-||csdnimg.cn/check-adblock/
-||csdnimg.cn/lib/fuckadblock/
 ||rabc1.iteye.com^
-blog.csdn.net##.fourth_column
-blog.csdn.net##.csdn-tracking-statistics[style="height:250px;"]
-blog.csdn.net##[id^="kp_box_"]
-!bbs
-bbs.csdn.net##.post_recommend
+||kunpeng-sc.csdnimg.cn/#/preview/
+||csdnimg.cn^*/trans/logger.js
+blog.csdn.net##.banner-ad-box
+blog.csdn.net##.csdn-tracking-statistics[data-pid]
 
 !---腾讯各类游戏论坛
 ||ossweb-img.qq.com^$domain=gamebbs.qq.com
