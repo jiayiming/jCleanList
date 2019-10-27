@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: w/noD6L3F0yAzcdjaP98BA
-! Last modified: 28 Sep 2019 17:57 +0800
+! Checksum: gc4STJag3Dvp8UD5j40TlQ
+! Last modified: 27 Oct 2019 17:53 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -57,10 +57,6 @@ _300x250.
 @@||map.bdstatic.com/*/pkg/initmap_ad*.js
 !淘宝/聚划算
 @@||g.alicdn.com^*/??*,*,*,
-!优酷
-!http://v.youku.com/v_show/id_XMTM0OTQ2NTA2MA==.html
-@@||k.youku.com/player/getFlvPath/sid/*ad*$object-subrequest
-@@|http://*/youku/*ad*.flv$object-subrequest
 !网易云
 @@||music.126.net/*/ad*.mp3$media
 !工行
@@ -79,11 +75,13 @@ _300x250.
 @@||ry.tbcdn.cn/apps/ivy/*
 
 !---通用广告联盟通用猜测
-|http://*/i.js
+|http://*/i.js$script,third-party
 ||union.$third-party
-|http://*.com/s.php?id=$script,third-party
 |http://*icast*
-/duilian.
+.php?zoneid=
+/V.aspx?Bln=$script,third-party
+/v.php?z=$script,third-party
+/s.php?id=$script,third-party
 !---google
 */pagead/*
 */gampad/*
@@ -1077,13 +1075,9 @@ douploads.com##.adsbygoogle
 !-----优酷+土豆共通
 ||atm.youku.com^
 !---优酷
-||valipl.*cibntv.net^
-||pl-ali.youku.com^
+||vali*.cibntv.net^*.mp4?$media
 ||acs.youku.com
-||cmstool.youku.com^
-||sealine.youku.com/yk/html?
-||hudong.alicdn.com/api/data/v2/
-||tip.soku.com/searches/*/sideads.json
+||cmstool.youku.com/cms/tool/pub/get_putdata.json
 youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
 soku.com##div[id^="ab_"]
