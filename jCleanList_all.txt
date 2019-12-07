@@ -1,7 +1,7 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: gc4STJag3Dvp8UD5j40TlQ
-! Last modified: 27 Oct 2019 17:53 +0800
+! Checksum: vcqCQp+nC6Sk8eiHOT1rEQ
+! Last modified: 08 Dec 2019 01:02 +0800
 ! Expires: 2 days (update frequency)
 ! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
@@ -331,6 +331,7 @@ _yad_jsonp_
 ||linezing.com^$third-party
 ||log.outbrain.com^
 ||mmstat.com^$third-party
+@@||mmstat.com/eg.js$domain=taobao.com|tmall.com|tudou.com|youku.com
 ||msg.71.am^
 ||users.51.la^$third-party
 ||v2.jiathis.com^$third-party
@@ -1076,7 +1077,6 @@ douploads.com##.adsbygoogle
 ||atm.youku.com^
 !---优酷
 ||vali*.cibntv.net^*.mp4?$media
-||acs.youku.com
 ||cmstool.youku.com/cms/tool/pub/get_putdata.json
 youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
