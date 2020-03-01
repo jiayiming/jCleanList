@@ -921,9 +921,12 @@ imdb.com##.aux-content-widget-2
 !---人人影视(ZiMuZu)
 ||jstucdn.com/g3/
 ||jstucdn.com/js/ad_
+||chat.rrys2019.com^
 ||lx167.com^$third-party
-||nqtnu.cn/V.aspx?Bln=
 ||ousns.net^
+||quandangdang.net^
+||iyoowi.com^
+rrys2019.com##.chat-enterbox
 got001.com##.ad-box
 !---电影天堂
 ||dy2018.com/js
