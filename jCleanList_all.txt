@@ -1,15 +1,12 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Checksum: vcqCQp+nC6Sk8eiHOT1rEQ
 ! Last modified: 08 Dec 2019 01:02 +0800
 ! Expires: 2 days (update frequency)
-! Coding: utf-8
 ! Homepage: https://github.com/jiayiming/jCleanList
 ! https://github.com/jiayiming/jCleanList/raw/master/jCleanList_all.txt
-!----Sina/TX @小蛐蛐
-!----MIT Licensed, NO WARRANTY but Best Wishes----
+!----Sina @小蛐蛐
 
-!---通用广告猜测
+!---------通用猜测---------
 /[\/_\.\?\&\-]ad[sv]?\d*[\/_\.\-]/
 /[^a-z\d%]ad[sv]?(?:click|show|file|js|id|text|view|image|img|img|flash|top|frame|page|client|service|detail|sponsor)/
 ://ads.
@@ -37,17 +34,21 @@
 /tanchuang.
 /float.js
 /960x90_
+-728x90.
 _728x90.
+728x90.jpg|
 /300x250_
+-300x250.
 _300x250.
-!---白名单区域
-!duowan|dianping|https://plus.jd.com/index
+!---------白名单---------
+!JS:dianping|https://plus.jd.com/index
 @@|http://*ad*,*.js
 @@|https://*ad*,*.js
-@@|http://*/*_ad*.$stylesheet
-@@|https://*/*_ad*.$stylesheet
-!https://www.microsoft.com/zh-cn/download/details.aspx?id=26368
-@@|https://*/*-ad*$stylesheet
+!CSS
+@@|https://*ad$stylesheet
+!OneDrive
+@@||akamaihd.net/files/onedrive-website-release-*ad*.js
+!QQ
 @@||qq.com^*ADTAG=*
 @@||ossweb-img.qq.com/images/clientpop/idata_ad/*
 @@||wx.qq.com^*/index_ad
@@ -64,8 +65,6 @@ _300x250.
 !建行
 @@||ccb.com/cn/v3/js/adv.js
 @@||adv.ccb.com^
-!OneDrive
-@@||spoprod-a.akamaihd.net/files/onedrive-website-release-*ad*.js
 !My Digital Life Forums
 @@||mydigitallife.net/css.php*ads
 !Others
@@ -73,7 +72,7 @@ _300x250.
 @@||adidas.*^
 @@||srcb.com/*/advert/
 @@||ry.tbcdn.cn/apps/ivy/*
-
+!---------新广告联盟---------
 !---通用广告联盟通用猜测
 |http://*/i.js$script,third-party
 ||union.$third-party
@@ -135,6 +134,8 @@ _yad_jsonp_
 ||6dad.com^$third-party
 ||6dvip.com^
 ||70e.com^$third-party
+||71xe.com/script/
+||71xe.com/script1/
 ||778669.com^$third-party
 ||77power.com^
 ||7k7k.com^$third-party,popup
@@ -208,6 +209,7 @@ _yad_jsonp_
 ||unionsky2.cn^$third-party
 ||whytoss.com^
 ||woniu666.com^$third-party
+||x-ssp.com^$third-party
 ||xcy8.com^
 ||xp3366.com^$third-party
 ||xsu.cc^$third-party
@@ -220,6 +222,8 @@ _yad_jsonp_
 ||zedo.com^$third-party
 !---easy ad
 ||2xbpub.com^$third-party
+||4dsply.com^$3p
+||adapex.io^$3p
 ||adcash.com^$third-party
 ||addelive.com^$third-party
 ||adnetworkperformance.com^$third-party
@@ -234,10 +238,14 @@ _yad_jsonp_
 ||directrev.com^$popup,third-party
 ||earnify.com^$third-party
 ||exoclick.com^$third-party
-||infolinks.com^$third-party
+||infolinks.com^
+||lkqd.net^$3p
+||media.net^
 ||megdexchange.com^$popup
+||modulepush.com^$3p
 ||oclaserver.com^$third-party
 ||oclasrv.com^$third-party
+||pagiwp.com^
 ||popads.net^$third-party
 ||popcash.net^$third-party
 ||proffigurufast.com^$third-party
@@ -247,8 +255,9 @@ _yad_jsonp_
 ||revsci.net^$third-party
 ||static-cn.plista.com^
 ||tbjfw.com^$third-party
+||wpu.sh^$3p
 ||wsockd.com^$third-party
-
+!---------新统计分析---------
 !---通用统计分析站点猜测
 |http://*/tj.js
 |https://*/tj.js
@@ -273,6 +282,7 @@ _yad_jsonp_
 /track.gif?
 /v.gif?
 /__utm.gif
+/trans/logger.js
 !---google
 ||google-analytics.com^$third-party
 ||googletagmanager.com/gtm.js
@@ -313,6 +323,7 @@ _yad_jsonp_
 ||itc.cn/pv/
 !---360
 ||s.360.cn^
+||jspassport.ssl.qhimg.com^
 !---xunlei
 ||analytics-union.xunlei.com^
 !---Others(China)
@@ -373,7 +384,7 @@ _yad_jsonp_
 ||platform.twitter.com/widgets.js$third-party
 ||connect.facebook.net/en_US/fbevents.js$third-party
 ||facebook.com/v*/plugins/page.php$third-party
-
+!---------门户/新闻/综合---------
 !---Google
 www.google.com.hk,www.google.com,encrypted.google.com###tads,#bottomads
 www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
@@ -629,23 +640,18 @@ www.pcpop.com##[id^="ad_"]
 !新闻页顶部横幅
 pcpop.com##.gg_list
 !---驱动之家
-||icons.mydrivers.com/news/2018/
-@@||icons.mydrivers.com/news/2018/load.gif
-||taboola.com/libtrc/mydrivers-desktop/
-www.mydrivers.com##div[style*="width:1300px; height:90px;"]
-www.mydrivers.com##div[style^="width:1300px;height:90px;"]
-mydrivers.com##.duilian
+||icons.mydrivers.com/2018/news/*_*_$image
+||icons.mydrivers.com/2018/www/*_90$image
+||drivers.mydrivers.com/images/icon/a_d_img.jpg
+www.mydrivers.com##div[style^="width:1300px;"][style*="height:90px;"]
 !3分钟警告
 mydrivers.com###a_showhotnews_list_dia
 !子页
-news.mydrivers.com##.adsbygoogle
+mydrivers.com##.adsbygoogle
 news.mydrivers.com##.baidu
-news.mydrivers.com##.ad_warp
-news.mydrivers.com##.news_info>div[style^="width:728px; height:"]
-news.mydrivers.com##div[style$="margin:auto; padding-top:5px;"]
-!驱动子页
-||mydrivers.com/inc/*.js
-drivers.mydrivers.com##.baidu_box
+news.mydrivers.com##div[style^="width:728px; height:90px;"]
+news.mydrivers.com##table[width="1000"][height="90"]
+drivers.mydrivers.com##div[style^="width:998px; height:90px;"]
 !---太平洋电脑网
 /adpuba/*
 ||ivy.pconline.com.cn^
@@ -714,7 +720,7 @@ csdn.net##[id^="kp_box_"]
 ||csdnimg.cn^*/trans/logger.js
 blog.csdn.net##.banner-ad-box
 blog.csdn.net##.csdn-tracking-statistics[data-pid]
-
+!---------论坛/社区/游戏---------
 !---腾讯各类游戏论坛
 ||ossweb-img.qq.com^$domain=gamebbs.qq.com
 !--Discuz
@@ -788,8 +794,6 @@ bbs.wuyou.net##.a_t
 ||img.mydigit.net/advpic/*
 bbs.mydigit.cn##.radio.mb10
 !---52pojie
-52pojie.cn##.a_pt
-52pojie.cn##.a_pb
 !---家电论坛
 ||pic.jdbbs.com^
 ||pic.jd-bbs.com^
@@ -826,7 +830,7 @@ mop.com##[class^="adP"]
 !大杂烩
 dzh.mop.com##.adarea
 dzh.mop.com##.adarea_top
-
+!---------动漫/影音/字幕---------
 !---动漫花园
 ||share.dmhy.org/*?$image
 @@||share.dmhy.org^*/generate-captcha?
@@ -840,6 +844,7 @@ share.dmhy.org##div[id$="_ad"]
 ||acgnx.se/images/Muz5IiK.png
 ||acgnx.se/images/xAXI8.gif
 ||acgnx.se/images/yAJh7.gif
+||acgnx.se/images/*A$match-case
 ||analytics.acgnx.se^
 acgnx.se##div.banner
 acgnx.se##div.box[style="overflow:hidden;"]
@@ -873,19 +878,20 @@ bbs.9baka.com###top80
 !帖子空白
 bbs.9baka.com##td[width="680"][height="50"]
 !---天使动漫
-tsdm.love##.a_c
-tsdm.love##.a_pt
-tsdm.love##.a_pb
-tsdm.love###separatorline+tbody:not([class])
-tsdm.love###pgt+div:not([id])
+||aqours.love/img01/MP3/
+tsdm.live##.a_c
+tsdm.live##.a_pt
+tsdm.live##.a_pb
+tsdm.live###separatorline+tbody:not([class])
+tsdm.live###pgt+div:not([id])
 !右侧漂浮资讯
-tsdm.love###ts_sidebar_base
+tsdm.live###ts_sidebar_base
 !屏蔽微博
-||tsdm.love/weibo.html
+||tsdm.live/weibo.html
 !签到弹窗
-||*.com^$popup,domain=tsdm.love
-||*.net^$popup,domain=tsdm.love
-@@||baidu.com^$popup,domain=tsdm.love
+||*.com^$popup,domain=tsdm.live
+||*.net^$popup,domain=tsdm.live
+@@||baidu.com^$popup,domain=tsdm.live
 !---78动漫论坛
 78dm.net##.adv
 bbs.78dm.net##.a_mu
@@ -920,24 +926,10 @@ imdb.com##.aux-content-widget-2
 ||ousns.net^
 got001.com##.ad-box
 !---电影天堂
-||dy2018.com/js17/
-||dy2018.com/jsdd/
-!---圣城
-||cnscg.com/template/default/style/t6/*x*.png
-||cnscg.com/template/default/style/t6/*.gif
-||www.cnscg.com/template/default/style/t6/480x60_
-!---RARBT
-||sinaimg.cn^$image,domain=rarbt.cc
-rarbt.cc##.hd+div.cl[style]
-!---99mp4
-||qiqivv.com^
-||jianbaimei.com^
-||x-ssp.com^
-!---PT80
-||fj.pt80.net^
+||dy2018.com/js
 !---杂碎后院
 ||zasv.net/daxiang.png
-
+!---------游戏---------
 !---游侠网
 ||pbmp.ali213.net/js/
 /ali213-kx-function.js
@@ -977,20 +969,6 @@ www.17173.com##.ad17173Corner1
 ||17173.com/ping.js
 !论坛帖子
 bbs.17173.com##.first-post-ad
-!---多玩
-||gt.duowan.com^
-||da.duowan.com/loc/
-||market.duowan.com^
-||pub.dwstatic.com/common/js/yastat.js
-!右下角迷你漂浮
-||pub.dwstatic.com/common/newsPopup/newsPopup.js
-!论坛
-||game.yy.com/resource/fodder/$domain=bbs.duowan.com
-!多玩乐视视频
-lol.duowan.com##.full-banner
-||dwstatic.com^*/p/livetip/
-||untitled.dwstatic.com^
-||vupload.duowan.com^
 !---178
 ||178.com/glr.js
 ||atcount.178.com^
@@ -1000,6 +978,8 @@ lol.duowan.com##.full-banner
 ||anquan.org/static/outer/js/aq_auth.js
 !移动版
 bbs.nga.cn##div[style$="width: 100%; line-height: 3em; text-align: center; z-index: 6;"]
+!---Stage1st
+saraba1st.com##.adsbygoogle
 !---游久网
 ||gg.uuu9.com^
 uuu9.com###top
@@ -1020,7 +1000,7 @@ yzz.cn##.ad200x340
 ||7477.com/adiframe/
 ||pp8.com^$third-party
 yxdown.com###tl_adv
-
+!---------微薄/SNS/网盘---------
 !---新浪微薄
 ||biz.weibo.com^
 ||sinajs.cn/t6/home/js/pl/guide/adforfqy/
@@ -1040,8 +1020,11 @@ t.qq.com###homeBannerNew
 !--百度云
 ||*monitor.jpg?xcode
 ||pan.baidu.com/api/analytics*
+pan.baidu.com##.ad-platform-tips
 !---Lanzous
 lanzous.com##div[style*="height: 110px;width: 990px;"],div[style*="height: 225px;width: 300px"]
+!---迅雷快传
+||img.kuai.xunlei.com/js/statistics.js
 !---城通网盘
 ||ctfile.com/iz.php?
 ||ctfile.com/popjump.php?$popup
@@ -1067,47 +1050,51 @@ douploads.com##.adsbygoogle
 ||imgur.com^$image,domain=uploadocean.com
 !---UsersCloud
 ||puhtml.com^$third-party
-
+!---------在线视频/直播---------
 !---视频全局
 ||irs01.*^
 ||acs86.com^
 ||mediav.com^
 !------------------------------------
-!-----优酷+土豆共通
+!-----优酷土豆
+!@@||mmstat.com/$domain=v.youku.com|tudou.com
 ||atm.youku.com^
-!---优酷
-||vali*.cibntv.net^*.mp4?$media
+||cibntv.net/youku/$media
+||valipl.cp31.ott.cibntv.net/$media
+v.youku.com##+js(nano-stb, , ,0.02)
 ||cmstool.youku.com/cms/tool/pub/get_putdata.json
+*/ikuAdapterNew.js^$script,domain=youku.com|tudou.com
+v.youku.com##.control-phonewatch
 youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
 soku.com##div[id^="ab_"]
 !---爱奇异
-||cupid.iqiyi.com^
-||iqiyi.com/js/player_v1/sdk/comscore.
-||qy.net/tmpstats.gif?
-iqiyi.com##div[id^="100000"]
+||t7z.cupid.iqiyi.com^
+||static.iqiyi.com/js/common/mars_v.js
+iqiyi.com##+js(aopr, DOMParser)
+iqiyi.com##.skin_focus,.skin_focus+[id^="10000000"]
 !---腾讯视频
 ||l.qq.com/livemsg?*
 ||l.qq.com/p?
 @@||qq.com/proxyhttp?
-||qq.com^*.ts?index=0
-||qq.com^*p201.1.mp4?
-/moviets.tc.qq.com/*
+!||qq.com^*.ts?index=0
+!||qq.com^*p201.1.mp4?
+||qq.com/*.mp4?$media,redirect=noopmp3-0.1s,domain=v.qq.com
+!v.qq.com##+js(nano-sib.js, \u5012\u8ba1\u65f6, 1000, 0)
+v.qq.com##+js(json-prune, ad, vinfo)
 ||gtimg.com/qqlive/
 ||btrace.video.qq.com^
 @@||btrace.video.qq.com/kvcollect?*load*
 v.qq.com##.mod_ad
 v.qq.com##.player_bg_ad
-!---乐视
-||dc.letv.com^
 !---搜狐视频
 ||images.sohu.com/ytv/
-||v.aty.sohu.com^
+||aty.sohu.com^
+tv.sohu.com##.hd-hotWord
 !pv
-||sohu.com/ctr.gif?
 ||click.hd.sohu.com.cn^
+||ctr.hd.sohu.com^
 ||tv.sohu.com/upload/trace/
-||v.blog.sohu.com/dostat.do?
 ||js.tv.itc.cn/hdpv.js
 !---新浪视频
 ||pfp.sina.com.cn^
@@ -1127,21 +1114,22 @@ cntv.cn##[id^="div-gpt-ad-"]
 @@||web-play.pptv.com^
 ||asimgs.pplive.cn
 pptv.com##[id^="afp_"]
+!---乐视
+||dc.letv.com^
 !---56.com
 ||acs.56.com
 ||56img.com/script/fn/stat/
-!---嗶哩嗶哩
+!---哔哩哔哩
 @@||hdslb.com/*/ad*.jpg
 ||hdslb.com/bfs/$object-subrequest
-||bilibili.com/x/web-show/res/loc?*&aid=
-||bilibili.com/x/web-show/res/loc?pf=0&id=160
+||hdslb.com/bfs/sycp/creative_img/
 ||data.bilibili.com/v/web/web_page_view?*
 ||hdslb.com/bfs/seed/log/report/
-bilibili.com##.online + .adpos
 bilibili.com##.gg-floor-module
 bilibili.com###slide_ad
 !---AcFun
 ||aixifan.com^*/sensorsdata
+||aixifan.com/static/*/appGuide/
 ||tongji.aixifan.com^
 ||imgs.aixifan.com/cms/$object-subrequest
 acfun.cn##.ac-ad-img
@@ -1150,10 +1138,8 @@ acfun.cn##.area-ad
 tucao.one##div[style="margin-top:20px;"]
 tucao.one##div[style^="margin-top:16px;overflow:hidden;"]
 !---斗鱼
-||p2psdk.wscdns.com^
-||accelh5.p2p.8686c.com^
+@@||shark2.douyucdn.cn/front-publish/live-master/js/room/playerAside
 ||douyucdn.cn/nggsys/
-||douyucdn.cn/resource/common/tongzhuo/game_info.json
 ||g.wan.douyu.com^
 douyu.com##.lol-ad
 douyu.com##.DropPane-ad
@@ -1230,7 +1216,7 @@ v.17173.com##.side-ad
 !---华数TV广电宽屏
 ||delivery.wasu.cn^
 wasu.cn##div[class^="play_ads"]
-
+!---------下载/软件/小说---------
 !---迅雷看看
 ||biz*.sandai.net^
 ||biz*.kankan.com^
@@ -1247,36 +1233,25 @@ onlinedown.net##.downDz>h4:first-child
 soft.hao123.com##.rank-main
 !---绿色下载站
 downg.com##.nav-breadcrumb+.cols2>.col1
+downg.com##.down_btn_right,.tit-d:first-child,.download-list:first-child
 !---非凡软件站
 ||a1.zhanzhang.net^
-||crsky.com/tjs/count/*
-||crsky.com/js/soft2.js
-crsky.com##.bdleft_down
-crsky.com##.w300ans
-crsky.com###recommend-useful
-crsky.com###recommend-original
-crsky.com##.downWarp
-crsky.com##.mirror-special
-crsky.com##.yelldown
+crsky.com##.i_dwon
+crsky.com##.Adown_dli
+crsky.com##.Imdown
 !---绿色软件联盟
 ||xdowns.com/ggco.js
 ||xdowns.com/info.js
 ||xdowns.com/js/lefttuijian.js
 !---下载吧
-||www.xiazaiba.com/data/xzb_haha.js
-||83133.com/api/
-xiazaiba.com##.test-90
-xiazaiba.com##.test-300
-xiazaiba.com##.dl-item:first-child
+||xiazaiba.com/data/xzb_haha.js
+xiazaiba.com##[class^="adv-"]
 !---汉化新世纪
 ||hanzify.org/Main/Template/Images/ak47/*
 hanzify.org##.banner-leader-index
 hanzify.org##.section-title>span[style*="float:right;"]
 hanzify.org##.categorypickdown
 !---pc6下载站
-||pc6.com/img/
-||pc6.com/js/jf/
-pc6.com##dl.content-box + div[style]
 pc6.com##.ad2
 pc6.com##.ad-download
 !屏蔽高速下载广告
@@ -1305,17 +1280,17 @@ iplaysoft.com##div[style="margin:-10px 0 0 0;overflow:hidden"]
 iplaysoft.com##div[style^="margin-top:20px;padding:35px 0 20px 0;"]
 dl.iplaysoft.com##DIV[style^="width:250px;height:250px;"]
 !---心海e站(烈火)
-||hrtsea.com/*/Wondershare-Data-Recovery-Banner.jpg
+hrtsea.com##.asb
 !---小众软件
 ||appinn.net/images/*.jpg|
 appinn.com##.adsbygoogle
 appinn.com##.featured-section.clearfix
 !---精品绿色便携软件
 portablesoft.org##.adsbygoogle
+!---423down
+423down.com##.adsbygoogle
 !---小俊博客
 ||xiaojun911.com/d/js/acmsd/
-!---TTrar天天资讯
-||ttrar.com/js/
 !---晋江言情小说网
 !首页顶部
 jjwxc.net##table[style*="width:984px;height:92px;"]
@@ -1349,7 +1324,7 @@ book.qidian.com##.right-op-wrap
 yunqi.qq.com##.topBanner
 !---派派前后院
 paipai.fm##a[href*="gamezixia.php?jump="]
-
+!---------其他---------
 !----Speedtest
 ||aaxads.com^$third-party
 ||betrad.com^$third-party
@@ -1388,7 +1363,7 @@ techpowerup.com##figure.mnmuzjsddc
 !---天猫
 !去访问验证
 detail.tmall.com##.sufei-tb-dialog.sufei-tb-overlay
-!---京东商城
+!---京东
 ||nfa.jd.com^
 !屏蔽搜索热词
 ||f.3.cn/recommend/hotwords/
@@ -1398,7 +1373,7 @@ m.jd.com###m_common_tip
 m.jd.com###pannelSeat
 pro.m.jd.com##[id^="content_"]
 !---当当网
-!pv
+||dangdang.com/adall.
 ||click.dangdang.com/js_tracker.js
 !---什么值得买
 ||zdmimg.com/www/delivery/*
@@ -1410,23 +1385,23 @@ smzdm.com##.side-stuff
 !---玩家堂
 ||itocp.com/html/gk/*
 !---超能网
+||img.expreview.com/mama/
 expreview.com##.banner
 !---充电头
-www.chongdiantou.com##.asb
+chongdiantou.com##.nice-sales
 !---手机乐园
-||css.shouji.com.cn/script/*$subdocument
-||shouji.com.cn/tg/market_73090.gif
+||shouji.com.cn/static/v1/js/qrcode.js
+!---智能电视网ZNDS
+||zndsssp.dangbei.net^$image
+znds.com###cpzs
+znds.com###sitefocus
+down.znds.com##.container[style="height:62px;"]
 !---apkpure
 ||a.apkpure.com^
-||dealspure.com/images/promotion/
-||vk.com^$third-party
-apkpure.com##.ad-left
-apkpure.com##.ad-left+div+div[style]
-apkpure.com##.ad-right
-apkpure.com##div[style*="width:100%; height:250px;"]
-apkpure.com##.slide-wrap
-apkpure.com##.ad-right-600
+apkpure.com##[class^="ad-"]
 apkpure.com##.adsbypure
+apkpure.com##.left>.box[style]
+apkpure.com##.slide-wrap
 !---apkmirror
 apkmirror.com##.gooWidget
 apkmirror.com##.amazon-ad
@@ -1445,6 +1420,7 @@ docin.com###docindex_ad
 !--AccuWeather
 ||ooyala.com/static/v4/production/latest/analytics-plugin/
 ||e0mn.com/v4/
+||lijit.com/beacon
 accuweather.com###header-davek
 accuweather.com###aadTop300
 accuweather.com##.sidebar-telmet-promo
@@ -1460,8 +1436,12 @@ weather.com.cn##.tong
 weather.com.cn##.ad4
 !旧版
 weather.com.cn##.post_st
+!---站长之家
+||chinaz.com/gj_g/
 !---纯真
 ||uniondm.cz88.net^
+!---IP.cn
+||s.ip-cdn.com/img/*.jpg
 !---爱词霸
 iciba.com##.head_ad
 !右侧边栏
@@ -1473,11 +1453,14 @@ iciba.com###ezfm
 ||ptf.flyert.com/hot/
 flyertea.com##.forumlistad
 !移动版
-flyertea.com##[class=" "]
+flyertea.com##div[class=" "]
 !---我爱卡
 bbs.51credit.com###threadlisttableid>tbody:not([id])
 !移动版
 bbs.51credit.com##li[data-id]
 !---东方财富网
-||same.eastmoney.com/s?*
-||fundact.eastmoney.com/banner/
+||same.eastmoney.com^
+||eastmoney.com/banner/
+||dfcfw.com/emfloatframe/
+||eastmoney.com/analysis/
+||bdwblog.eastmoney.com^
