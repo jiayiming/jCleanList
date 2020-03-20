@@ -230,6 +230,7 @@ _yad_jsonp_
 ||adnium.com^$third-party
 ||adnxs.com^$third-party
 ||amazon-adsystem.com^$third-party
+||adroll.com^$third-party
 ||buysellads.com^$third-party
 ||carambo.la^$third-party
 ||clkrev.com^
@@ -349,6 +350,7 @@ _yad_jsonp_
 ||wrating.com^$third-party
 ||xianliao.me^
 !---Others(Foreign)
+||alexametrics.com^
 ||analytics.slashdotmedia.com^
 ||criteo.net^$third-party
 ||crsspxl.com^$third-party
@@ -415,6 +417,8 @@ www.baidu.com,baike.baidu.com,wapbaike.baidu.com##.qtqy-container,.relative-shop
 !知道移动版
 www.baidu.com,zhidao.baidu.com##.icon-bannerad,[class$="ecom-ads"],.wgt-related-questions-new,.feed-recommend
 !tieba_All
+||tb1.bdstatic.com/??/tb/_/game_iframe_common_$script,important
+||tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script,important
 !i贴吧
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
@@ -422,11 +426,6 @@ tieba.baidu.com##.pc2client
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 tieba.baidu.com##.firework-wrap
 !tieba0_帖子列表
-!顶部+背景游戏
-||bdstatic.com/tb/cms/ngmis/*
-||baidu.com/forum/pic/item/d40735fae6cd7b89a4a59262012442a7d8330e01.jpg
-tieba.baidu.com###plat_recom_carousel
-tieba.baidu.com##.j_couplet
 !PC端底部通栏弹层1000x120
 ||bdstatic.com/tb/cms/*%e5%ba%95%e9%83%a8
 !列表内推广贴
@@ -440,8 +439,6 @@ tieba.baidu.com###pagelet_frs-aside\/pagelet\/ad
 ||bdstatic.com/r/www/cache/baidu_search/
 ||bdstatic.com/tb/static-pb/widget/baidusearch/
 ||aod-image-material.cdn.bcebos.com^
-tieba.baidu.com##.top_toutu_admarks
-tieba.baidu.com##.cps_wrap
 !楼层商业推广
 ||fc-feed.cdn.bcebos.com^
 tieba.baidu.com##.j_l_post[data-field*="\"user_name\":\"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87\""]:not([data-field*="\"user_id\":1180601200,"])
@@ -739,8 +736,8 @@ miui.com##.app_download
 !---V2EX
 ||v2ex.*/assets/sidebar/
 v2ex.com##.adsbygoogle
-v2ex.com##.sidebar_units
-v2ex.com##.sidebar_compliance
+v2ex.com##.box:has(>.inner[align]>a[href*="aliyun"])
+v2ex.com##.box:has(>.inner>.sidebar_units)1
 !---卡饭论坛
 !官网首页
 kafan.cn##.comeing_show_box
@@ -751,38 +748,22 @@ bbs.vc52.cn##.a_mu
 bbs.vc52.cn##.a_pt
 bbs.vc52.cn##.a_pb
 !---远景论坛
-||bbs.pcbeta.com/static/image/microsoftstore/*x*.jpg
+bbs.pcbeta.com###wp>div[style]+style+div:style(height: 267px !important)
 bbs.pcbeta.com##.forum_top + div + div[class]
 bbs.pcbeta.com###diynavtop + style + div[class]
-bbs.pcbeta.com##div[style*="width:960px;height:91px;"]
-bbs.pcbeta.com###sitefocus
 bbs.pcbeta.com##.a_pt
 bbs.pcbeta.com##.a_pb
 !---机锋论坛
 bbs.gfan.com##.a_h
 !帖子一楼底部
 bbs.gfan.com##.plc.plm>a
-!---52samsung
-||bbs.52samsung.com/samsungadv/*
 !---威锋网
-||yes1.feng.com^$domain=feng.com
-feng.com##.dd305
-!首页logo修复
-@@||feng.com/view.php?what=zone:216&
-@@||feng.com/images/560a0b6b83143.png
-!论坛logo修复
-@@/view.php?what=zone:93&$domain=feng.com
-@@||feng.com/images/%*logo.png
-bbs.feng.com##.wea_d_panel_980.a_t
-bbs.feng.com##.fl_row
+||yes1.feng.com^
+feng.com##div[class^="ad-"]
 !---PCINLIFE
-||we.pcinlife.com/banner/*
 ||we.poppur.com/banner/*
-||wdfans.cn^$domain=we.poppur.com
-we.poppur.com##.a_h
-we.poppur.com##.a_pt
 !---Chiphell
-||chiphell.com/activity/*
+chiphell.com##.drag
 !---宽带技术网
 chinadsl.net##.jammer
 !---恩山WIFI论坛
@@ -1025,7 +1006,7 @@ t.qq.com###homeBannerNew
 ||pan.baidu.com/api/analytics*
 pan.baidu.com##.ad-platform-tips
 !---Lanzous
-lanzous.com##div[style*="height: 110px;width: 990px;"],div[style*="height: 225px;width: 300px"]
+||woozooo.com^
 !---迅雷快传
 ||img.kuai.xunlei.com/js/statistics.js
 !---城通网盘
@@ -1141,7 +1122,7 @@ acfun.cn##.area-ad
 tucao.one##div[style="margin-top:20px;"]
 tucao.one##div[style^="margin-top:16px;overflow:hidden;"]
 !---斗鱼
-@@||shark2.douyucdn.cn/front-publish/live-master/js/room/playerAside
+@@||douyucdn.cn/front-publish/live-master/js/*_ad$script
 ||douyucdn.cn/nggsys/
 ||g.wan.douyu.com^
 douyu.com##.lol-ad
@@ -1334,6 +1315,9 @@ paipai.fm##a[href*="gamezixia.php?jump="]
 !---Gmail
 ||mail.google.com^*&view=ad&
 mail.google.com##.aKB
+!---Outlook
+outlook.live.com##div[tabindex="-1"]+div>div>div>div:nth-of-type(4)
+outlook.live.com##.customScrollBar[data-is-scrollable]>div>div:not([id])
 !---SourceForge
 ||a.fsdn.com/*/bizx-prebid.js
 sourceforge.net###project-nel
