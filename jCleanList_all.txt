@@ -637,10 +637,15 @@ www.pcpop.com##[id^="ad_"]
 !新闻页顶部横幅
 pcpop.com##.gg_list
 !---驱动之家
-||icons.mydrivers.com/2018/news/*_*_$image
+||mydrivers.com/www/gg_
+||icons.mydrivers.com^*www/hw_*$image
+||icons.mydrivers.com^*www/ry_*$image
+||icons.mydrivers.com/2020/news/
 ||icons.mydrivers.com/2018/www/*_90$image
-||drivers.mydrivers.com/images/icon/a_d_img.jpg
-www.mydrivers.com##div[style^="width:1300px;"][style*="height:90px;"]
+||drivers.mydrivers.com/images/icon/gg_
+||drivers.mydrivers.com/images/icon/a_d_img
+www.mydrivers.com##div[style*="width:1300px;"][style*="height:90px;"]
+mydrivers.com##.duilian
 !3分钟警告
 mydrivers.com###a_showhotnews_list_dia
 !子页
@@ -736,8 +741,7 @@ miui.com##.app_download
 !---V2EX
 ||v2ex.*/assets/sidebar/
 v2ex.com##.adsbygoogle
-v2ex.com##.box:has(>.inner[align]>a[href*="aliyun"])
-v2ex.com##.box:has(>.inner>.sidebar_units)1
+v2ex.com##.box:has(>.inner>.adsbygoogle)
 !---卡饭论坛
 !官网首页
 kafan.cn##.comeing_show_box
@@ -817,7 +821,8 @@ dzh.mop.com##.adarea_top
 @@||share.dmhy.org^*/generate-captcha?
 ||bebi.com^
 share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
-share.dmhy.org##div[id$="_ad"]
+||loli.net/2020/04/27/wzuXHIxF4T3G86h.gif
+share.dmhy.org###1280_ad>a:first-child
 !---末日动漫资源库
 ||acgnx.se/images/cXG30.gif
 ||acgnx.se/images/sW2sY.gif
@@ -1055,22 +1060,27 @@ soku.com##div[id^="ab_"]
 !---爱奇异
 ||t7z.cupid.iqiyi.com^
 ||static.iqiyi.com/js/common/mars_v.js
+!iqiyi.com##+js(nano-sib)
 iqiyi.com##+js(aopr, DOMParser)
 iqiyi.com##.skin_focus,.skin_focus+[id^="10000000"]
 !---腾讯视频
 ||l.qq.com/livemsg?*
 ||l.qq.com/p?
 @@||qq.com/proxyhttp?
-!||qq.com^*.ts?index=0
-!||qq.com^*p201.1.mp4?
-||qq.com/*.mp4?$media,redirect=noopmp3-0.1s,domain=v.qq.com
-!v.qq.com##+js(nano-sib.js, \u5012\u8ba1\u65f6, 1000, 0)
-v.qq.com##+js(json-prune, ad, vinfo)
+||qq.com^*.ts?index=0
+||qq.com^*p201.1.mp4?
+!||qq.com/*.mp4?$media,redirect=noopmp3-0.1s,domain=v.qq.com
+v.qq.com##+js(nano-sib.js, \u5012\u8ba1\u65f6, 1000, 0)
+!v.qq.com##+js(json-prune, ad, vinfo)
+v.qq.com##+js(json-prune,adList ad)
+||adss.video.qq.com^
 ||gtimg.com/qqlive/
+||tencentmind.com^
 ||btrace.video.qq.com^
 @@||btrace.video.qq.com/kvcollect?*load*
 v.qq.com##.mod_ad
 v.qq.com##.player_bg_ad
+v.qq.com##txpdix[data-role="hd-ad-adapter-interactivelayer"]
 !---搜狐视频
 ||images.sohu.com/ytv/
 ||aty.sohu.com^
@@ -1133,10 +1143,10 @@ douyu.com###treasure
 douyu.com##.guess-user-reminding-out
 !我的关注
 douyu.com##.layout-Banner-item
-!播放器超大游侠狂欢周
-douyu.com##.PaladinWeek-toast
-!播放器中签到领XX
-douyu.com##[class|="recommendAD"]
+!播放器左侧
+douyu.com##[class^="adsRoot"]
+!超级粉丝团提示
+douyu.com##.SuperFansGuideTips
 !手机绑定提示
 douyu.com##.BindPanels
 !每日签到领取
@@ -1341,9 +1351,7 @@ forum.mobilism.org##.FIOnDemandWrapper
 !侧栏
 techpowerup.com##figure.mnmuzjsddc
 !MORA
-||sonylabelgate.112.2o7.net^
-||point.widget.rakuten.co.jp^
-||facebook.com/plugins/like.php
+||mora.jp/pc/img/jack/
 ##.package_adBox
 !---网页飞信
 ||imgl.fetionpic.com^$domain=webim.feixin.10086.cn
