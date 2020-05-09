@@ -1058,6 +1058,7 @@ youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
 soku.com##div[id^="ab_"]
 !---爱奇异
+@@/videos/vts/
 ||t7z.cupid.iqiyi.com^
 ||static.iqiyi.com/js/common/mars_v.js
 !iqiyi.com##+js(nano-sib)
