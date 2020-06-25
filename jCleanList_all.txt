@@ -198,7 +198,6 @@ _yad_jsonp_
 ||s8dj.com^$third-party
 ||sharele.cn^$third-party
 ||star8.net^$third-party
-||tagtic.cn^$third-party
 ||tui1999.com^$third-party
 ||tuigoo.com^$third-party
 ||twcczhu.com^$third-party
@@ -579,6 +578,8 @@ finance.sina.com.cn##[data-sudaclick*="ads_"]
 !---搜狐
 ||images.sohu.com/bill/
 ||go.sohu.com^
+||fpb.sohu.com^
+||qpb.sohu.com^
 sohu.com##.godR
 !首页
 www.sohu.com##.god_header
@@ -821,7 +822,7 @@ dzh.mop.com##.adarea_top
 @@||share.dmhy.org^*/generate-captcha?
 ||bebi.com^
 share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
-||loli.net/2020/04/27/wzuXHIxF4T3G86h.gif
+||loli.net/2020/06/12/lMY3SxetK1jTk65.jpg
 share.dmhy.org###1280_ad>a:first-child
 !---末日动漫资源库
 ||acgnx.se/images/cXG30.gif
@@ -865,19 +866,20 @@ bbs.9baka.com###top80
 bbs.9baka.com##td[width="680"][height="50"]
 !---天使动漫
 ||aqours.love/img01/MP3/
-tsdm.live##.a_c
-tsdm.live##.a_pt
-tsdm.live##.a_pb
-tsdm.live###separatorline+tbody:not([class])
-tsdm.live###pgt+div:not([id])
+tsdm39.net##.a_c
+tsdm39.net##.a_pt
+tsdm39.net##.a_pb
+tsdm39.net###separatorline+tbody:not([class])
+tsdm39.net###pgt+div:not([id])
 !右侧漂浮资讯
-tsdm.live###ts_sidebar_base
+tsdm39.net###ts_sidebar_base
 !屏蔽微博
-||tsdm.live/weibo.html
+||tsdm39.net/weibo.html
 !签到弹窗
-||*.com^$popup,domain=tsdm.live
-||*.net^$popup,domain=tsdm.live
-@@||baidu.com^$popup,domain=tsdm.live
+||*.com^$popup,domain=tsdm39.net
+||*.net^$popup,domain=tsdm39.net
+@@||baidu.com^$popup,domain=tsdm39.net
+@@||tsdm*^$popup,domain=tsdm39.net
 !---78动漫论坛
 78dm.net##.adv
 bbs.78dm.net##.a_mu
@@ -962,7 +964,8 @@ bbs.17173.com##.first-post-ad
 ||178.com/glr.js
 ||atcount.178.com^
 !---艾泽拉斯国家地理论坛
-||nga*/common_res/js_dscommon.js
+||g1.tagtic.cn^$third-party
+||nga*/common_res/js_dscommon.js11
 ||nga*/proxy/cache_attach/ds_list.js
 ||anquan.org/static/outer/js/aq_auth.js
 !移动版
@@ -1053,7 +1056,6 @@ douploads.com##.adsbygoogle
 v.youku.com##+js(nano-stb, , ,0.02)
 ||cmstool.youku.com/cms/tool/pub/get_putdata.json
 */ikuAdapterNew.js^$script,domain=youku.com|tudou.com
-v.youku.com##.control-phonewatch
 youku.com###lotteryToolbar
 youku.com###lotteryToolbarBig
 soku.com##div[id^="ab_"]
@@ -1068,11 +1070,11 @@ iqiyi.com##.skin_focus,.skin_focus+[id^="10000000"]
 ||l.qq.com/livemsg?*
 ||l.qq.com/p?
 @@||qq.com/proxyhttp?
+@@||qq.com/fcgi-bin/
 ||qq.com^*.ts?index=0
 ||qq.com^*p201.1.mp4?
 !||qq.com/*.mp4?$media,redirect=noopmp3-0.1s,domain=v.qq.com
 v.qq.com##+js(nano-sib.js, \u5012\u8ba1\u65f6, 1000, 0)
-!v.qq.com##+js(json-prune, ad, vinfo)
 v.qq.com##+js(json-prune,adList ad)
 ||adss.video.qq.com^
 ||gtimg.com/qqlive/
@@ -1116,6 +1118,7 @@ pptv.com##[id^="afp_"]
 ||56img.com/script/fn/stat/
 !---哔哩哔哩
 @@||hdslb.com/*/ad*.jpg
+||api.bilibili.com/x/web-show/res/loc?pf=$~script
 ||hdslb.com/bfs/$object-subrequest
 ||hdslb.com/bfs/sycp/creative_img/
 ||data.bilibili.com/v/web/web_page_view?*
@@ -1169,7 +1172,6 @@ douyu.com##.Bottom-recommend>div:last-of-type
 @@||msstatic.com/huya/*/login/yy/sdk_udb_ad*.js
 ||g.huya.com^
 !---火猫
-||myqcloud.com^*/AdvSDK.js
 ||abc.huomao.com^
 ||aclog*.huomaotv.cn^
 !h5播放器右下角酷游电竞
