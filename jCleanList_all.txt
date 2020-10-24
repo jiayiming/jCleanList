@@ -162,6 +162,7 @@ _yad_jsonp_
 ||criteo.com^$third-party
 ||csbew.com^
 ||dazhantai.com^$third-party
+||dlads.cn^$3p
 ||egooad.com^$third-party
 ||fastapi.net^$third-party
 ||fd7c.com^
@@ -392,7 +393,7 @@ www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 !---众里寻他千百度
 !百度全局
 ||a.baidu.com
-||fex.bdstatic.com/hunter/alog/*
+||bdstatic.com/hunter/alog/*
 !搜索
 ||bdstatic.com^*/plugins/every_cookie_
 ||bdstatic.com^*/tam-ogel/
@@ -418,16 +419,20 @@ www.baidu.com,zhidao.baidu.com##.icon-bannerad,[class$="ecom-ads"],.wgt-related-
 !tieba_All
 ||tb1.bdstatic.com/??/tb/_/game_iframe_common_$script,important
 ||tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script,important
+||baidu.com/dalog/
 !i贴吧
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
 !烟花
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 tieba.baidu.com##.firework-wrap
+#左侧漂浮
+tieba.baidu.com##.tbui_aside_float_bar + .clearfix
+tieba.baidu.com##body > div[ad-dom-img]
 !tieba0_帖子列表
 !PC端底部通栏弹层1000x120
 ||bdstatic.com/tb/cms/*%e5%ba%95%e9%83%a8
-!列表内推广贴
+!列表内推广贴(游戏类)
 tieba.baidu.com##.j_thread_list:not([data-field])
 tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
 !侧边栏
@@ -652,6 +657,7 @@ mydrivers.com###a_showhotnews_list_dia
 !子页
 mydrivers.com##.adsbygoogle
 news.mydrivers.com##.baidu
+news.mydrivers.com##div.news_info>p:last-of-type
 news.mydrivers.com##div[style^="width:728px; height:90px;"]
 news.mydrivers.com##table[width="1000"][height="90"]
 drivers.mydrivers.com##div[style^="width:998px; height:90px;"]
@@ -700,9 +706,8 @@ m.cnbeta.com##.cbimage-fixed
 !---IT之家
 ||ithome.com/file/js/money/
 ||lapin365.com/Shared/RenderLapinBlock?
-ithome.com##.AdblockBanner
-ithome.com##.bx-recom2
 ithome.com##a[href*="/lapin."]
+ithome.com###tt
 ithome.com##.con-recom
 !移动版
 ||ithome.com/m/images/index/open-app*
@@ -740,6 +745,7 @@ miui.com##.app_download
 ||zhihu.com/commercial_api/banners_
 ||zhihu-web-analytics.zhihu.com^
 !---V2EX
+||i.v2ex.co^
 ||v2ex.*/assets/sidebar/
 v2ex.com##.adsbygoogle
 v2ex.com##.box:has(>.inner>.adsbygoogle)
@@ -795,15 +801,11 @@ jdbbs.com##div[style$="margin:0 auto; width:1000px; height:100px;"]
 erji.net##.a_t
 !---天涯
 ||8*.tianya.cn^
-||tianyaui.com/qy/adsame/ads.js
 ||dol.tianya.cn/s?z=tianya&
+||tianya.cn/adsp/*
 ||tianyaui.com/global/broadcast/*/bc_play_ebook_
-||userlogo.tianya.cn/adsp/*
+||tianyaui.com^*/stat_
 bbs.tianya.cn##.art-view
-!帖子页面1楼底部聚焦广告
-||focus.tianya.cn/shang/*/index.shtml
-!pv
-||static.tianyaui.com^*/stat_20080313.js
 !---猫扑
 ||pub.mop.com^
 ||mopimg.cn/tj/
@@ -818,12 +820,9 @@ dzh.mop.com##.adarea
 dzh.mop.com##.adarea_top
 !---------动漫/影音/字幕---------
 !---动漫花园
-||share.dmhy.org/*?$image
+||share.dmhy.org/sheng1.gif
+||share.dmhy.org/JTW.gif
 @@||share.dmhy.org^*/generate-captcha?
-||bebi.com^
-share.dmhy.org##.user-sidebar > .box.ui-corner-all:last-child
-||loli.net/2020/06/12/lMY3SxetK1jTk65.jpg
-share.dmhy.org###1280_ad>a:first-child
 !---末日动漫资源库
 ||acgnx.se/images/cXG30.gif
 ||acgnx.se/images/sW2sY.gif
@@ -914,6 +913,8 @@ imdb.com##.aux-content-widget-2
 ||ousns.net^
 ||quandangdang.net^
 ||iyoowi.com^
+rrys2020.com###globalNav1
+rrys2020.com###globalNav2
 rrys2019.com##.chat-enterbox
 got001.com##.ad-box
 !---电影天堂
@@ -1013,6 +1014,7 @@ t.qq.com###homeBannerNew
 ||*monitor.jpg?xcode
 ||pan.baidu.com/api/analytics*
 pan.baidu.com##.ad-platform-tips
+pan.baidu.com##.phone-banner
 !---Lanzous
 ||woozooo.com^
 !---迅雷快传
@@ -1137,6 +1139,7 @@ tucao.one##div[style="margin-top:20px;"]
 tucao.one##div[style^="margin-top:16px;overflow:hidden;"]
 !---斗鱼
 @@||douyucdn.cn/front-publish/live-master/js/*_ad$script
+@@||dotserver.douyucdn.cn^
 ||douyucdn.cn/nggsys/
 ||g.wan.douyu.com^
 douyu.com##.lol-ad
@@ -1171,6 +1174,9 @@ douyu.com##.Bottom-recommend>div:last-of-type
 !---虎牙
 @@||msstatic.com/huya/*/login/yy/sdk_udb_ad*.js
 ||g.huya.com^
+||statwup.huya.com^
+||metric.huya.com^
+||ylog.huya.com^
 !---火猫
 ||abc.huomao.com^
 ||aclog*.huomaotv.cn^
@@ -1229,8 +1235,7 @@ onlinedown.net##.downDz>h4:first-child
 ||hao123img.com/res/js/track.js
 soft.hao123.com##.rank-main
 !---绿色下载站
-downg.com##.nav-breadcrumb+.cols2>.col1
-downg.com##.down_btn_right,.tit-d:first-child,.download-list:first-child
+||downg.com/img/$script
 !---非凡软件站
 ||a1.zhanzhang.net^
 crsky.com##.i_dwon
@@ -1262,16 +1267,16 @@ pc6.com###gaosuxiazai
 ||piaodown.com/other/*
 !---异次元
 ||bdx.playnext.cn^
-||iplaysoft.com/tempads/
 iplaysoft.com##.adsbygoogle
 iplaysoft.com###section_event
-iplaysoft.com###bottom_ad
+iplaysoft.com##.entry-recommend
 iplaysoft.com###sidebar > ul > .widget:first-child
 iplaysoft.com###sidebar > ul > .widget:nth-child(3)
 iplaysoft.com##.widget[style]
 iplaysoft.com##div[style*="width:3"][style*="height:2"]
 iplaysoft.com###sidebar_scroll_bdad
 !子页
+iplaysoft.com##.entry-recommend-posts
 iplaysoft.com##.d250
 iplaysoft.com##div[style="margin:-10px 0 0 0;overflow:hidden"]
 iplaysoft.com##div[style^="margin-top:20px;padding:35px 0 20px 0;"]
@@ -1315,7 +1320,9 @@ book.qidian.com###j-topHeadBox
 book.qidian.com##.games-op-wrap
 book.qidian.com##.right-op-wrap
 !书页
-.qidian.com/pageops.
+||qidian.com/pageops.
+!---潇湘书院
+xxsy.net##.area_1200
 !---腾讯云起书院
 ||chuangshi.qq.com/upload/cmsv2/
 yunqi.qq.com##.topBanner
@@ -1333,6 +1340,7 @@ outlook.live.com##div[tabindex="-1"]+div>div>div>div:nth-of-type(4)
 outlook.live.com##.customScrollBar[data-is-scrollable]>div>div:not([id])
 !---SourceForge
 ||a.fsdn.com/*/bizx-prebid.js
+||sf-syn.com/conversion_outbound_tracker$subdocument,domain=sourceforge.net
 sourceforge.net###project-nel
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
@@ -1351,8 +1359,8 @@ forum.xda-developers.com##.postbit-wrapper.xda-box
 forum.mobilism.org##.FIOnDemandWrapper
 !---TechPowerUp
 ||techpowerup.com/njutrvceser/
-!侧栏
-techpowerup.com##figure.mnmuzjsddc
+techpowerup.com##a[href*="njutrvceser"]
+techpowerup.com##.sidebar>aside
 !MORA
 ||mora.jp/pc/img/jack/
 ##.package_adBox
