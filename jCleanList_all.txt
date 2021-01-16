@@ -154,6 +154,7 @@ _yad_jsonp_
 ||admaster.com.cn^$third-party
 ||adyun.com^$third-party
 ||adsame.com^$third-party
+||bebi.com^
 ||c1o1.com^$third-party
 ||cee1.iteye.com^
 ||chanet.com.cn^$third-party
@@ -435,6 +436,8 @@ tieba.baidu.com##body > div[ad-dom-img]
 !列表内推广贴(游戏类)
 tieba.baidu.com##.j_thread_list:not([data-field])
 tieba.baidu.com##.j_thread_list + li[class]:not(.j_thread_list)
+!列表内为你推荐
+tieba.baidu.com##.fengchao-wrap-feed
 !侧边栏
 tieba.baidu.com##.app_download_box
 tieba.baidu.com###pagelet_frs-aside\/pagelet\/ad
@@ -822,6 +825,7 @@ dzh.mop.com##.adarea_top
 !---动漫花园
 ||share.dmhy.org/sheng1.gif
 ||share.dmhy.org/JTW.gif
+||share.dmhy.org/QT.
 @@||share.dmhy.org^*/generate-captcha?
 !---末日动漫资源库
 ||acgnx.se/images/cXG30.gif
@@ -908,6 +912,7 @@ imdb.com##.aux-content-widget-2
 !---人人影视(ZiMuZu)
 ||jstucdn.com/g3/
 ||jstucdn.com/js/ad_
+||jstucdn.com/js/vrsr
 ||chat.rrys2019.com^
 ||lx167.com^$third-party
 ||ousns.net^
@@ -991,7 +996,7 @@ yzz.cn##.ad200x340
 ||yxdown.com/cj/
 ||yxdown.com/pc/news/js/news
 ||7477.com/adiframe/
-||pp8.com^$third-party
+!||pp8.com^$third-party
 yxdown.com###tl_adv
 !---------微薄/SNS/网盘---------
 !---新浪微薄
@@ -1072,12 +1077,14 @@ iqiyi.com##.skin_focus,.skin_focus+[id^="10000000"]
 ||l.qq.com/livemsg?*
 ||l.qq.com/p?
 @@||qq.com/proxyhttp?
-@@||qq.com/fcgi-bin/
+@@||video.qq.com/fcgi-bin/
+||mark.l.qq.com/fcgi-bin/get_video_mark_all?idlist=
 ||qq.com^*.ts?index=0
 ||qq.com^*p201.1.mp4?
 !||qq.com/*.mp4?$media,redirect=noopmp3-0.1s,domain=v.qq.com
-v.qq.com##+js(nano-sib.js, \u5012\u8ba1\u65f6, 1000, 0)
-v.qq.com##+js(json-prune,adList ad)
+！v.qq.com##+js(json-prune,adList ad)
+v.qq.com##+js(json-prune,ad,vinfo)
+v.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6, 1000, 0)
 ||adss.video.qq.com^
 ||gtimg.com/qqlive/
 ||tencentmind.com^
@@ -1086,6 +1093,8 @@ v.qq.com##+js(json-prune,adList ad)
 v.qq.com##.mod_ad
 v.qq.com##.player_bg_ad
 v.qq.com##txpdix[data-role="hd-ad-adapter-interactivelayer"]
+||pgdt.gtimg.cn/gdt/*.jpg/0?ck=
+v.qq.com##txpdiv.txp_ad txp_ad_center
 !---搜狐视频
 ||images.sohu.com/ytv/
 ||aty.sohu.com^
@@ -1281,8 +1290,6 @@ iplaysoft.com##.d250
 iplaysoft.com##div[style="margin:-10px 0 0 0;overflow:hidden"]
 iplaysoft.com##div[style^="margin-top:20px;padding:35px 0 20px 0;"]
 dl.iplaysoft.com##DIV[style^="width:250px;height:250px;"]
-!---心海e站(烈火)
-hrtsea.com##.asb
 !---小众软件
 ||appinn.net/images/*.jpg|
 appinn.com##.adsbygoogle
