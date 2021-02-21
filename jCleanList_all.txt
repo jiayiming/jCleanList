@@ -823,9 +823,10 @@ dzh.mop.com##.adarea
 dzh.mop.com##.adarea_top
 !---------动漫/影音/字幕---------
 !---动漫花园
-||share.dmhy.org/sheng1.gif
-||share.dmhy.org/JTW.gif
-||share.dmhy.org/QT.
+||share.dmhy.org/*.jpg?1
+||share.dmhy.org/*.jpg?2
+||share.dmhy.org/*gif?1
+||share.dmhy.org/*.gif?2
 @@||share.dmhy.org^*/generate-captcha?
 !---末日动漫资源库
 ||acgnx.se/images/cXG30.gif
@@ -923,7 +924,7 @@ rrys2020.com###globalNav2
 rrys2019.com##.chat-enterbox
 got001.com##.ad-box
 !---电影天堂
-||dy2018.com/js
+||dytt8.net/js
 !---杂碎后院
 ||zasv.net/daxiang.png
 !---------游戏---------
@@ -1082,7 +1083,7 @@ iqiyi.com##.skin_focus,.skin_focus+[id^="10000000"]
 ||qq.com^*.ts?index=0
 ||qq.com^*p201.1.mp4?
 !||qq.com/*.mp4?$media,redirect=noopmp3-0.1s,domain=v.qq.com
-！v.qq.com##+js(json-prune,adList ad)
+!v.qq.com##+js(json-prune,adList ad)
 v.qq.com##+js(json-prune,ad,vinfo)
 v.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6, 1000, 0)
 ||adss.video.qq.com^
@@ -1136,6 +1137,7 @@ pptv.com##[id^="afp_"]
 ||hdslb.com/bfs/seed/log/report/
 bilibili.com##.gg-floor-module
 bilibili.com###slide_ad
+bilibili.com##.ad-report
 !---AcFun
 ||aixifan.com^*/sensorsdata
 ||aixifan.com/static/*/appGuide/
@@ -1222,7 +1224,6 @@ v.17173.com##.side-ad
 ||js.player.cntv.cn/creator/fingerprint2.js
 ||vdp2precv.app.cntvwb.cn/gs.gif?
 !---芒果TV
-@@||player.mgtv.com/mgtv_v6_ad/ad.swf
 @@||mgtv.com/sdk/*/ad-sdk.js
 ||da.mgtv.com^
 !---华数TV广电宽屏
@@ -1395,6 +1396,9 @@ smzdm.com##.banner-stuff
 smzdm.com##.g_g
 smzdm.com##.feed-stuff
 smzdm.com##.side-stuff
+!---快递100
+@@||kuaidi100.com/*/count.js
+@@||hm.baidu.com$domain=kuaidi100.com
 !---玩家堂
 ||itocp.com/html/gk/*
 !---超能网
