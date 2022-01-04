@@ -1,9 +1,9 @@
 [Adblock Plus 2.1]
 ! Title: jCleanList
-! Last modified: 08 Dec 2019 01:02 +0800
 ! Expires: 2 days (update frequency)
 ! Homepage: https://github.com/jiayiming/jCleanList
 ! https://github.com/jiayiming/jCleanList/raw/master/jCleanList_all.txt
+! https://cdn.jsdelivr.net/gh/jiayiming/jCleanList@master/jCleanList_all.txt
 !----Sina @小蛐蛐
 
 !---------通用猜测---------
@@ -1014,7 +1014,7 @@ yzz.cn##.ad200x340
 !子页
 52pk.com###ggfloat
 !---keylol
-||blob.keylol.com/forum/
+keylol.com##.rnd_ai_pr
 !---迅游网
 ||yxdown.com/cj/
 ||yxdown.com/pc/news/js/news
