@@ -272,6 +272,7 @@ _yad_jsonp_
 ||directrev.com^$popup,third-party
 ||earnify.com^$3p
 ||exoclick.com^$3p
+||iclickcdn.com^$3p
 ||infolinks.com^
 ||lkqd.net^$3p
 ||media.net^
@@ -325,6 +326,7 @@ activeation.com,activetect.net,adf.ly,atabencot.net,atharori.net,atomcurve.com,a
 !---google
 ||google-analytics.com^$3p
 ||googletagmanager.com/gtm.js
+||googletagmanager.com/gtag/js
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/1553
 !#if env_chromium
 *##+js(no-floc)
@@ -994,6 +996,13 @@ keylol.com##.rnd_ai_pr
 ||yxdown.com/cj/
 ||yxdown.com/pc/news/js/news
 yxdown.com###tl_adv
+!---CODEX-GAMES
+||d3g5ovfngjw9bw.cloudfront.net/wNumb.min.js
+||toglooman.com^$3p
+||cdn4ads.com^$3p
+||adsco.re^$3p
+||mxyxgkuexjr.com^$3p
+||vgfutxwgq.com^$3p
 !---------微薄/SNS/网盘---------
 !---新浪微薄
 ||biz.weibo.com^
@@ -1060,8 +1069,8 @@ youku.com##[data-adid]
 @@/videos/vts/
 ||t7z.cupid.iqiyi.com^
 ||static.iqiyi.com/js/common/mars_v.js
-iqiyi.com##+js(aopr, DOMParser1)
 iqiyi.com##+js(set-constant, Object.prototype.parseXML, noopFunc)
+iqiyi.com##+js(set-constant, Object.prototype.blackscreenDuration, 1)
 iqiyi.com##:not(.qy-index-page) > div[id^="100000"]
 !---腾讯视频
 ||l.qq.com/livemsg?*
@@ -1134,7 +1143,11 @@ bilibili.com##.ad-report
 acfun.cn##.ac-ad-img
 acfun.cn##.area-ad
 !---吐槽
-tucao.one##div[style="margin-top:20px;"]
+||tucao.one/uploadfile/*/ch.gif
+||tucao.one/uploadfile/20*/20*.gif
+||tucao.one/uploadfile/20*/*x*.gif
+||tucao.one/uploadfile/20*/t5.jpg
+tucao.one###t1, #t4, #t5
 tucao.one##div[style^="margin-top:16px;overflow:hidden;"]
 !---斗鱼
 @@||douyucdn.cn/front-publish/live-master/js/*_ad$script
