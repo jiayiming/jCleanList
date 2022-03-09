@@ -231,6 +231,7 @@ _yad_jsonp_
 ||s8dj.com^$3p
 ||sharele.cn^$3p
 ||star8.net^$3p
+||stgowan.com^$3p
 ||tui1999.com^$3p
 ||tuigoo.com^$3p
 ||twcczhu.com^$3p
@@ -317,6 +318,7 @@ activeation.com,activetect.net,adf.ly,atabencot.net,atharori.net,atomcurve.com,a
 /tongji.js
 /trackad.
 /1.gif?
+/a.gif?
 /c.gif?
 /click.gif?
 /track.gif?
@@ -339,6 +341,7 @@ activeation.com,activetect.net,adf.ly,atabencot.net,atharori.net,atomcurve.com,a
 ||imgstat.baidu.com^
 ||cbjslog.baidu.com^
 ||pos.baidu.com^
+||zz.bdstatic.com^
 ||sp0.baidu.com^
 ||sp1.baidu.com^
 ||sp3.baidu.com^
@@ -441,8 +444,8 @@ www.google.com.hk,www.google.com,encrypted.google.comgoogle.com###rhs
 ||a.baidu.com
 ||fex.bdstatic.com/hunter/
 !搜索
-www.baidu.com###content_left > div[class][style]:not([id])
-www.baidu.com###content_left > [id*="00"]:not(.result) > div
+www.baidu.com###content_left > div:not([class]):not([id])
+!www.baidu.com###content_left > [id*="00"]:not(.result) > div
 www.baidu.com###content_right > table > tbody > tr > td > div:not(#con-ar)
 www.baidu.com###\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"] > .t > a[href^="http://www.baidu.com/baidu.php?"]
 www.baidu.com###\32 ~ #\31 [data-click^="\7b \"rsv_bdr\":\"0\",\"p5\":"]
@@ -940,9 +943,10 @@ patch.ali213.net##.picBg
 ||ali213.net/static/js/kv
 game.ali213.net##.a_pt
 !---3DM
-||3c.3dmgame.com^
-||3dmgame.com/tools/gamead?
 ||tj.shwswl.cn^$3p
+||yeyou.3dmgame.com/uploads/images/thumbgameh5/
+3dmgame.com##.dj_warp_e
+3dmgame.com##.addvide3000
 bbs.3dmgame.com##.a_cn
 bbs.3dmgame.com##.a_h
 !---游民星空
@@ -1061,12 +1065,13 @@ youku.com##+js(nano-stb, , , 0)
 v.youku.com##+js(set-constant, Object.prototype._adData, emptyObj)
 @@||cibntv.net/*/ad/$xhr
 ||cibntv.net/youku/$media
+||cibntv.net/youku/$media,redirect-rule=noop-1s.mp4
 ||atm.youku.com^
 ||cmstool.youku.com/cms/tool/pub/get_putdata.json
 ||js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
 youku.com##[data-adid]
 !---爱奇异
-@@/videos/vts/
+@@/videos/vts/*
 ||t7z.cupid.iqiyi.com^
 ||static.iqiyi.com/js/common/mars_v.js
 iqiyi.com##+js(set-constant, Object.prototype.parseXML, noopFunc)
@@ -1097,9 +1102,8 @@ v.qq.com##txpdiv.txp_ad
 ||pgdt.gtimg.cn/gdt/*.jpg/0?ck=
 !---芒果TV
 @@||mgtv.com/sdk/*/ad-sdk.js
-||video.da.mgtv.com/$media
-||ys.da.mgtv.com^
-||da.mgtv.com/mediafiles/wiad_creative/$image
+||da.mgtv.com^
+||log.mgtv.com^
 !---PPTV
 @@||web-play.pptv.com^
 ||asimgs.pplive.cn
@@ -1441,6 +1445,9 @@ weather.com.cn##.post_st
 ||chinaz.com/gj_g/
 !---纯真
 ||uniondm.cz88.net^
+!--17ce
+||17ce.com/adwrap/
+17ce.com###tp_banner
 !---爱词霸
 iciba.com##.head_ad
 !右侧边栏
