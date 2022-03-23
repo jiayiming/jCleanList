@@ -345,6 +345,7 @@ activeation.com,activetect.net,adf.ly,atabencot.net,atharori.net,atomcurve.com,a
 ||sp0.baidu.com^
 ||sp1.baidu.com^
 ||sp3.baidu.com^
+||dlswbr.baidu.com^
 ||push.zhanzhang.baidu.com^
 ||baidu.com/x.js?
 !分享
@@ -468,6 +469,7 @@ tieba.baidu.com##.pc2client
 tieba.baidu.com##.firework_sender_wrap,#global_notice_wrap
 tieba.baidu.com##.firework-wrap
 #左侧漂浮
+||tieba-ares.cdn.bcebos.com/mis/
 tieba.baidu.com##.tbui_aside_float_bar + .clearfix
 tieba.baidu.com##body > div[ad-dom-img]
 !tieba0_帖子列表
@@ -754,8 +756,7 @@ zhihu.com##.TopstoryItem--advertCard
 !---V2EX
 ||i.v2ex.co^
 ||v2ex.*/assets/sidebar/
-v2ex.com##.adsbygoogle
-v2ex.com##.box:has(>.inner>.adsbygoogle)
+v2ex.com##.box:has([href$="advertise"])
 !---卡饭论坛
 !官网首页
 kafan.cn##.comeing_show_box
@@ -1354,7 +1355,10 @@ techpowerup.com##.sidebar>aside
 !---appmedia
 appmedia.jp##[id^="div-gpt-ad-"]
 appmedia.jp##[id^="crt-"]
-!MORA
+!---豆瓣
+||erebor.douban.com^
+/piwik.js
+!---MORA
 ||mora.jp/pc/img/jack/
 mora.jp##.package_bannerArea
 mora.jp##.package_adBox
