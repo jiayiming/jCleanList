@@ -803,6 +803,7 @@ zhihu.com##.TopstoryItem--advertCard
 ||i.v2ex.co^
 ||v2ex.*/assets/sidebar/
 v2ex.com##.box:has([href$="advertise"])
+v2ex.com##div[style="box-sizing: border-box"]
 !---卡饭论坛
 !官网首页
 kafan.cn##.comeing_show_box
@@ -814,8 +815,6 @@ bbs.vc52.cn##.a_pt
 bbs.vc52.cn##.a_pb
 !---远景论坛
 bbs.pcbeta.com##[class^="_jc"]:upward(4)
-#pcbeta.com1###wp>div[class][id]:not([class*="cl"])
-#pcbeta.com1##+js(aopr, Node.prototype.insertBefore)
 bbs.pcbeta.com##.a_pt
 bbs.pcbeta.com##.a_pb
 !---威锋网
