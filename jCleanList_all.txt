@@ -760,6 +760,8 @@ cnbeta.com##.tac
 m.cnbeta.com##.cbimage-fixed
 !---IT之家
 ||ithome.com/file/js/money/
+||ithome.com/newsuploadfiles/focus/*.png
+ithome.com##.rds
 ||lapin365.com/Shared/RenderLapinBlock?
 ithome.com##a[href*="/lapin."]
 ithome.com###tt
@@ -876,7 +878,7 @@ dzh.mop.com##.adarea_top
 ||share.dmhy.org^*?$image
 @@||share.dmhy.org^*/generate-captcha?
 share.dmhy.org##.download-pp
-share.dmhy.org##.resource-info li:nth-child(4)
+share.dmhy.org##.resource-info li:has-text("在线播放")
 !---末日动漫资源库
 ||analytics.acgnx.se^
 acgnx.se##div.banner
@@ -1114,8 +1116,8 @@ douploads.com##.adsbygoogle
 /fret/meow4/*$script,3p
 ||increasinglycockroachpolicy.com$script,3p
 ||btsow.beauty/app/jav$image
-btsow.beauty##+js(window.open-defuser)
-btsow.beauty##+js(abort-on-property-read, AaDetector)
+btsow.*##+js(window.open-defuser)
+btsow.*##+js(abort-on-property-read, AaDetector)
 !---------在线视频/直播---------
 !---视频全局
 ||irs01.*^
@@ -1207,15 +1209,18 @@ v.qq.com###adPlayer
 ||bjcathay.com/s?z=
 ||player.cntv.cn/creator/fingerprint2.js
 !---哔哩哔哩
-@@||api.bilibili.com/x/web-interface/*&ad_
-||api.bilibili.com/x/web-show/res/locs?pf=$~script
-||hdslb.com/bfs/$object-subrequest
+@@||api.bilibili.com/x/web-interface/wbi/search/*&ad_resource
+||api.bilibili.com/x/internal/gaia-gateway/exclimbwuzhi$xhr,1p
+||cm.bilibili.com^
+||data.bilibili.com^
 ||hdslb.com/bfs/sycp/
-||hdslb.com/bfs/seed/log/report/
-||cm.bilibili.com/cm/api/$xhr
+@@/log/report/*$script,from=bilibili.com
+||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js$script,important,from=bilibili.com
 bilibili.com##.adblock-tips
 bilibili.com###slide_ad
+bilibili.com##a[href^="//cm.bilibili.com"]
 bilibili.com##.ad-report
+bilibili.com##+js(nowebrtc)
 !---AcFun
 ||aixifan.com^*/sensorsdata
 ||aixifan.com/static/*/appGuide/
@@ -1249,6 +1254,10 @@ douyu.com###js-room-activity
 !播放器左侧1分钟漂浮
 douyu.com##.PELact
 !播放器左下角
+douyu.com##.XinghaiAd
+!播放器左下角游戏推广
+||douyucdn.cn/adxdsp/
+douyu.com##.ScreenBannerAd
 douyu.com##.XinghaiAd
 !播放器左下角悬赏挑战
 douyu.com##.PostReward-videoPendant
