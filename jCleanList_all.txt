@@ -7,7 +7,7 @@
 !----Sina @小蛐蛐
 
 !---------通用猜测---------
-/[\/_\?\&\-]ad[sv]?\d*[\/_\.\-]/
+/[\/_\?\&\-]ad[sv]?\d*[\/_\.\-]/$~xhr
 !/[^a-z\d%]ad[sv]?(?:click|text)/
 ||ads.
 /ads.
@@ -369,18 +369,19 @@ activeation.com,activetect.net,adf.ly,atabencot.net,atharori.net,atomcurve.com,a
 *##+js(no-floc)
 !#endif
 !---baidu
-||hm.baidu.com^
-||nsclick.baidu.com^
-||sclick.baidu.com^
-||webclick.baidu.com^
-||imgstat.baidu.com^
 ||cbjslog.baidu.com^
+||dlswbr.baidu.com^
+||hm.baidu.com^
+||imgstat.baidu.com^
+||nsclick.baidu.com^
 ||pos.baidu.com^
-||zz.bdstatic.com^
+||sclick.baidu.com^
+||sofire.bdstatic.com^
 ||sp0.baidu.com^
 ||sp1.baidu.com^
 ||sp3.baidu.com^
-||dlswbr.baidu.com^
+||webclick.baidu.com^
+||zz.bdstatic.com^
 ||push.zhanzhang.baidu.com^
 ||baidu.com/x.js?
 !分享
@@ -501,6 +502,10 @@ $removeparam=utm_source
 ||sohu.com^$removeparam=_f
 ||sohu.com^$removeparam=_trans_
 ||sohu.com^$removeparam=scm
+||jd.com^$removeparam=cu
+||jd.com^$removeparam=utm_campaign
+||jd.com^$removeparam=utm_medium
+||jd.com^$removeparam=utm_term
 !原神大世界地图图片
 ||uploadstatic.mihoyo.com/ys-obc/$removeparam=x-oss-process
 !---------门户/新闻/综合---------
@@ -513,6 +518,7 @@ www.google.*##+js(set-constant, rwt, noopFunc)
 ||a.baidu.com
 /alog/dp.
 ||baidu.com/api/bidder/
+||baidu.com/static/h.gif
 !搜索
 ||bdstatic.com^*/plugins/every_cookie_
 www.baidu.com##.c-container:has(.t > a[data-landurl])
@@ -538,7 +544,7 @@ tieba.baidu.com##.firework-wrap
 tieba.baidu.com##.tbui_aside_float_bar + .clearfix
 tieba.baidu.com##body > div[ad-dom-img]
 !tieba0_帖子列表
-!tieba.baidu.com##.bus-top-activity-wrap
+tieba.baidu.com##.bus-top-activity-wrap
 tieba.baidu.com###plat_recom_carousel > .tbui_slideshow_list
 tieba.baidu.com###plat_recom_carousel > .activity_head
 !PC端底部通栏弹层1000x120
@@ -593,7 +599,7 @@ zhidao.baidu.com##.feed-recommend
 ||baidu.com/api/wikiui/directad?
 ||baidu.com/api/wikiui/getasp?
 ||baidu.com/api/wikiui/guesslike?
-baike.baidu.com##.J-search-ad
+baike.baidu.com###J-bottom-recommend-wrapper
 !kaike移动
 baike.baidu.com##.BK-content-load, .BK-after-content-wrapper>.yitiao-container, .BK-after-content-wrapper>.tashuo-list+div+div, .BK-after-content-wrapper>ul
 !wenku
@@ -917,8 +923,9 @@ share.dmhy.org##.download-pp
 share.dmhy.org##.resource-info li:has-text("在线播放")
 !---末日动漫资源库
 ||analytics.acgnx.se^
-acgnx.se##div.banner
-acgnx.se##div.box[style="overflow:hidden;"]
+||analytics.acgnx.net^
+acgnx.*##div.banner
+acgnx.*##div.box[style="overflow:hidden;"]
 !---简单动漫
 ||36dm.*/images/top
 ||36dm.*/images/bd
@@ -933,6 +940,7 @@ acgnx.se##div.box[style="overflow:hidden;"]
 ||acgsou.com/images/bdacg.gif
 !---Mikan Project
 ||mikanime.tv/images/NFVideo/$image
+||mikanime.tv/images/SSWJ/$image
 !mikanime.tv##a[onclick$="'clicked', 'ad');"]
 !---轻之国度
 lightnovel.cn###swRoller_1
@@ -1023,12 +1031,12 @@ patch.ali213.net##.picBg
 ||ali213.net/static/js/kv
 game.ali213.net##.a_pt
 !---3DM
-||tj.shwswl.cn^$3p
-||yeyou.3dmgame.com/uploads/images/thumbgameh5/
-3dmgame.com##.dj_warp_e
-3dmgame.com##.addvide3000
+||3dmgame.com/static/image/common/pc_tg3dm.jpg
+3dmgame.com##.listlab > .img[href*="/yx."]
+3dmgame.com##.add_
 bbs.3dmgame.com##.a_cn
 bbs.3dmgame.com##.a_h
+bbs.3dmgame.com##.a_pt
 !---游民星空
 ||ja*.gamersky.com^
 ||gamersky.com/common/tg/
@@ -1080,6 +1088,8 @@ keylol.com##.rnd_ai_pr
 ||yxdown.com/cj/
 ||yxdown.com/pc/news/js/news
 yxdown.com###tl_adv
+!---nexusmods
+next.nexusmods.com##[data-testid^="ad-"]
 !---CODEX-GAMES
 ||d3g5ovfngjw9bw.cloudfront.net/wNumb.min.js
 ||toglooman.com^$3p
@@ -1174,7 +1184,7 @@ btsow.*##+js(abort-on-property-read, AaDetector)
 !---视频全局
 ||irs01.*^
 ||acs86.com^
-||mediav.com^
+||mediav.com^$3p
 !---Youtube
 ||youtube.com/ptracking?
 ||youtube.com/api/stats/qoe?
@@ -1199,18 +1209,15 @@ youku.com##.advertise-layer
 !---爱奇异
 @@||iqiyipic.com/image/*/ad/p_*.jpg$image
 @@/videos/vts/*
-||t7z.cupid.iqiyi.com^
+||cupid.iqiyi.com/mixer?
 ||static.iqiyi.com/js/common/mars_v.js
-||iqiyi.com/videos/other/202$xmlhttprequest,redirect=noopmp3-0.1s
-||71edge.com/videos/other/202$xmlhttprequest,redirect=noopmp3-0.1s
 iqiyi.com##+js(set-constant, Object.prototype.parseXML, noopFunc)
 iqiyi.com##+js(set-constant, Object.prototype.blackscreenDuration, 1)
 iqiyi.com##+js(set-constant, QiyiPlayerProphetData.a.data, {})
 ||apisgame.iqiyi.com^
 ||static.g.iqiyi.com^
 ||msg.qy.net^
-iqiyi.com##:not(.qy-index-page) > div[id^="100000"]
-iqiyi.com##.cupid-panel + div
+iqiyi.com###middle_banner_ad_bk
 iqiyi.com##.black-screen[data-cupid="adblock-blackscreen"]
 !---腾讯视频
 ||l.qq.com/livemsg?
@@ -1293,7 +1300,7 @@ tucao.cam##div[style^="margin-top:16px;overflow:hidden;"]
 ||webconf.douyucdn.cn/resource/common/giftphotos_w.json
 /mobilegame/getroomapp?
 !屏蔽重载
-!douyu.com##+js(aeld,visibilitychange)
+douyu.com##+js(aeld,visibilitychange)
 !顶部分类下拉
 douyu.com##.DropMenuList-ad
 !顶部关注下拉
@@ -1333,6 +1340,7 @@ douyu.com##.Bottom-recommend>div:last-of-type
 !---虎牙
 @@||msstatic.com^*/login/yy/sdk_udb_ad*.js
 @@||msstatic.com^*/ad-report/
+||adsmind.gdtimg.com^
 ||huya.com*/cache1min.
 ||g.huya.com^
 ||statwup.huya.com^
@@ -1350,6 +1358,7 @@ huya.com##.room-business-game
 huya.com##.room-sidebar #public-screen-ab
 huya.com##.sidebar-banner
 huya.com##.end-ab-banner
+huya.com##.small-handle-tip
 !---华数TV广电宽屏
 ||delivery.wasu.cn^
 wasu.cn##div[class^="play_ads"]
@@ -1491,6 +1500,8 @@ outlook.live.com###app > div[class] > div[class] > div[class] > div[class]:not(.
 ||a.fsdn.com/*/bizx-prebid.js
 ||sf-syn.com/conversion_outbound_tracker$subdocument,domain=sourceforge.net
 sourceforge.net###project-nel
+!---TG
+web.telegram.org##div.bubble.is-sponsored
 !---腾讯邮箱
 ||stockweb.mail.qq.com/lview?*
 !---Github
