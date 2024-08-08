@@ -1267,6 +1267,8 @@ tv.sohu.com##.hd-hotWord
 ||p.data.cctv.com^
 ||bjcathay.com/s?z=
 ||player.cntv.cn/creator/fingerprint2.js
+!---咪咕
+||ggxwb.miguvideo.com^
 !---哔哩哔哩
 @@||api.bilibili.com/x/web-interface/wbi/search/*&ad_resource
 ||api.bilibili.com/x/internal/gaia-gateway/exclimbwuzhi$xhr,1p
