@@ -58,7 +58,7 @@
 /guanggao.
 /guanggao/*
 /tuiguang/*
-/popup_*.js
+!/popup_*.js
 /tan.js
 /tan1.js
 /tanchuang.
@@ -91,6 +91,7 @@ _300x250.
 !百度地图
 @@||map.bdstatic.com/*/pkg/initmap_ad*.js
 @@||dlswbr.baidu.com/heicha/mw/abclite-
+||map.baidu.com/newmap_test/static/common/images/transparent.gif
 !淘宝/聚划算
 @@||g.alicdn.com^*/??*,*,*,
 !lego.alicdn.com/mm/lego2??mv/cellxLayout-adv/0.0.1/index.js
@@ -110,6 +111,8 @@ _300x250.
 @@||twitter.com/i/api/*ad
 !My Digital Life Forums
 @@||mydigitallife.net/css.php*ads
+!https://www.rtings.com/monitor/reviews/lg/27gp850-b-27gp83b-b
+@@/ad*vue_*.js$script
 !https://zzz.hakush.in/_app/immutable/chunks/Ad.z1Hs-MgX.js
 @@||hakush.in/_app/immutable/chunks/Ad.
 !Others
@@ -281,6 +284,7 @@ _yad_jsonp_
 ||adapex.io^$3p
 ||adcash.com^$3p
 ||addelive.com^$3p
+||adexchangeclear.com^
 ||adnetworkperformance.com^$3p
 ||adnium.com^$3p
 ||adnxs.com^$3p
@@ -388,6 +392,7 @@ activeation.com,activetect.net,adf.ly,atabencot.net,atharori.net,atomcurve.com,a
 ||dlswbr.baidu.com^
 ||hm.baidu.com^
 ||imgstat.baidu.com^
+||miao.baidu.com^
 ||nsclick.baidu.com^
 ||pos.baidu.com^
 ||sclick.baidu.com^
@@ -491,6 +496,7 @@ www.sina.com.cn##.part-l
 ||taboola.com^$3p
 ||taboolasyndication.com^*/log/
 ||trackedlink.net^$3p
+||usrpubtrk.com^
 ||yahoo.co.jp/js/s_retargeting.js
 ||s.yimg.jp/images/listing/tool/cv/ytag.js
 !MS
@@ -527,6 +533,20 @@ $removeparam=utm_source
 ||iqiyi.com^$removeparam=vfrm
 ||iqiyi.com^$removeparam=vfrmblk
 ||iqiyi.com^$removeparam=vfrmrst
+||iqiyi.com^$removeparam=vid
+||iqiyi.com^$removeparam=fid
+||iqiyi.com^$removeparam=tvname
+||iqiyi.com^$removeparam=ht
+||iqiyi.com^$removeparam=pb2
+||iqiyi.com^$removeparam=ps2
+||iqiyi.com^$removeparam=ps3
+||iqiyi.com^$removeparam=ps4
+||iqiyi.com^$removeparam=s2
+||iqiyi.com^$removeparam=s3
+||iqiyi.com^$removeparam=s4
+||iqiyi.com^$removeparam=vtype
+||iqiyi.com^$removeparam=f_block
+||iqiyi.com^$removeparam=ischarge
 ||detail.tmall.com^$removeparam=abbucket
 ||detail.tmall.com^$removeparam=rn
 ||sohu.com^$removeparam=_f
@@ -565,7 +585,6 @@ www.baidu.com,m.baidu.com##.page-banner
 !tieba_All
 ||tb1.bdstatic.com/??/tb/_/game_iframe_common_$script,important
 ||tb1.bdstatic.com/??/tb/_/game_rank_in_head_$script,important
-||sofire.bdstatic.com^
 !i贴吧
 tieba.baidu.com##.pc2client
 ||m.tiebaimg.com/timg?wapp&imgtype=0&quality=100*
@@ -583,11 +602,9 @@ tieba.baidu.com###plat_recom_carousel > .activity_head
 !PC端底部通栏弹层1000x120
 ||bdstatic.com/tb/cms/*%e5%ba%95%e9%83%a8
 !列表内推广贴
-||fc1tn.baidu.com/it/u=
 tieba.baidu.com##.thread_item_box:not(.j_thread_list)
-tieba.baidu.com1##.j_thread_list:not([data-field])
-tieba.baidu.com1##.j_thread_list + li[class]:not(.j_thread_list)
 tieba.baidu.com##.fengchao-wrap-feed
+tieba.baidu.com##.custom-ad-container
 !侧边栏
 ||ns-strategy.cdn.bcebos.com/ns-strategy/$image
 tieba.baidu.com###aside-ad
@@ -853,6 +870,9 @@ bbs.ithome.com##.bbs_login+div[style^="width:960px;height:60px"]
 !---landian
 ||lancdn.com/public/images/view/$image
 ||lancdn.com/landian/images/landianwx.gif
+||img.lancdn.com/landian/2025/08/110020b.png
+||img.lancdn.com/landian/2025/08/110051B.png
+landiannews.com##.content-gg
 landiannews.com,landian.vip##.home-post.download+.module-radius
 landiannews.com,landian.vip##.adsbygoogle
 !---CSDN
@@ -860,7 +880,7 @@ landiannews.com,landian.vip##.adsbygoogle
 ||csdnimg.cn^*#/preview/
 csdn.net##.banner-ad-box
 csdn.net##[id^="kp_box_"]
-blog.csdn.net##div[style="min-height:250px;"]
+blog.csdn.net##.swiper-slide-box-remuneration
 !---------论坛/社区/游戏---------
 !---腾讯各类游戏论坛
 ||ossweb-img.qq.com^$domain=gamebbs.qq.com
@@ -883,6 +903,7 @@ zhihu.com##+js(addEventListener-defuser, /contextmenu|copy/)
 ||v2ex.*/assets/sidebar/
 v2ex.com##.box:has([href$="advertise"])
 v2ex.com##div[style="box-sizing: border-box"]
+v2ex.com###pro-campaign-container
 !---卡饭论坛
 !官网首页
 kafan.cn##.comeing_show_box
@@ -1051,7 +1072,7 @@ got001.com##.ad-box
 ||zasv.net/daxiang.png
 !---------游戏---------
 !---Nexus Mods
-nexusmods.com##.ads
+nexusmods.com##.ads-top,.ads-bottom
 !---游侠网
 ||pbmp.ali213.net/js/
 /ali213-kx-function.js
@@ -1125,6 +1146,7 @@ keylol.com##.rnd_ai_pr
 yxdown.com###tl_adv
 !---nexusmods
 nexusmods.com##[data-testid^="ad-"]
+nexusmods.com###mainContent > .border-b.border-stroke-subdued
 !---CODEX-GAMES
 ||d3g5ovfngjw9bw.cloudfront.net/wNumb.min.js
 ||toglooman.com^$3p
@@ -1179,6 +1201,8 @@ pan.baidu.com##.bd-aside-ad
 ctfile.com##.card.bg-light.mb-3
 !---ys168
 ys168.com###zdy_wz0
+!---ModsFire
+modsfire.com##+js(abort-current-script, parseInt, break;case $.)
 !---https://userupload.net
 ||d1spc7iz1ls2b1.cloudfront.net^
 /\/[0-9a-f]{32}\/invoke\.js/$script,3p
@@ -1253,9 +1277,9 @@ youku.com##.advertise-layer
 @@||iqiyipic.com/image/*/ad/p_*.jpg$image
 @@/videos/vts/*
 !||t7z.cupid.iqiyi.com^
-@@||t7z.cupid.iqiyi.com/mixer$domain=iqiyi.com
+||cupid.iqiyi.com/mixer
 ||static.iqiyi.com/js/common/mars_v.js
-iqiyi.com##+js(json-prune, items.*.video.*.data.[-].ad.adScene data.template.tabs.*.blocks.*.data.data.*.videos.feature_ad data.template.tabs.*.blocks.*.data.data.videos.*.ad)
+iqiyi.com##+js(json-prune, data.[-].ad.adScene items.*.video.*.data.[-].ad.adScene data.template.tabs.*.blocks.*.data.data.*.videos.feature_ad data.template.tabs.*.blocks.*.data.data.videos.*.ad)
 iqiyi.com##+js(adjust-setInterval, adUI, 1000, 0.02)
 iqiyi.com##+js(set-constant, Object.prototype.parseXML, noopFunc)
 iqiyi.com##+js(set-constant, Object.prototype.blackscreenDuration, 1)
@@ -1267,8 +1291,8 @@ iqiyi.com##+js(set-constant, QiyiPlayerProphetData.a.data, {})
 ||mesh.if.iqiyi.com/player/lw/lwplay/accelerator.js
 ||mesh.if.iqiyi.com/tvg/v2/lw/base_info?entity_id=*&ad_ext=
 ||www.iqiyi.com/service-worker.js
-||iqiyi.com/track2?
-||iqiyi.com/dsp_track3
+!||iqiyi.com/track2?
+!||iqiyi.com/dsp_track3
 ||apisgame.iqiyi.com^
 ||static.g.iqiyi.com^
 ||msg.qy.net^
