@@ -365,6 +365,7 @@ activeation.com,activetect.net,adf.ly,atabencot.net,atharori.net,atomcurve.com,a
 /click.gif?
 /clear.gif?
 /d.gif?
+/imp.gif?
 /log.gif?
 /s.gif?
 /track.gif^
@@ -375,6 +376,7 @@ activeation.com,activetect.net,adf.ly,atabencot.net,atharori.net,atomcurve.com,a
 /js_log_error.js
 /log-reporter.js
 /trans/logger.js
+/www/delivery/*$script
 /?sentry_key=
 /b/ss/*&aqe=$image,redirect-rule=1x1.gif
 /wpm@*/web-pixel-
@@ -448,6 +450,7 @@ www.sina.com.cn##.part-l
 ||linezing.com^$3p
 ||log.outbrain.com^
 ||msg.71.am^
+/sensorsdata.$from=~sensorsdata.cn
 ||tr.jianshu.com^
 ||users.51.la^$3p
 ||v2.jiathis.com^$3p
@@ -677,12 +680,14 @@ video.baidu.com##.section-ad
 v.baidu.com##.section.full-collunm-ad
 !---腾讯网
 ||l.qq.com/lview?
+||appcfg.v.qq.com^
 ||cm.l.qq.com^
 ||gtimg.com^*/ad/
 ||gtimg.com/web/crystal/
 ||beacon.qq.com^
 ||beacon.cdn.qq.com^
 ||btrace.qq.com^
+||galileotelemetry.tencent.com^
 ||gdt.qq.com^
 ||isdspeed.qq.com^
 ||qq.com/collect?
@@ -695,6 +700,8 @@ v.baidu.com##.section.full-collunm-ad
 ||tajs.qq.com^
 ||tcss.qq.com^
 ||trace.qq.com^
+||vd6.l.qq.com^
+||vi.l.qq.com^
 !首页和子页通用
 qq.com##.l_qq_com
 !子页
@@ -858,6 +865,7 @@ ithome.com##.rds
 ithome.com##a[href*="/lapin."]
 ithome.com###tt
 ithome.com##.con-recom
+ithome.com##.rds
 !移动版
 ||ithome.com/m/images/index/open-app*
 m.ithome.com##.open-app-banner
@@ -1290,6 +1298,7 @@ iqiyi.com##+js(set-constant, QiyiPlayerProphetData.a.data, {})
 ||cupid.iqiyi.com/mixer?$replace=/"adSlots"/"no_ads"/
 ||mesh.if.iqiyi.com/player/lw/lwplay/accelerator.js
 ||mesh.if.iqiyi.com/tvg/v2/lw/base_info?entity_id=*&ad_ext=
+||mesh.if.iqiyi.com/portal/*/recommend?$xhr,removeparam=adExt
 ||www.iqiyi.com/service-worker.js
 !||iqiyi.com/track2?
 !||iqiyi.com/dsp_track3
@@ -1299,6 +1308,7 @@ iqiyi.com##+js(set-constant, QiyiPlayerProphetData.a.data, {})
 ||127.0.0.1^$script,domain=iqiyi.com
 iqiyi.com##a[href^="https://ads."]
 iqiyi.com##.black-screen[data-cupid="adblock-blackscreen"]
+iqiyi.com###middle_banner_ad_bk
 a[href^="https://ads."]
 !---腾讯视频
 ||qq.com/livemsg?
@@ -1313,7 +1323,9 @@ v.qq.com##+js(set-constant, CreativePlayerwebPlugin.AD_EVENT.AD_DESTROY, '')
 v.qq.com##+js(nowebrtc)
 ||gtimg.com/qqlive/
 ||btrace.video.qq.com^
+||vip.video.qq.com/rpc/trpc.vip_ad_promotion
 v.qq.com##.game-switch-ad
+v.qq.com##.txp_ad
 !---芒果TV
 @@||mgtv.com/sdk/*/ad-sdk.js
 ||da.mgtv.com^
@@ -1532,6 +1544,7 @@ portablesoft.org##.adsbygoogle
 423down.com##div.entry p[style],div.entry~p[style],div.entry>p[align] span[style]
 423down.com##li:has(> .pic[href^="http"]:not([href*="423down."]))
 423down.com##+js(addEventListener-defuser, DOMContentLoaded, adsBlocked)
+www.423down.com##.column2.content > .excerpt > li:has(span.cat:has-text("423Down"))
 !---晋江言情小说网
 !首页顶部
 jjwxc.net##table[style*="width:984px;height:92px;"]
@@ -1649,7 +1662,7 @@ pro.m.jd.com##[id^="content_"]
 ||dangdang.com/adall.
 ||click.dangdang.com/js_tracker.js
 !---什么值得买
-||zdmimg.com/www/delivery/*
+!@@||res.smzdm.com/js/ads.js
 smzdm.com##.logo-special
 smzdm.com##.banner-stuff
 smzdm.com##.g_g
