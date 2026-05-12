@@ -413,6 +413,8 @@ activeation.com,activetect.net,adf.ly,atabencot.net,atharori.net,atomcurve.com,a
 /pingd?
 @@||pingjs.qq.com^$1p
 @@||tajs.qq.com/stats?$1p
+!aegis.qq.com
+||rumt-zh.com^
 !---ali
 ||mmstat.com^$3p
 @@||mmstat.com/eg.js$from=1688.com|taobao.com|tmall.com|tudou.com|youku.com
@@ -499,6 +501,7 @@ www.sina.com.cn##.part-l
 ||taboola.com^$3p
 ||taboolasyndication.com^*/log/
 ||trackedlink.net^$3p
+||tracking.sexcash.com^
 ||usrpubtrk.com^
 ||yahoo.co.jp/js/s_retargeting.js
 ||s.yimg.jp/images/listing/tool/cv/ytag.js
@@ -536,7 +539,6 @@ $removeparam=utm_source
 ||iqiyi.com^$removeparam=vfrm
 ||iqiyi.com^$removeparam=vfrmblk
 ||iqiyi.com^$removeparam=vfrmrst
-||iqiyi.com^$removeparam=vid
 ||iqiyi.com^$removeparam=fid
 ||iqiyi.com^$removeparam=tvname
 ||iqiyi.com^$removeparam=ht
@@ -649,11 +651,8 @@ zhidao.baidu.com##.widget-ads
 zhidao.baidu.com##.feed-recommend
 !baike
 ||baike.baidu.com/api/wikiad/
-||baidu.com/api/wikiui/directad?
-||baidu.com/api/wikiui/getasp?
-||baidu.com/api/wikiui/guesslike?
-!baike.baidu.com###J-union-wrapper
-!baike.baidu.com###J-bottom-recommend-wrapper
+||baike.baidu.com/lemma/api/directad?
+||baike.baidu.com/lemma/api/guesslike?
 !kaike移动
 baike.baidu.com##.BK-content-load, .BK-after-content-wrapper>.yitiao-container, .BK-after-content-wrapper>.tashuo-list+div+div, .BK-after-content-wrapper>ul
 !wenku
@@ -1269,6 +1268,7 @@ youku.com##+js(nano-stb, , , 0)
 !youku.com##+js(m3u-prune,'',/^https:\/\/[\w\.]+ott\.cibntv\.net.+?\.m3u8\?/)
 youku.com##+js(adjust-setTimeout, '', '', 0.02)
 v.youku.com##+js(set-constant, Object.prototype._adData, {})
+@@||alicdn.com^*yksdk/*sdk.js$script,from=youku.com
 @@||cibntv.net/*ad$xhr
 ||cibntv.net/youku/$media
 ||cibntv.net/youku/$media,redirect-rule=noop-1s.mp4
@@ -1277,15 +1277,18 @@ v.youku.com##+js(set-constant, Object.prototype._adData, {})
 ||atm.youku.com^
 ||cmstool.youku.com/cms/tool/pub/get_putdata.json
 ||js.ykimg.com/youku/dist/js/lib/ikuAdapterNew.js
+||acg.youku.com/webfile/*.jpg
+||alicdn.com/awsc/et/
 youku.com##[data-adid]
 youku.com###youku-advertise,#player-advertise
 ||m.ykimg.com/material/
 youku.com##.advertise-layer
+youku.com##.ad-box:not(#ad-banner):not(:empty)
 !---爱奇异
 @@||iqiyipic.com/image/*/ad/p_*.jpg$image
 @@/videos/vts/*
 !||t7z.cupid.iqiyi.com^
-||cupid.iqiyi.com/mixer
+!||cupid.iqiyi.com/mixer
 ||static.iqiyi.com/js/common/mars_v.js
 iqiyi.com##+js(json-prune, data.[-].ad.adScene items.*.video.*.data.[-].ad.adScene data.template.tabs.*.blocks.*.data.data.*.videos.feature_ad data.template.tabs.*.blocks.*.data.data.videos.*.ad)
 iqiyi.com##+js(adjust-setInterval, adUI, 1000, 0.02)
@@ -1295,7 +1298,11 @@ iqiyi.com##+js(set-constant, QiyiPlayerProphetData.a.data, {})
 !||cupid.iqiyi.com/mixer?$jsonprune=\$..[adSlots]
 !https://t7z.cupid.iqiyi.com/mixer?conf=1&ul=https%3A%2F%2Fwww.iqiyi.com%2Fv_24w73bqwa1w.html&reh=&d=qc_100001_101737&a=44a4a2b2d93904d8de473047d3883549&r=2.2.0-ares6-pure&e=13.083.22920&h=1756222070134&v=0&x=undefined&upd=0&y=0&azt=504&i=pcw&cb=Q0c5958eee7f1f2875c1e4a7d32213ddd
 !https://github.com/AdguardTeam/AdguardFilters/commit/2a35b3e64b1581a34daf7a97c03e79323f5eed8b
-||cupid.iqiyi.com/mixer?$replace=/"adSlots"/"no_ads"/
+!||cupid.iqiyi.com/mixer?$replace=/"adSlots"/"no_ads"/
+!www.iqiyi.com#%#//scriptlet('trusted-replace-node-text', 'script', 'window.QiyiPlayerProphetData', '/(QiyiPlayerProphetData=.*?"a":.*?")data(":{)/', '$1no_ads$2')
+www.iqiyi.com##+js(trusted-replace-node-text, script, function defaultTrace, '!function(){const s={apply:(c,e,n)=>(n[0]?.adSlots&&(n[0].adSlots=[]),n[1]?.success&&(n[1].success=new Proxy(n[1].success,s)),Reflect.apply(c,e,n))};window.Object.assign=new Proxy(window.Object.assign,s)}(); function defaultTrace', sedCount, 1)
+www.iqiyi.com##+js(trusted-replace-node-text, script, function defaultTrace, '!function(){const e={apply:(e,t,o)=>{const i=o[1];if(!i||"object"!=typeof i.QiyiPlayerProphetData)return Reflect.apply(e,t,o)}};window.Object.defineProperties=new Proxy(window.Object.defineProperties,e)}(); function defaultTrace', sedCount, 1)
+iqiyi.com##+js(trusted-replace-node-text, script, function defaultTrace, '(()=>{let e=!1;window.qyMesh=window.qyMesh||{},window.qyMesh=new Proxy(window.qyMesh,{get:function(a,t,d){return!e&&a?.preload?.Page_recommend_1?.response?.items&&(a.preload.Page_recommend_1.response.items.forEach((e=>{e.extData?.dataExtAd&&(e.extData.dataExtAd={}),e.video&&e.video.forEach((e=>{e.adverts&&(e.adverts=[]),e.data&&(e.data=e.data.filter((e=>!e.ad)))}))})),e=!0),Reflect.get(a,t,d)}})})(); function defaultTrace', sedCount, 1)
 ||mesh.if.iqiyi.com/player/lw/lwplay/accelerator.js
 ||mesh.if.iqiyi.com/tvg/v2/lw/base_info?entity_id=*&ad_ext=
 ||mesh.if.iqiyi.com/portal/*/recommend?$xhr,removeparam=adExt
@@ -1309,7 +1316,7 @@ iqiyi.com##+js(set-constant, QiyiPlayerProphetData.a.data, {})
 iqiyi.com##a[href^="https://ads."]
 iqiyi.com##.black-screen[data-cupid="adblock-blackscreen"]
 iqiyi.com###middle_banner_ad_bk
-a[href^="https://ads."]
+iqiyi.com##div[class^="list_list_"] > div:has(div[class^="videolist_closeAd"])
 !---腾讯视频
 ||qq.com/livemsg?
 @@||video.qq.com/getvinfo*ad$script,1p
@@ -1320,12 +1327,13 @@ v.qq.com##+js(json-prune, ads)
 v.qq.com##+js(json-prune, data.CardList.[].children_list.ad_list data.CardList.[-].params.advertiser_name)
 v.qq.com##+js(set-constant, CreativePlayerwebPlugin.AD_EVENT.AD_LOAD_START, '')
 v.qq.com##+js(set-constant, CreativePlayerwebPlugin.AD_EVENT.AD_DESTROY, '')
-v.qq.com##+js(nowebrtc)
+!v.qq.com##+js(nowebrtc)
 ||gtimg.com/qqlive/
 ||btrace.video.qq.com^
 ||vip.video.qq.com/rpc/trpc.vip_ad_promotion
 v.qq.com##.game-switch-ad
 v.qq.com##.txp_ad
+v.qq.com##.game-module-container
 !---芒果TV
 @@||mgtv.com/sdk/*/ad-sdk.js
 ||da.mgtv.com^
@@ -1370,6 +1378,7 @@ bilibili.com###slide_ad
 bilibili.com##a[href^="//cm.bilibili.com"]
 bilibili.com##.ad-report
 bilibili.com##+js(nowebrtc)
+!bilibili.com##+js(addEventListener-defuser, visibilitychange, , { "delay": 250 })
 !---AcFun
 ||aixifan.com^*/sensorsdata
 ||aixifan.com/static/*/appGuide/
@@ -1448,6 +1457,7 @@ huya.com##+js(remove-attr, style, #banner[style*="background-image:url"])
 ||msstatic.com/huya/*/p2plib.js$script
 ||midext2.cdn.huya.com/ext-web-mid/ext-web-sub-frame/$subdocument
 huya.com###J_roomSideTop
+huya.com###J_roomGgTop
 huya.com###huya-ab
 huya.com###huya-ab-fixed
 huya.com##.room-business-game
@@ -1455,6 +1465,7 @@ huya.com##.room-sidebar #public-screen-ab
 huya.com##.sidebar-banner
 huya.com##.end-ab-banner
 huya.com##.small-handle-tip
+huya.com##.common-popup.popup-slide-in.vertical
 !---华数TV广电宽屏
 ||delivery.wasu.cn^
 wasu.cn##div[class^="play_ads"]
